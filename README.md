@@ -2,7 +2,7 @@
 
 A mobile-first web app that helps you track skin care products, build daily/weekly/monthly routines, flag ingredient conflicts, and optionally adjust advice around your menstrual cycle. Data stays in your browser. Nothing is sent to a server except product lookups (when you add a new product).
 
-This is early-stage software (v0.1). It works, but many features are basic or missing. See [docs/KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md) for an honest list.
+This is early-stage software (v0.1). It works, but many features are basic or missing. See [docs/KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md) for an honest list of current gaps, and [docs/ROADMAP.md](docs/ROADMAP.md) for what we plan to build next.
 
 ## What works today
 
@@ -23,6 +23,18 @@ This is early-stage software (v0.1). It works, but many features are basic or mi
 - Not medical advice. Do not rely on this for safety decisions.
 
 More detail: [docs/KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md).
+
+## Roadmap (summary)
+
+| Phase | Target | Focus |
+|-------|--------|--------|
+| **v0.1** ✅ | Shipped | Shelf, routines, conflicts, cycle, PDF |
+| **v0.2** | Daily driver | Edit products, weekly scheduling, backup/import, onboarding |
+| **v0.3** | Trust & polish | More conflict rules, PWA, lookup cache, CI |
+| **v0.4** | Habit loop | Check-offs, reminders, sensitivity modes |
+| **v1.0** | Platform | Optional sync, barcode scan |
+
+Full plan: [docs/ROADMAP.md](docs/ROADMAP.md) · Backlog: [docs/BACKLOG.md](docs/BACKLOG.md) · Vision: [docs/PRODUCT-VISION.md](docs/PRODUCT-VISION.md)
 
 ## Requirements
 
@@ -109,6 +121,9 @@ hooks/use-app-data.ts   Client data hook + React context
 
 | Doc | Contents |
 |-----|----------|
+| [docs/PRODUCT-VISION.md](docs/PRODUCT-VISION.md) | North star, personas, and product principles |
+| [docs/ROADMAP.md](docs/ROADMAP.md) | Phased delivery plan (v0.2 → v1.0) |
+| [docs/BACKLOG.md](docs/BACKLOG.md) | Prioritized epics, user stories, and sprint candidates |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How data flows, how routines and conflicts are computed |
 | [docs/DATA-AND-STORAGE.md](docs/DATA-AND-STORAGE.md) | Database schema, seed products, privacy |
 | [docs/KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md) | Audit findings, gaps, and rough edges |

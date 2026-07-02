@@ -20,7 +20,7 @@ This is an audit of the project as of v0.1. It lists what is rough, missing, or 
 | Onboarding flow | `onboardingComplete` exists in types but no UI uses it |
 | Push reminders | Not built |
 | PWA / offline install | Not built |
-| Automated tests | None |
+| Automated tests | Vitest unit tests in `lib/`; no E2E yet |
 | CI pipeline | None |
 
 ## Scheduling quirks
@@ -83,10 +83,12 @@ The 9 seed products create many real conflicts (multiple exfoliants, vitamin C s
 
 ## Suggested next work (not committed)
 
-If you continue development, these would address the biggest gaps:
+Tracked in [BACKLOG.md](BACKLOG.md). Sprint 1 (v0.2) focus:
 
-1. Let users edit frequency, time of day, and ingredients on existing products.
-2. Configurable weekly day (or “every N days”).
-3. Expand or externalize conflict rules.
-4. JSON export/import for backup.
-5. Either remove unused `onboardingComplete` or build onboarding.
+1. PROD-101 — Edit existing product
+2. PROD-201 — Configurable weekly day
+3. PROD-501 / PROD-502 — JSON export and import
+4. PROD-601 — Onboarding flow
+5. PROD-301 — Shelf-wide conflict banner on Products
+
+See [ROADMAP.md](ROADMAP.md) for the full phased plan.
