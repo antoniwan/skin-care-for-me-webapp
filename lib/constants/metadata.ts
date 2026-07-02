@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_NAME = "Skin Care For Me";
+export const SITE_NAME = "Skincare for You";
 
 export const ROOT_METADATA: Metadata = {
   title: {

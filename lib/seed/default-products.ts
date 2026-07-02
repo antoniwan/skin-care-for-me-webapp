@@ -4,7 +4,7 @@ import { SEED_PRODUCT_IDS } from "./product-ids";
 
 export { SEED_PRODUCT_IDS, isSeedProductId } from "./product-ids";
 
-const SEED_TIMESTAMP = "2026-07-02T00:00:00.000Z";
+const SEED_TIMESTAMP = "2026-07-02T18:00:00.000Z";
 
 const BASE_DEFAULT_PRODUCTS: Product[] = [
   {

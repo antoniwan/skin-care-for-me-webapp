@@ -26,7 +26,7 @@ export function ProductsPage() {
 
       <AddProductSheet onAdd={addProductFromLookup} />
 
-      <div className="space-y-3">
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
         {products.map((product) => (
           <ProductCard
             key={product.id}

@@ -1,6 +1,6 @@
 # Product backlog
 
-Prioritized work items for Skin Care For Me. IDs are stable references for issues and PRs.
+Prioritized work items for Skincare for You. IDs are stable references for issues and PRs.
 
 **Priority key:** P0 = must ship in phase · P1 = should ship · P2 = nice to have · P3 = future/explore  
 **Effort key:** S (&lt;3 days) · M (3–7 days) · L (1–2 weeks) · XL (2+ weeks)

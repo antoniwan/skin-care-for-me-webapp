@@ -1,4 +1,4 @@
-# Skin Care For Me
+# Skincare for You
 
 A mobile-first web app that helps you track skin care products, build daily/weekly/monthly routines, flag ingredient conflicts, and optionally adjust advice around your menstrual cycle. Data stays in your browser. Nothing is sent to a server except product lookups (when you add a new product).
 

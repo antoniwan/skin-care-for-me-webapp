@@ -9,8 +9,8 @@ export function BottomNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border/80 bg-card/95 backdrop-blur-md pb-[env(safe-area-inset-bottom)]">
-      <div className="mx-auto flex max-w-lg items-stretch justify-around px-1">
+    <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border/80 bg-card/95 backdrop-blur-md pb-[env(safe-area-inset-bottom)] lg:hidden">
+      <div className="mx-auto flex max-w-lg items-stretch justify-around px-1 lg:max-w-none">
         {APP_NAV_ITEMS.map(({ href, label, icon: Icon }) => {
           const active = isNavItemActive(pathname, href);
           return (

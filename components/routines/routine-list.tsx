@@ -20,7 +20,7 @@ export function RoutineList({
   }
 
   return (
-    <div className="space-y-4">
+    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
       {routines.map((routine) => (
         <RoutineCard
           key={routine.id}

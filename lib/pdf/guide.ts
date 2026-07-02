@@ -1,4 +1,5 @@
 import { jsPDF } from "jspdf";
+import { SITE_NAME } from "../constants/metadata";
 import type { ConflictWarning, Product, Routine } from "../types";
 import { CYCLE_PHASE_LABELS, CYCLE_SKIN_NOTES } from "../cycle/phases";
 import type { CyclePhase } from "../types";
@@ -45,7 +46,7 @@ export function downloadGuidePdf(data: GuideData): void {
     y += 2;
   };
 
-  heading("Skin Care For Me — Personal Guide", 20);
+  heading(`${SITE_NAME} — Personal Guide`, 20);
   body(`Generated ${new Date().toLocaleDateString()}`);
   y += 4;
 
@@ -109,5 +110,5 @@ export function downloadGuidePdf(data: GuideData): void {
     }
   }
 
-  doc.save(`skin-care-guide-${new Date().toISOString().slice(0, 10)}.pdf`);
+  doc.save(`skincare-for-you-guide-${new Date().toISOString().slice(0, 10)}.pdf`);
 }

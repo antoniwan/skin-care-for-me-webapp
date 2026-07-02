@@ -66,6 +66,7 @@ export function ProductCard({ product, onRemove }: ProductCardProps) {
 
         <ProductLinks
           manufacturerUrl={product.manufacturerUrl}
+          productPageLabel={product.productPageLabel}
           amazonAsin={product.amazonAsin}
         />
 

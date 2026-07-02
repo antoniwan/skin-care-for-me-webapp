@@ -1,19 +1,21 @@
 "use client";
 
 import { useAppDataContext } from "@/components/providers/app-data-provider";
+import { RoutineGuideSection } from "@/components/routines/routine-guide-section";
 import { RoutineList } from "@/components/routines/routine-list";
 import { PageContainer } from "@/components/layout/page-container";
 import { PageHeader } from "@/components/layout/page-header";
 import { PageLoading } from "@/components/layout/page-loading";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { getCurrentCyclePhase, getCycleDay } from "@/lib/cycle/phases";
 import type { RoutineFrequency } from "@/lib/types";
 
 const FREQUENCIES: RoutineFrequency[] = ["daily", "weekly", "monthly"];
 
 export function RoutinesPage() {
-  const { routines, products, loading } = useAppDataContext();
+  const { routines, products, conflicts, settings, loading } = useAppDataContext();
 
-  if (loading) {
+  if (loading || !settings) {
     return <PageLoading message="Loading routines…" />;
   }
 
@@ -27,6 +29,9 @@ export function RoutinesPage() {
       </PageContainer>
     );
   }
+
+  const phase = getCurrentCyclePhase(settings.cycle);
+  const cycleDay = getCycleDay(settings.cycle);
 
   const byFrequency = Object.fromEntries(
     FREQUENCIES.map((freq) => [
@@ -43,7 +48,7 @@ export function RoutinesPage() {
       />
 
       <Tabs defaultValue="daily">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-3 lg:max-w-md">
           {FREQUENCIES.map((freq) => (
             <TabsTrigger key={freq} value={freq} className="capitalize">
               {freq}
@@ -60,6 +65,14 @@ export function RoutinesPage() {
           </TabsContent>
         ))}
       </Tabs>
+
+      <RoutineGuideSection
+        products={products}
+        routines={routines}
+        conflicts={conflicts}
+        cyclePhase={phase}
+        cycleDay={cycleDay}
+      />
     </PageContainer>
   );
 }

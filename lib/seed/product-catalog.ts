@@ -5,17 +5,23 @@ import { SEED_PRODUCT_IDS } from "./product-ids";
 export interface SeedProductCatalogEntry {
   imageUrl: string;
   manufacturerUrl: string;
+  productPageLabel?: string;
   amazonAsin: string;
   size?: string;
   tagline?: string;
   highlights?: string[];
 }
 
+/**
+ * Verified product page URLs and Amazon ASINs (checked 2026-07).
+ * Clinique and Fresh use Ulta PDPs — brand sites often block bots or 404.
+ */
 export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   [SEED_PRODUCT_IDS.cliniqueAllAboutCleanSoap]: {
     imageUrl: "/products/clinique-all-about-clean-mild.svg",
     manufacturerUrl:
-      "https://www.clinique.com/product/1687/7740/3-step/all-about-cleantm/liquid-facial-soap/mild",
+      "https://www.ulta.com/p/all-about-clean-liquid-facial-soap-cleanser-mild-xlsImpprod10791729",
+    productPageLabel: "Ulta",
     amazonAsin: "B002RBTB8C",
     size: "6.7 fl oz / 200 ml",
     tagline: "Step 1 — gentle liquid cleanser for dry combination skin.",
@@ -28,8 +34,9 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   [SEED_PRODUCT_IDS.cliniqueClarifyingLotion2]: {
     imageUrl: "/products/clinique-clarifying-lotion-2.svg",
     manufacturerUrl:
-      "https://www.clinique.com/product/1686/12706/3-step/clarifying-lotion/twice-a-day-exfoliator-2",
-    amazonAsin: "B000H1A36A",
+      "https://www.ulta.com/p/clarifying-face-lotion-toner-2-dry-combination-xlsImpprod10791737",
+    productPageLabel: "Ulta",
+    amazonAsin: "B000VBMX4O",
     size: "6.7 fl oz / 200 ml",
     tagline: "Step 2 — daily liquid exfoliator with BHA for dry combination skin.",
     highlights: [
@@ -41,8 +48,9 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   [SEED_PRODUCT_IDS.cliniqueDramaticallyDifferentLotion]: {
     imageUrl: "/products/clinique-ddml-plus.svg",
     manufacturerUrl:
-      "https://www.clinique.com/product/1688/12777/3-step/dramatically-different-moisturizing-lotiontm/dramatically-different-moisturizing-lotion",
-    amazonAsin: "B00CE0G6NY",
+      "https://www.ulta.com/p/dramatically-different-moisturizing-lotion-face-xlsImpprod10791743",
+    productPageLabel: "Ulta",
+    amazonAsin: "B00CVZ3NJ2",
     size: "4.2 fl oz / 125 ml",
     tagline: "Step 3 — barrier-strengthening lotion for very dry to dry-combination skin.",
     highlights: [
@@ -54,7 +62,8 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   [SEED_PRODUCT_IDS.cliniqueMoistureSurgeHydrator]: {
     imageUrl: "/products/clinique-moisture-surge-100h.jpg",
     manufacturerUrl:
-      "https://www.clinique.com/product/18237/38816/skincare/moisturizers/moisture-surgetm-100h-auto-replenishing-hydrator",
+      "https://www.ulta.com/p/moisture-surge-100h-auto-replenishing-hydrator-gel-moisturizer-with-hyaluronic-acid-pimprod2021615?sku=2576545",
+    productPageLabel: "Ulta",
     amazonAsin: "B08PDLD8JV",
     size: "1.7 fl oz / 50 ml",
     tagline: "Oil-free gel-cream hydrator with dual-weight hyaluronic acid.",
@@ -67,8 +76,9 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   [SEED_PRODUCT_IDS.cliniqueMoistureSurgeOvernight]: {
     imageUrl: "/products/clinique-moisture-surge-overnight.svg",
     manufacturerUrl:
-      "https://www.clinique.com/product/18236/38815/skincare/moisturizers/moisture-surgetm-overnight-face-mask",
-    amazonAsin: "B07VJX8RFK",
+      "https://www.ulta.com/p/moisture-surge-overnight-face-mask-xlsImpprod10791821",
+    productPageLabel: "Ulta",
+    amazonAsin: "B00HSZRQQQ",
     size: "3.4 fl oz / 100 ml",
     tagline: "Leave-on overnight mask for intensive evening hydration.",
     highlights: [
@@ -81,7 +91,8 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
     imageUrl: "/products/cerave-hydrating-mineral-spf30.svg",
     manufacturerUrl:
       "https://www.cerave.com/sunscreen/face/hydrating-mineral-sunscreen-face-lotion-spf-30",
-    amazonAsin: "B095T53QX8",
+    productPageLabel: "CeraVe.com",
+    amazonAsin: "B084V4L9H1",
     size: "2.5 fl oz / 75 ml",
     tagline: "100% mineral SPF 30 with ceramides, niacinamide, and hyaluronic acid.",
     highlights: [
@@ -93,8 +104,9 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   [SEED_PRODUCT_IDS.freshSugarFacePolish]: {
     imageUrl: "/products/fresh-sugar-face-polish.svg",
     manufacturerUrl:
-      "https://www.fresh.com/us/skincare/exfoliators/sugar-face-polish-exfoliator-H00004519.html",
-    amazonAsin: "B0009ET8MK",
+      "https://www.ulta.com/p/sugar-face-polish-exfoliator-xlsImpprod10791731",
+    productPageLabel: "Ulta",
+    amazonAsin: "B0081IOGNU",
     size: "4.2 oz / 125 g",
     tagline: "Brown sugar scrub and mask with strawberry and plum seed oils.",
     highlights: [
@@ -105,8 +117,9 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   },
   [SEED_PRODUCT_IDS.medicubeZeroPorePad]: {
     imageUrl: "/products/medicube-zero-pore-pad.svg",
-    manufacturerUrl: "https://global.medicube.com/products/zero-pore-pad-2-0",
-    amazonAsin: "B0BG8XHQMV",
+    manufacturerUrl: "https://medicube.us/products/zero-pore-pad-1",
+    productPageLabel: "Medicube",
+    amazonAsin: "B09V7Z4TJG",
     size: "70 pads",
     tagline: "Dual-texture toner pads with 4.5% lactic acid and 0.45% salicylic acid.",
     highlights: [
@@ -118,8 +131,9 @@ export const SEED_PRODUCT_CATALOG: Record<string, SeedProductCatalogEntry> = {
   [SEED_PRODUCT_IDS.medicubePdrnEyeMask]: {
     imageUrl: "/products/medicube-pdrn-eye-mask.svg",
     manufacturerUrl:
-      "https://global.medicube.com/products/pdrn-pink-collagen-jelly-eye-mask",
-    amazonAsin: "B0D3VQZ8KX",
+      "https://www.stylekorean.com/shop/medicube-pdrn-pink-caffeine-collagen-eye-patch-60ea/1778132535",
+    productPageLabel: "StyleKorean",
+    amazonAsin: "B0G38FGSKL",
     size: "60 patches (30 pairs)",
     tagline: "Hydrogel under-eye patches with PDRN, collagen, and caffeine.",
     highlights: [
@@ -144,6 +158,7 @@ export function enrichSeedProduct(product: Product): Product {
     ...product,
     imageUrl: catalog.imageUrl,
     manufacturerUrl: catalog.manufacturerUrl,
+    productPageLabel: catalog.productPageLabel,
     amazonAsin: catalog.amazonAsin,
     size: catalog.size,
     tagline: catalog.tagline,

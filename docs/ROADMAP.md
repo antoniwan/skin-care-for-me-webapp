@@ -11,7 +11,7 @@ This roadmap turns [PRODUCT-VISION.md](PRODUCT-VISION.md) into delivery phases. 
 
 ```mermaid
 gantt
-    title Skin Care For Me - indicative phases
+    title Skincare for You - indicative phases
     dateFormat YYYY-MM-DD
     axisFormat %b %Y
     section v0.2 Daily driver

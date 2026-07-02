@@ -1,6 +1,6 @@
 # Product vision
 
-**Skin Care For Me** helps people build a routine they can actually follow — with ingredient awareness, optional cycle context, and no account required. Data stays on the device unless the user explicitly looks up a new product.
+**Skincare for You** helps people build a routine they can actually follow — with ingredient awareness, optional cycle context, and no account required. Data stays on the device unless the user explicitly looks up a new product.
 
 ## Problem
 

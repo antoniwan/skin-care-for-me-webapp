@@ -16,7 +16,8 @@ describe("seed product catalog", () => {
 
   it("looks up catalog entries by seed id", () => {
     const entry = getSeedCatalogEntry(SEED_PRODUCT_IDS.ceraveHydratingMineralSunscreen);
-    expect(entry?.amazonAsin).toBe("B095T53QX8");
+    expect(entry?.amazonAsin).toBe("B084V4L9H1");
+    expect(entry?.manufacturerUrl).toContain("cerave.com");
   });
 
   it("merges catalog fields onto base products", () => {
@@ -33,6 +34,7 @@ describe("seed product catalog", () => {
       updatedAt: "2024-01-01T00:00:00.000Z",
     });
 
-    expect(enriched.manufacturerUrl).toContain("fresh.com");
+    expect(enriched.manufacturerUrl).toContain("ulta.com");
+    expect(enriched.productPageLabel).toBe("Ulta");
   });
 });

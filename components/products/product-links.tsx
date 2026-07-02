@@ -1,21 +1,28 @@
 import { buildAmazonAffiliateUrl } from "@/lib/products/affiliate";
+import { getProductPageLabel } from "@/lib/products/product-page-link";
 import { ExternalLink, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ProductLinksProps {
   manufacturerUrl?: string;
+  productPageLabel?: string;
   amazonAsin?: string;
 }
 
 export function ProductLinks({
   manufacturerUrl,
+  productPageLabel,
   amazonAsin,
 }: ProductLinksProps) {
   if (!manufacturerUrl && !amazonAsin) return null;
 
+  const pageLabel = manufacturerUrl
+    ? getProductPageLabel(manufacturerUrl, productPageLabel)
+    : null;
+
   return (
     <div className="flex flex-wrap gap-2">
-      {manufacturerUrl && (
+      {manufacturerUrl && pageLabel && (
         <Button variant="outline" size="sm" className="h-8 gap-1.5 text-xs" asChild>
           <a
             href={manufacturerUrl}
@@ -23,7 +30,7 @@ export function ProductLinks({
             rel="noopener noreferrer"
           >
             <ExternalLink className="size-3.5" />
-            Manufacturer
+            {pageLabel}
           </a>
         </Button>
       )}

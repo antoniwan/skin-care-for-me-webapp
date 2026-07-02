@@ -1,6 +1,5 @@
 import {
   Calendar,
-  Download,
   Home,
   Package,
   Sparkles,
@@ -18,7 +17,6 @@ export const APP_NAV_ITEMS: AppNavItem[] = [
   { href: "/products", label: "Products", icon: Package },
   { href: "/routines", label: "Routines", icon: Sparkles },
   { href: "/cycle", label: "Cycle", icon: Calendar },
-  { href: "/guide", label: "Guide", icon: Download },
 ];
 
 export function isNavItemActive(pathname: string, href: string): boolean {

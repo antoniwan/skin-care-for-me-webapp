@@ -23,17 +23,18 @@ There is no backend database. The Next.js API route exists only for product look
 `app/layout.tsx` wraps all pages in `ClientAppShell`, which provides:
 
 1. `AppDataProvider` — React context from `hooks/use-app-data.ts`
-2. `AppShell` — max-width column + fixed bottom navigation
+2. `AppShell` — responsive max-width column, side nav on large screens, bottom nav on mobile
 
-Bottom nav routes:
+Bottom nav routes (mobile) and side nav (desktop):
 
 | Route | Page |
 |-------|------|
 | `/` | Today |
 | `/products` | Product shelf |
-| `/routines` | All routines by frequency |
+| `/routines` | All routines by frequency + PDF guide section |
 | `/cycle` | Cycle tracking settings |
-| `/guide` | PDF download + full routine list |
+
+`/guide` redirects to `/routines#guide`.
 
 ## Data loading
 

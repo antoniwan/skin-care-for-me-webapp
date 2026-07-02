@@ -30,6 +30,8 @@ export interface Product {
   imageUrl?: string;
   /** Official brand product page */
   manufacturerUrl?: string;
+  /** Button label for manufacturerUrl (defaults from hostname) */
+  productPageLabel?: string;
   /** Amazon Standard Identification Number for affiliate links */
   amazonAsin?: string;
   size?: string;
