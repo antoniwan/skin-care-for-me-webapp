@@ -14,7 +14,7 @@ All personal data is stored in the browser using IndexedDB. Clearing site data i
 | Store | Key | Indexed fields | Contents |
 |-------|-----|----------------|----------|
 | `products` | `id` (string) | `name`, `category`, `frequency`, `createdAt` | User and seed products |
-| `routines` | `id` (string) | `frequency`, `timeOfDay`, `generatedAt` | Auto-generated; overwritten on each refresh |
+| `routines` | `id` (string) | `frequency`, `timeOfDay`, `generatedAt` | Legacy table — routines are **derived on read**, not read from here |
 | `settings` | `id` (always `"app"`) | — | Cycle settings + `onboardingComplete` flag |
 
 ### Settings shape
@@ -71,7 +71,7 @@ All personal data is stored in the browser using IndexedDB. Clearing site data i
 }
 ```
 
-Routines are derived data. They are regenerated whenever products or settings change. Do not treat stored routines as the source of truth.
+Routines are derived data. They are computed by `refreshAppData()` in `lib/services/app-data.ts` whenever products or settings change. They are **not** written to IndexedDB during normal app use (the `routines` table remains for schema v1 compatibility only).
 
 ## Seed products
 

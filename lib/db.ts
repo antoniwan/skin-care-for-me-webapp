@@ -64,10 +64,12 @@ export async function deleteProduct(id: string): Promise<void> {
   await db.products.delete(id);
 }
 
+/** @deprecated Routines are derived on read via `refreshAppData()`. Table kept for schema v1 compat. */
 export async function getRoutines(): Promise<Routine[]> {
   return db.routines.orderBy("generatedAt").reverse().toArray();
 }
 
+/** @deprecated Routines are derived on read via `refreshAppData()`. */
 export async function saveRoutines(routines: Routine[]): Promise<void> {
   await db.routines.clear();
   await db.routines.bulkPut(routines);
