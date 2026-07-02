@@ -1,13 +1,14 @@
 # Known limitations
 
-This is an audit of the project as of v0.1. It lists what is rough, missing, or wrong on purpose. Use this before trusting the app for real skin care decisions.
+Audit of the project as of **v0.1.0** (2026-07-02). Lists what is rough, missing, or intentional. Read before trusting the app for real skin care decisions.
 
 ## Medical and safety
 
 - **Not medical advice.** Conflict rules are a small curated list, not a complete interaction database.
-- **AI lookup can be wrong.** Without verification, ingredient lists from OpenAI or the mock fallback may be inaccurate.
-- **Cycle logic is simplified.** Phase boundaries use fixed percentages of cycle length, not individual health data.
-- **No patch testing, allergy, or pregnancy modes.**
+- **AI lookup can be wrong.** Ingredient lists from OpenAI or mock fallback may be inaccurate without verification.
+- **Cycle logic is simplified.** Phase boundaries use fixed percentages of cycle length, not labs or ovulation data.
+- **Life-stage rules are conservative defaults.** Pregnancy/postpartum holds are not a substitute for clinician guidance.
+- **No allergy or patch-test modes.** Ingredient lists are informational only.
 
 ## Features missing
 
@@ -17,78 +18,89 @@ This is an audit of the project as of v0.1. It lists what is rough, missing, or 
 | Barcode / photo scan | Not built |
 | User accounts / sync | Not built |
 | JSON backup / restore | Not built |
-| Onboarding flow | `onboardingComplete` exists in types but no UI uses it |
+| Onboarding flow | `onboardingComplete` in schema; no UI |
 | Push reminders | Not built |
 | PWA / offline install | Not built |
-| Automated tests | Vitest unit tests in `lib/`; no E2E yet |
+| E2E tests | Vitest unit tests only (38 tests in `lib/`) |
 | CI pipeline | None |
+| Privacy policy / terms pages | Not built |
+| Product-page conflict banner | Shelf-wide summary on Routines `#guide` only (PROD-301) |
 
 ## Scheduling quirks
 
-- **Weekly routines** only appear on **Sundays** (`getDay() === 0`).
-- **Monthly routines** only appear on the **1st** of each month.
-- There is no UI to pick “weekly on Wednesday” or similar.
-- Products marked `weekly` with `timeOfDay: evening` still only show on Sunday evening, not on whatever day you actually use them.
+- **Weekly routines** only on **Sundays** (`getDay() === 0`).
+- **Monthly routines** only on the **1st** of the month.
+- No UI to pick weekly day (e.g. Wednesday).
+- `weekly` + `evening` still means Sunday evening only.
 
 ## Routine generation
 
-- Category order is fixed. The app does not know your personal preferences (e.g. oil before cream debates).
-- `separateConflictingProducts` only auto-removes `avoid`-severity pairs. `caution` and `separate` products stay in the same routine; you only get UI warnings.
-- When removing a product from an `avoid` pair, sunscreen is always kept if one side is sunscreen — arbitrary but intentional.
-- Cycle phase filtering only downgrades **daily** harsh actives during menstrual/luteal. It does not remove them from weekly routines.
-- Multiple moisturizers (e.g. DDML + Moisture Surge) can all appear in the same routine — no deduplication.
+- Fixed category order — no user reordering.
+- `separateConflictingProducts()` only auto-removes `avoid` pairs; `caution`/`separate` stay with UI warnings.
+- Sunscreen kept when paired with `avoid` conflict — intentional.
+- Body context holds daily harsh actives on menstrual/luteal; weekly/monthly harsh actives may still appear.
+- Multiple moisturizers can coexist in one routine — no deduplication.
 
 ## Ingredient conflicts
 
 - ~10 rules in `lib/rules/ingredient-conflicts.ts`.
-- Matching uses substring alias normalization — false positives and false negatives are possible.
-- Warnings on Today/Routines only show when **both** products are in the **same** routine bucket. Conflicts across different times/frequencies are hidden there (visible on Guide + PDF).
-- No concentration or pH awareness (e.g. low-dose vs prescription strength).
+- Substring alias matching — false positives/negatives possible.
+- Step hints only when both products share a **routine bucket**. Cross-bucket conflicts: Routines guide + PDF only.
+- No concentration or pH modeling.
+- Rule reason/guidance text is English; UI chrome is localized.
 
 ## Product lookup
 
-- **Without `OPENAI_API_KEY`:** mock data only. Good for dev, not for real product info.
-- **With API key:** one-shot GPT-4o-mini call per lookup. No caching on server. Costs money per lookup.
-- Lookup results cannot be corrected in the UI without deleting and re-adding.
+- **Without `OPENAI_API_KEY`:** mock data only.
+- **With key:** one GPT-4o-mini call per lookup; no server cache; costs per request.
+- No in-app correction without delete + re-add.
+- No API rate limiting (production risk — see [PRODUCTION-TRACKER.md](PRODUCTION-TRACKER.md)).
 
 ## Storage
 
-- Data is per-browser, per-origin. Clearing site data loses user-added products (seeds come back).
-- Seed products are re-upserted every load — you cannot permanently remove them.
-- No encryption at rest beyond what the browser provides.
-- Routines are derived on each read, not stored in IndexedDB during normal use.
+- Per-browser, per-origin. Clear site data → user products gone; seeds return.
+- Seeds re-upserted every load — cannot permanently remove.
+- No encryption beyond browser defaults.
+- Routines derived in memory, not stored in IndexedDB.
+- Locale in `localStorage` — cleared independently of IndexedDB.
 
 ## UI / UX
 
-- Mobile-first layout; desktop is a narrow column by design.
-- No dark mode toggle (CSS has `.dark` tokens but nothing switches them).
-- PDF uses Helvetica, not app fonts. Layout is plain text.
-- No loading/error boundaries for failed IndexedDB or API errors beyond generic messages.
-- Add-product sheet has no cancel confirmation if you already fetched a preview.
+- Mobile-first; desktop has side nav + wider layout (`max-w-6xl`), not a phone-only column.
+- No dark mode toggle (`.dark` tokens exist, unused).
+- PDF uses Helvetica, not app fonts.
+- Generic error boundary; no IndexedDB-specific failure UI.
+- Add-product sheet: no cancel confirmation after preview fetch.
+- Seed shelf shows many conflicts by design — can alarm new users.
 
-## Code quality (audit notes)
+## Localization
 
-- **Both `package-lock.json` and `pnpm-lock.yaml`** exist — pick one package manager for team consistency.
-- **`graphify-out/`** is generated architecture tooling output; not required to run the app.
-- **Dependencies:** `shadcn` is listed as a runtime dependency though it is normally a dev CLI only.
+- UI fully localized (`es-419` default, `en` available).
+- Seed product copy, conflict rule bodies, PDF, and HTML meta descriptions remain English.
+- See [LOCALIZATION.md](LOCALIZATION.md).
 
-## Default seed shelf
+## Code quality
 
-The 9 seed products create many real conflicts (multiple exfoliants, vitamin C sources, etc.). That is useful for testing warnings but can make first launch look alarming. This is expected with the current demo data.
+- **`package-lock.json` and `pnpm-lock.yaml`** both present — pick one package manager.
+- **`graphify-out/`** — generated tooling output; not required to run the app.
+- **`shadcn`** listed as runtime dependency; normally a dev CLI.
 
-## Deployment notes
+## Deployment
 
-- Standard Next.js deploy (e.g. Vercel). Set `OPENAI_API_KEY` in environment variables for production lookups.
-- IndexedDB does not exist on the server — all DB code runs client-side only. SSR pages do not preload user data.
+- Standard Next.js on Vercel (or similar).
+- **Env:** `OPENAI_API_KEY`, `NEXT_PUBLIC_SITE_URL`, optional `NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG`.
+- **Planned URL:** `https://skincareforyou.builds.software`
+- IndexedDB is client-only — SSR does not preload user data.
+- Meta assets exist (`og.png`, `icon.svg`, `robots.ts`, `sitemap.ts`) — see [PRODUCTION-TRACKER.md](PRODUCTION-TRACKER.md) for remaining launch gaps.
 
-## Suggested next work (not committed)
+## Suggested next work
 
-Tracked in [BACKLOG.md](BACKLOG.md). Sprint 1 (v0.2) focus:
+Tracked in [BACKLOG.md](BACKLOG.md). v0.2 focus:
 
 1. PROD-101 — Edit existing product
 2. PROD-201 — Configurable weekly day
 3. PROD-501 / PROD-502 — JSON export and import
 4. PROD-601 — Onboarding flow
-5. PROD-301 — Shelf-wide conflict banner on Products
+5. PROD-301 — Shelf-wide conflict banner on Products page
 
-See [ROADMAP.md](ROADMAP.md) for the full phased plan.
+See [ROADMAP.md](ROADMAP.md) for phased plan.

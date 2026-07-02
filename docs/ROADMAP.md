@@ -37,12 +37,16 @@ gantt
 
 | Delivered | Notes |
 |-----------|-------|
-| Product shelf + AI/mock lookup | Server action + IndexedDB |
-| Auto-generated routines | Daily / weekly / monthly buckets |
-| Ingredient conflict warnings | ~10 curated rules, inline UI |
-| Cycle-aware soft filtering | Optional settings |
-| PDF guide export | Client-side jsPDF |
-| Architecture refactor + unit tests | Services layer, Vitest |
+| Product shelf + AI/mock lookup | Server action + API route + IndexedDB |
+| Auto-generated routines | Daily / weekly / monthly buckets; category ordering |
+| Routine safety check | Layering, ingredient pairings, schedule match |
+| Ingredient conflict warnings | ~10 rules; inline + guide summary |
+| Body & cycle context | Menstrual, life stage, weight; routine holds |
+| Localization | `es-419` default, `en` toggle; UI strings |
+| PDF guide export | Client-side jsPDF at `/routines#guide` |
+| Responsive shell | Side nav desktop, bottom nav mobile |
+| Production meta basics | OG image, favicon, robots, sitemap |
+| Unit tests | Vitest in `lib/` (38 tests) |
 
 **Exit criteria:** User can add products, see Today, download guide, no server DB.
 
@@ -94,7 +98,7 @@ gantt
 |------------|----------|
 | **Routine check-offs** | Mark steps done today; streak optional |
 | **Reminders** | Local notifications for AM/PM (permission-based) |
-| **Sensitivity modes** | Pregnancy / retinol-newbie / "rest day" toggles |
+| **Sensitivity modes** | Pregnancy / retinol-newbie / "rest day" toggles — *partial: life-stage holds shipped in v0.1* |
 | **Routine customization** | Reorder steps; hide products from a routine without deleting |
 | **Smarter Today** | "Skip actives" one-tap; weather/season notes (copy only) |
 

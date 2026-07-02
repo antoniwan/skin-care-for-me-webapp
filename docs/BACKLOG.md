@@ -16,7 +16,7 @@ Prioritized work items for Skincare for You. IDs are stable references for issue
 | [E1 — Shelf management](#e1--shelf-management) | 1 | 3 | Own your product list |
 | [E2 — Scheduling & Today](#e2--scheduling--today) | 1–3 | 2 | Right routine, right day |
 | [E3 — Ingredient intelligence](#e3--ingredient-intelligence) | 1–2 | 2 | Trustworthy warnings |
-| [E4 — Cycle & sensitivity](#e4--cycle--sensitivity) | 1–3 | 1 | Context-aware routines |
+| [E4 — Cycle & sensitivity](#e4--cycle--sensitivity) | 1–3 | 1 | Body context (v0.1) + refinements |
 | [E5 — Data & privacy](#e5--data--privacy) | 1–4 | 2 | Portable, local-first |
 | [E6 — Onboarding & UX](#e6--onboarding--ux) | 1–2 | 2 | First-run clarity |
 | [E7 — Habit & engagement](#e7--habit--engagement) | 3 | 0 | Follow-through |
@@ -248,7 +248,9 @@ Prioritized work items for Skincare for You. IDs are stable references for issue
 
 ## E4 — Cycle & sensitivity
 
-*Optional body-context without medical claims.*
+*Optional body context without medical claims.*
+
+**Shipped in v0.1:** Body page (`/cycle`), menstrual + life stage + weight settings, routine holds, `BodyContextBanner`, privacy notice, i18n. See [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md).
 
 ### PROD-401 · Cycle onboarding copy & validation
 | Field | Value |
@@ -270,11 +272,13 @@ Prioritized work items for Skincare for You. IDs are stable references for issue
 | Priority | P2 |
 | Effort | M |
 | Phase | 3 |
-| Status | Not started |
+| Status | Partial — life-stage holds exist; no standalone "retinol newbie" toggle |
 
 **User story:** As a user in a sensitive period, I want a toggle that further limits harsh actives across all frequencies.
 
 **Acceptance criteria:** Setting in cycle or general settings; generator filter; PDF reflects mode.
+
+**Note:** `pregnant` / `postpartum` / `breastfeeding` life stages already hold retinoids and daily acids. This item covers additional modes beyond life stage.
 
 ---
 

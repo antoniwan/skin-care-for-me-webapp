@@ -1,48 +1,50 @@
 # Architecture
 
-This document explains how the app is put together and how data moves through it. Read this if you are changing routines, conflicts, or storage.
+This document explains how the app is put together and how data moves through it. Read this if you are changing routines, conflicts, storage, or localization.
 
 ## High-level picture
 
 ```
 Browser
   │
-  ├─ React pages (client components)
-  │     └─ useAppDataContext() ──► useAppData() hook
+  ├─ LocaleProvider          locale + t() from lib/i18n (localStorage)
+  │     └─ AppDataProvider   useAppData() → IndexedDB liveQuery
+  │           └─ AppShell    side nav (lg+) / bottom nav (mobile)
   │
-  ├─ IndexedDB (Dexie)          products, settings (routines derived in memory)
+  ├─ IndexedDB (Dexie)       products, settings (routines derived in memory)
   │
-  └─ POST /api/products/lookup  only when adding a product
-        └─ OpenAI (or mock)     returns structured JSON once; result saved locally
+  └─ POST /api/products/lookup   only when adding a product
+        └─ OpenAI (or mock)      structured JSON once; saved locally
 ```
 
-There is no backend database. The Next.js API route exists only for product lookup because that needs an API key on the server. Everything else runs in the browser.
+There is no backend database. The API route exists only for product lookup (API key on server). Everything else runs in the browser.
 
 ## App shell
 
-`app/layout.tsx` wraps all pages in `ClientAppShell`, which provides:
+`app/(app)/layout.tsx` renders `AppLayoutClient` (`components/layout/app-layout-client.tsx`), which wraps:
 
-1. `AppDataProvider` — React context from `hooks/use-app-data.ts`
-2. `AppShell` — responsive max-width column, side nav on large screens, bottom nav on mobile
+1. **`LocaleProvider`** — `lib/i18n`, persists locale in `localStorage`, sets `document.documentElement.lang`
+2. **`AppDataProvider`** — React context from `hooks/use-app-data.ts`
+3. **`AppShell`** — responsive layout: `max-w-6xl` on desktop, side nav (`lg+`), bottom nav on mobile, language toggle
 
-Bottom nav routes (mobile) and side nav (desktop):
-
-| Route | Page |
-|-------|------|
-| `/` | Today |
-| `/products` | Product shelf |
-| `/routines` | All routines by frequency + PDF guide section |
-| `/cycle` | Body & cycle settings (menstrual, life stage, weight) |
+| Route | Page | Nav label (i18n key) |
+|-------|------|----------------------|
+| `/` | Today | `nav.today` |
+| `/products` | Product shelf | `nav.products` |
+| `/routines` | Routines by frequency + guide (`#guide`) | `nav.routines` |
+| `/cycle` | Body & cycle settings | `nav.body` |
 
 `/guide` redirects to `/routines#guide`.
 
+Root `app/layout.tsx` sets global metadata (`lib/constants/metadata.ts`), fonts (Sora + DM Sans), viewport `theme-color`, and default `lang="es-419"`.
+
 ## Data loading
 
-`useAppData()` uses Dexie’s `useLiveQuery` to subscribe to IndexedDB changes. On each read it calls `refreshAppData()` in `lib/services/app-data.ts`, which:
+`useAppData()` uses Dexie's `useLiveQuery` to subscribe to IndexedDB. On each read it calls `refreshAppData()` in `lib/services/app-data.ts`, which:
 
-1. Loads products from IndexedDB (and upserts seed products — see [DATA-AND-STORAGE.md](DATA-AND-STORAGE.md))
-2. Loads settings (or defaults)
-3. Derives routines via `generateRoutines(products, settings)` (not persisted)
+1. Loads products (and upserts seed products — see [DATA-AND-STORAGE.md](DATA-AND-STORAGE.md))
+2. Loads settings (or defaults; migrates legacy `cycle` → `bodyContext`)
+3. Derives routines via `generateRoutines(products, settings)` — **not persisted**
 4. Runs `detectConflicts(products)` for shelf-wide warnings
 
 Mutations (`addProductFromLookup`, `removeProductById`, `updateAppSettings`) write to IndexedDB; `useLiveQuery` re-runs automatically.
@@ -54,98 +56,128 @@ File: `lib/routines/generator.ts`
 ### Inputs
 
 - All products on the shelf
-- App settings (mainly cycle phase)
+- App settings (`bodyContext` via `getBodyContextCore()`)
 
 ### Steps
 
-1. **Conflict pre-filter** — Products in `avoid`-severity pairs may be dropped from routines. If one product is sunscreen, the other product is removed instead of the sunscreen.
+1. **`separateConflictingProducts()`** — Products in `avoid`-severity pairs may be dropped. If one is sunscreen, the other is removed.
 
-2. **Phase filter** — If cycle tracking is on and the phase is menstrual or luteal, daily products with harsh actives (retinol, AHA, BHA, benzoyl peroxide in `activeIngredients`) are excluded from daily routines. Weekly/monthly versions can still appear.
+2. **`applyBodyContextFilter()`** — Uses `shouldIncludeProductInRoutine()` from `lib/body-context/routine-rules.ts` (pregnancy, postpartum, menstrual/luteal holds). See [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md).
 
-3. **Bucket by frequency and time** — Each product has `frequency` (`daily` | `weekly` | `monthly`) and `timeOfDay` (`morning` | `evening` | `any`). Products land in matching buckets (e.g. daily + morning).
+3. **Bucket by frequency and time** — Each product has `frequency` and `timeOfDay`. Products land in matching buckets.
 
-4. **Sort steps** — Within a routine, products are ordered by category:
-
+4. **`finalizeRoutineProductOrder()`** — Category order from `lib/routines/category-order.ts`:
    ```
    cleanser → toner → serum → treatment → eye_cream → moisturizer → sunscreen → exfoliant → mask → other
    ```
+   SPF last in morning; masks last in evening.
 
-5. **Output** — One `Routine` object per non-empty bucket, with step list and usage text copied from each product.
+5. **Output** — One `Routine` per non-empty bucket with steps and usage text.
 
 ### “Today” filtering
 
-`getTodaysRoutines()` picks which routines to show on the home page:
+`getTodaysRoutines()`:
 
-- **Daily** — always included
-- **Weekly** — only when `dayOfWeek === 0` (Sunday)
-- **Monthly** — only when `dayOfMonth === 1`
+- **Daily** — always
+- **Weekly** — `dayOfWeek === 0` (Sunday)
+- **Monthly** — `dayOfMonth === 1`
 
-If cycle tracking is enabled, routines tagged with a `cyclePhase` must match the current phase.
+## Routine verification (safety check)
+
+File: `lib/routines/verification.ts`
+
+On the Routines page (detailed cards), each routine runs three checks:
+
+| Check | What it validates |
+|-------|-------------------|
+| Layering order | Category sequence; SPF last AM, mask last PM |
+| Ingredient pairings | Conflicts among products in this routine |
+| Schedule match | Product frequency/time fits the routine bucket |
+
+UI: `RoutineVerificationPanel` — collapsed by default when all pass; labels localized via `lib/i18n/ui.ts` (`localizeVerification`).
 
 ## Ingredient conflicts
 
 File: `lib/rules/ingredient-conflicts.ts`
 
-### How detection works
+1. Normalize ingredients via alias map (e.g. salicylic acid → `bha`).
+2. Check every product pair against ~10 static rules.
+3. Severity: `avoid` | `caution` | `separate`, with reason + guidance (English in rules file; UI labels localized).
 
-1. Each product has `activeIngredients` and full `ingredients` lists.
-2. Ingredient strings are normalized via alias map (e.g. “salicylic acid” → `bha`, “lactic acid” → `aha`).
-3. Every product pair is checked against a static list of ~10 rules.
-4. Each rule has severity: `avoid`, `caution`, or `separate`, plus reason and guidance text.
+### Where warnings appear
 
-### Where warnings appear in the UI
-
-Folder: `components/conflicts/` (barrel: `index.ts`)
+Folder: `components/conflicts/`
 
 | Component | When used |
 |-----------|-----------|
-| `StepInteractionHint` | Under a routine step, if that product conflicts with another product **in the same routine** |
-| `RoutineInteractionBadge` | Pill on routine card header — count of conflicts in that routine |
-| `InteractionSummaryBar` | Guide page only — shelf-wide count, opens a sheet |
-| `InteractionDetailsSheet` | Bottom sheet with full text for a set of warnings |
+| `StepInteractionHint` | Under a routine step — conflicts with another product **in the same routine** |
+| `RoutineInteractionBadge` | Routine card header — count for that routine |
+| `InteractionSummaryBar` | Routines guide section (`#guide`) — shelf-wide count |
+| `InteractionDetailsSheet` | Bottom sheet with `InteractionDetail` cards (severity, ingredients, why / what to do) |
+| `InteractionTrigger` / `SeverityBadge` | Shared primitives for accent-bar trigger styling |
 
-Shelf-wide conflicts between products that never share a routine (e.g. weekly pad vs daily morning cleanser) do **not** show on Today. They appear on the Guide page summary and in the PDF.
+Conflicts across different routine buckets do **not** show on Today step hints. They appear in the guide summary and PDF.
 
-## Cycle phases
+## Body context
 
-File: `lib/cycle/phases.ts`
+Files: `lib/body-context/*` (see [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md))
 
-Phases are estimated from:
+- **`getBodyContextCore()`** — Phase/life-stage data for routine generation (no localized strings).
+- **`getBodyContextSnapshot(settings, t)`** — Adds localized `activeFactors` and `guidanceNotes` for UI.
+- **`lib/cycle/phases.ts`** — Re-exports body-context helpers for backward compatibility.
 
-- `lastPeriodStart` (date string)
-- `cycleLength` (default 28)
-- `periodLength` (default 5)
+## Localization
 
-Day-in-cycle is computed with modulo arithmetic. Phase boundaries are fixed ratios of cycle length (not medical-grade). The app shows short skin notes per phase and feeds phase into routine generation.
+File: `lib/i18n/` — see [LOCALIZATION.md](LOCALIZATION.md)
+
+- Default locale: `es-419` (Spanish, Latin America)
+- Also: `en`
+- UI strings: `lib/i18n/messages/`
+- Product seed copy and conflict rule text remain **English** (display-layer translation partial).
 
 ## Product lookup
 
-File: `lib/products/lookup.ts` → `app/api/products/lookup/route.ts`
+Files: `lib/products/lookup.ts`, `app/(app)/products/actions.ts`, `app/api/products/lookup/route.ts`
 
-1. Client sends `{ query: "product name" }`.
-2. If `OPENAI_API_KEY` is set, `gpt-4o-mini` returns structured data validated by Zod.
-3. If not set, `mockLookup()` returns guessed data from keywords (sunscreen, retinol, or generic serum).
-4. Client saves the result as a new `Product` in IndexedDB. The server does not store it.
+1. Client sends product name query.
+2. With `OPENAI_API_KEY`: `gpt-4o-mini` + Zod validation.
+3. Without key: `mockLookup()` keyword fallback.
+4. Result saved as new `Product` in IndexedDB. Server does not store it.
 
 ## PDF export
 
 File: `lib/pdf/guide.ts`
 
-Runs entirely client-side with jsPDF. Uses Helvetica (not the web fonts). Includes products, all routines, cycle context, and all shelf-wide conflicts.
+Client-side jsPDF. Helvetica (not web fonts). Products, routines, body context notes, shelf-wide conflicts.
 
 ## UI stack
 
-- **shadcn/ui** components in `components/ui/` (Button, Card, Sheet, Tabs, etc.)
-- **Warm theme** in `app/globals.css` (cream background, terracotta primary)
-- **Fonts** loaded via `@fontsource` in `app/layout.tsx`
+- **shadcn/ui** in `components/ui/`
+- **Design tokens** in `app/globals.css` — rose/coral primary, cream background
+- **Fonts** — Sora (headings), DM Sans (body) via `@fontsource` in `app/layout.tsx`
+- **Brand** — `AppLogo` wordmark + heartbeat heart; name **Skincare for You** in all locales
+
+## SEO & production meta
+
+| Asset / route | Location |
+|---------------|----------|
+| Root metadata | `lib/constants/metadata.ts` |
+| Site URL | `lib/constants/site.ts` → `NEXT_PUBLIC_SITE_URL` |
+| OG image | `public/og.png` |
+| Favicon | `app/icon.svg`, `public/icon.svg` |
+| robots.txt | `app/robots.ts` |
+| sitemap.xml | `app/sitemap.ts` |
+
+Launch checklist: [PRODUCTION-TRACKER.md](PRODUCTION-TRACKER.md).
 
 ## What is not architected yet
 
 - Server-side persistence or sync
 - Authentication
-- Service worker / offline caching
-- CI pipeline (unit tests exist via Vitest)
+- Service worker / PWA
+- CI pipeline (unit tests exist — 38 Vitest tests)
 - Product edit flow
-- Database migrations beyond Dexie v1
+- API rate limiting on lookup
+- Dexie schema migrations beyond v1
 
 See [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md).

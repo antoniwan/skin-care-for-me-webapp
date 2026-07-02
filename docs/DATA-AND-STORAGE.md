@@ -1,6 +1,8 @@
 # Data and storage
 
-All personal data is stored in the browser using IndexedDB. Clearing site data in your browser deletes everything except the seed products (they are re-inserted on next load).
+All personal data is stored in the browser using IndexedDB. Clearing site data deletes user-added products; seed products are re-inserted on next load.
+
+**Locale preference** is separate: stored in `localStorage` (`skincare-for-you-locale`), not IndexedDB. See [LOCALIZATION.md](LOCALIZATION.md).
 
 ## Database
 
@@ -14,8 +16,8 @@ All personal data is stored in the browser using IndexedDB. Clearing site data i
 | Store | Key | Indexed fields | Contents |
 |-------|-----|----------------|----------|
 | `products` | `id` (string) | `name`, `category`, `frequency`, `createdAt` | User and seed products |
-| `routines` | `id` (string) | `frequency`, `timeOfDay`, `generatedAt` | Legacy table — routines are **derived on read**, not read from here |
-| `settings` | `id` (always `"app"`) | — | Cycle settings + `onboardingComplete` flag |
+| `routines` | `id` (string) | `frequency`, `timeOfDay`, `generatedAt` | Legacy — **not used at runtime** |
+| `settings` | `id` (always `"app"`) | — | `bodyContext` + `onboardingComplete` |
 
 ### Settings shape
 
@@ -27,7 +29,7 @@ All personal data is stored in the browser using IndexedDB. Clearing site data i
       enabled: boolean
       cycleLength: number      // default 28
       periodLength: number     // default 5
-      lastPeriodStart: string | null  // ISO date "YYYY-MM-DD"
+      lastPeriodStart: string | null  // "YYYY-MM-DD"
     }
     lifeStage: "none" | "pregnant" | "postpartum" | "breastfeeding"
              | "perimenopause" | "menopause"
@@ -37,11 +39,11 @@ All personal data is stored in the browser using IndexedDB. Clearing site data i
       recentChange: "stable" | "gaining" | "losing" | "prefer_not_to_say"
     }
   }
-  onboardingComplete: boolean  // currently unused in UI
+  onboardingComplete: boolean  // exists in schema; no onboarding UI yet
 }
 ```
 
-Legacy installs may still have a top-level `cycle` object in IndexedDB; it is migrated on read. See [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md) for full behavior.
+Legacy installs may have a top-level `cycle` object; `normalizeAppSettings()` in `lib/body-context/migrate.ts` maps it on read. See [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md).
 
 ### Product shape
 
@@ -50,46 +52,48 @@ Legacy installs may still have a top-level `cycle` object in IndexedDB; it is mi
   id: string
   name: string
   brand?: string
-  category: "cleanser" | "toner" | "serum" | "moisturizer" | "sunscreen"
-          | "exfoliant" | "mask" | "eye_cream" | "treatment" | "other"
+  category: ProductCategory
   ingredients: string[]
-  activeIngredients: string[]   // used for conflict detection
+  activeIngredients: string[]   // conflict detection
   usageGuide: string
   frequency: "daily" | "weekly" | "monthly"
   timeOfDay: "morning" | "evening" | "any"
   notes?: string
-  isSeed?: boolean             // true for built-in products
-  createdAt: string            // ISO timestamp
+  isSeed?: boolean
+  imageUrl?: string
+  manufacturerUrl?: string
+  productPageLabel?: string
+  amazonAsin?: string
+  tagline?: string
+  highlights?: string[]
+  size?: string
+  createdAt: string
   updatedAt: string
 }
 ```
+
+Seed products include catalog metadata from `lib/seed/product-catalog.ts` (images, shop links).
 
 ### Routine shape
 
 ```ts
 {
-  id: string                   // e.g. "daily-morning-follicular"
+  id: string
   frequency: "daily" | "weekly" | "monthly"
   timeOfDay: "morning" | "evening"
-  steps: {
-    productId: string
-    productName: string
-    category: ProductCategory
-    instructions: string
-    order: number
-  }[]
-  cyclePhase?: CyclePhase      // set when cycle tracking is on
+  steps: RoutineStep[]
+  cyclePhase?: CyclePhase      // when menstrual tracking active
   generatedAt: string
 }
 ```
 
-Routines are derived data. They are computed by `refreshAppData()` in `lib/services/app-data.ts` whenever products or settings change. They are **not** written to IndexedDB during normal app use (the `routines` table remains for schema v1 compatibility only).
+Routines are **derived** in `lib/services/app-data.ts` via `generateRoutines()`. They are not written to IndexedDB during normal use.
 
 ## Seed products
 
-File: `lib/seed/default-products.ts`
+Files: `lib/seed/default-products.ts`, `lib/seed/product-catalog.ts`
 
-Nine products are hardcoded for development and demo. They use stable IDs prefixed with `seed-`.
+Nine products ship with stable `seed-*` IDs:
 
 | Product | Brand |
 |---------|-------|
@@ -105,36 +109,41 @@ Nine products are hardcoded for development and demo. They use stable IDs prefix
 
 ### Seed behavior
 
-- On every `getAllProducts()` call, `ensureSeedProducts()` runs `bulkPut` for all seed products.
-- Seed products have `isSeed: true`.
-- They cannot be deleted from the UI (`removeProduct` ignores seed IDs; delete button is disabled).
-- If you edit `default-products.ts`, changes apply on next load (upsert by id).
-- Ingredient and usage text were researched from public product pages but may be incomplete or outdated. Verify against your actual bottles.
+- `ensureSeedProducts()` runs on every `getAllProducts()` — `bulkPut` upserts seeds.
+- `isSeed: true` — delete button disabled in UI.
+- Catalog changes apply on next load (upsert by id).
+- Ingredient text is for demo/testing; verify against your actual bottles.
 
 ## Privacy
 
-| Data | Where it lives | Sent to server? |
-|------|----------------|-----------------|
+| Data | Where | Sent to server? |
+|------|-------|-----------------|
 | Products (after add) | IndexedDB | No |
 | Seed products | IndexedDB | No |
-| Routines | IndexedDB | No |
-| Cycle settings | IndexedDB | No |
-| Body context (cycle, life stage, weight prefs) | IndexedDB | No |
-| Product name during lookup | Request body to `/api/products/lookup` | Yes, once per lookup |
-| OpenAI processing | Vercel/server function | Yes, if API key is set |
+| Body context settings | IndexedDB | No |
+| Locale preference | localStorage | No |
+| Derived routines | Memory only | No |
+| Product name during lookup | Request to `/api/products/lookup` | Yes, once per lookup |
+| OpenAI processing | Server function | Yes, if `OPENAI_API_KEY` set |
 
-There is no analytics, auth, or telemetry in the codebase today.
+No analytics, auth, or telemetry in the codebase.
 
 ## Backup and portability
 
-- **PDF guide** — partial export (products, routines, conflicts, cycle note).
-- **No JSON export/import** — not implemented.
-- **No sync** — opening the app on another device starts fresh (plus seed products).
+- **PDF guide** — partial export (products, routines, conflicts, body notes).
+- **No JSON export/import** — not implemented (backlog PROD-501/502).
+- **No sync** — new device = fresh shelf + seeds.
 
 ## Browser support
 
-IndexedDB is required. The app expects a modern browser (Chrome, Firefox, Safari, Edge). Private/incognito modes work but data is cleared when the session ends (browser-dependent).
+IndexedDB required. Modern Chrome, Firefox, Safari, Edge. Private/incognito: data cleared when session ends (browser-dependent).
 
 ## Future schema changes
 
-Dexie migrations would add a new `version(n).stores(...)` block in `lib/db.ts`. There is no migration code yet — you are on v1 only.
+Add a new `version(n).stores(...)` block in `lib/db.ts`. Currently v1 only — no migration beyond legacy `cycle` → `bodyContext` on read.
+
+## Related docs
+
+- [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md) — body context behavior
+- [LOCALIZATION.md](LOCALIZATION.md) — locale storage
+- [PRODUCTION-TRACKER.md](PRODUCTION-TRACKER.md) — privacy policy gap for launch

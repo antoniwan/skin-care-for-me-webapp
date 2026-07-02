@@ -1,16 +1,16 @@
 # Body & cycle context
 
-This document is the source of truth for how **body-aware routines** work in Skincare for You. Use it to verify behavior when changing settings, UI, or routine generation.
+Source of truth for **body-aware routines** in Skincare for You. Use when changing settings, UI, or routine generation.
 
 ## Purpose
 
-Optional body context lets routines and guidance adapt to:
+Optional body context adapts routines and guidance for:
 
 - **Menstrual cycle phase** (sensitivity windows)
-- **Life stage** (pregnancy, postpartum, breastfeeding, perimenopause, menopause)
-- **Recent weight change** (barrier and hydration tips — no products removed)
+- **Life stage** (pregnant, postpartum, breastfeeding, perimenopause, menopause)
+- **Recent weight change** (barrier/hydration tips — no product removal)
 
-Nothing in this feature is sent to a server. All values live in **IndexedDB** on the user’s device (`settings` store, key `app`).
+All values stay in **IndexedDB** (`settings` store, key `app`). Nothing is transmitted to a server.
 
 ## Privacy guarantee
 
@@ -21,15 +21,15 @@ Nothing in this feature is sent to a server. All values live in **IndexedDB** on
 | Life stage | IndexedDB | Never |
 | Postpartum weeks | IndexedDB | Never |
 | Weight preference | IndexedDB | Never |
-| Derived phase / guidance | Computed in browser | Never |
+| Derived phase / guidance | Browser memory | Never |
 
-The API route `/api/products/lookup` is unrelated — it only runs when adding a product by name.
+`/api/products/lookup` is unrelated — runs only when adding a product by name.
 
 ## Settings shape
 
 ```ts
 bodyContext: {
-  enabled: boolean                    // master switch
+  enabled: boolean
   menstrual: {
     enabled: boolean
     cycleLength: number               // default 28, range 21–40
@@ -38,7 +38,7 @@ bodyContext: {
   }
   lifeStage: "none" | "pregnant" | "postpartum" | "breastfeeding"
            | "perimenopause" | "menopause"
-  postpartumWeeks: number | null      // 0–52 when lifeStage === "postpartum"
+  postpartumWeeks: number | null      // 0–52 when postpartum
   weight: {
     enabled: boolean
     recentChange: "stable" | "gaining" | "losing" | "prefer_not_to_say"
@@ -48,12 +48,7 @@ bodyContext: {
 
 ### Legacy migration
 
-Older installs stored `settings.cycle`. On read, `normalizeAppSettings()` in `lib/body-context/migrate.ts` maps:
-
-- `cycle.enabled` → `bodyContext.enabled` and menstrual tracking
-- Other menstrual fields → `bodyContext.menstrual`
-
-No server migration is required.
+`settings.cycle` → `bodyContext` via `normalizeAppSettings()` in `lib/body-context/migrate.ts` on read.
 
 ## Code map
 
@@ -62,112 +57,97 @@ No server migration is required.
 | Types | `lib/types/body-context.ts` |
 | Defaults | `lib/body-context/defaults.ts` |
 | Migration | `lib/body-context/migrate.ts` |
-| Phase math | `lib/body-context/snapshot.ts` (`getCurrentCyclePhase`, `getCycleDay`) |
-| Snapshot + guidance | `lib/body-context/snapshot.ts` (`getBodyContextSnapshot`) |
-| Routine inclusion rules | `lib/body-context/routine-rules.ts` |
-| User-facing labels | `lib/body-context/labels.ts` |
+| Phase math | `lib/body-context/snapshot.ts` |
+| Core snapshot (generation) | `getBodyContextCore()` — no localized strings |
+| UI snapshot | `getBodyContextSnapshot(settings, t)` — localized factors + guidance |
+| Routine rules | `lib/body-context/routine-rules.ts` |
+| English labels (legacy) | `lib/body-context/labels.ts` |
+| i18n UI strings | `lib/i18n/messages/` + `lib/i18n/ui.ts` |
 | Settings UI | `components/pages/cycle-page.tsx` |
 | Banner | `components/cycle/body-context-banner.tsx` |
 | Privacy notice | `components/cycle/body-context-privacy-notice.tsx` |
-| Routine generation | `lib/routines/generator.ts` |
-| PDF export | `lib/pdf/guide.ts` |
+| Generation | `lib/routines/generator.ts` → `applyBodyContextFilter()` |
+| PDF | `lib/pdf/guide.ts` |
+| Re-exports | `lib/cycle/phases.ts` → `lib/body-context` |
 
 ## Menstrual cycle
 
 ### Phase calculation
 
-Given `lastPeriodStart`, `cycleLength`, and `periodLength`:
+From `lastPeriodStart`, `cycleLength`, `periodLength`:
 
 1. **Menstrual** — days 1 … `periodLength`
-2. **Follicular** — until ~46% of cycle length
-3. **Ovulation** — until ~57% of cycle length
-4. **Luteal** — remainder of cycle
+2. **Follicular** — until ~46% of cycle
+3. **Ovulation** — until ~57%
+4. **Luteal** — remainder
 
-Requires `bodyContext.enabled` and `menstrual.enabled` with a valid `lastPeriodStart`.
+Requires `bodyContext.enabled`, `menstrual.enabled`, valid `lastPeriodStart`.
 
-### Effect on routines
+### Routine impact
 
-On **menstrual** and **luteal** days, products that are:
+On **menstrual** and **luteal** days, daily products with harsh actives (retinoids, BHA/AHA in exfoliant/treatment categories) are **held**. Weekly/monthly slots may still include them.
 
-- Category `exfoliant` or `treatment`, **and**
-- Contain retinoids or strong acids (BHA/AHA patterns)
+### UI
 
-…are **held from daily routines** but still allowed in weekly/monthly slots.
-
-### Effect on UI
-
-- **Today** — `BodyContextBanner` with phase, day, and skin note
-- **Body page** — menstrual fields + live preview banner
-- **PDF** — menstrual phase section when active
+- **Today** — `BodyContextBanner` (sidebar on desktop when enabled)
+- **Body page** — settings + live preview + held-products list
+- **PDF** — phase section when active
 
 ## Life stage
 
 | Stage | Routine impact | Guidance |
 |-------|----------------|----------|
 | `none` | None | — |
-| `pregnant` | Holds retinoids; holds daily toner/treatment/exfoliant with BHA/AHA | Prenatal clinician reminder |
-| `breastfeeding` | Same retinoid / daily acid rules as pregnancy | Clinician reminder |
-| `postpartum` (weeks 0–11) | Holds retinoids and daily harsh actives | Gentle barrier-first messaging |
-| `postpartum` (week 12+) | No automatic holds | Gradual reintroduction note |
-| `perimenopause` | No product holds | Hydration / consistency tips |
-| `menopause` | No product holds | Ceramide / SPF tips |
+| `pregnant` | Holds retinoids; daily BHA/AHA in toner/treatment/exfoliant | Clinician reminder |
+| `breastfeeding` | Same retinoid/daily acid caution as pregnancy | Clinician reminder |
+| `postpartum` (0–11 wk) | Holds retinoids + daily harsh actives | Barrier-first messaging |
+| `postpartum` (12+ wk) | No automatic holds | Gradual reintroduction note |
+| `perimenopause` | No holds | Hydration tips |
+| `menopause` | No holds | Ceramide / SPF tips |
 
-`postpartumWeeks` is only read when `lifeStage === "postpartum"`.
-
-### Products held list
-
-When any products are excluded, the **Body** page shows **Products held from routines** with per-product reasons from `getProductExclusionReason()`.
+Exclusion reasons are English internally; UI uses `localizeExclusionReason(t, reason)`.
 
 ## Weight context
 
-Weight settings **never remove products**. When `weight.enabled` is true and `recentChange` is `gaining` or `losing`:
+Never removes products. When enabled with `gaining` or `losing`:
 
-- Guidance notes appear in `BodyContextBanner` and PDF
-- Routines are unchanged
+- Guidance in banner and PDF
+- Routines unchanged
 
-`prefer_not_to_say` and `stable` add no weight-specific notes.
-
-## Master switch behavior
+## Master switch
 
 `bodyContext.enabled === false`:
 
-- No phase calculation for routines
-- No product holds from body rules
+- No body-based routine holds
 - Banner hidden on Today
-- Body page shows only privacy notice + master toggle
-
-Individual sub-toggles (menstrual, weight) only apply when master switch is on.
+- Body page shows privacy notice + toggle only
 
 ## UI surfaces checklist
 
-Use this to triple-check implementations:
-
-- [ ] **Nav** — label “Body”, route `/cycle`
-- [ ] **Body page** — privacy notice, master switch, three setting sections, preview banner, held products list
-- [ ] **Today** — banner when enabled (sidebar on desktop)
-- [ ] **Routines** — routines regenerate when settings change; PDF includes body notes
-- [ ] **Safety check** — layering notes mention menstrual adjustment when `routine.cyclePhase` set
-- [ ] **IndexedDB** — `saveSettings` writes `bodyContext` only (no network)
+- [x] **Nav** — "Body" (`nav.body`), route `/cycle`
+- [x] **Body page** — privacy, master switch, three sections, banner, held products
+- [x] **Today** — banner when enabled
+- [x] **Routines** — regenerates on settings change; guide PDF includes body notes
+- [x] **Safety check** — menstrual adjustment in review notes when applicable
+- [x] **IndexedDB** — `bodyContext` only; no network
+- [x] **i18n** — all body UI strings in message catalogs
 
 ## Routine generation flow
 
 ```
 products
   → separateConflictingProducts()     // ingredient "avoid" pairs
-  → applyBodyContextFilter()          // shouldIncludeProductInRoutine per snapshot
-  → build routines by frequency × timeOfDay
+  → applyBodyContextFilter()          // getBodyContextCore + shouldIncludeProductInRoutine
+  → bucket by frequency × timeOfDay
   → finalizeRoutineProductOrder()     // SPF last AM, masks last PM
 ```
 
-`getBodyContextSnapshot(settings.bodyContext)` is computed once per generation pass.
+## Limitations
 
-## Limitations & disclaimers
-
-- Not medical advice. Pregnancy/postpartum rules are conservative defaults.
-- Phase windows use simplified calendar math, not ovulation tests or hormonal labs.
-- Weight context is qualitative only — no BMI, no body weight numbers stored.
-- Users who do not menstruate can leave menstrual tracking off and use life stage alone.
-- No sync between devices; clearing site data removes all body settings.
+- Not medical advice. Conservative pregnancy/postpartum defaults.
+- Simplified calendar math — not ovulation kits or hormones.
+- Weight is qualitative only — no BMI or weight numbers stored.
+- No cross-device sync; clearing site data removes settings.
 
 ## Tests
 
@@ -176,12 +156,13 @@ products
 | `lib/body-context/migrate.test.ts` | Legacy `cycle` → `bodyContext` |
 | `lib/body-context/routine-rules.test.ts` | Pregnancy, postpartum, menstrual holds |
 | `lib/cycle/phases.test.ts` | Phase boundaries |
-| `lib/routines/generator.test.ts` | Ordering + routine buckets |
+| `lib/routines/generator.test.ts` | Ordering + buckets |
 
 Run: `npm test`
 
 ## Related docs
 
 - [DATA-AND-STORAGE.md](DATA-AND-STORAGE.md) — IndexedDB schema
-- [ARCHITECTURE.md](ARCHITECTURE.md) — app shell and data flow
-- [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md) — general product caveats
+- [LOCALIZATION.md](LOCALIZATION.md) — body string keys
+- [ARCHITECTURE.md](ARCHITECTURE.md) — data flow
+- [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md) — general caveats
