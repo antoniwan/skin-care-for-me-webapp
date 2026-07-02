@@ -10,19 +10,7 @@ import type {
 } from "../types";
 import { getCurrentCyclePhase } from "../cycle/phases";
 import { detectConflicts, getConflictsForRoutine } from "../rules/ingredient-conflicts";
-
-const CATEGORY_ORDER: ProductCategory[] = [
-  "cleanser",
-  "toner",
-  "serum",
-  "treatment",
-  "eye_cream",
-  "moisturizer",
-  "sunscreen",
-  "exfoliant",
-  "mask",
-  "other",
-];
+import { finalizeRoutineProductOrder } from "./category-order";
 
 const PHASE_SENSITIVE: Record<CyclePhase, ProductCategory[]> = {
   menstrual: ["exfoliant", "treatment"],
@@ -31,14 +19,6 @@ const PHASE_SENSITIVE: Record<CyclePhase, ProductCategory[]> = {
   luteal: ["exfoliant"],
   none: [],
 };
-
-function sortByCategory(products: Product[]): Product[] {
-  return [...products].sort((a, b) => {
-    const ai = CATEGORY_ORDER.indexOf(a.category);
-    const bi = CATEGORY_ORDER.indexOf(b.category);
-    return ai - bi;
-  });
-}
 
 function matchesTime(product: Product, time: TimeOfDay): boolean {
   return product.timeOfDay === "any" || product.timeOfDay === time;
@@ -60,14 +40,16 @@ function shouldIncludeForPhase(
   return true;
 }
 
-function buildSteps(products: Product[]): RoutineStep[] {
-  return sortByCategory(products).map((product, index) => ({
-    productId: product.id,
-    productName: product.name,
-    category: product.category,
-    instructions: product.usageGuide,
-    order: index + 1,
-  }));
+function buildSteps(products: Product[], timeOfDay: TimeOfDay): RoutineStep[] {
+  return finalizeRoutineProductOrder(products, timeOfDay).map(
+    (product, index) => ({
+      productId: product.id,
+      productName: product.name,
+      category: product.category,
+      instructions: product.usageGuide,
+      order: index + 1,
+    }),
+  );
 }
 
 function buildRoutine(
@@ -89,7 +71,7 @@ function buildRoutine(
     id: `${frequency}-${timeOfDay}-${phase}`,
     frequency,
     timeOfDay,
-    steps: buildSteps(filtered),
+    steps: buildSteps(filtered, timeOfDay),
     cyclePhase: phase !== "none" ? phase : undefined,
     generatedAt: new Date().toISOString(),
   };

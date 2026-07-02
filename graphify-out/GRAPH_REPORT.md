@@ -1,16 +1,16 @@
 # Graph Report - skin-care-for-me-webapp  (2026-07-02)
 
 ## Corpus Check
-- 109 files · ~47,530 words
+- 115 files · ~49,444 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 610 nodes · 1538 edges · 26 communities (21 shown, 5 thin omitted)
+- 647 nodes · 1641 edges · 26 communities (21 shown, 5 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `056d1c92`
+- Built from commit: `2e24c2db`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,13 +41,13 @@
 - [[_COMMUNITY_Community 25|Community 25]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `cn()` - 74 edges
-2. `useAppDataContext()` - 26 edges
-3. `Product` - 24 edges
+1. `cn()` - 75 edges
+2. `Product` - 31 edges
+3. `useAppDataContext()` - 26 edges
 4. `getCurrentCyclePhase()` - 22 edges
-5. `getCycleDay()` - 19 edges
-6. `ConflictWarning` - 19 edges
-7. `Routine` - 18 edges
+5. `Routine` - 21 edges
+6. `ConflictWarning` - 20 edges
+7. `getCycleDay()` - 19 edges
 8. `Product` - 18 edges
 9. `compilerOptions` - 16 edges
 10. `Button()` - 15 edges
@@ -57,26 +57,26 @@
   app/api/products/lookup/route.ts → lib/products/lookup.ts
 - `SeverityDot()` --calls--> `cn()`  [EXTRACTED]
   components/conflicts/routine-interaction-badge.tsx → lib/utils.ts
-- `AppLogo()` --calls--> `cn()`  [EXTRACTED]
-  components/layout/app-logo.tsx → lib/utils.ts
 - `EmptyState()` --calls--> `cn()`  [EXTRACTED]
   components/layout/empty-state.tsx → lib/utils.ts
 - `PageContainer()` --calls--> `cn()`  [EXTRACTED]
   components/layout/page-container.tsx → lib/utils.ts
+- `HomePage()` --calls--> `cn()`  [EXTRACTED]
+  components/pages/home-page.tsx → lib/utils.ts
 
 ## Communities (26 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
-Nodes (61): getOtherProductName(), groupWarningsByProduct(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), grouped, sorted, warning (+53 more)
+Nodes (59): getOtherProductName(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), warningKey(), InteractionDetail(), InteractionDetailsSheet(), SEVERITY_STYLES (+51 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.33
-Nodes (7): enrichSeedProduct(), getSeedCatalogEntry(), SEED_PRODUCT_CATALOG, SeedProductCatalogEntry, enriched, entry, SEED_PRODUCT_IDS
+Cohesion: 0.08
+Nodes (45): groupWarningsByProduct(), RoutineInteractionBadge(), CyclePhaseBannerProps, formatCategory(), CyclePhase, ProductCategory, TimeOfDay, downloadGuidePdf() (+37 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.18
-Nodes (9): buildAmazonAffiliateUrl(), hasAmazonAffiliateTag(), ProductIngredients(), ProductIngredientsProps, ProductLinks(), ProductLinksProps, getProductPageLabel(), Button() (+1 more)
+Cohesion: 0.17
+Nodes (10): buildAmazonAffiliateUrl(), hasAmazonAffiliateTag(), ProductCardProps, ProductIngredients(), ProductIngredientsProps, ProductLinks(), ProductLinksProps, getProductPageLabel() (+2 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.04
@@ -92,23 +92,23 @@ Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModu
 
 ### Community 6 - "Community 6"
 Cohesion: 0.09
-Nodes (45): getGreeting(), HomePage(), ConflictList(), SEVERITY_STYLES, PAGE_METADATA, CyclePhaseBanner(), CyclePage(), CYCLE_PHASE_LABELS (+37 more)
+Nodes (50): getGreeting(), HomePage(), ConflictList(), SEVERITY_STYLES, InteractionSummaryBar(), PAGE_METADATA, CyclePhaseBanner(), CyclePage() (+42 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.12
-Nodes (17): metadata, viewport, ROOT_METADATA, APP_NAV_ITEMS, AppNavItem, isNavItemActive(), useAppData(), AppLayoutClient() (+9 more)
+Cohesion: 0.18
+Nodes (10): metadata, viewport, ROOT_METADATA, useAppData(), AppLayoutClient(), AppShell(), ClientAppShell(), AppDataContext (+2 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.18
-Nodes (15): Env, envSchema, getEnv(), hasOpenAiKey(), ProductLookupResult, POST(), lookupProductAction(), LookupProductActionResult (+7 more)
+Cohesion: 0.21
+Nodes (12): Env, envSchema, getEnv(), hasOpenAiKey(), POST(), lookupProductAction(), LookupProductActionResult, lookupProduct() (+4 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.13
 Nodes (23): code:bash (npm install), code:env (OPENAI_API_KEY=sk-...), code:env (NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=yourtag-20), code:bash (npm run build), code:block5 (app/                    Next.js App Router pages and API rou), Deploy on Vercel, Documentation, Getting Started (+15 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.15
-Nodes (13): makeWarning(), bha, cleanser, evening, morning, products, retinol, routines (+5 more)
+Cohesion: 0.09
+Nodes (24): grouped, makeWarning(), sorted, warning, bha, cleanser, evening, morning (+16 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.11
@@ -139,28 +139,28 @@ Cohesion: 0.22
 Nodes (8): Non-goals (for now), North star, Problem, Product principles, Product vision, Related docs, Success metrics (v0.2+), Target users
 
 ### Community 25 - "Community 25"
-Cohesion: 0.06
-Nodes (72): CyclePhaseBannerProps, db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines(), getSettings() (+64 more)
+Cohesion: 0.07
+Nodes (58): db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines(), getSettings(), listProducts() (+50 more)
 
 ## Knowledge Gaps
-- **223 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+218 more)
+- **236 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+231 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 0` to `Community 2`, `Community 6`, `Community 7`?**
-  _High betweenness centrality (0.068) - this node is a cross-community bridge._
-- **Why does `Button()` connect `Community 2` to `Community 0`, `Community 25`, `Community 6`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `Product` connect `Community 25` to `Community 0`, `Community 1`, `Community 6`, `Community 15`?**
+- **Why does `cn()` connect `Community 0` to `Community 1`, `Community 2`, `Community 6`?**
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **Why does `Product` connect `Community 1` to `Community 0`, `Community 2`, `Community 6`, `Community 15`, `Community 25`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `Button()` connect `Community 2` to `Community 0`, `Community 1`, `Community 6`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _223 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _236 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06384065372829417 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05873340143003064 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.0764423076923077 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._

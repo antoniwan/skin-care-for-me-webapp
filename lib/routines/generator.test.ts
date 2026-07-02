@@ -6,6 +6,51 @@ import {
 import { defaultSettings, makeProduct } from "@/lib/test/fixtures";
 
 describe("generateRoutines", () => {
+  it("orders Clinique-style steps: cleanse, toner, moisturize, SPF", () => {
+    const products = [
+      makeProduct({
+        id: "spf",
+        name: "SPF",
+        category: "sunscreen",
+        frequency: "daily",
+        timeOfDay: "morning",
+      }),
+      makeProduct({
+        id: "moist",
+        name: "Moisturizer",
+        category: "moisturizer",
+        frequency: "daily",
+        timeOfDay: "any",
+      }),
+      makeProduct({
+        id: "toner",
+        name: "Toner",
+        category: "toner",
+        frequency: "daily",
+        timeOfDay: "any",
+      }),
+      makeProduct({
+        id: "cleanse",
+        name: "Cleanser",
+        category: "cleanser",
+        frequency: "daily",
+        timeOfDay: "any",
+      }),
+    ];
+
+    const routines = generateRoutines(products, defaultSettings);
+    const morning = routines.find(
+      (r) => r.frequency === "daily" && r.timeOfDay === "morning",
+    );
+
+    expect(morning?.steps.map((s) => s.category)).toEqual([
+      "cleanser",
+      "toner",
+      "moisturizer",
+      "sunscreen",
+    ]);
+  });
+
   it("orders steps by category", () => {
     const products = [
       makeProduct({

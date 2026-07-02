@@ -4,7 +4,7 @@ import { SEED_PRODUCT_IDS } from "./product-ids";
 
 export { SEED_PRODUCT_IDS, isSeedProductId } from "./product-ids";
 
-const SEED_TIMESTAMP = "2026-07-02T18:00:00.000Z";
+const SEED_TIMESTAMP = "2026-07-02T20:00:00.000Z";
 
 const BASE_DEFAULT_PRODUCTS: Product[] = [
   {
@@ -36,7 +36,7 @@ const BASE_DEFAULT_PRODUCTS: Product[] = [
     id: SEED_PRODUCT_IDS.cliniqueClarifyingLotion2,
     name: "Clarifying Lotion 2",
     brand: "Clinique",
-    category: "exfoliant",
+    category: "toner",
     ingredients: [
       "Water",
       "Alcohol Denat.",

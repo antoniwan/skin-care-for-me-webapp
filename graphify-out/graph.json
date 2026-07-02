@@ -1233,7 +1233,7 @@
       "source_file": "components/cycle/cycle-phase-banner.tsx",
       "source_location": "L8",
       "id": "cycle_cycle_phase_banner_cyclephasebannerprops",
-      "community": 25,
+      "community": 1,
       "norm_label": "cyclephasebannerprops"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L1",
       "id": "components_layout_app_logo_tsx",
-      "community": 7,
+      "community": 0,
       "norm_label": "app-logo.tsx"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L5",
       "id": "layout_app_logo_applogosize",
-      "community": 7,
+      "community": 0,
       "norm_label": "applogosize"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L7",
       "id": "layout_app_logo_sizestyles",
-      "community": 7,
+      "community": 0,
       "norm_label": "sizestyles"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L15",
       "id": "layout_app_logo_applogo",
-      "community": 7,
+      "community": 0,
       "norm_label": "applogo()"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "components/layout/app-shell.tsx",
       "source_location": "L1",
       "id": "components_layout_app_shell_tsx",
-      "community": 7,
+      "community": 0,
       "norm_label": "app-shell.tsx"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "components/layout/bottom-nav.tsx",
       "source_location": "L1",
       "id": "components_layout_bottom_nav_tsx",
-      "community": 7,
+      "community": 0,
       "norm_label": "bottom-nav.tsx"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "components/layout/bottom-nav.tsx",
       "source_location": "L8",
       "id": "layout_bottom_nav_bottomnav",
-      "community": 7,
+      "community": 0,
       "norm_label": "bottomnav()"
     },
     {
@@ -1413,7 +1413,7 @@
       "source_file": "components/layout/side-nav.tsx",
       "source_location": "L1",
       "id": "components_layout_side_nav_tsx",
-      "community": 7,
+      "community": 0,
       "norm_label": "side-nav.tsx"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "components/layout/side-nav.tsx",
       "source_location": "L9",
       "id": "layout_side_nav_sidenav",
-      "community": 7,
+      "community": 0,
       "norm_label": "sidenav()"
     },
     {
@@ -1501,7 +1501,7 @@
       "label": "FREQUENCIES",
       "file_type": "code",
       "source_file": "components/pages/routines-page.tsx",
-      "source_location": "L13",
+      "source_location": "L16",
       "id": "pages_routines_page_frequencies",
       "community": 6,
       "norm_label": "frequencies"
@@ -1510,7 +1510,7 @@
       "label": "RoutinesPage()",
       "file_type": "code",
       "source_file": "components/pages/routines-page.tsx",
-      "source_location": "L15",
+      "source_location": "L18",
       "id": "pages_routines_page_routinespage",
       "community": 6,
       "norm_label": "routinespage()"
@@ -1530,7 +1530,7 @@
       "source_file": "components/products/add-product-sheet.tsx",
       "source_location": "L20",
       "id": "products_add_product_sheet_addproductsheetprops",
-      "community": 8,
+      "community": 25,
       "norm_label": "addproductsheetprops"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L1",
       "id": "components_products_product_card_tsx",
-      "community": 6,
+      "community": 2,
       "norm_label": "product-card.tsx"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L10",
       "id": "products_product_card_productcardprops",
-      "community": 25,
+      "community": 2,
       "norm_label": "productcardprops"
     },
     {
@@ -1593,7 +1593,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L111",
       "id": "products_product_card_productimage",
-      "community": 6,
+      "community": 2,
       "norm_label": "productimage()"
     },
     {
@@ -1656,7 +1656,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L1",
       "id": "components_products_product_meta_badges_tsx",
-      "community": 25,
+      "community": 0,
       "norm_label": "product-meta-badges.tsx"
     },
     {
@@ -1665,7 +1665,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L5",
       "id": "products_product_meta_badges_productmetabadgesprops",
-      "community": 25,
+      "community": 0,
       "norm_label": "productmetabadgesprops"
     },
     {
@@ -1674,7 +1674,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L12",
       "id": "products_product_meta_badges_productmetabadges",
-      "community": 25,
+      "community": 0,
       "norm_label": "productmetabadges()"
     },
     {
@@ -1683,7 +1683,7 @@
       "source_file": "components/providers/app-data-provider.tsx",
       "source_location": "L1",
       "id": "components_providers_app_data_provider_tsx",
-      "community": 6,
+      "community": 7,
       "norm_label": "app-data-provider.tsx"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_file": "components/providers/app-data-provider.tsx",
       "source_location": "L6",
       "id": "providers_app_data_provider_appdatacontextvalue",
-      "community": 6,
+      "community": 7,
       "norm_label": "appdatacontextvalue"
     },
     {
@@ -1701,7 +1701,7 @@
       "source_file": "components/providers/app-data-provider.tsx",
       "source_location": "L8",
       "id": "providers_app_data_provider_appdatacontext",
-      "community": 6,
+      "community": 7,
       "norm_label": "appdatacontext"
     },
     {
@@ -1728,25 +1728,25 @@
       "source_file": "components/routines/routine-card.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_card_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "routine-card.tsx"
     },
     {
       "label": "RoutineCardProps",
       "file_type": "code",
       "source_file": "components/routines/routine-card.tsx",
-      "source_location": "L13",
+      "source_location": "L20",
       "id": "routines_routine_card_routinecardprops",
-      "community": 25,
+      "community": 1,
       "norm_label": "routinecardprops"
     },
     {
       "label": "RoutineCard()",
       "file_type": "code",
       "source_file": "components/routines/routine-card.tsx",
-      "source_location": "L18",
+      "source_location": "L27",
       "id": "routines_routine_card_routinecard",
-      "community": 0,
+      "community": 1,
       "norm_label": "routinecard()"
     },
     {
@@ -1755,7 +1755,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_guide_section_tsx",
-      "community": 25,
+      "community": 1,
       "norm_label": "routine-guide-section.tsx"
     },
     {
@@ -1764,7 +1764,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L9",
       "id": "routines_routine_guide_section_routineguidesectionprops",
-      "community": 25,
+      "community": 1,
       "norm_label": "routineguidesectionprops"
     },
     {
@@ -1773,7 +1773,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L17",
       "id": "routines_routine_guide_section_routineguidesection",
-      "community": 25,
+      "community": 1,
       "norm_label": "routineguidesection()"
     },
     {
@@ -1782,7 +1782,7 @@
       "source_file": "components/routines/routine-list.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_list_tsx",
-      "community": 25,
+      "community": 6,
       "norm_label": "routine-list.tsx"
     },
     {
@@ -1791,17 +1791,71 @@
       "source_file": "components/routines/routine-list.tsx",
       "source_location": "L5",
       "id": "routines_routine_list_routinelistprops",
-      "community": 25,
+      "community": 1,
       "norm_label": "routinelistprops"
     },
     {
       "label": "RoutineList()",
       "file_type": "code",
       "source_file": "components/routines/routine-list.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "id": "routines_routine_list_routinelist",
       "community": 6,
       "norm_label": "routinelist()"
+    },
+    {
+      "label": "routine-verification-panel.tsx",
+      "file_type": "code",
+      "source_file": "components/routines/routine-verification-panel.tsx",
+      "source_location": "L1",
+      "id": "components_routines_routine_verification_panel_tsx",
+      "community": 1,
+      "norm_label": "routine-verification-panel.tsx"
+    },
+    {
+      "label": "RoutineVerificationPanel()",
+      "file_type": "code",
+      "source_file": "components/routines/routine-verification-panel.tsx",
+      "source_location": "L7",
+      "id": "routines_routine_verification_panel_routineverificationpanel",
+      "community": 1,
+      "norm_label": "routineverificationpanel()"
+    },
+    {
+      "label": "routines-overview.tsx",
+      "file_type": "code",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L1",
+      "id": "components_routines_routines_overview_tsx",
+      "community": 1,
+      "norm_label": "routines-overview.tsx"
+    },
+    {
+      "label": "RoutinesOverviewProps",
+      "file_type": "code",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L8",
+      "id": "routines_routines_overview_routinesoverviewprops",
+      "community": 1,
+      "norm_label": "routinesoverviewprops"
+    },
+    {
+      "label": "RoutinesOverview()",
+      "file_type": "code",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L14",
+      "id": "routines_routines_overview_routinesoverview",
+      "community": 6,
+      "norm_label": "routinesoverview()"
+    },
+    {
+      "label": "OverviewPill()",
+      "file_type": "code",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L86",
+      "id": "routines_routines_overview_overviewpill",
+      "community": 1,
+      "norm_label": "overviewpill()"
     },
     {
       "label": "badge.tsx",
@@ -2286,7 +2340,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L1",
       "id": "components_ui_tabs_tsx",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabs.tsx"
     },
     {
@@ -2295,7 +2349,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L9",
       "id": "ui_tabs_tabs",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabs()"
     },
     {
@@ -2304,7 +2358,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L27",
       "id": "ui_tabs_tabslistvariants",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabslistvariants"
     },
     {
@@ -2313,7 +2367,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L42",
       "id": "ui_tabs_tabslist",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabslist()"
     },
     {
@@ -2322,7 +2376,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L58",
       "id": "ui_tabs_tabstrigger",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabstrigger()"
     },
     {
@@ -2331,7 +2385,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L77",
       "id": "ui_tabs_tabscontent",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabscontent()"
     },
     {
@@ -2556,7 +2610,7 @@
       "source_file": "lib/format.test.ts",
       "source_location": "L1",
       "id": "lib_format_test_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "format.test.ts"
     },
     {
@@ -2565,7 +2619,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L1",
       "id": "lib_format_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "format.ts"
     },
     {
@@ -2574,7 +2628,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L3",
       "id": "lib_format_formatcategory",
-      "community": 25,
+      "community": 1,
       "norm_label": "formatcategory()"
     },
     {
@@ -2583,7 +2637,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L7",
       "id": "lib_format_formatfrequency",
-      "community": 25,
+      "community": 1,
       "norm_label": "formatfrequency()"
     },
     {
@@ -2592,7 +2646,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L11",
       "id": "lib_format_formattimeofday",
-      "community": 25,
+      "community": 1,
       "norm_label": "formattimeofday()"
     },
     {
@@ -2628,7 +2682,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L1",
       "id": "lib_conflicts_display_test_ts",
-      "community": 0,
+      "community": 15,
       "norm_label": "display.test.ts"
     },
     {
@@ -2646,7 +2700,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L30",
       "id": "conflicts_display_test_sorted",
-      "community": 0,
+      "community": 15,
       "norm_label": "sorted"
     },
     {
@@ -2655,7 +2709,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L52",
       "id": "conflicts_display_test_warning",
-      "community": 0,
+      "community": 15,
       "norm_label": "warning"
     },
     {
@@ -2664,7 +2718,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L60",
       "id": "conflicts_display_test_grouped",
-      "community": 0,
+      "community": 15,
       "norm_label": "grouped"
     },
     {
@@ -2691,7 +2745,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L14",
       "id": "conflicts_display_groupwarningsbyproduct",
-      "community": 0,
+      "community": 1,
       "norm_label": "groupwarningsbyproduct()"
     },
     {
@@ -2772,7 +2826,7 @@
       "source_file": "lib/constants/navigation.ts",
       "source_location": "L1",
       "id": "lib_constants_navigation_ts",
-      "community": 7,
+      "community": 0,
       "norm_label": "navigation.ts"
     },
     {
@@ -2781,7 +2835,7 @@
       "source_file": "lib/constants/navigation.ts",
       "source_location": "L9",
       "id": "constants_navigation_appnavitem",
-      "community": 7,
+      "community": 0,
       "norm_label": "appnavitem"
     },
     {
@@ -2790,7 +2844,7 @@
       "source_file": "lib/constants/navigation.ts",
       "source_location": "L15",
       "id": "constants_navigation_app_nav_items",
-      "community": 7,
+      "community": 0,
       "norm_label": "app_nav_items"
     },
     {
@@ -2799,7 +2853,7 @@
       "source_file": "lib/constants/navigation.ts",
       "source_location": "L22",
       "id": "constants_navigation_isnavitemactive",
-      "community": 7,
+      "community": 0,
       "norm_label": "isnavitemactive()"
     },
     {
@@ -2871,7 +2925,7 @@
       "source_file": "lib/pdf/guide.ts",
       "source_location": "L1",
       "id": "lib_pdf_guide_ts",
-      "community": 6,
+      "community": 1,
       "norm_label": "guide.ts"
     },
     {
@@ -2880,7 +2934,7 @@
       "source_file": "lib/pdf/guide.ts",
       "source_location": "L7",
       "id": "pdf_guide_guidedata",
-      "community": 25,
+      "community": 1,
       "norm_label": "guidedata"
     },
     {
@@ -2889,7 +2943,7 @@
       "source_file": "lib/pdf/guide.ts",
       "source_location": "L15",
       "id": "pdf_guide_downloadguidepdf",
-      "community": 6,
+      "community": 1,
       "norm_label": "downloadguidepdf()"
     },
     {
@@ -3055,6 +3109,78 @@
       "norm_label": "getproductpagelabel()"
     },
     {
+      "label": "category-order.test.ts",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L1",
+      "id": "lib_routines_category_order_test_ts",
+      "community": 1,
+      "norm_label": "category-order.test.ts"
+    },
+    {
+      "label": "products",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L7",
+      "id": "routines_category_order_test_products",
+      "community": 1,
+      "norm_label": "products"
+    },
+    {
+      "label": "ordered",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L28",
+      "id": "routines_category_order_test_ordered",
+      "community": 1,
+      "norm_label": "ordered"
+    },
+    {
+      "label": "category-order.ts",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L1",
+      "id": "lib_routines_category_order_ts",
+      "community": 1,
+      "norm_label": "category-order.ts"
+    },
+    {
+      "label": "ROUTINE_CATEGORY_ORDER",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L4",
+      "id": "routines_category_order_routine_category_order",
+      "community": 1,
+      "norm_label": "routine_category_order"
+    },
+    {
+      "label": "categoryRank()",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L17",
+      "id": "routines_category_order_categoryrank",
+      "community": 1,
+      "norm_label": "categoryrank()"
+    },
+    {
+      "label": "sortProductsByCategory()",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L22",
+      "id": "routines_category_order_sortproductsbycategory",
+      "community": 1,
+      "norm_label": "sortproductsbycategory()"
+    },
+    {
+      "label": "finalizeRoutineProductOrder()",
+      "file_type": "code",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L31",
+      "id": "routines_category_order_finalizeroutineproductorder",
+      "community": 1,
+      "norm_label": "finalizeroutineproductorder()"
+    },
+    {
       "label": "generator.test.ts",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
@@ -3076,7 +3202,7 @@
       "label": "routines",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L27",
+      "source_location": "L41",
       "id": "routines_generator_test_routines",
       "community": 15,
       "norm_label": "routines"
@@ -3085,7 +3211,7 @@
       "label": "morning",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L28",
+      "source_location": "L42",
       "id": "routines_generator_test_morning",
       "community": 15,
       "norm_label": "morning"
@@ -3094,7 +3220,7 @@
       "label": "retinol",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L55",
+      "source_location": "L100",
       "id": "routines_generator_test_retinol",
       "community": 15,
       "norm_label": "retinol"
@@ -3103,7 +3229,7 @@
       "label": "bha",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L62",
+      "source_location": "L107",
       "id": "routines_generator_test_bha",
       "community": 15,
       "norm_label": "bha"
@@ -3112,7 +3238,7 @@
       "label": "cleanser",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L69",
+      "source_location": "L114",
       "id": "routines_generator_test_cleanser",
       "community": 15,
       "norm_label": "cleanser"
@@ -3121,7 +3247,7 @@
       "label": "evening",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L81",
+      "source_location": "L126",
       "id": "routines_generator_test_evening",
       "community": 15,
       "norm_label": "evening"
@@ -3130,7 +3256,7 @@
       "label": "warnings",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L84",
+      "source_location": "L129",
       "id": "routines_generator_test_warnings",
       "community": 15,
       "norm_label": "warnings"
@@ -3145,37 +3271,19 @@
       "norm_label": "generator.ts"
     },
     {
-      "label": "CATEGORY_ORDER",
-      "file_type": "code",
-      "source_file": "lib/routines/generator.ts",
-      "source_location": "L14",
-      "id": "routines_generator_category_order",
-      "community": 25,
-      "norm_label": "category_order"
-    },
-    {
       "label": "PHASE_SENSITIVE",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L27",
+      "source_location": "L15",
       "id": "routines_generator_phase_sensitive",
       "community": 25,
       "norm_label": "phase_sensitive"
     },
     {
-      "label": "sortByCategory()",
-      "file_type": "code",
-      "source_file": "lib/routines/generator.ts",
-      "source_location": "L35",
-      "id": "routines_generator_sortbycategory",
-      "community": 25,
-      "norm_label": "sortbycategory()"
-    },
-    {
       "label": "matchesTime()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L43",
+      "source_location": "L23",
       "id": "routines_generator_matchestime",
       "community": 25,
       "norm_label": "matchestime()"
@@ -3184,7 +3292,7 @@
       "label": "shouldIncludeForPhase()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L47",
+      "source_location": "L27",
       "id": "routines_generator_shouldincludeforphase",
       "community": 25,
       "norm_label": "shouldincludeforphase()"
@@ -3193,7 +3301,7 @@
       "label": "buildSteps()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L63",
+      "source_location": "L43",
       "id": "routines_generator_buildsteps",
       "community": 25,
       "norm_label": "buildsteps()"
@@ -3202,7 +3310,7 @@
       "label": "buildRoutine()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L73",
+      "source_location": "L55",
       "id": "routines_generator_buildroutine",
       "community": 25,
       "norm_label": "buildroutine()"
@@ -3211,7 +3319,7 @@
       "label": "separateConflictingProducts()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L98",
+      "source_location": "L80",
       "id": "routines_generator_separateconflictingproducts",
       "community": 25,
       "norm_label": "separateconflictingproducts()"
@@ -3220,7 +3328,7 @@
       "label": "generateRoutines()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L114",
+      "source_location": "L96",
       "id": "routines_generator_generateroutines",
       "community": 25,
       "norm_label": "generateroutines()"
@@ -3229,19 +3337,226 @@
       "label": "getRoutineWarnings()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L135",
+      "source_location": "L117",
       "id": "routines_generator_getroutinewarnings",
-      "community": 25,
+      "community": 1,
       "norm_label": "getroutinewarnings()"
     },
     {
       "label": "getTodaysRoutines()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L147",
+      "source_location": "L129",
       "id": "routines_generator_gettodaysroutines",
       "community": 6,
       "norm_label": "gettodaysroutines()"
+    },
+    {
+      "label": "verification.test.ts",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L1",
+      "id": "lib_routines_verification_test_ts",
+      "community": 15,
+      "norm_label": "verification.test.ts"
+    },
+    {
+      "label": "products",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L11",
+      "id": "routines_verification_test_products",
+      "community": 15,
+      "norm_label": "products"
+    },
+    {
+      "label": "routines",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L35",
+      "id": "routines_verification_test_routines",
+      "community": 15,
+      "norm_label": "routines"
+    },
+    {
+      "label": "morning",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L36",
+      "id": "routines_verification_test_morning",
+      "community": 15,
+      "norm_label": "morning"
+    },
+    {
+      "label": "verification",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L41",
+      "id": "routines_verification_test_verification",
+      "community": 15,
+      "norm_label": "verification"
+    },
+    {
+      "label": "retinol",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L51",
+      "id": "routines_verification_test_retinol",
+      "community": 15,
+      "norm_label": "retinol"
+    },
+    {
+      "label": "bpo",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L58",
+      "id": "routines_verification_test_bpo",
+      "community": 15,
+      "norm_label": "bpo"
+    },
+    {
+      "label": "routine",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L66",
+      "id": "routines_verification_test_routine",
+      "community": 15,
+      "norm_label": "routine"
+    },
+    {
+      "label": "safety",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L90",
+      "id": "routines_verification_test_safety",
+      "community": 15,
+      "norm_label": "safety"
+    },
+    {
+      "label": "verification.ts",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L1",
+      "id": "lib_routines_verification_ts",
+      "community": 1,
+      "norm_label": "verification.ts"
+    },
+    {
+      "label": "RoutineCheckId",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L5",
+      "id": "routines_verification_routinecheckid",
+      "community": 1,
+      "norm_label": "routinecheckid"
+    },
+    {
+      "label": "RoutineCheck",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L10",
+      "id": "routines_verification_routinecheck",
+      "community": 1,
+      "norm_label": "routinecheck"
+    },
+    {
+      "label": "RoutineVerification",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L17",
+      "id": "routines_verification_routineverification",
+      "community": 1,
+      "norm_label": "routineverification"
+    },
+    {
+      "label": "matchesTime()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L23",
+      "id": "routines_verification_matchestime",
+      "community": 1,
+      "norm_label": "matchestime()"
+    },
+    {
+      "label": "checkApplicationOrder()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L27",
+      "id": "routines_verification_checkapplicationorder",
+      "community": 1,
+      "norm_label": "checkapplicationorder()"
+    },
+    {
+      "label": "checkIngredientSafety()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L62",
+      "id": "routines_verification_checkingredientsafety",
+      "community": 1,
+      "norm_label": "checkingredientsafety()"
+    },
+    {
+      "label": "checkShelfAlignment()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L94",
+      "id": "routines_verification_checkshelfalignment",
+      "community": 1,
+      "norm_label": "checkshelfalignment()"
+    },
+    {
+      "label": "collectReviewNotes()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L115",
+      "id": "routines_verification_collectreviewnotes",
+      "community": 1,
+      "norm_label": "collectreviewnotes()"
+    },
+    {
+      "label": "verifyRoutine()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L147",
+      "id": "routines_verification_verifyroutine",
+      "community": 1,
+      "norm_label": "verifyroutine()"
+    },
+    {
+      "label": "RoutineShelfExclusion",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L170",
+      "id": "routines_verification_routineshelfexclusion",
+      "community": 1,
+      "norm_label": "routineshelfexclusion"
+    },
+    {
+      "label": "getRoutineShelfExclusions()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L176",
+      "id": "routines_verification_getroutineshelfexclusions",
+      "community": 1,
+      "norm_label": "getroutineshelfexclusions()"
+    },
+    {
+      "label": "formatRoutineSchedule()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L200",
+      "id": "routines_verification_formatroutineschedule",
+      "community": 1,
+      "norm_label": "formatroutineschedule()"
+    },
+    {
+      "label": "formatRoutineTitle()",
+      "file_type": "code",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L211",
+      "id": "routines_verification_formatroutinetitle",
+      "community": 1,
+      "norm_label": "formatroutinetitle()"
     },
     {
       "label": "ingredient-conflicts.test.ts",
@@ -3384,7 +3699,7 @@
       "source_file": "lib/seed/product-catalog.test.ts",
       "source_location": "L1",
       "id": "lib_seed_product_catalog_test_ts",
-      "community": 1,
+      "community": 25,
       "norm_label": "product-catalog.test.ts"
     },
     {
@@ -3393,7 +3708,7 @@
       "source_file": "lib/seed/product-catalog.test.ts",
       "source_location": "L18",
       "id": "seed_product_catalog_test_entry",
-      "community": 1,
+      "community": 25,
       "norm_label": "entry"
     },
     {
@@ -3402,7 +3717,7 @@
       "source_file": "lib/seed/product-catalog.test.ts",
       "source_location": "L24",
       "id": "seed_product_catalog_test_enriched",
-      "community": 1,
+      "community": 25,
       "norm_label": "enriched"
     },
     {
@@ -3411,7 +3726,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L1",
       "id": "lib_seed_product_catalog_ts",
-      "community": 1,
+      "community": 25,
       "norm_label": "product-catalog.ts"
     },
     {
@@ -3420,7 +3735,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L5",
       "id": "seed_product_catalog_seedproductcatalogentry",
-      "community": 1,
+      "community": 25,
       "norm_label": "seedproductcatalogentry"
     },
     {
@@ -3429,7 +3744,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L19",
       "id": "seed_product_catalog_seed_product_catalog",
-      "community": 1,
+      "community": 25,
       "norm_label": "seed_product_catalog"
     },
     {
@@ -3438,7 +3753,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L147",
       "id": "seed_product_catalog_getseedcatalogentry",
-      "community": 1,
+      "community": 25,
       "norm_label": "getseedcatalogentry()"
     },
     {
@@ -3447,7 +3762,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L153",
       "id": "seed_product_catalog_enrichseedproduct",
-      "community": 1,
+      "community": 25,
       "norm_label": "enrichseedproduct()"
     },
     {
@@ -3456,7 +3771,7 @@
       "source_file": "lib/seed/product-ids.ts",
       "source_location": "L1",
       "id": "lib_seed_product_ids_ts",
-      "community": 1,
+      "community": 25,
       "norm_label": "product-ids.ts"
     },
     {
@@ -3465,7 +3780,7 @@
       "source_file": "lib/seed/product-ids.ts",
       "source_location": "L1",
       "id": "seed_product_ids_seed_product_ids",
-      "community": 1,
+      "community": 25,
       "norm_label": "seed_product_ids"
     },
     {
@@ -3582,7 +3897,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L1",
       "id": "lib_types_conflicts_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "conflicts.ts"
     },
     {
@@ -3591,7 +3906,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L3",
       "id": "types_conflicts_ingredientconflict",
-      "community": 25,
+      "community": 1,
       "norm_label": "ingredientconflict"
     },
     {
@@ -3600,7 +3915,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L11",
       "id": "types_conflicts_conflictwarning",
-      "community": 0,
+      "community": 1,
       "norm_label": "conflictwarning"
     },
     {
@@ -3609,7 +3924,7 @@
       "source_file": "lib/types/cycle.ts",
       "source_location": "L1",
       "id": "lib_types_cycle_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "cycle.ts"
     },
     {
@@ -3618,7 +3933,7 @@
       "source_file": "lib/types/cycle.ts",
       "source_location": "L1",
       "id": "types_cycle_cyclephase",
-      "community": 25,
+      "community": 1,
       "norm_label": "cyclephase"
     },
     {
@@ -3627,7 +3942,7 @@
       "source_file": "lib/types/cycle.ts",
       "source_location": "L8",
       "id": "types_cycle_cyclesettings",
-      "community": 25,
+      "community": 1,
       "norm_label": "cyclesettings"
     },
     {
@@ -3636,7 +3951,7 @@
       "source_file": "lib/types/index.ts",
       "source_location": "L1",
       "id": "lib_types_index_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "index.ts"
     },
     {
@@ -3645,7 +3960,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L1",
       "id": "lib_types_product_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "product.ts"
     },
     {
@@ -3654,7 +3969,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L1",
       "id": "types_product_productcategory",
-      "community": 25,
+      "community": 1,
       "norm_label": "productcategory"
     },
     {
@@ -3663,7 +3978,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L13",
       "id": "types_product_routinefrequency",
-      "community": 25,
+      "community": 1,
       "norm_label": "routinefrequency"
     },
     {
@@ -3672,7 +3987,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L15",
       "id": "types_product_timeofday",
-      "community": 25,
+      "community": 1,
       "norm_label": "timeofday"
     },
     {
@@ -3681,7 +3996,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L17",
       "id": "types_product_product",
-      "community": 25,
+      "community": 1,
       "norm_label": "product"
     },
     {
@@ -3690,7 +4005,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L44",
       "id": "types_product_productlookupresult",
-      "community": 8,
+      "community": 25,
       "norm_label": "productlookupresult"
     },
     {
@@ -3699,7 +4014,7 @@
       "source_file": "lib/types/routine.ts",
       "source_location": "L1",
       "id": "lib_types_routine_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "routine.ts"
     },
     {
@@ -3708,7 +4023,7 @@
       "source_file": "lib/types/routine.ts",
       "source_location": "L4",
       "id": "types_routine_routinestep",
-      "community": 25,
+      "community": 1,
       "norm_label": "routinestep"
     },
     {
@@ -3717,7 +4032,7 @@
       "source_file": "lib/types/routine.ts",
       "source_location": "L12",
       "id": "types_routine_routine",
-      "community": 25,
+      "community": 1,
       "norm_label": "routine"
     },
     {
@@ -3726,7 +4041,7 @@
       "source_file": "lib/types/settings.ts",
       "source_location": "L1",
       "id": "lib_types_settings_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "settings.ts"
     },
     {
@@ -5044,6 +5359,24 @@
       "norm_label": "metadata"
     },
     {
+      "label": "CATEGORY_ORDER",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L14",
+      "community": 25,
+      "norm_label": "category_order",
+      "id": "routines_generator_category_order"
+    },
+    {
+      "label": "sortByCategory()",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L35",
+      "community": 25,
+      "norm_label": "sortbycategory()",
+      "id": "routines_generator_sortbycategory"
+    },
+    {
       "label": "@fontsource/fraunces",
       "file_type": "code",
       "source_file": "package.json",
@@ -5165,7 +5498,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L158",
-      "community": 0,
+      "community": 1,
       "norm_label": "routineinteractionbadge()",
       "id": "conflicts_ingredient_interactions_routineinteractionbadge"
     },
@@ -5174,7 +5507,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L194",
-      "community": 0,
+      "community": 6,
       "norm_label": "interactionsummarybar()",
       "id": "conflicts_ingredient_interactions_interactionsummarybar"
     },
@@ -5192,7 +5525,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L1",
-      "community": 25,
+      "community": 1,
       "norm_label": "productcategory",
       "id": "lib_types_productcategory"
     },
@@ -5201,7 +5534,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L13",
-      "community": 25,
+      "community": 6,
       "norm_label": "routinefrequency",
       "id": "lib_types_routinefrequency"
     },
@@ -5210,7 +5543,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L15",
-      "community": 25,
+      "community": 1,
       "norm_label": "timeofday",
       "id": "lib_types_timeofday"
     },
@@ -5219,7 +5552,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L17",
-      "community": 25,
+      "community": 1,
       "norm_label": "cyclephase",
       "id": "lib_types_cyclephase"
     },
@@ -5291,7 +5624,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L83",
-      "community": 8,
+      "community": 25,
       "norm_label": "productlookupresult",
       "id": "lib_types_productlookupresult"
     },
@@ -5408,7 +5741,7 @@
       "file_type": "code",
       "source_file": "app/routines/page.tsx",
       "source_location": "L1",
-      "community": 0,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "app_routines_page_tsx"
     },
@@ -5444,7 +5777,7 @@
       "file_type": "code",
       "source_file": "components/layout/bottom-nav.tsx",
       "source_location": "L8",
-      "community": 7,
+      "community": 0,
       "norm_label": "nav_items",
       "id": "layout_bottom_nav_nav_items"
     },
@@ -5861,9 +6194,9 @@
       "source_file": "package.json",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_package_dependencies",
-      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_dm_sans",
-      "confidence_score": 1.0
+      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_dm_sans"
     },
     {
       "relation": "contains",
@@ -5871,9 +6204,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_package_dependencies",
-      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_sora",
-      "confidence_score": 1.0
+      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_sora"
     },
     {
       "relation": "contains",
@@ -11104,6 +11437,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/pages/routines-page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_pages_routines_page_tsx",
+      "target": "components_routines_routines_overview_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/routines-page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_pages_routines_page_tsx",
+      "target": "routines_routines_overview_routinesoverview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/routines-page.tsx",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -11186,6 +11541,50 @@
       "confidence_score": 1.0,
       "source": "components_pages_routines_page_tsx",
       "target": "cycle_phases_getcycleday"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/routines-page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_pages_routines_page_tsx",
+      "target": "lib_routines_verification_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/routines-page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_pages_routines_page_tsx",
+      "target": "routines_verification_getroutineshelfexclusions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/routines-page.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "components_pages_routines_page_tsx",
+      "target": "lib_format_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/routines-page.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "components_pages_routines_page_tsx",
+      "target": "lib_format_pluralize",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -11283,6 +11682,17 @@
       "weight": 1.0,
       "source": "pages_routines_page_routinespage",
       "target": "cycle_phases_getcycleday"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/pages/routines-page.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "pages_routines_page_routinespage",
+      "target": "routines_verification_getroutineshelfexclusions"
     },
     {
       "relation": "imports_from",
@@ -12494,6 +12904,72 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "components_routines_routine_verification_panel_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "routines_routine_verification_panel_routineverificationpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "lib_routines_verification_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "routines_verification_formatroutineschedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "routines_verification_formatroutinetitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "routines_verification_verifyroutine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
       "source_location": "L2",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -12607,6 +13083,17 @@
       "confidence_score": 1.0,
       "source": "components_routines_routine_card_tsx",
       "target": "types_conflicts_conflictwarning"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "types_product_product",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -12734,6 +13221,17 @@
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "routines_routine_card_routinecardprops",
+      "target": "types_product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
       "source_location": "L15",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -12783,6 +13281,39 @@
       "weight": 1.0,
       "source": "routines_routine_card_routinecard",
       "target": "conflicts_display_groupwarningsbyproduct"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "routines_routine_card_routinecard",
+      "target": "routines_verification_verifyroutine"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "routines_routine_card_routinecard",
+      "target": "routines_verification_formatroutinetitle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "routines_routine_card_routinecard",
+      "target": "routines_verification_formatroutineschedule"
     },
     {
       "relation": "imports",
@@ -13153,6 +13684,255 @@
       "confidence_score": 1.0,
       "source": "components_pages_guide_page_tsx",
       "target": "routines_routine_list_routinelist"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-verification-panel.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_routines_routine_verification_panel_tsx",
+      "target": "lib_routines_verification_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-verification-panel.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_routines_routine_verification_panel_tsx",
+      "target": "routines_verification_routineverification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-verification-panel.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_routines_routine_verification_panel_tsx",
+      "target": "lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-verification-panel.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_routines_routine_verification_panel_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-verification-panel.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_routines_routine_verification_panel_tsx",
+      "target": "routines_routine_verification_panel_routineverificationpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "lib_types_index_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "lib_routines_verification_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "routines_verification_routineshelfexclusion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "routines_verification_verifyroutine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "components_ui_card_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "ui_card_card",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "ui_card_cardcontent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "lib_format_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "lib_format_pluralize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "routines_routines_overview_routinesoverviewprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "routines_routines_overview_routinesoverview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "routines_routines_overview_overviewpill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "types_product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_routines_routines_overview_tsx",
+      "target": "types_routine_routine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "routines_routines_overview_routinesoverviewprops",
+      "target": "types_routine_routine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "routines_routines_overview_routinesoverviewprops",
+      "target": "types_product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "routines_routines_overview_routinesoverviewprops",
+      "target": "routines_verification_routineshelfexclusion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/routines/routines-overview.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "routines_routines_overview_routinesoverview",
+      "target": "lib_format_pluralize"
     },
     {
       "relation": "imports_from",
@@ -17692,6 +18472,220 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_test_ts",
+      "target": "lib_routines_category_order_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_test_ts",
+      "target": "routines_category_order_finalizeroutineproductorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_test_ts",
+      "target": "lib_test_fixtures_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_test_ts",
+      "target": "test_fixtures_makeproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_test_ts",
+      "target": "routines_category_order_test_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.test.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_test_ts",
+      "target": "routines_category_order_test_ordered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "lib_types_index_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "routines_category_order_routine_category_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "routines_category_order_categoryrank",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "routines_category_order_sortproductsbycategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "routines_category_order_finalizeroutineproductorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "lib_routines_category_order_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "lib_routines_category_order_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "types_product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "types_product_productcategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_category_order_ts",
+      "target": "types_product_timeofday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_category_order_categoryrank",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/category-order.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "routines_category_order_finalizeroutineproductorder",
+      "target": "routines_category_order_sortproductsbycategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "routines_category_order_finalizeroutineproductorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "routines_generator_buildsteps",
+      "target": "routines_category_order_finalizeroutineproductorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "lib/routines/generator.test.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -17882,31 +18876,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_routines_generator_ts",
-      "target": "routines_generator_category_order"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/routines/generator.ts",
       "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_routines_generator_ts",
       "target": "routines_generator_phase_sensitive"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/routines/generator.ts",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_routines_generator_ts",
-      "target": "routines_generator_sortbycategory"
     },
     {
       "relation": "contains",
@@ -17987,6 +18961,28 @@
       "confidence_score": 1.0,
       "source": "lib_routines_generator_ts",
       "target": "routines_generator_gettodaysroutines"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "lib_routines_generator_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "lib_routines_generator_ts",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -18086,6 +19082,26 @@
       "confidence_score": 1.0,
       "source": "lib_routines_generator_ts",
       "target": "types_product_timeofday"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "routines_generator_category_order"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "routines_generator_sortbycategory"
     },
     {
       "relation": "imports_from",
@@ -18202,22 +19218,22 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L64",
+      "source_location": "L92",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "routines_generator_buildsteps",
-      "target": "routines_generator_sortbycategory"
+      "source": "routines_generator_buildroutine",
+      "target": "routines_generator_buildsteps"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L92",
+      "source_location": "L64",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "routines_generator_buildroutine",
-      "target": "routines_generator_buildsteps"
+      "source": "routines_generator_buildsteps",
+      "target": "routines_generator_sortbycategory"
     },
     {
       "relation": "calls",
@@ -18256,6 +19272,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_generator_generateroutines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "lib/services/app-data.ts",
       "source_location": "L10",
       "weight": 1.0,
@@ -18286,6 +19313,17 @@
       "target": "routines_generator_generateroutines"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_generator_getroutinewarnings",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -18312,6 +19350,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "routines_verification_verifyroutine",
+      "target": "routines_generator_getroutinewarnings"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "app/page.tsx",
       "source_location": "L31",
       "weight": 1.0,
@@ -18328,6 +19377,392 @@
       "confidence_score": 1.0,
       "source": "app_page_tsx",
       "target": "routines_generator_gettodaysroutines"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "lib_routines_verification_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_formatroutinetitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_verifyroutine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "lib_test_fixtures_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "test_fixtures_defaultsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "test_fixtures_makeproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_routines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_morning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_retinol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_bpo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_routine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.test.ts",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "lib_routines_verification_test_ts",
+      "target": "routines_verification_test_safety",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "lib_types_index_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_routinecheckid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_routinecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_routineverification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_matchestime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_checkapplicationorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_checkingredientsafety",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_checkshelfalignment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_collectreviewnotes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_verifyroutine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_routineshelfexclusion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_getroutineshelfexclusions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_formatroutineschedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "routines_verification_formatroutinetitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "types_conflicts_conflictwarning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "types_product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "types_routine_routine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_routines_verification_ts",
+      "target": "types_product_routinefrequency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "routines_verification_verifyroutine",
+      "target": "routines_verification_checkapplicationorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "routines_verification_verifyroutine",
+      "target": "routines_verification_checkingredientsafety",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "routines_verification_verifyroutine",
+      "target": "routines_verification_checkshelfalignment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "routines_verification_verifyroutine",
+      "target": "routines_verification_collectreviewnotes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/verification.ts",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "routines_verification_routineshelfexclusion",
+      "target": "types_product_product",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -21905,5 +23340,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "056d1c9281851d3dfa2768f3b4c24bf0b6213fc9"
+  "built_at_commit": "2e24c2db21d725746bb1a3a9232d15a4f9f00426"
 }
