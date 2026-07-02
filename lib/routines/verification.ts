@@ -51,11 +51,11 @@ function checkApplicationOrder(routine: Routine): RoutineCheck {
 
   return {
     id: "application-order",
-    label: "Application order",
+    label: "Layering order",
     passed: orderOk,
     detail: orderOk
-      ? "Steps follow cleanse → treat → hydrate → protect."
-      : "Step order may not match how products should be layered.",
+      ? "Products are ordered cleanse → treat → hydrate → protect."
+      : "The step order may not match how these products should be layered.",
   };
 }
 
@@ -68,26 +68,26 @@ function checkIngredientSafety(warnings: ConflictWarning[]): RoutineCheck {
   if (avoid.length > 0) {
     return {
       id: "ingredient-safety",
-      label: "Ingredient safety",
+      label: "Ingredient pairings",
       passed: false,
-      detail: `${avoid.length} pairing${avoid.length === 1 ? "" : "s"} flagged as avoid in this routine.`,
+      detail: `${avoid.length} pairing${avoid.length === 1 ? "" : "s"} in this routine should not be used together.`,
     };
   }
 
   if (caution.length > 0) {
     return {
       id: "ingredient-safety",
-      label: "Ingredient safety",
+      label: "Ingredient pairings",
       passed: true,
-      detail: `No hard conflicts; ${caution.length} caution note${caution.length === 1 ? "" : "s"} to review.`,
+      detail: `No serious conflicts; ${caution.length} note${caution.length === 1 ? "" : "s"} worth reading below.`,
     };
   }
 
   return {
     id: "ingredient-safety",
-    label: "Ingredient safety",
+    label: "Ingredient pairings",
     passed: true,
-    detail: "No ingredient conflicts within this routine.",
+    detail: "Nothing in this routine conflicts on ingredients.",
   };
 }
 
@@ -103,12 +103,12 @@ function checkShelfAlignment(
 
   return {
     id: "shelf-alignment",
-    label: "Shelf alignment",
+    label: "Schedule match",
     passed: mismatches.length === 0,
     detail:
       mismatches.length === 0
-        ? "Every product matches this routine's frequency and time."
-        : `${mismatches.length} product${mismatches.length === 1 ? "" : "s"} may not belong in this slot.`,
+        ? "Every product belongs in this routine's frequency and time of day."
+        : `${mismatches.length} product${mismatches.length === 1 ? " doesn't" : "s don't"} quite match this routine's schedule.`,
   };
 }
 

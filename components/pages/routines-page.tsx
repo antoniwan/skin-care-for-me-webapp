@@ -48,7 +48,7 @@ export function RoutinesPage() {
     <PageContainer>
       <PageHeader
         title="Routines"
-        description="Layering order, ingredient safety, and timing — verified for every routine on your shelf."
+        description="Each routine is checked for layering order, ingredient pairings, and the right schedule."
       />
 
       <RoutinesOverview

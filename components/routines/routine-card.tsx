@@ -50,7 +50,7 @@ export function RoutineCard({
             {verification.allPassed && (
               <Badge className="gap-1 border-transparent bg-primary text-primary-foreground">
                 <CheckCircle2 className="size-3" />
-                Verified
+                All clear
               </Badge>
             )}
             <RoutineInteractionBadge warnings={warnings} />

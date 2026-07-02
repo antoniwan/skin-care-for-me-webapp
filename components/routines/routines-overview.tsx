@@ -32,26 +32,26 @@ export function RoutinesOverview({
           <div className="min-w-0 flex-1 space-y-3">
             <div>
               <p className="font-heading text-base font-semibold">
-                Built from your shelf, checked three ways
+                Built from your products
               </p>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                 {routines.length} {pluralize(routines.length, "routine")} ·{" "}
-                {stepCount} total steps · {verifiedCount} fully verified
+                {stepCount} steps · {verifiedCount} ready to use
               </p>
             </div>
 
             <div className="grid gap-2 sm:grid-cols-3">
               <OverviewPill
-                title="Order"
-                detail="Cleanse → treat → hydrate → protect"
+                title="Layering"
+                detail="Products ordered for how you apply them"
               />
               <OverviewPill
                 title="Ingredients"
-                detail="Conflicts scanned per routine"
+                detail="Pairings checked within each routine"
               />
               <OverviewPill
-                title="Timing"
-                detail="Frequency & AM/PM matched to each product"
+                title="Schedule"
+                detail="Daily, weekly, and AM/PM slots respected"
               />
             </div>
 
