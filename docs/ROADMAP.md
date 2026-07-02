@@ -11,21 +11,22 @@ This roadmap turns [PRODUCT-VISION.md](PRODUCT-VISION.md) into delivery phases. 
 
 ```mermaid
 gantt
-    title Skin Care For Me — indicative phases
-    dateFormat YYYY-MM
+    title Skin Care For Me - indicative phases
+    dateFormat YYYY-MM-DD
+    axisFormat %b %Y
     section v0.2 Daily driver
-    Product edit & schedule      :2026-07, 6w
-    Onboarding & empty states     :2026-08, 3w
-    Backup / restore              :2026-08, 2w
-    section v0.3 Trust & polish
-    Conflict rules v2             :2026-09, 4w
-    Lookup quality & cache        :2026-09, 3w
-    PWA offline                   :2026-10, 3w
+    Product edit and schedule      :p1, 2026-07-01, 6w
+    Onboarding and empty states      :p2, 2026-08-01, 3w
+    Backup and restore               :p3, 2026-08-15, 2w
+    section v0.3 Trust and polish
+    Conflict rules v2                :p4, 2026-09-01, 4w
+    Lookup quality and cache         :p5, 2026-09-15, 3w
+    PWA offline                      :p6, 2026-10-01, 3w
     section v0.4 Habit loop
-    Reminders & check-ins         :2026-11, 4w
-    Usage log (local)             :2026-11, 3w
+    Reminders and check-ins          :p7, 2026-11-01, 4w
+    Usage log local                  :p8, 2026-11-15, 3w
     section v1.0 Platform
-    Optional sync                 :2027-01, 8w
+    Optional sync                    :p9, 2027-01-01, 8w
 ```
 
 ---

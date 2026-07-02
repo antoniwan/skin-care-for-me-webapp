@@ -1,6 +1,7 @@
 "use client";
 
 import { useAppDataContext } from "@/components/providers/app-data-provider";
+import { AffiliateDisclosure } from "@/components/products/affiliate-disclosure";
 import { AddProductSheet } from "@/components/products/add-product-sheet";
 import { ProductCard } from "@/components/products/product-card";
 import { PageContainer } from "@/components/layout/page-container";
@@ -20,7 +21,7 @@ export function ProductsPage() {
     <PageContainer>
       <PageHeader
         title="My products"
-        description={`Stored locally on your device. ${products.length} ${pluralize(products.length, "item")} including default starter products.`}
+        description={`Your curated shelf with photos, brand links, and shop links. ${products.length} ${pluralize(products.length, "item")} stored locally on your device.`}
       />
 
       <AddProductSheet onAdd={addProductFromLookup} />
@@ -34,6 +35,8 @@ export function ProductsPage() {
           />
         ))}
       </div>
+
+      <AffiliateDisclosure />
     </PageContainer>
   );
 }

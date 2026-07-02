@@ -1,20 +1,12 @@
 import type { Product } from "../types";
+import { enrichSeedProduct } from "./product-catalog";
+import { SEED_PRODUCT_IDS } from "./product-ids";
 
-const SEED_TIMESTAMP = "2024-01-01T00:00:00.000Z";
+export { SEED_PRODUCT_IDS, isSeedProductId } from "./product-ids";
 
-export const SEED_PRODUCT_IDS = {
-  cliniqueClarifyingLotion2: "seed-clinique-clarifying-lotion-2",
-  cliniqueMoistureSurgeHydrator: "seed-clinique-moisture-surge-hydrator",
-  cliniqueAllAboutCleanSoap: "seed-clinique-all-about-clean-soap",
-  freshSugarFacePolish: "seed-fresh-sugar-face-polish",
-  medicubeZeroPorePad: "seed-medicube-zero-pore-pad",
-  cliniqueMoistureSurgeOvernight: "seed-clinique-moisture-surge-overnight",
-  medicubePdrnEyeMask: "seed-medicube-pdrn-eye-mask",
-  cliniqueDramaticallyDifferentLotion: "seed-clinique-ddml-plus",
-  ceraveHydratingMineralSunscreen: "seed-cerave-hydrating-mineral-spf30",
-} as const;
+const SEED_TIMESTAMP = "2026-07-02T00:00:00.000Z";
 
-export const DEFAULT_PRODUCTS: Product[] = [
+const BASE_DEFAULT_PRODUCTS: Product[] = [
   {
     id: SEED_PRODUCT_IDS.cliniqueAllAboutCleanSoap,
     name: "All About Clean Liquid Facial Soap Mild",
@@ -254,6 +246,7 @@ export const DEFAULT_PRODUCTS: Product[] = [
   },
 ];
 
-export function isSeedProductId(id: string): boolean {
-  return id.startsWith("seed-");
-}
+/** Seed products with catalog images, links, and commerce metadata. */
+export const DEFAULT_PRODUCTS: Product[] = BASE_DEFAULT_PRODUCTS.map(
+  (product) => enrichSeedProduct({ ...product, updatedAt: SEED_TIMESTAMP }),
+);

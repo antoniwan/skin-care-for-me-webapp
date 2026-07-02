@@ -26,6 +26,15 @@ export interface Product {
   activeIngredients: string[];
   notes?: string;
   isSeed?: boolean;
+  /** Local path or remote URL for product hero image */
+  imageUrl?: string;
+  /** Official brand product page */
+  manufacturerUrl?: string;
+  /** Amazon Standard Identification Number for affiliate links */
+  amazonAsin?: string;
+  size?: string;
+  tagline?: string;
+  highlights?: string[];
   createdAt: string;
   updatedAt: string;
 }

@@ -60,6 +60,16 @@ OPENAI_API_KEY=sk-...
 
 Without this key, adding a product still works but returns keyword-based placeholder data (sunscreen/retinol/generic serum). Env is validated in `lib/env.ts`.
 
+### Optional: Amazon affiliate links
+
+Add your [Amazon Associates](https://affiliate-program.amazon.com/) tag to `.env.local`:
+
+```env
+NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=yourtag-20
+```
+
+Seed products on the shelf show **Manufacturer** and **Shop on Amazon** links when catalog metadata is present.
+
 ### Production build
 
 ```bash

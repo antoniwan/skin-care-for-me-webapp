@@ -891,7 +891,7 @@
       "source_file": "app/(app)/error.tsx",
       "source_location": "L1",
       "id": "app_app_error_tsx",
-      "community": 0,
+      "community": 2,
       "norm_label": "error.tsx"
     },
     {
@@ -900,7 +900,7 @@
       "source_file": "app/(app)/error.tsx",
       "source_location": "L6",
       "id": "app_error_apperror",
-      "community": 0,
+      "community": 2,
       "norm_label": "apperror()"
     },
     {
@@ -1080,7 +1080,7 @@
       "source_file": "components/conflicts/index.ts",
       "source_location": "L1",
       "id": "components_conflicts_index_ts",
-      "community": 2,
+      "community": 0,
       "norm_label": "index.ts"
     },
     {
@@ -1089,7 +1089,7 @@
       "source_file": "components/conflicts/interaction-detail.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_detail_tsx",
-      "community": 2,
+      "community": 0,
       "norm_label": "interaction-detail.tsx"
     },
     {
@@ -1098,7 +1098,7 @@
       "source_file": "components/conflicts/interaction-detail.tsx",
       "source_location": "L6",
       "id": "conflicts_interaction_detail_interactiondetail",
-      "community": 2,
+      "community": 0,
       "norm_label": "interactiondetail()"
     },
     {
@@ -1107,7 +1107,7 @@
       "source_file": "components/conflicts/interaction-details-sheet.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_details_sheet_tsx",
-      "community": 2,
+      "community": 0,
       "norm_label": "interaction-details-sheet.tsx"
     },
     {
@@ -1116,7 +1116,7 @@
       "source_file": "components/conflicts/interaction-details-sheet.tsx",
       "source_location": "L14",
       "id": "conflicts_interaction_details_sheet_interactiondetailssheet",
-      "community": 2,
+      "community": 0,
       "norm_label": "interactiondetailssheet()"
     },
     {
@@ -1125,7 +1125,7 @@
       "source_file": "components/conflicts/interaction-summary-bar.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_summary_bar_tsx",
-      "community": 2,
+      "community": 0,
       "norm_label": "interaction-summary-bar.tsx"
     },
     {
@@ -1134,7 +1134,7 @@
       "source_file": "components/conflicts/interaction-summary-bar.tsx",
       "source_location": "L11",
       "id": "conflicts_interaction_summary_bar_interactionsummarybar",
-      "community": 2,
+      "community": 0,
       "norm_label": "interactionsummarybar()"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_file": "components/conflicts/routine-interaction-badge.tsx",
       "source_location": "L1",
       "id": "components_conflicts_routine_interaction_badge_tsx",
-      "community": 2,
+      "community": 0,
       "norm_label": "routine-interaction-badge.tsx"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "components/conflicts/routine-interaction-badge.tsx",
       "source_location": "L23",
       "id": "conflicts_routine_interaction_badge_routineinteractionbadge",
-      "community": 2,
+      "community": 0,
       "norm_label": "routineinteractionbadge()"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L1",
       "id": "components_conflicts_severity_styles_ts",
-      "community": 2,
+      "community": 0,
       "norm_label": "severity-styles.ts"
     },
     {
@@ -1179,7 +1179,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L1",
       "id": "conflicts_severity_styles_severity_styles",
-      "community": 2,
+      "community": 0,
       "norm_label": "severity_styles"
     },
     {
@@ -1188,7 +1188,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L19",
       "id": "conflicts_severity_styles_conflictseverity",
-      "community": 2,
+      "community": 0,
       "norm_label": "conflictseverity"
     },
     {
@@ -1197,7 +1197,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L21",
       "id": "conflicts_severity_styles_getseveritystyle",
-      "community": 2,
+      "community": 0,
       "norm_label": "getseveritystyle()"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "components/conflicts/step-interaction-hint.tsx",
       "source_location": "L1",
       "id": "components_conflicts_step_interaction_hint_tsx",
-      "community": 2,
+      "community": 0,
       "norm_label": "step-interaction-hint.tsx"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "components/conflicts/step-interaction-hint.tsx",
       "source_location": "L15",
       "id": "conflicts_step_interaction_hint_stepinteractionhint",
-      "community": 2,
+      "community": 0,
       "norm_label": "stepinteractionhint()"
     },
     {
@@ -1447,7 +1447,7 @@
       "label": "ProductsPage()",
       "file_type": "code",
       "source_file": "components/pages/products-page.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "id": "pages_products_page_productspage",
       "community": 6,
       "norm_label": "productspage()"
@@ -1507,19 +1507,37 @@
       "norm_label": "addproductsheet()"
     },
     {
+      "label": "affiliate-disclosure.tsx",
+      "file_type": "code",
+      "source_file": "components/products/affiliate-disclosure.tsx",
+      "source_location": "L1",
+      "id": "components_products_affiliate_disclosure_tsx",
+      "community": 6,
+      "norm_label": "affiliate-disclosure.tsx"
+    },
+    {
+      "label": "AffiliateDisclosure()",
+      "file_type": "code",
+      "source_file": "components/products/affiliate-disclosure.tsx",
+      "source_location": "L1",
+      "id": "products_affiliate_disclosure_affiliatedisclosure",
+      "community": 6,
+      "norm_label": "affiliatedisclosure()"
+    },
+    {
       "label": "product-card.tsx",
       "file_type": "code",
       "source_file": "components/products/product-card.tsx",
       "source_location": "L1",
       "id": "components_products_product_card_tsx",
-      "community": 1,
+      "community": 2,
       "norm_label": "product-card.tsx"
     },
     {
       "label": "ProductCardProps",
       "file_type": "code",
       "source_file": "components/products/product-card.tsx",
-      "source_location": "L7",
+      "source_location": "L10",
       "id": "products_product_card_productcardprops",
       "community": 1,
       "norm_label": "productcardprops"
@@ -1528,10 +1546,73 @@
       "label": "ProductCard()",
       "file_type": "code",
       "source_file": "components/products/product-card.tsx",
-      "source_location": "L12",
+      "source_location": "L15",
       "id": "products_product_card_productcard",
       "community": 6,
       "norm_label": "productcard()"
+    },
+    {
+      "label": "ProductImage()",
+      "file_type": "code",
+      "source_file": "components/products/product-card.tsx",
+      "source_location": "L110",
+      "id": "products_product_card_productimage",
+      "community": 2,
+      "norm_label": "productimage()"
+    },
+    {
+      "label": "product-ingredients.tsx",
+      "file_type": "code",
+      "source_file": "components/products/product-ingredients.tsx",
+      "source_location": "L1",
+      "id": "components_products_product_ingredients_tsx",
+      "community": 2,
+      "norm_label": "product-ingredients.tsx"
+    },
+    {
+      "label": "ProductIngredientsProps",
+      "file_type": "code",
+      "source_file": "components/products/product-ingredients.tsx",
+      "source_location": "L7",
+      "id": "products_product_ingredients_productingredientsprops",
+      "community": 2,
+      "norm_label": "productingredientsprops"
+    },
+    {
+      "label": "ProductIngredients()",
+      "file_type": "code",
+      "source_file": "components/products/product-ingredients.tsx",
+      "source_location": "L11",
+      "id": "products_product_ingredients_productingredients",
+      "community": 2,
+      "norm_label": "productingredients()"
+    },
+    {
+      "label": "product-links.tsx",
+      "file_type": "code",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L1",
+      "id": "components_products_product_links_tsx",
+      "community": 2,
+      "norm_label": "product-links.tsx"
+    },
+    {
+      "label": "ProductLinksProps",
+      "file_type": "code",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L5",
+      "id": "products_product_links_productlinksprops",
+      "community": 2,
+      "norm_label": "productlinksprops"
+    },
+    {
+      "label": "ProductLinks()",
+      "file_type": "code",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L10",
+      "id": "products_product_links_productlinks",
+      "community": 2,
+      "norm_label": "productlinks()"
     },
     {
       "label": "product-meta-badges.tsx",
@@ -1539,7 +1620,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L1",
       "id": "components_products_product_meta_badges_tsx",
-      "community": 1,
+      "community": 2,
       "norm_label": "product-meta-badges.tsx"
     },
     {
@@ -1557,7 +1638,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L12",
       "id": "products_product_meta_badges_productmetabadges",
-      "community": 1,
+      "community": 2,
       "norm_label": "productmetabadges()"
     },
     {
@@ -1620,7 +1701,7 @@
       "source_file": "components/routines/routine-card.tsx",
       "source_location": "L13",
       "id": "routines_routine_card_routinecardprops",
-      "community": 2,
+      "community": 1,
       "norm_label": "routinecardprops"
     },
     {
@@ -1629,7 +1710,7 @@
       "source_file": "components/routines/routine-card.tsx",
       "source_location": "L18",
       "id": "routines_routine_card_routinecard",
-      "community": 2,
+      "community": 6,
       "norm_label": "routinecard()"
     },
     {
@@ -1692,7 +1773,7 @@
       "source_file": "components/ui/button.tsx",
       "source_location": "L1",
       "id": "components_ui_button_tsx",
-      "community": 0,
+      "community": 2,
       "norm_label": "button.tsx"
     },
     {
@@ -1701,7 +1782,7 @@
       "source_file": "components/ui/button.tsx",
       "source_location": "L7",
       "id": "ui_button_buttonvariants",
-      "community": 0,
+      "community": 2,
       "norm_label": "buttonvariants"
     },
     {
@@ -1710,7 +1791,7 @@
       "source_file": "components/ui/button.tsx",
       "source_location": "L44",
       "id": "ui_button_button",
-      "community": 0,
+      "community": 2,
       "norm_label": "button()"
     },
     {
@@ -1719,7 +1800,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L1",
       "id": "components_ui_card_tsx",
-      "community": 6,
+      "community": 2,
       "norm_label": "card.tsx"
     },
     {
@@ -1728,7 +1809,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L5",
       "id": "ui_card_card",
-      "community": 6,
+      "community": 2,
       "norm_label": "card()"
     },
     {
@@ -1737,7 +1818,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L23",
       "id": "ui_card_cardheader",
-      "community": 6,
+      "community": 2,
       "norm_label": "cardheader()"
     },
     {
@@ -1746,7 +1827,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L36",
       "id": "ui_card_cardtitle",
-      "community": 6,
+      "community": 2,
       "norm_label": "cardtitle()"
     },
     {
@@ -1773,7 +1854,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L72",
       "id": "ui_card_cardcontent",
-      "community": 6,
+      "community": 2,
       "norm_label": "cardcontent()"
     },
     {
@@ -2142,7 +2223,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L1",
       "id": "components_ui_tabs_tsx",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabs.tsx"
     },
     {
@@ -2151,7 +2232,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L9",
       "id": "ui_tabs_tabs",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabs()"
     },
     {
@@ -2160,7 +2241,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L27",
       "id": "ui_tabs_tabslistvariants",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabslistvariants"
     },
     {
@@ -2169,7 +2250,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L42",
       "id": "ui_tabs_tabslist",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabslist()"
     },
     {
@@ -2178,7 +2259,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L58",
       "id": "ui_tabs_tabstrigger",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabstrigger()"
     },
     {
@@ -2187,7 +2268,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L77",
       "id": "ui_tabs_tabscontent",
-      "community": 0,
+      "community": 6,
       "norm_label": "tabscontent()"
     },
     {
@@ -2430,7 +2511,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L3",
       "id": "lib_format_formatcategory",
-      "community": 1,
+      "community": 2,
       "norm_label": "formatcategory()"
     },
     {
@@ -2466,7 +2547,7 @@
       "source_file": "lib/utils.ts",
       "source_location": "L1",
       "id": "lib_utils_ts",
-      "community": 2,
+      "community": 0,
       "norm_label": "utils.ts"
     },
     {
@@ -2484,7 +2565,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L1",
       "id": "lib_conflicts_display_test_ts",
-      "community": 2,
+      "community": 15,
       "norm_label": "display.test.ts"
     },
     {
@@ -2502,7 +2583,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L30",
       "id": "conflicts_display_test_sorted",
-      "community": 2,
+      "community": 15,
       "norm_label": "sorted"
     },
     {
@@ -2511,7 +2592,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L52",
       "id": "conflicts_display_test_warning",
-      "community": 2,
+      "community": 15,
       "norm_label": "warning"
     },
     {
@@ -2520,7 +2601,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L60",
       "id": "conflicts_display_test_grouped",
-      "community": 2,
+      "community": 15,
       "norm_label": "grouped"
     },
     {
@@ -2529,7 +2610,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L1",
       "id": "lib_conflicts_display_ts",
-      "community": 2,
+      "community": 0,
       "norm_label": "display.ts"
     },
     {
@@ -2538,7 +2619,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L3",
       "id": "conflicts_display_warningkey",
-      "community": 2,
+      "community": 0,
       "norm_label": "warningkey()"
     },
     {
@@ -2547,7 +2628,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L14",
       "id": "conflicts_display_groupwarningsbyproduct",
-      "community": 2,
+      "community": 0,
       "norm_label": "groupwarningsbyproduct()"
     },
     {
@@ -2556,7 +2637,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L32",
       "id": "conflicts_display_getotherproductname",
-      "community": 2,
+      "community": 0,
       "norm_label": "getotherproductname()"
     },
     {
@@ -2565,7 +2646,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L41",
       "id": "conflicts_display_severity_order",
-      "community": 2,
+      "community": 0,
       "norm_label": "severity_order"
     },
     {
@@ -2574,7 +2655,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L43",
       "id": "conflicts_display_sortwarningsbyseverity",
-      "community": 2,
+      "community": 0,
       "norm_label": "sortwarningsbyseverity()"
     },
     {
@@ -2583,7 +2664,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L53",
       "id": "conflicts_display_highestseverity",
-      "community": 2,
+      "community": 0,
       "norm_label": "highestseverity()"
     },
     {
@@ -2747,6 +2828,42 @@
       "id": "pdf_guide_downloadguidepdf",
       "community": 6,
       "norm_label": "downloadguidepdf()"
+    },
+    {
+      "label": "affiliate.test.ts",
+      "file_type": "code",
+      "source_file": "lib/products/affiliate.test.ts",
+      "source_location": "L1",
+      "id": "lib_products_affiliate_test_ts",
+      "community": 2,
+      "norm_label": "affiliate.test.ts"
+    },
+    {
+      "label": "affiliate.ts",
+      "file_type": "code",
+      "source_file": "lib/products/affiliate.ts",
+      "source_location": "L1",
+      "id": "lib_products_affiliate_ts",
+      "community": 2,
+      "norm_label": "affiliate.ts"
+    },
+    {
+      "label": "buildAmazonAffiliateUrl()",
+      "file_type": "code",
+      "source_file": "lib/products/affiliate.ts",
+      "source_location": "L5",
+      "id": "products_affiliate_buildamazonaffiliateurl",
+      "community": 2,
+      "norm_label": "buildamazonaffiliateurl()"
+    },
+    {
+      "label": "hasAmazonAffiliateTag()",
+      "file_type": "code",
+      "source_file": "lib/products/affiliate.ts",
+      "source_location": "L11",
+      "id": "products_affiliate_hasamazonaffiliatetag",
+      "community": 2,
+      "norm_label": "hasamazonaffiliatetag()"
     },
     {
       "label": "factory.test.ts",
@@ -3145,31 +3262,22 @@
       "norm_label": "default-products.ts"
     },
     {
-      "label": "SEED_PRODUCT_IDS",
+      "label": "BASE_DEFAULT_PRODUCTS",
       "file_type": "code",
       "source_file": "lib/seed/default-products.ts",
-      "source_location": "L5",
-      "id": "seed_default_products_seed_product_ids",
+      "source_location": "L9",
+      "id": "seed_default_products_base_default_products",
       "community": 1,
-      "norm_label": "seed_product_ids"
+      "norm_label": "base_default_products"
     },
     {
       "label": "DEFAULT_PRODUCTS",
       "file_type": "code",
       "source_file": "lib/seed/default-products.ts",
-      "source_location": "L17",
+      "source_location": "L250",
       "id": "seed_default_products_default_products",
       "community": 1,
       "norm_label": "default_products"
-    },
-    {
-      "label": "isSeedProductId()",
-      "file_type": "code",
-      "source_file": "lib/seed/default-products.ts",
-      "source_location": "L257",
-      "id": "seed_default_products_isseedproductid",
-      "community": 1,
-      "norm_label": "isseedproductid()"
     },
     {
       "label": "index.ts",
@@ -3179,6 +3287,105 @@
       "id": "lib_seed_index_ts",
       "community": 1,
       "norm_label": "index.ts"
+    },
+    {
+      "label": "product-catalog.test.ts",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L1",
+      "id": "lib_seed_product_catalog_test_ts",
+      "community": 1,
+      "norm_label": "product-catalog.test.ts"
+    },
+    {
+      "label": "entry",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L18",
+      "id": "seed_product_catalog_test_entry",
+      "community": 1,
+      "norm_label": "entry"
+    },
+    {
+      "label": "enriched",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L23",
+      "id": "seed_product_catalog_test_enriched",
+      "community": 1,
+      "norm_label": "enriched"
+    },
+    {
+      "label": "product-catalog.ts",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L1",
+      "id": "lib_seed_product_catalog_ts",
+      "community": 1,
+      "norm_label": "product-catalog.ts"
+    },
+    {
+      "label": "SeedProductCatalogEntry",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L5",
+      "id": "seed_product_catalog_seedproductcatalogentry",
+      "community": 1,
+      "norm_label": "seedproductcatalogentry"
+    },
+    {
+      "label": "SEED_PRODUCT_CATALOG",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L14",
+      "id": "seed_product_catalog_seed_product_catalog",
+      "community": 1,
+      "norm_label": "seed_product_catalog"
+    },
+    {
+      "label": "getSeedCatalogEntry()",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L133",
+      "id": "seed_product_catalog_getseedcatalogentry",
+      "community": 1,
+      "norm_label": "getseedcatalogentry()"
+    },
+    {
+      "label": "enrichSeedProduct()",
+      "file_type": "code",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L139",
+      "id": "seed_product_catalog_enrichseedproduct",
+      "community": 1,
+      "norm_label": "enrichseedproduct()"
+    },
+    {
+      "label": "product-ids.ts",
+      "file_type": "code",
+      "source_file": "lib/seed/product-ids.ts",
+      "source_location": "L1",
+      "id": "lib_seed_product_ids_ts",
+      "community": 1,
+      "norm_label": "product-ids.ts"
+    },
+    {
+      "label": "SEED_PRODUCT_IDS",
+      "file_type": "code",
+      "source_file": "lib/seed/product-ids.ts",
+      "source_location": "L1",
+      "id": "seed_product_ids_seed_product_ids",
+      "community": 1,
+      "norm_label": "seed_product_ids"
+    },
+    {
+      "label": "isSeedProductId()",
+      "file_type": "code",
+      "source_file": "lib/seed/product-ids.ts",
+      "source_location": "L13",
+      "id": "seed_product_ids_isseedproductid",
+      "community": 1,
+      "norm_label": "isseedproductid()"
     },
     {
       "label": "app-data.ts",
@@ -3303,7 +3510,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L11",
       "id": "types_conflicts_conflictwarning",
-      "community": 2,
+      "community": 0,
       "norm_label": "conflictwarning"
     },
     {
@@ -3391,7 +3598,7 @@
       "label": "ProductLookupResult",
       "file_type": "code",
       "source_file": "lib/types/product.ts",
-      "source_location": "L33",
+      "source_location": "L42",
       "id": "types_product_productlookupresult",
       "community": 8,
       "norm_label": "productlookupresult"
@@ -3440,6 +3647,33 @@
       "id": "types_settings_appsettings",
       "community": 1,
       "norm_label": "appsettings"
+    },
+    {
+      "label": "generate-product-svgs.mjs",
+      "file_type": "code",
+      "source_file": "scripts/generate-product-svgs.mjs",
+      "source_location": "L1",
+      "id": "scripts_generate_product_svgs_mjs",
+      "community": 24,
+      "norm_label": "generate-product-svgs.mjs"
+    },
+    {
+      "label": "products",
+      "file_type": "code",
+      "source_file": "scripts/generate-product-svgs.mjs",
+      "source_location": "L5",
+      "id": "scripts_generate_product_svgs_products",
+      "community": 24,
+      "norm_label": "products"
+    },
+    {
+      "label": "svg",
+      "file_type": "code",
+      "source_file": "scripts/generate-product-svgs.mjs",
+      "source_location": "L57",
+      "id": "scripts_generate_product_svgs_svg",
+      "community": 24,
+      "norm_label": "svg"
     },
     {
       "label": "AGENTS.md",
@@ -3505,10 +3739,19 @@
       "norm_label": "what does not work (or is incomplete)"
     },
     {
-      "label": "Requirements",
+      "label": "Roadmap (summary)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L27",
+      "id": "skin_care_for_me_webapp_readme_roadmap_summary",
+      "community": 9,
+      "norm_label": "roadmap (summary)"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L39",
       "id": "skin_care_for_me_webapp_readme_requirements",
       "community": 9,
       "norm_label": "requirements"
@@ -3517,7 +3760,7 @@
       "label": "Quick start",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L32",
+      "source_location": "L44",
       "id": "skin_care_for_me_webapp_readme_quick_start",
       "community": 9,
       "norm_label": "quick start"
@@ -3526,7 +3769,7 @@
       "label": "code:bash (npm install)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L34",
+      "source_location": "L46",
       "id": "skin_care_for_me_webapp_readme_codeblock_1",
       "community": 9,
       "norm_label": "code:bash (npm install)"
@@ -3535,7 +3778,7 @@
       "label": "Optional: real AI product lookup",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L41",
+      "source_location": "L53",
       "id": "skin_care_for_me_webapp_readme_optional_real_ai_product_lookup",
       "community": 9,
       "norm_label": "optional: real ai product lookup"
@@ -3544,16 +3787,34 @@
       "label": "code:env (OPENAI_API_KEY=sk-...)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L45",
+      "source_location": "L57",
       "id": "skin_care_for_me_webapp_readme_codeblock_2",
       "community": 9,
       "norm_label": "code:env (openai_api_key=sk-...)"
     },
     {
+      "label": "Optional: Amazon affiliate links",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L63",
+      "id": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links",
+      "community": 9,
+      "norm_label": "optional: amazon affiliate links"
+    },
+    {
+      "label": "code:env (NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=yourtag-20)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L67",
+      "id": "skin_care_for_me_webapp_readme_codeblock_3",
+      "community": 9,
+      "norm_label": "code:env (next_public_amazon_associate_tag=yourtag-20)"
+    },
+    {
       "label": "Production build",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L51",
+      "source_location": "L73",
       "id": "skin_care_for_me_webapp_readme_production_build",
       "community": 9,
       "norm_label": "production build"
@@ -3562,8 +3823,8 @@
       "label": "code:bash (npm run build)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L53",
-      "id": "skin_care_for_me_webapp_readme_codeblock_3",
+      "source_location": "L75",
+      "id": "skin_care_for_me_webapp_readme_codeblock_4",
       "community": 9,
       "norm_label": "code:bash (npm run build)"
     },
@@ -3571,7 +3832,7 @@
       "label": "Scripts",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L58",
+      "source_location": "L80",
       "id": "skin_care_for_me_webapp_readme_scripts",
       "community": 9,
       "norm_label": "scripts"
@@ -3580,25 +3841,25 @@
       "label": "Project layout",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L69",
+      "source_location": "L91",
       "id": "skin_care_for_me_webapp_readme_project_layout",
       "community": 9,
       "norm_label": "project layout"
     },
     {
-      "label": "code:block4 (app/                    Next.js App Router pages and API rou)",
+      "label": "code:block5 (app/                    Next.js App Router pages and API rou)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L71",
-      "id": "skin_care_for_me_webapp_readme_codeblock_4",
+      "source_location": "L93",
+      "id": "skin_care_for_me_webapp_readme_codeblock_5",
       "community": 9,
-      "norm_label": "code:block4 (app/                    next.js app router pages and api rou)"
+      "norm_label": "code:block5 (app/                    next.js app router pages and api rou)"
     },
     {
       "label": "Documentation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L108",
+      "source_location": "L130",
       "id": "skin_care_for_me_webapp_readme_documentation",
       "community": 9,
       "norm_label": "documentation"
@@ -3607,7 +3868,7 @@
       "label": "Tech stack",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L116",
+      "source_location": "L141",
       "id": "skin_care_for_me_webapp_readme_tech_stack",
       "community": 9,
       "norm_label": "tech stack"
@@ -3616,7 +3877,7 @@
       "label": "License",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L125",
+      "source_location": "L150",
       "id": "skin_care_for_me_webapp_readme_license",
       "community": 9,
       "norm_label": "license"
@@ -3791,6 +4052,411 @@
       "id": "docs_architecture_what_is_not_architected_yet",
       "community": 16,
       "norm_label": "what is not architected yet"
+    },
+    {
+      "label": "BACKLOG.md",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L1",
+      "id": "docs_backlog_md",
+      "community": 21,
+      "norm_label": "backlog.md"
+    },
+    {
+      "label": "Product backlog",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L1",
+      "id": "docs_backlog_product_backlog",
+      "community": 21,
+      "norm_label": "product backlog"
+    },
+    {
+      "label": "Epic summary",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L12",
+      "id": "docs_backlog_epic_summary",
+      "community": 21,
+      "norm_label": "epic summary"
+    },
+    {
+      "label": "E1 \u2014 Shelf management",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L27",
+      "id": "docs_backlog_e1_shelf_management",
+      "community": 21,
+      "norm_label": "e1 \u2014 shelf management"
+    },
+    {
+      "label": "PROD-101 \u00b7 Edit existing product",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L31",
+      "id": "docs_backlog_prod_101_edit_existing_product",
+      "community": 21,
+      "norm_label": "prod-101 \u00b7 edit existing product"
+    },
+    {
+      "label": "PROD-102 \u00b7 Delete confirmation for user products",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L51",
+      "id": "docs_backlog_prod_102_delete_confirmation_for_user_products",
+      "community": 21,
+      "norm_label": "prod-102 \u00b7 delete confirmation for user products"
+    },
+    {
+      "label": "PROD-103 \u00b7 Duplicate product detection",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L65",
+      "id": "docs_backlog_prod_103_duplicate_product_detection",
+      "community": 21,
+      "norm_label": "prod-103 \u00b7 duplicate product detection"
+    },
+    {
+      "label": "PROD-104 \u00b7 Manual product entry (no AI)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L79",
+      "id": "docs_backlog_prod_104_manual_product_entry_no_ai",
+      "community": 21,
+      "norm_label": "prod-104 \u00b7 manual product entry (no ai)"
+    },
+    {
+      "label": "E2 \u2014 Scheduling & Today",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L93",
+      "id": "docs_backlog_e2_scheduling_today",
+      "community": 21,
+      "norm_label": "e2 \u2014 scheduling & today"
+    },
+    {
+      "label": "PROD-201 \u00b7 Configurable weekly day",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L97",
+      "id": "docs_backlog_prod_201_configurable_weekly_day",
+      "community": 21,
+      "norm_label": "prod-201 \u00b7 configurable weekly day"
+    },
+    {
+      "label": "PROD-202 \u00b7 Monthly cadence options",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L117",
+      "id": "docs_backlog_prod_202_monthly_cadence_options",
+      "community": 21,
+      "norm_label": "prod-202 \u00b7 monthly cadence options"
+    },
+    {
+      "label": "PROD-203 \u00b7 Routine step reorder (per routine)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L131",
+      "id": "docs_backlog_prod_203_routine_step_reorder_per_routine",
+      "community": 21,
+      "norm_label": "prod-203 \u00b7 routine step reorder (per routine)"
+    },
+    {
+      "label": "PROD-204 \u00b7 Hide product from routine (without delete)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L145",
+      "id": "docs_backlog_prod_204_hide_product_from_routine_without_delete",
+      "community": 21,
+      "norm_label": "prod-204 \u00b7 hide product from routine (without delete)"
+    },
+    {
+      "label": "PROD-205 \u00b7 Empty Today state improvements",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L159",
+      "id": "docs_backlog_prod_205_empty_today_state_improvements",
+      "community": 21,
+      "norm_label": "prod-205 \u00b7 empty today state improvements"
+    },
+    {
+      "label": "E3 \u2014 Ingredient intelligence",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L173",
+      "id": "docs_backlog_e3_ingredient_intelligence",
+      "community": 21,
+      "norm_label": "e3 \u2014 ingredient intelligence"
+    },
+    {
+      "label": "PROD-301 \u00b7 Shelf-wide conflict banner on Products",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L177",
+      "id": "docs_backlog_prod_301_shelf_wide_conflict_banner_on_products",
+      "community": 21,
+      "norm_label": "prod-301 \u00b7 shelf-wide conflict banner on products"
+    },
+    {
+      "label": "PROD-302 \u00b7 Externalized conflict rules",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L191",
+      "id": "docs_backlog_prod_302_externalized_conflict_rules",
+      "community": 21,
+      "norm_label": "prod-302 \u00b7 externalized conflict rules"
+    },
+    {
+      "label": "PROD-303 \u00b7 Expand rule set to 30+ pairs",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L205",
+      "id": "docs_backlog_prod_303_expand_rule_set_to_30_pairs",
+      "community": 21,
+      "norm_label": "prod-303 \u00b7 expand rule set to 30+ pairs"
+    },
+    {
+      "label": "PROD-304 \u00b7 Cross-routine conflict hints",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L221",
+      "id": "docs_backlog_prod_304_cross_routine_conflict_hints",
+      "community": 21,
+      "norm_label": "prod-304 \u00b7 cross-routine conflict hints"
+    },
+    {
+      "label": "PROD-305 \u00b7 \"Why this warning?\" explainer",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L235",
+      "id": "docs_backlog_prod_305_why_this_warning_explainer",
+      "community": 21,
+      "norm_label": "prod-305 \u00b7 \"why this warning?\" explainer"
+    },
+    {
+      "label": "E4 \u2014 Cycle & sensitivity",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L249",
+      "id": "docs_backlog_e4_cycle_sensitivity",
+      "community": 21,
+      "norm_label": "e4 \u2014 cycle & sensitivity"
+    },
+    {
+      "label": "PROD-401 \u00b7 Cycle onboarding copy & validation",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L253",
+      "id": "docs_backlog_prod_401_cycle_onboarding_copy_validation",
+      "community": 21,
+      "norm_label": "prod-401 \u00b7 cycle onboarding copy & validation"
+    },
+    {
+      "label": "PROD-402 \u00b7 Sensitivity mode (pregnancy / retinol newbie)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L267",
+      "id": "docs_backlog_prod_402_sensitivity_mode_pregnancy_retinol_newbie",
+      "community": 21,
+      "norm_label": "prod-402 \u00b7 sensitivity mode (pregnancy / retinol newbie)"
+    },
+    {
+      "label": "PROD-403 \u00b7 Weekly/monthly harsh active respect in luteal",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L281",
+      "id": "docs_backlog_prod_403_weekly_monthly_harsh_active_respect_in_luteal",
+      "community": 21,
+      "norm_label": "prod-403 \u00b7 weekly/monthly harsh active respect in luteal"
+    },
+    {
+      "label": "E5 \u2014 Data & privacy",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L295",
+      "id": "docs_backlog_e5_data_privacy",
+      "community": 21,
+      "norm_label": "e5 \u2014 data & privacy"
+    },
+    {
+      "label": "PROD-501 \u00b7 JSON export",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L299",
+      "id": "docs_backlog_prod_501_json_export",
+      "community": 21,
+      "norm_label": "prod-501 \u00b7 json export"
+    },
+    {
+      "label": "PROD-502 \u00b7 JSON import with merge",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L313",
+      "id": "docs_backlog_prod_502_json_import_with_merge",
+      "community": 21,
+      "norm_label": "prod-502 \u00b7 json import with merge"
+    },
+    {
+      "label": "PROD-503 \u00b7 Clear all data",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L329",
+      "id": "docs_backlog_prod_503_clear_all_data",
+      "community": 21,
+      "norm_label": "prod-503 \u00b7 clear all data"
+    },
+    {
+      "label": "PROD-504 \u00b7 Optional encrypted sync",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L343",
+      "id": "docs_backlog_prod_504_optional_encrypted_sync",
+      "community": 21,
+      "norm_label": "prod-504 \u00b7 optional encrypted sync"
+    },
+    {
+      "label": "E6 \u2014 Onboarding & UX",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L357",
+      "id": "docs_backlog_e6_onboarding_ux",
+      "community": 21,
+      "norm_label": "e6 \u2014 onboarding & ux"
+    },
+    {
+      "label": "PROD-601 \u00b7 First-run onboarding flow",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L361",
+      "id": "docs_backlog_prod_601_first_run_onboarding_flow",
+      "community": 21,
+      "norm_label": "prod-601 \u00b7 first-run onboarding flow"
+    },
+    {
+      "label": "PROD-602 \u00b7 Seed shelf intro card",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L375",
+      "id": "docs_backlog_prod_602_seed_shelf_intro_card",
+      "community": 21,
+      "norm_label": "prod-602 \u00b7 seed shelf intro card"
+    },
+    {
+      "label": "PROD-603 \u00b7 Dark mode toggle",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L389",
+      "id": "docs_backlog_prod_603_dark_mode_toggle",
+      "community": 21,
+      "norm_label": "prod-603 \u00b7 dark mode toggle"
+    },
+    {
+      "label": "PROD-604 \u00b7 Branded PDF guide",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L403",
+      "id": "docs_backlog_prod_604_branded_pdf_guide",
+      "community": 21,
+      "norm_label": "prod-604 \u00b7 branded pdf guide"
+    },
+    {
+      "label": "E7 \u2014 Habit & engagement",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L417",
+      "id": "docs_backlog_e7_habit_engagement",
+      "community": 21,
+      "norm_label": "e7 \u2014 habit & engagement"
+    },
+    {
+      "label": "PROD-701 \u00b7 Mark routine steps complete",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L421",
+      "id": "docs_backlog_prod_701_mark_routine_steps_complete",
+      "community": 21,
+      "norm_label": "prod-701 \u00b7 mark routine steps complete"
+    },
+    {
+      "label": "PROD-702 \u00b7 AM/PM reminders",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L435",
+      "id": "docs_backlog_prod_702_am_pm_reminders",
+      "community": 21,
+      "norm_label": "prod-702 \u00b7 am/pm reminders"
+    },
+    {
+      "label": "PROD-703 \u00b7 Streak display (optional)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L451",
+      "id": "docs_backlog_prod_703_streak_display_optional",
+      "community": 21,
+      "norm_label": "prod-703 \u00b7 streak display (optional)"
+    },
+    {
+      "label": "E8 \u2014 Platform & growth",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L465",
+      "id": "docs_backlog_e8_platform_growth",
+      "community": 21,
+      "norm_label": "e8 \u2014 platform & growth"
+    },
+    {
+      "label": "PROD-801 \u00b7 PWA install + offline shell",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L469",
+      "id": "docs_backlog_prod_801_pwa_install_offline_shell",
+      "community": 21,
+      "norm_label": "prod-801 \u00b7 pwa install + offline shell"
+    },
+    {
+      "label": "PROD-802 \u00b7 Lookup result cache",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L483",
+      "id": "docs_backlog_prod_802_lookup_result_cache",
+      "community": 21,
+      "norm_label": "prod-802 \u00b7 lookup result cache"
+    },
+    {
+      "label": "PROD-803 \u00b7 Barcode scan add",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L497",
+      "id": "docs_backlog_prod_803_barcode_scan_add",
+      "community": 21,
+      "norm_label": "prod-803 \u00b7 barcode scan add"
+    },
+    {
+      "label": "PROD-804 \u00b7 CI pipeline",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L511",
+      "id": "docs_backlog_prod_804_ci_pipeline",
+      "community": 21,
+      "norm_label": "prod-804 \u00b7 ci pipeline"
+    },
+    {
+      "label": "Suggested sprint 1 (v0.2 kickoff)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L525",
+      "id": "docs_backlog_suggested_sprint_1_v0_2_kickoff",
+      "community": 21,
+      "norm_label": "suggested sprint 1 (v0.2 kickoff)"
+    },
+    {
+      "label": "Backlog hygiene",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L542",
+      "id": "docs_backlog_backlog_hygiene",
+      "community": 21,
+      "norm_label": "backlog hygiene"
     },
     {
       "label": "DATA-AND-STORAGE.md",
@@ -4063,6 +4729,87 @@
       "norm_label": "suggested next work (not committed)"
     },
     {
+      "label": "PRODUCT-VISION.md",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L1",
+      "id": "docs_product_vision_md",
+      "community": 23,
+      "norm_label": "product-vision.md"
+    },
+    {
+      "label": "Product vision",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L1",
+      "id": "docs_product_vision_product_vision",
+      "community": 23,
+      "norm_label": "product vision"
+    },
+    {
+      "label": "Problem",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L5",
+      "id": "docs_product_vision_problem",
+      "community": 23,
+      "norm_label": "problem"
+    },
+    {
+      "label": "North star",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L14",
+      "id": "docs_product_vision_north_star",
+      "community": 23,
+      "norm_label": "north star"
+    },
+    {
+      "label": "Target users",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L18",
+      "id": "docs_product_vision_target_users",
+      "community": 23,
+      "norm_label": "target users"
+    },
+    {
+      "label": "Product principles",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L27",
+      "id": "docs_product_vision_product_principles",
+      "community": 23,
+      "norm_label": "product principles"
+    },
+    {
+      "label": "Success metrics (v0.2+)",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L35",
+      "id": "docs_product_vision_success_metrics_v0_2",
+      "community": 23,
+      "norm_label": "success metrics (v0.2+)"
+    },
+    {
+      "label": "Non-goals (for now)",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L47",
+      "id": "docs_product_vision_non_goals_for_now",
+      "community": 23,
+      "norm_label": "non-goals (for now)"
+    },
+    {
+      "label": "Related docs",
+      "file_type": "document",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L54",
+      "id": "docs_product_vision_related_docs",
+      "community": 23,
+      "norm_label": "related docs"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "docs/README.md",
@@ -4081,6 +4828,123 @@
       "norm_label": "documentation"
     },
     {
+      "label": "Product",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L5",
+      "id": "docs_readme_product",
+      "community": 19,
+      "norm_label": "product"
+    },
+    {
+      "label": "Engineering",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L13",
+      "id": "docs_readme_engineering",
+      "community": 19,
+      "norm_label": "engineering"
+    },
+    {
+      "label": "ROADMAP.md",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L1",
+      "id": "docs_roadmap_md",
+      "community": 22,
+      "norm_label": "roadmap.md"
+    },
+    {
+      "label": "Product roadmap",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L1",
+      "id": "docs_roadmap_product_roadmap",
+      "community": 22,
+      "norm_label": "product roadmap"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L10",
+      "id": "docs_roadmap_overview",
+      "community": 22,
+      "norm_label": "overview"
+    },
+    {
+      "label": "code:mermaid (gantt)",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L12",
+      "id": "docs_roadmap_codeblock_1",
+      "community": 22,
+      "norm_label": "code:mermaid (gantt)"
+    },
+    {
+      "label": "Phase 0 \u2014 Foundation \u2705 (shipped v0.1)",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L33",
+      "id": "docs_roadmap_phase_0_foundation_shipped_v0_1",
+      "community": 22,
+      "norm_label": "phase 0 \u2014 foundation \u2705 (shipped v0.1)"
+    },
+    {
+      "label": "Phase 1 \u2014 Daily driver (target: v0.2)",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L50",
+      "id": "docs_roadmap_phase_1_daily_driver_target_v0_2",
+      "community": 22,
+      "norm_label": "phase 1 \u2014 daily driver (target: v0.2)"
+    },
+    {
+      "label": "Phase 2 \u2014 Trust & polish (target: v0.3)",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L70",
+      "id": "docs_roadmap_phase_2_trust_polish_target_v0_3",
+      "community": 22,
+      "norm_label": "phase 2 \u2014 trust & polish (target: v0.3)"
+    },
+    {
+      "label": "Phase 3 \u2014 Habit loop (target: v0.4)",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L88",
+      "id": "docs_roadmap_phase_3_habit_loop_target_v0_4",
+      "community": 22,
+      "norm_label": "phase 3 \u2014 habit loop (target: v0.4)"
+    },
+    {
+      "label": "Phase 4 \u2014 Platform (target: v1.0)",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L106",
+      "id": "docs_roadmap_phase_4_platform_target_v1_0",
+      "community": 22,
+      "norm_label": "phase 4 \u2014 platform (target: v1.0)"
+    },
+    {
+      "label": "How priorities are set",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L123",
+      "id": "docs_roadmap_how_priorities_are_set",
+      "community": 22,
+      "norm_label": "how priorities are set"
+    },
+    {
+      "label": "Phase gate checklist",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L132",
+      "id": "docs_roadmap_phase_gate_checklist",
+      "community": 22,
+      "norm_label": "phase gate checklist"
+    },
+    {
       "label": "metadata",
       "file_type": "code",
       "source_file": "app/layout.tsx",
@@ -4090,11 +4954,29 @@
       "norm_label": "metadata"
     },
     {
+      "label": "SEED_PRODUCT_IDS",
+      "file_type": "code",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L5",
+      "community": 1,
+      "norm_label": "seed_product_ids",
+      "id": "seed_default_products_seed_product_ids"
+    },
+    {
+      "label": "isSeedProductId()",
+      "file_type": "code",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L257",
+      "community": 1,
+      "norm_label": "isseedproductid()",
+      "id": "seed_default_products_isseedproductid"
+    },
+    {
       "label": "ingredient-interactions.tsx",
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L1",
-      "community": 2,
+      "community": 0,
       "norm_label": "ingredient-interactions.tsx",
       "id": "components_conflicts_ingredient_interactions_tsx"
     },
@@ -4103,7 +4985,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L23",
-      "community": 2,
+      "community": 0,
       "norm_label": "severity_styles",
       "id": "conflicts_ingredient_interactions_severity_styles"
     },
@@ -4130,7 +5012,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L75",
-      "community": 2,
+      "community": 0,
       "norm_label": "interactiondetailssheet()",
       "id": "conflicts_ingredient_interactions_interactiondetailssheet"
     },
@@ -4139,7 +5021,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L108",
-      "community": 2,
+      "community": 0,
       "norm_label": "stepinteractionhint()",
       "id": "conflicts_ingredient_interactions_stepinteractionhint"
     },
@@ -4148,7 +5030,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L158",
-      "community": 2,
+      "community": 0,
       "norm_label": "routineinteractionbadge()",
       "id": "conflicts_ingredient_interactions_routineinteractionbadge"
     },
@@ -4157,7 +5039,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L194",
-      "community": 2,
+      "community": 0,
       "norm_label": "interactionsummarybar()",
       "id": "conflicts_ingredient_interactions_interactionsummarybar"
     },
@@ -4256,7 +5138,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L72",
-      "community": 2,
+      "community": 1,
       "norm_label": "conflictwarning",
       "id": "lib_types_conflictwarning"
     },
@@ -4382,7 +5264,7 @@
       "file_type": "code",
       "source_file": "app/products/page.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 2,
       "norm_label": "page.tsx",
       "id": "app_products_page_tsx"
     },
@@ -4391,7 +5273,7 @@
       "file_type": "code",
       "source_file": "app/routines/page.tsx",
       "source_location": "L1",
-      "community": 0,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "app_routines_page_tsx"
     },
@@ -4400,7 +5282,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/conflict-list.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 2,
       "norm_label": "conflict-list.tsx",
       "id": "components_conflicts_conflict_list_tsx"
     },
@@ -4409,7 +5291,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/conflict-list.tsx",
       "source_location": "L8",
-      "community": 6,
+      "community": 2,
       "norm_label": "severity_styles",
       "id": "conflicts_conflict_list_severity_styles"
     },
@@ -9798,6 +10680,28 @@
       "source_file": "components/pages/products-page.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "source": "components_pages_products_page_tsx",
+      "target": "components_products_affiliate_disclosure_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/products-page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_pages_products_page_tsx",
+      "target": "products_affiliate_disclosure_affiliatedisclosure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/products-page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "components_pages_products_page_tsx",
       "target": "components_products_add_product_sheet_tsx"
@@ -10381,6 +11285,16 @@
       "target": "products_add_product_sheet_addproductsheet"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/affiliate-disclosure.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_products_affiliate_disclosure_tsx",
+      "target": "products_affiliate_disclosure_affiliatedisclosure",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -10390,6 +11304,50 @@
       "confidence_score": 1.0,
       "source": "components_products_product_card_tsx",
       "target": "lib_types_index_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-card.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_products_product_card_tsx",
+      "target": "components_products_product_ingredients_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-card.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_products_product_card_tsx",
+      "target": "products_product_ingredients_productingredients",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-card.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_products_product_card_tsx",
+      "target": "components_products_product_links_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-card.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_products_product_card_tsx",
+      "target": "products_product_links_productlinks",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -10511,6 +11469,16 @@
       "target": "products_product_card_productcard"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-card.tsx",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "components_products_product_card_tsx",
+      "target": "products_product_card_productimage",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -10564,6 +11532,123 @@
       "confidence_score": 1.0,
       "source": "products_product_card_productcardprops",
       "target": "lib_types_product"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-ingredients.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_products_product_ingredients_tsx",
+      "target": "components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-ingredients.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_products_product_ingredients_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-ingredients.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_products_product_ingredients_tsx",
+      "target": "products_product_ingredients_productingredientsprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-ingredients.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_products_product_ingredients_tsx",
+      "target": "products_product_ingredients_productingredients",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_products_product_links_tsx",
+      "target": "lib_products_affiliate_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "components_products_product_links_tsx",
+      "target": "products_affiliate_buildamazonaffiliateurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_products_product_links_tsx",
+      "target": "components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "components_products_product_links_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_products_product_links_tsx",
+      "target": "products_product_links_productlinksprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "components_products_product_links_tsx",
+      "target": "products_product_links_productlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/products/product-links.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "products_product_links_productlinks",
+      "target": "products_affiliate_buildamazonaffiliateurl"
     },
     {
       "relation": "imports_from",
@@ -13218,9 +14303,9 @@
       "source_file": "hooks/use-app-data.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hooks_use_app_data_ts",
-      "target": "lib_db_ensureseedproducts",
-      "confidence_score": 1.0
+      "target": "lib_db_ensureseedproducts"
     },
     {
       "relation": "imports_from",
@@ -13251,9 +14336,9 @@
       "source_file": "hooks/use-app-data.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hooks_use_app_data_ts",
-      "target": "services_app_data_readappdatasnapshot",
-      "confidence_score": 1.0
+      "target": "services_app_data_readappdatasnapshot"
     },
     {
       "relation": "imports",
@@ -13650,9 +14735,9 @@
       "source_file": "lib/db.ts",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_db_ts",
-      "target": "lib_db_listproducts",
-      "confidence_score": 1.0
+      "target": "lib_db_listproducts"
     },
     {
       "relation": "contains",
@@ -13951,9 +15036,9 @@
       "source_file": "lib/db.ts",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_db_getallproducts",
-      "target": "lib_db_listproducts",
-      "confidence_score": 1.0
+      "target": "lib_db_listproducts"
     },
     {
       "relation": "imports",
@@ -13962,9 +15047,9 @@
       "source_file": "lib/services/app-data.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_services_app_data_ts",
-      "target": "lib_db_listproducts",
-      "confidence_score": 1.0
+      "target": "lib_db_listproducts"
     },
     {
       "relation": "calls",
@@ -15544,6 +16629,59 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "lib/products/affiliate.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_products_affiliate_test_ts",
+      "target": "lib_products_affiliate_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/products/affiliate.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_products_affiliate_test_ts",
+      "target": "products_affiliate_buildamazonaffiliateurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/products/affiliate.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_products_affiliate_test_ts",
+      "target": "products_affiliate_hasamazonaffiliatetag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/products/affiliate.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_products_affiliate_ts",
+      "target": "products_affiliate_buildamazonaffiliateurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/products/affiliate.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "lib_products_affiliate_ts",
+      "target": "products_affiliate_hasamazonaffiliatetag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "lib/products/factory.test.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -16422,9 +17560,9 @@
       "source_file": "lib/services/app-data.ts",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_app_data_deriveappdatasnapshot",
-      "target": "routines_generator_generateroutines",
-      "confidence_score": 1.0
+      "target": "routines_generator_generateroutines"
     },
     {
       "relation": "calls",
@@ -16765,9 +17903,9 @@
       "source_file": "lib/services/app-data.ts",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_app_data_deriveappdatasnapshot",
-      "target": "rules_ingredient_conflicts_detectconflicts",
-      "confidence_score": 1.0
+      "target": "rules_ingredient_conflicts_detectconflicts"
     },
     {
       "relation": "calls",
@@ -16792,14 +17930,69 @@
       "target": "lib_types_index_ts"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_seed_default_products_ts",
+      "target": "lib_seed_product_catalog_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_seed_default_products_ts",
+      "target": "seed_product_catalog_enrichseedproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
       "confidence": "EXTRACTED",
       "source_file": "lib/seed/default-products.ts",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "lib_seed_default_products_ts",
-      "target": "seed_default_products_seed_product_ids"
+      "target": "lib_seed_product_ids_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_seed_default_products_ts",
+      "target": "seed_product_ids_seed_product_ids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_seed_default_products_ts",
+      "target": "seed_product_ids_isseedproductid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "lib_seed_default_products_ts",
+      "target": "seed_default_products_base_default_products",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16812,16 +18005,6 @@
       "target": "seed_default_products_default_products"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "lib/seed/default-products.ts",
-      "source_location": "L257",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_seed_default_products_ts",
-      "target": "seed_default_products_isseedproductid"
-    },
-    {
       "relation": "re_exports",
       "context": "export",
       "confidence": "EXTRACTED",
@@ -16831,6 +18014,17 @@
       "confidence_score": 1.0,
       "source": "lib_seed_index_ts",
       "target": "lib_seed_default_products_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "lib_seed_default_products_ts",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -16853,6 +18047,26 @@
       "confidence_score": 1.0,
       "source": "lib_seed_default_products_ts",
       "target": "types_product_product"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_seed_default_products_ts",
+      "target": "seed_default_products_seed_product_ids"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/default-products.ts",
+      "source_location": "L257",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_seed_default_products_ts",
+      "target": "seed_default_products_isseedproductid"
     },
     {
       "relation": "imports_from",
@@ -16885,6 +18099,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_seed_index_ts",
+      "target": "seed_default_products_default_products"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "seed_default_products_default_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/index.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_seed_index_ts",
       "target": "seed_default_products_seed_product_ids"
     },
     {
@@ -16896,18 +18132,219 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_seed_index_ts",
-      "target": "seed_default_products_default_products"
+      "target": "seed_default_products_isseedproductid"
     },
     {
-      "relation": "re_exports",
-      "context": "re-export",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "lib/seed/index.ts",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "lib_seed_product_catalog_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "seed_product_catalog_enrichseedproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "seed_product_catalog_getseedcatalogentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "lib_seed_product_ids_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "seed_product_ids_seed_product_ids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "seed_product_catalog_test_entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.test.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_test_ts",
+      "target": "seed_product_catalog_test_enriched",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "lib_types_index_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "lib_seed_product_ids_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "seed_product_ids_seed_product_ids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "seed_product_catalog_seedproductcatalogentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "seed_product_catalog_seed_product_catalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "seed_product_catalog_getseedcatalogentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "seed_product_catalog_enrichseedproduct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_seed_product_catalog_ts",
+      "target": "types_product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-catalog.ts",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "seed_product_catalog_enrichseedproduct",
+      "target": "seed_product_catalog_getseedcatalogentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-ids.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_seed_product_ids_ts",
+      "target": "seed_product_ids_seed_product_ids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/seed/product-ids.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lib_seed_product_ids_ts",
+      "target": "seed_product_ids_isseedproductid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/services/app-data.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "lib_services_app_data_ts",
+      "target": "seed_product_ids_isseedproductid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source": "lib_seed_index_ts",
-      "target": "seed_default_products_isseedproductid"
+      "source_file": "lib/services/app-data.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "services_app_data_removeproductbyid",
+      "target": "seed_product_ids_isseedproductid"
     },
     {
       "relation": "imports",
@@ -16918,17 +18355,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_services_app_data_ts",
-      "target": "seed_default_products_isseedproductid"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/services/app-data.ts",
-      "source_location": "L52",
-      "weight": 1.0,
-      "source": "services_app_data_removeproductbyid",
       "target": "seed_default_products_isseedproductid"
     },
     {
@@ -16958,9 +18384,9 @@
       "source_file": "lib/services/app-data.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_services_app_data_ts",
-      "target": "services_app_data_readappdatasnapshot",
-      "confidence_score": 1.0
+      "target": "services_app_data_readappdatasnapshot"
     },
     {
       "relation": "contains",
@@ -16968,9 +18394,9 @@
       "source_file": "lib/services/app-data.ts",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_services_app_data_ts",
-      "target": "services_app_data_deriveappdatasnapshot",
-      "confidence_score": 1.0
+      "target": "services_app_data_deriveappdatasnapshot"
     },
     {
       "relation": "contains",
@@ -17228,9 +18654,9 @@
       "source_file": "lib/services/app-data.ts",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_app_data_readappdatasnapshot",
-      "target": "services_app_data_deriveappdatasnapshot",
-      "confidence_score": 1.0
+      "target": "services_app_data_deriveappdatasnapshot"
     },
     {
       "relation": "calls",
@@ -17239,9 +18665,9 @@
       "source_file": "lib/services/app-data.ts",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_app_data_refreshappdata",
-      "target": "services_app_data_deriveappdatasnapshot",
-      "confidence_score": 1.0
+      "target": "services_app_data_deriveappdatasnapshot"
     },
     {
       "relation": "calls",
@@ -17275,6 +18701,17 @@
       "confidence_score": 1.0,
       "source": "services_app_data_updateappsettings",
       "target": "services_app_data_refreshappdata"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/services/app-data.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "services_app_data_removeproductbyid",
+      "target": "seed_default_products_isseedproductid"
     },
     {
       "relation": "imports_from",
@@ -17815,6 +19252,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-product-svgs.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scripts_generate_product_svgs_mjs",
+      "target": "scripts_generate_product_svgs_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/generate-product-svgs.mjs",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "scripts_generate_product_svgs_mjs",
+      "target": "scripts_generate_product_svgs_svg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
       "source_location": "L2",
       "weight": 1.0,
@@ -17881,6 +19338,16 @@
       "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_readme_skin_care_for_me",
       "target": "skin_care_for_me_webapp_readme_what_does_not_work_or_is_incomplete"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "skin_care_for_me_webapp_readme_skin_care_for_me",
+      "target": "skin_care_for_me_webapp_readme_roadmap_summary",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -17976,6 +19443,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "skin_care_for_me_webapp_readme_quick_start",
+      "target": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L52",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -18006,6 +19483,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links",
+      "target": "skin_care_for_me_webapp_readme_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L54",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -18016,11 +19503,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "skin_care_for_me_webapp_readme_production_build",
+      "target": "skin_care_for_me_webapp_readme_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L70",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_readme_project_layout",
       "target": "skin_care_for_me_webapp_readme_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "skin_care_for_me_webapp_readme_project_layout",
+      "target": "skin_care_for_me_webapp_readme_codeblock_5",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -18201,6 +19708,446 @@
       "confidence_score": 1.0,
       "source": "docs_architecture_ingredient_conflicts",
       "target": "docs_architecture_where_warnings_appear_in_the_ui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_backlog_md",
+      "target": "docs_backlog_product_backlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_epic_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e1_shelf_management",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e2_scheduling_today",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e3_ingredient_intelligence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L249",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e4_cycle_sensitivity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e5_data_privacy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L357",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e6_onboarding_ux",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L417",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e7_habit_engagement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L465",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e8_platform_growth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L525",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_suggested_sprint_1_v0_2_kickoff",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L542",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_backlog_hygiene",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "docs_backlog_e1_shelf_management",
+      "target": "docs_backlog_prod_101_edit_existing_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "docs_backlog_e1_shelf_management",
+      "target": "docs_backlog_prod_102_delete_confirmation_for_user_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "docs_backlog_e1_shelf_management",
+      "target": "docs_backlog_prod_103_duplicate_product_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "docs_backlog_e1_shelf_management",
+      "target": "docs_backlog_prod_104_manual_product_entry_no_ai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "docs_backlog_e2_scheduling_today",
+      "target": "docs_backlog_prod_201_configurable_weekly_day",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "docs_backlog_e2_scheduling_today",
+      "target": "docs_backlog_prod_202_monthly_cadence_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "docs_backlog_e2_scheduling_today",
+      "target": "docs_backlog_prod_203_routine_step_reorder_per_routine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "docs_backlog_e2_scheduling_today",
+      "target": "docs_backlog_prod_204_hide_product_from_routine_without_delete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "docs_backlog_e2_scheduling_today",
+      "target": "docs_backlog_prod_205_empty_today_state_improvements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "docs_backlog_e3_ingredient_intelligence",
+      "target": "docs_backlog_prod_301_shelf_wide_conflict_banner_on_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "docs_backlog_e3_ingredient_intelligence",
+      "target": "docs_backlog_prod_302_externalized_conflict_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "docs_backlog_e3_ingredient_intelligence",
+      "target": "docs_backlog_prod_303_expand_rule_set_to_30_pairs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "docs_backlog_e3_ingredient_intelligence",
+      "target": "docs_backlog_prod_304_cross_routine_conflict_hints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L235",
+      "weight": 1.0,
+      "source": "docs_backlog_e3_ingredient_intelligence",
+      "target": "docs_backlog_prod_305_why_this_warning_explainer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "docs_backlog_e4_cycle_sensitivity",
+      "target": "docs_backlog_prod_401_cycle_onboarding_copy_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "docs_backlog_e4_cycle_sensitivity",
+      "target": "docs_backlog_prod_402_sensitivity_mode_pregnancy_retinol_newbie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L281",
+      "weight": 1.0,
+      "source": "docs_backlog_e4_cycle_sensitivity",
+      "target": "docs_backlog_prod_403_weekly_monthly_harsh_active_respect_in_luteal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L299",
+      "weight": 1.0,
+      "source": "docs_backlog_e5_data_privacy",
+      "target": "docs_backlog_prod_501_json_export",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L313",
+      "weight": 1.0,
+      "source": "docs_backlog_e5_data_privacy",
+      "target": "docs_backlog_prod_502_json_import_with_merge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L329",
+      "weight": 1.0,
+      "source": "docs_backlog_e5_data_privacy",
+      "target": "docs_backlog_prod_503_clear_all_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L343",
+      "weight": 1.0,
+      "source": "docs_backlog_e5_data_privacy",
+      "target": "docs_backlog_prod_504_optional_encrypted_sync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L361",
+      "weight": 1.0,
+      "source": "docs_backlog_e6_onboarding_ux",
+      "target": "docs_backlog_prod_601_first_run_onboarding_flow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L375",
+      "weight": 1.0,
+      "source": "docs_backlog_e6_onboarding_ux",
+      "target": "docs_backlog_prod_602_seed_shelf_intro_card",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L389",
+      "weight": 1.0,
+      "source": "docs_backlog_e6_onboarding_ux",
+      "target": "docs_backlog_prod_603_dark_mode_toggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L403",
+      "weight": 1.0,
+      "source": "docs_backlog_e6_onboarding_ux",
+      "target": "docs_backlog_prod_604_branded_pdf_guide",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L421",
+      "weight": 1.0,
+      "source": "docs_backlog_e7_habit_engagement",
+      "target": "docs_backlog_prod_701_mark_routine_steps_complete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L435",
+      "weight": 1.0,
+      "source": "docs_backlog_e7_habit_engagement",
+      "target": "docs_backlog_prod_702_am_pm_reminders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L451",
+      "weight": 1.0,
+      "source": "docs_backlog_e7_habit_engagement",
+      "target": "docs_backlog_prod_703_streak_display_optional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L469",
+      "weight": 1.0,
+      "source": "docs_backlog_e8_platform_growth",
+      "target": "docs_backlog_prod_801_pwa_install_offline_shell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L483",
+      "weight": 1.0,
+      "source": "docs_backlog_e8_platform_growth",
+      "target": "docs_backlog_prod_802_lookup_result_cache",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L497",
+      "weight": 1.0,
+      "source": "docs_backlog_e8_platform_growth",
+      "target": "docs_backlog_prod_803_barcode_scan_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L511",
+      "weight": 1.0,
+      "source": "docs_backlog_e8_platform_growth",
+      "target": "docs_backlog_prod_804_ci_pipeline",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -18485,12 +20432,212 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_product_vision_md",
+      "target": "docs_product_vision_product_vision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_product_vision_product_vision",
+      "target": "docs_product_vision_problem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "docs_product_vision_product_vision",
+      "target": "docs_product_vision_north_star",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "docs_product_vision_product_vision",
+      "target": "docs_product_vision_target_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "docs_product_vision_product_vision",
+      "target": "docs_product_vision_product_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "docs_product_vision_product_vision",
+      "target": "docs_product_vision_success_metrics_v0_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "docs_product_vision_product_vision",
+      "target": "docs_product_vision_non_goals_for_now",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PRODUCT-VISION.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "docs_product_vision_product_vision",
+      "target": "docs_product_vision_related_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/README.md",
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_readme_md",
       "target": "docs_readme_documentation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_readme_documentation",
+      "target": "docs_readme_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "docs_readme_documentation",
+      "target": "docs_readme_engineering",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_roadmap_md",
+      "target": "docs_roadmap_product_roadmap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_phase_0_foundation_shipped_v0_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_phase_1_daily_driver_target_v0_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_phase_2_trust_polish_target_v0_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_phase_3_habit_loop_target_v0_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_phase_4_platform_target_v1_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_how_priorities_are_set",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "docs_roadmap_product_roadmap",
+      "target": "docs_roadmap_phase_gate_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "docs_roadmap_overview",
+      "target": "docs_roadmap_codeblock_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -18906,5 +21053,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5d2722db60bbdf4664ac203eb6f4d22a1a5f8bad"
+  "built_at_commit": "0e95496b3eddf7cc3c12a462e3b037c8d813374b"
 }
