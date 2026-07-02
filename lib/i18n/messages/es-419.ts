@@ -118,7 +118,7 @@ export const es419: Messages = {
       title: "Tu cuidado de hoy",
       emptyTitle: "Empieza tu estante",
       emptyDescription:
-        "Agrega los productos que tienes. Las rutinas y las alertas de ingredientes se actualizan solas.",
+        "Tu estante incluye productos de demostración. Agregar los tuyos llegará pronto.",
       emptyRoutines:
         "No hay rutinas para hoy. Revisa las pestañas semanal o mensual.",
     },
@@ -315,6 +315,9 @@ export const es419: Messages = {
     namePlaceholder: "ej. CeraVe Limpiador Hidratante",
     notFound:
       "No encontramos información del producto. Prueba un nombre más específico.",
+    comingSoon: "Próximamente",
+    unavailable:
+      "Buscar y guardar tus productos aún no está listo. El estante de demostración sí funciona.",
   },
   affiliate:
     "Los enlaces de Amazon pueden generar comisión sin costo extra para ti. Configura NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG en tu entorno para usar tu etiqueta de Associates.",

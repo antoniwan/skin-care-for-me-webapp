@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Loader2, Plus, Search } from "lucide-react";
+import { Loader2, Plus, Search, Sparkles } from "lucide-react";
 import { lookupProductAction } from "@/app/(app)/products/actions";
 import type { ProductLookupResult } from "@/lib/types";
 import { ProductMetaBadges } from "@/components/products/product-meta-badges";
 import { useTranslation } from "@/components/providers/locale-provider";
+import { PRODUCT_LOOKUP_ENABLED } from "@/lib/constants/features";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -17,12 +18,57 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
 
 interface AddProductSheetProps {
-  onAdd: (lookup: ProductLookupResult) => Promise<unknown>;
+  onAdd?: (lookup: ProductLookupResult) => Promise<unknown>;
+  className?: string;
 }
 
-export function AddProductSheet({ onAdd }: AddProductSheetProps) {
+export function AddProductSheet({ onAdd, className }: AddProductSheetProps) {
+  if (!PRODUCT_LOOKUP_ENABLED) {
+    return <AddProductUnavailable className={className} />;
+  }
+
+  return <AddProductSheetEnabled onAdd={onAdd} className={className} />;
+}
+
+function AddProductUnavailable({ className }: { className?: string }) {
+  const { t } = useTranslation();
+
+  return (
+    <div
+      className={cn(
+        "flex w-full items-start gap-3 rounded-xl border border-border/70 bg-muted/25 px-4 py-3.5",
+        className,
+      )}
+      role="status"
+    >
+      <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-background shadow-sm ring-1 ring-border/60">
+        <Plus className="size-4 text-muted-foreground" aria-hidden />
+      </div>
+      <div className="min-w-0 flex-1 pt-0.5">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+          <p className="text-sm font-medium text-foreground">
+            {t("common.addProduct")}
+          </p>
+          <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-primary">
+            <Sparkles className="size-3" aria-hidden />
+            {t("addProduct.comingSoon")}
+          </span>
+        </div>
+        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+          {t("addProduct.unavailable")}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function AddProductSheetEnabled({
+  onAdd,
+  className,
+}: AddProductSheetProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -53,7 +99,7 @@ export function AddProductSheet({ onAdd }: AddProductSheetProps) {
   }
 
   async function handleSave() {
-    if (!preview) return;
+    if (!preview || !onAdd) return;
     await onAdd(preview);
     setOpen(false);
     setQuery("");
@@ -64,7 +110,7 @@ export function AddProductSheet({ onAdd }: AddProductSheetProps) {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button className="w-full gap-2" size="lg">
+        <Button className={cn("w-full gap-2", className)} size="lg">
           <Plus className="size-4" />
           {t("common.addProduct")}
         </Button>

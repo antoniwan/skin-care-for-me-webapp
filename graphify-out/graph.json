@@ -1125,7 +1125,7 @@
       "source_file": "components/conflicts/index.ts",
       "source_location": "L1",
       "id": "components_conflicts_index_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "index.ts"
     },
     {
@@ -1134,7 +1134,7 @@
       "source_file": "components/conflicts/interaction-detail.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_detail_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "interaction-detail.tsx"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_file": "components/conflicts/interaction-detail.tsx",
       "source_location": "L10",
       "id": "conflicts_interaction_detail_interactiondetail",
-      "community": 0,
+      "community": 1,
       "norm_label": "interactiondetail()"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "components/conflicts/interaction-details-sheet.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_details_sheet_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "interaction-details-sheet.tsx"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "components/conflicts/interaction-details-sheet.tsx",
       "source_location": "L17",
       "id": "conflicts_interaction_details_sheet_interactiondetailssheet",
-      "community": 0,
+      "community": 1,
       "norm_label": "interactiondetailssheet()"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_primitives_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "interaction-primitives.tsx"
     },
     {
@@ -1179,7 +1179,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L8",
       "id": "conflicts_interaction_primitives_interactiontriggerprops",
-      "community": 0,
+      "community": 1,
       "norm_label": "interactiontriggerprops"
     },
     {
@@ -1188,7 +1188,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L18",
       "id": "conflicts_interaction_primitives_interactiontrigger",
-      "community": 0,
+      "community": 1,
       "norm_label": "interactiontrigger()"
     },
     {
@@ -1197,7 +1197,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L90",
       "id": "conflicts_interaction_primitives_severitybadge",
-      "community": 0,
+      "community": 1,
       "norm_label": "severitybadge()"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L115",
       "id": "conflicts_interaction_primitives_severitysummary",
-      "community": 0,
+      "community": 1,
       "norm_label": "severitysummary()"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "components/conflicts/interaction-summary-bar.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_summary_bar_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "interaction-summary-bar.tsx"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "components/conflicts/interaction-summary-bar.tsx",
       "source_location": "L13",
       "id": "conflicts_interaction_summary_bar_interactionsummarybar",
-      "community": 0,
+      "community": 1,
       "norm_label": "interactionsummarybar()"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "components/conflicts/routine-interaction-badge.tsx",
       "source_location": "L1",
       "id": "components_conflicts_routine_interaction_badge_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "routine-interaction-badge.tsx"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "components/conflicts/routine-interaction-badge.tsx",
       "source_location": "L11",
       "id": "conflicts_routine_interaction_badge_routineinteractionbadge",
-      "community": 0,
+      "community": 1,
       "norm_label": "routineinteractionbadge()"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L1",
       "id": "components_conflicts_severity_styles_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "severity-styles.ts"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L1",
       "id": "conflicts_severity_styles_severity_styles",
-      "community": 0,
+      "community": 1,
       "norm_label": "severity_styles"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L28",
       "id": "conflicts_severity_styles_conflictseverity",
-      "community": 0,
+      "community": 1,
       "norm_label": "conflictseverity"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L30",
       "id": "conflicts_severity_styles_getseveritystyle",
-      "community": 0,
+      "community": 1,
       "norm_label": "getseveritystyle()"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "components/conflicts/step-interaction-hint.tsx",
       "source_location": "L1",
       "id": "components_conflicts_step_interaction_hint_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "step-interaction-hint.tsx"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "components/conflicts/step-interaction-hint.tsx",
       "source_location": "L16",
       "id": "conflicts_step_interaction_hint_stepinteractionhint",
-      "community": 0,
+      "community": 1,
       "norm_label": "stepinteractionhint()"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "components/cycle/body-context-banner.tsx",
       "source_location": "L1",
       "id": "components_cycle_body_context_banner_tsx",
-      "community": 15,
+      "community": 0,
       "norm_label": "body-context-banner.tsx"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "components/cycle/body-context-banner.tsx",
       "source_location": "L9",
       "id": "cycle_body_context_banner_bodycontextbannerprops",
-      "community": 15,
+      "community": 0,
       "norm_label": "bodycontextbannerprops"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "components/cycle/body-context-privacy-notice.tsx",
       "source_location": "L1",
       "id": "components_cycle_body_context_privacy_notice_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "body-context-privacy-notice.tsx"
     },
     {
@@ -1458,7 +1458,7 @@
       "source_file": "components/layout/empty-state.tsx",
       "source_location": "L1",
       "id": "components_layout_empty_state_tsx",
-      "community": 6,
+      "community": 1,
       "norm_label": "empty-state.tsx"
     },
     {
@@ -1467,7 +1467,7 @@
       "source_file": "components/layout/empty-state.tsx",
       "source_location": "L4",
       "id": "layout_empty_state_emptystate",
-      "community": 6,
+      "community": 1,
       "norm_label": "emptystate()"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L1",
       "id": "components_pages_cycle_page_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "cycle-page.tsx"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L33",
       "id": "pages_cycle_page_life_stages",
-      "community": 1,
+      "community": 0,
       "norm_label": "life_stages"
     },
     {
@@ -1584,7 +1584,7 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L42",
       "id": "pages_cycle_page_weight_options",
-      "community": 1,
+      "community": 0,
       "norm_label": "weight_options"
     },
     {
@@ -1611,16 +1611,16 @@
       "source_file": "components/pages/home-page.tsx",
       "source_location": "L17",
       "id": "pages_home_page_homepage",
-      "community": 6,
+      "community": 15,
       "norm_label": "homepage()"
     },
     {
       "label": "getGreetingPeriod()",
       "file_type": "code",
       "source_file": "components/pages/home-page.tsx",
-      "source_location": "L71",
+      "source_location": "L70",
       "id": "pages_home_page_getgreetingperiod",
-      "community": 6,
+      "community": 15,
       "norm_label": "getgreetingperiod()"
     },
     {
@@ -1681,7 +1681,7 @@
       "label": "AddProductSheetProps",
       "file_type": "code",
       "source_file": "components/products/add-product-sheet.tsx",
-      "source_location": "L21",
+      "source_location": "L23",
       "id": "products_add_product_sheet_addproductsheetprops",
       "community": 25,
       "norm_label": "addproductsheetprops"
@@ -1690,10 +1690,28 @@
       "label": "AddProductSheet()",
       "file_type": "code",
       "source_file": "components/products/add-product-sheet.tsx",
-      "source_location": "L25",
+      "source_location": "L28",
       "id": "products_add_product_sheet_addproductsheet",
       "community": 6,
       "norm_label": "addproductsheet()"
+    },
+    {
+      "label": "AddProductUnavailable()",
+      "file_type": "code",
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L36",
+      "id": "products_add_product_sheet_addproductunavailable",
+      "community": 1,
+      "norm_label": "addproductunavailable()"
+    },
+    {
+      "label": "AddProductSheetEnabled()",
+      "file_type": "code",
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L68",
+      "id": "products_add_product_sheet_addproductsheetenabled",
+      "community": 1,
+      "norm_label": "addproductsheetenabled()"
     },
     {
       "label": "affiliate-disclosure.tsx",
@@ -1701,7 +1719,7 @@
       "source_file": "components/products/affiliate-disclosure.tsx",
       "source_location": "L1",
       "id": "components_products_affiliate_disclosure_tsx",
-      "community": 0,
+      "community": 6,
       "norm_label": "affiliate-disclosure.tsx"
     },
     {
@@ -1710,7 +1728,7 @@
       "source_file": "components/products/affiliate-disclosure.tsx",
       "source_location": "L5",
       "id": "products_affiliate_disclosure_affiliatedisclosure",
-      "community": 0,
+      "community": 6,
       "norm_label": "affiliatedisclosure()"
     },
     {
@@ -1719,7 +1737,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L1",
       "id": "components_products_product_card_tsx",
-      "community": 2,
+      "community": 0,
       "norm_label": "product-card.tsx"
     },
     {
@@ -1746,7 +1764,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L116",
       "id": "products_product_card_productimage",
-      "community": 2,
+      "community": 0,
       "norm_label": "productimage()"
     },
     {
@@ -1755,7 +1773,7 @@
       "source_file": "components/products/product-ingredients.tsx",
       "source_location": "L1",
       "id": "components_products_product_ingredients_tsx",
-      "community": 2,
+      "community": 1,
       "norm_label": "product-ingredients.tsx"
     },
     {
@@ -1764,7 +1782,7 @@
       "source_file": "components/products/product-ingredients.tsx",
       "source_location": "L8",
       "id": "products_product_ingredients_productingredientsprops",
-      "community": 2,
+      "community": 1,
       "norm_label": "productingredientsprops"
     },
     {
@@ -1773,7 +1791,7 @@
       "source_file": "components/products/product-ingredients.tsx",
       "source_location": "L12",
       "id": "products_product_ingredients_productingredients",
-      "community": 2,
+      "community": 1,
       "norm_label": "productingredients()"
     },
     {
@@ -1935,7 +1953,7 @@
       "source_file": "components/providers/locale-provider.tsx",
       "source_location": "L70",
       "id": "providers_locale_provider_usetranslation",
-      "community": 0,
+      "community": 1,
       "norm_label": "usetranslation()"
     },
     {
@@ -1944,7 +1962,7 @@
       "source_file": "components/routines/routine-card.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_card_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "routine-card.tsx"
     },
     {
@@ -1962,7 +1980,7 @@
       "source_file": "components/routines/routine-card.tsx",
       "source_location": "L30",
       "id": "routines_routine_card_routinecard",
-      "community": 1,
+      "community": 6,
       "norm_label": "routinecard()"
     },
     {
@@ -1989,7 +2007,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_guide_section_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "routine-guide-section.tsx"
     },
     {
@@ -1998,7 +2016,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L10",
       "id": "routines_routine_guide_section_routineguidesectionprops",
-      "community": 0,
+      "community": 25,
       "norm_label": "routineguidesectionprops"
     },
     {
@@ -2007,7 +2025,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L19",
       "id": "routines_routine_guide_section_routineguidesection",
-      "community": 0,
+      "community": 1,
       "norm_label": "routineguidesection()"
     },
     {
@@ -2016,7 +2034,7 @@
       "source_file": "components/routines/routine-list.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_list_tsx",
-      "community": 25,
+      "community": 6,
       "norm_label": "routine-list.tsx"
     },
     {
@@ -2061,7 +2079,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L1",
       "id": "components_ui_badge_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "badge.tsx"
     },
     {
@@ -2070,7 +2088,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L7",
       "id": "ui_badge_badgevariants",
-      "community": 1,
+      "community": 0,
       "norm_label": "badgevariants"
     },
     {
@@ -2079,7 +2097,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L30",
       "id": "ui_badge_badge",
-      "community": 1,
+      "community": 0,
       "norm_label": "badge()"
     },
     {
@@ -2115,7 +2133,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L1",
       "id": "components_ui_card_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "card.tsx"
     },
     {
@@ -2124,7 +2142,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L5",
       "id": "ui_card_card",
-      "community": 1,
+      "community": 0,
       "norm_label": "card()"
     },
     {
@@ -2133,7 +2151,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L23",
       "id": "ui_card_cardheader",
-      "community": 1,
+      "community": 0,
       "norm_label": "cardheader()"
     },
     {
@@ -2142,7 +2160,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L36",
       "id": "ui_card_cardtitle",
-      "community": 1,
+      "community": 0,
       "norm_label": "cardtitle()"
     },
     {
@@ -2151,7 +2169,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L49",
       "id": "ui_card_carddescription",
-      "community": 1,
+      "community": 0,
       "norm_label": "carddescription()"
     },
     {
@@ -2160,7 +2178,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L59",
       "id": "ui_card_cardaction",
-      "community": 1,
+      "community": 0,
       "norm_label": "cardaction()"
     },
     {
@@ -2169,7 +2187,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L72",
       "id": "ui_card_cardcontent",
-      "community": 1,
+      "community": 0,
       "norm_label": "cardcontent()"
     },
     {
@@ -2178,7 +2196,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L82",
       "id": "ui_card_cardfooter",
-      "community": 1,
+      "community": 0,
       "norm_label": "cardfooter()"
     },
     {
@@ -2322,7 +2340,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L1",
       "id": "components_ui_select_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "select.tsx"
     },
     {
@@ -2331,7 +2349,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L9",
       "id": "ui_select_select",
-      "community": 1,
+      "community": 0,
       "norm_label": "select()"
     },
     {
@@ -2340,7 +2358,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L15",
       "id": "ui_select_selectgroup",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectgroup()"
     },
     {
@@ -2349,7 +2367,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L28",
       "id": "ui_select_selectvalue",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectvalue()"
     },
     {
@@ -2358,7 +2376,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L34",
       "id": "ui_select_selecttrigger",
-      "community": 1,
+      "community": 0,
       "norm_label": "selecttrigger()"
     },
     {
@@ -2367,7 +2385,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L60",
       "id": "ui_select_selectcontent",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectcontent()"
     },
     {
@@ -2376,7 +2394,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L93",
       "id": "ui_select_selectlabel",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectlabel()"
     },
     {
@@ -2385,7 +2403,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L106",
       "id": "ui_select_selectitem",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectitem()"
     },
     {
@@ -2394,7 +2412,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L130",
       "id": "ui_select_selectseparator",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectseparator()"
     },
     {
@@ -2403,7 +2421,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L143",
       "id": "ui_select_selectscrollupbutton",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectscrollupbutton()"
     },
     {
@@ -2412,7 +2430,7 @@
       "source_file": "components/ui/select.tsx",
       "source_location": "L162",
       "id": "ui_select_selectscrolldownbutton",
-      "community": 1,
+      "community": 0,
       "norm_label": "selectscrolldownbutton()"
     },
     {
@@ -3222,7 +3240,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L68",
       "id": "body_context_snapshot_lifestageguidance",
-      "community": 15,
+      "community": 0,
       "norm_label": "lifestageguidance()"
     },
     {
@@ -3231,7 +3249,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L98",
       "id": "body_context_snapshot_weightguidance",
-      "community": 15,
+      "community": 0,
       "norm_label": "weightguidance()"
     },
     {
@@ -3258,7 +3276,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L1",
       "id": "lib_conflicts_display_test_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "display.test.ts"
     },
     {
@@ -3267,7 +3285,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L11",
       "id": "conflicts_display_test_makewarning",
-      "community": 28,
+      "community": 1,
       "norm_label": "makewarning()"
     },
     {
@@ -3276,7 +3294,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L30",
       "id": "conflicts_display_test_sorted",
-      "community": 0,
+      "community": 1,
       "norm_label": "sorted"
     },
     {
@@ -3285,7 +3303,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L52",
       "id": "conflicts_display_test_warning",
-      "community": 0,
+      "community": 1,
       "norm_label": "warning"
     },
     {
@@ -3294,7 +3312,7 @@
       "source_file": "lib/conflicts/display.test.ts",
       "source_location": "L60",
       "id": "conflicts_display_test_grouped",
-      "community": 0,
+      "community": 1,
       "norm_label": "grouped"
     },
     {
@@ -3303,7 +3321,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L1",
       "id": "lib_conflicts_display_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "display.ts"
     },
     {
@@ -3312,7 +3330,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L3",
       "id": "conflicts_display_warningkey",
-      "community": 0,
+      "community": 1,
       "norm_label": "warningkey()"
     },
     {
@@ -3321,7 +3339,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L14",
       "id": "conflicts_display_groupwarningsbyproduct",
-      "community": 0,
+      "community": 1,
       "norm_label": "groupwarningsbyproduct()"
     },
     {
@@ -3330,7 +3348,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L32",
       "id": "conflicts_display_getotherproductname",
-      "community": 0,
+      "community": 1,
       "norm_label": "getotherproductname()"
     },
     {
@@ -3339,7 +3357,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L41",
       "id": "conflicts_display_severity_order",
-      "community": 0,
+      "community": 1,
       "norm_label": "severity_order"
     },
     {
@@ -3348,7 +3366,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L43",
       "id": "conflicts_display_sortwarningsbyseverity",
-      "community": 0,
+      "community": 1,
       "norm_label": "sortwarningsbyseverity()"
     },
     {
@@ -3357,7 +3375,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L53",
       "id": "conflicts_display_highestseverity",
-      "community": 0,
+      "community": 1,
       "norm_label": "highestseverity()"
     },
     {
@@ -3366,8 +3384,17 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L60",
       "id": "conflicts_display_countbyseverity",
-      "community": 0,
+      "community": 1,
       "norm_label": "countbyseverity()"
+    },
+    {
+      "label": "features.ts",
+      "file_type": "code",
+      "source_file": "lib/constants/features.ts",
+      "source_location": "L1",
+      "id": "lib_constants_features_ts",
+      "community": 1,
+      "norm_label": "features.ts"
     },
     {
       "label": "metadata.ts",
@@ -3663,7 +3690,7 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L168",
       "id": "i18n_ui_getcycleskinnote",
-      "community": 15,
+      "community": 0,
       "norm_label": "getcycleskinnote()"
     },
     {
@@ -3681,7 +3708,7 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L199",
       "id": "i18n_ui_getseveritylabel",
-      "community": 0,
+      "community": 1,
       "norm_label": "getseveritylabel()"
     },
     {
@@ -3690,7 +3717,7 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L206",
       "id": "i18n_ui_localizeconflictsummary",
-      "community": 0,
+      "community": 1,
       "norm_label": "localizeconflictsummary()"
     },
     {
@@ -3724,7 +3751,7 @@
       "label": "DeepString",
       "file_type": "code",
       "source_file": "lib/i18n/messages/en.ts",
-      "source_location": "L317",
+      "source_location": "L320",
       "id": "messages_en_deepstring",
       "community": 7,
       "norm_label": "deepstring"
@@ -3733,7 +3760,7 @@
       "label": "Messages",
       "file_type": "code",
       "source_file": "lib/i18n/messages/en.ts",
-      "source_location": "L326",
+      "source_location": "L329",
       "id": "messages_en_messages",
       "community": 7,
       "norm_label": "messages"
@@ -3789,7 +3816,7 @@
       "source_file": "lib/pdf/guide.ts",
       "source_location": "L1",
       "id": "lib_pdf_guide_ts",
-      "community": 6,
+      "community": 25,
       "norm_label": "guide.ts"
     },
     {
@@ -3978,7 +4005,7 @@
       "source_file": "lib/routines/category-order.test.ts",
       "source_location": "L1",
       "id": "lib_routines_category_order_test_ts",
-      "community": 28,
+      "community": 15,
       "norm_label": "category-order.test.ts"
     },
     {
@@ -3987,7 +4014,7 @@
       "source_file": "lib/routines/category-order.test.ts",
       "source_location": "L7",
       "id": "routines_category_order_test_products",
-      "community": 28,
+      "community": 15,
       "norm_label": "products"
     },
     {
@@ -3996,7 +4023,7 @@
       "source_file": "lib/routines/category-order.test.ts",
       "source_location": "L28",
       "id": "routines_category_order_test_ordered",
-      "community": 28,
+      "community": 15,
       "norm_label": "ordered"
     },
     {
@@ -4005,7 +4032,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L1",
       "id": "lib_routines_category_order_ts",
-      "community": 28,
+      "community": 15,
       "norm_label": "category-order.ts"
     },
     {
@@ -4014,7 +4041,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L4",
       "id": "routines_category_order_routine_category_order",
-      "community": 28,
+      "community": 15,
       "norm_label": "routine_category_order"
     },
     {
@@ -4023,7 +4050,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L17",
       "id": "routines_category_order_categoryrank",
-      "community": 28,
+      "community": 15,
       "norm_label": "categoryrank()"
     },
     {
@@ -4032,7 +4059,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L22",
       "id": "routines_category_order_sortproductsbycategory",
-      "community": 28,
+      "community": 15,
       "norm_label": "sortproductsbycategory()"
     },
     {
@@ -4041,7 +4068,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L31",
       "id": "routines_category_order_finalizeroutineproductorder",
-      "community": 28,
+      "community": 15,
       "norm_label": "finalizeroutineproductorder()"
     },
     {
@@ -4131,7 +4158,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L1",
       "id": "lib_routines_generator_ts",
-      "community": 25,
+      "community": 15,
       "norm_label": "generator.ts"
     },
     {
@@ -4140,7 +4167,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L17",
       "id": "routines_generator_matchestime",
-      "community": 25,
+      "community": 15,
       "norm_label": "matchestime()"
     },
     {
@@ -4149,7 +4176,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L21",
       "id": "routines_generator_buildsteps",
-      "community": 25,
+      "community": 15,
       "norm_label": "buildsteps()"
     },
     {
@@ -4158,7 +4185,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L33",
       "id": "routines_generator_buildroutine",
-      "community": 25,
+      "community": 15,
       "norm_label": "buildroutine()"
     },
     {
@@ -4167,7 +4194,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L55",
       "id": "routines_generator_separateconflictingproducts",
-      "community": 25,
+      "community": 15,
       "norm_label": "separateconflictingproducts()"
     },
     {
@@ -4185,7 +4212,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L83",
       "id": "routines_generator_generateroutines",
-      "community": 25,
+      "community": 15,
       "norm_label": "generateroutines()"
     },
     {
@@ -4194,7 +4221,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L110",
       "id": "routines_generator_getroutinewarnings",
-      "community": 25,
+      "community": 28,
       "norm_label": "getroutinewarnings()"
     },
     {
@@ -4203,7 +4230,7 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L122",
       "id": "routines_generator_gettodaysroutines",
-      "community": 6,
+      "community": 15,
       "norm_label": "gettodaysroutines()"
     },
     {
@@ -4401,7 +4428,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L200",
       "id": "routines_verification_formatroutineschedule",
-      "community": 1,
+      "community": 28,
       "norm_label": "formatroutineschedule()"
     },
     {
@@ -4410,7 +4437,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L211",
       "id": "routines_verification_formatroutinetitle",
-      "community": 1,
+      "community": 28,
       "norm_label": "formatroutinetitle()"
     },
     {
@@ -4419,7 +4446,7 @@
       "source_file": "lib/rules/ingredient-conflicts.test.ts",
       "source_location": "L1",
       "id": "lib_rules_ingredient_conflicts_test_ts",
-      "community": 28,
+      "community": 25,
       "norm_label": "ingredient-conflicts.test.ts"
     },
     {
@@ -4428,7 +4455,7 @@
       "source_file": "lib/rules/ingredient-conflicts.test.ts",
       "source_location": "L7",
       "id": "rules_ingredient_conflicts_test_products",
-      "community": 28,
+      "community": 25,
       "norm_label": "products"
     },
     {
@@ -4437,7 +4464,7 @@
       "source_file": "lib/rules/ingredient-conflicts.test.ts",
       "source_location": "L22",
       "id": "rules_ingredient_conflicts_test_warnings",
-      "community": 28,
+      "community": 25,
       "norm_label": "warnings"
     },
     {
@@ -4734,7 +4761,7 @@
       "source_file": "lib/test/fixtures.ts",
       "source_location": "L6",
       "id": "test_fixtures_makeproduct",
-      "community": 28,
+      "community": 1,
       "norm_label": "makeproduct()"
     },
     {
@@ -4842,7 +4869,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L11",
       "id": "types_conflicts_conflictwarning",
-      "community": 0,
+      "community": 1,
       "norm_label": "conflictwarning"
     },
     {
@@ -5038,7 +5065,7 @@
       "label": "What works today",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L7",
+      "source_location": "L9",
       "id": "skin_care_for_me_webapp_readme_what_works_today",
       "community": 9,
       "norm_label": "what works today"
@@ -5047,7 +5074,7 @@
       "label": "What does not work (or is incomplete)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L16",
+      "source_location": "L19",
       "id": "skin_care_for_me_webapp_readme_what_does_not_work_or_is_incomplete",
       "community": 9,
       "norm_label": "what does not work (or is incomplete)"
@@ -5056,7 +5083,7 @@
       "label": "Roadmap (summary)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L27",
+      "source_location": "L30",
       "id": "skin_care_for_me_webapp_readme_roadmap_summary",
       "community": 9,
       "norm_label": "roadmap (summary)"
@@ -5065,7 +5092,7 @@
       "label": "Requirements",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L39",
+      "source_location": "L42",
       "id": "skin_care_for_me_webapp_readme_requirements",
       "community": 9,
       "norm_label": "requirements"
@@ -5074,7 +5101,7 @@
       "label": "Quick start",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L44",
+      "source_location": "L47",
       "id": "skin_care_for_me_webapp_readme_quick_start",
       "community": 9,
       "norm_label": "quick start"
@@ -5083,46 +5110,28 @@
       "label": "code:bash (npm install)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L46",
+      "source_location": "L49",
       "id": "skin_care_for_me_webapp_readme_codeblock_1",
       "community": 9,
       "norm_label": "code:bash (npm install)"
     },
     {
-      "label": "Optional: real AI product lookup",
+      "label": "Environment variables",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L53",
-      "id": "skin_care_for_me_webapp_readme_optional_real_ai_product_lookup",
+      "source_location": "L56",
+      "id": "skin_care_for_me_webapp_readme_environment_variables",
       "community": 9,
-      "norm_label": "optional: real ai product lookup"
+      "norm_label": "environment variables"
     },
     {
-      "label": "code:env (OPENAI_API_KEY=sk-...)",
+      "label": "code:env (# Optional: real AI product lookup (server-side only))",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L57",
+      "source_location": "L60",
       "id": "skin_care_for_me_webapp_readme_codeblock_2",
       "community": 9,
-      "norm_label": "code:env (openai_api_key=sk-...)"
-    },
-    {
-      "label": "Optional: Amazon affiliate links",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L63",
-      "id": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links",
-      "community": 9,
-      "norm_label": "optional: amazon affiliate links"
-    },
-    {
-      "label": "code:env (NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=yourtag-20)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L67",
-      "id": "skin_care_for_me_webapp_readme_codeblock_3",
-      "community": 9,
-      "norm_label": "code:env (next_public_amazon_associate_tag=yourtag-20)"
+      "norm_label": "code:env (# optional: real ai product lookup (server-side only))"
     },
     {
       "label": "Production build",
@@ -5138,7 +5147,7 @@
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L75",
-      "id": "skin_care_for_me_webapp_readme_codeblock_4",
+      "id": "skin_care_for_me_webapp_readme_codeblock_3",
       "community": 9,
       "norm_label": "code:bash (npm run build)"
     },
@@ -5161,19 +5170,19 @@
       "norm_label": "project layout"
     },
     {
-      "label": "code:block5 (app/                    Next.js App Router pages and API rou)",
+      "label": "code:block4 (app/)",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L93",
-      "id": "skin_care_for_me_webapp_readme_codeblock_5",
+      "id": "skin_care_for_me_webapp_readme_codeblock_4",
       "community": 9,
-      "norm_label": "code:block5 (app/                    next.js app router pages and api rou)"
+      "norm_label": "code:block4 (app/)"
     },
     {
       "label": "Documentation",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L130",
+      "source_location": "L133",
       "id": "skin_care_for_me_webapp_readme_documentation",
       "community": 9,
       "norm_label": "documentation"
@@ -5182,7 +5191,7 @@
       "label": "Tech stack",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L142",
+      "source_location": "L147",
       "id": "skin_care_for_me_webapp_readme_tech_stack",
       "community": 9,
       "norm_label": "tech stack"
@@ -5191,7 +5200,7 @@
       "label": "License",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L151",
+      "source_location": "L156",
       "id": "skin_care_for_me_webapp_readme_license",
       "community": 9,
       "norm_label": "license"
@@ -5236,7 +5245,7 @@
       "label": "App shell",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "docs_architecture_app_shell",
       "community": 16,
       "norm_label": "app shell"
@@ -5245,7 +5254,7 @@
       "label": "Data loading",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L39",
+      "source_location": "L41",
       "id": "docs_architecture_data_loading",
       "community": 16,
       "norm_label": "data loading"
@@ -5254,7 +5263,7 @@
       "label": "Routine generation",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L50",
+      "source_location": "L52",
       "id": "docs_architecture_routine_generation",
       "community": 16,
       "norm_label": "routine generation"
@@ -5263,7 +5272,7 @@
       "label": "Inputs",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L54",
+      "source_location": "L56",
       "id": "docs_architecture_inputs",
       "community": 16,
       "norm_label": "inputs"
@@ -5272,7 +5281,7 @@
       "label": "Steps",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L59",
+      "source_location": "L61",
       "id": "docs_architecture_steps",
       "community": 16,
       "norm_label": "steps"
@@ -5281,7 +5290,7 @@
       "label": "code:block2 (cleanser \u2192 toner \u2192 serum \u2192 treatment \u2192 eye_cream \u2192 moisturiz)",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L69",
+      "source_location": "L70",
       "id": "docs_architecture_codeblock_2",
       "community": 16,
       "norm_label": "code:block2 (cleanser \u2192 toner \u2192 serum \u2192 treatment \u2192 eye_cream \u2192 moisturiz)"
@@ -5290,52 +5299,61 @@
       "label": "\u201cToday\u201d filtering",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L75",
+      "source_location": "L77",
       "id": "docs_architecture_today_filtering",
       "community": 16,
       "norm_label": "\u201ctoday\u201d filtering"
     },
     {
-      "label": "Ingredient conflicts",
+      "label": "Routine verification (safety check)",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
       "source_location": "L85",
+      "id": "docs_architecture_routine_verification_safety_check",
+      "community": 16,
+      "norm_label": "routine verification (safety check)"
+    },
+    {
+      "label": "Ingredient conflicts",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L99",
       "id": "docs_architecture_ingredient_conflicts",
       "community": 16,
       "norm_label": "ingredient conflicts"
     },
     {
-      "label": "How detection works",
+      "label": "Where warnings appear",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L89",
-      "id": "docs_architecture_how_detection_works",
+      "source_location": "L107",
+      "id": "docs_architecture_where_warnings_appear",
       "community": 16,
-      "norm_label": "how detection works"
+      "norm_label": "where warnings appear"
     },
     {
-      "label": "Where warnings appear in the UI",
+      "label": "Body context",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L96",
-      "id": "docs_architecture_where_warnings_appear_in_the_ui",
+      "source_location": "L121",
+      "id": "docs_architecture_body_context",
       "community": 16,
-      "norm_label": "where warnings appear in the ui"
+      "norm_label": "body context"
     },
     {
-      "label": "Cycle phases",
+      "label": "Localization",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L109",
-      "id": "docs_architecture_cycle_phases",
+      "source_location": "L129",
+      "id": "docs_architecture_localization",
       "community": 16,
-      "norm_label": "cycle phases"
+      "norm_label": "localization"
     },
     {
       "label": "Product lookup",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L121",
+      "source_location": "L138",
       "id": "docs_architecture_product_lookup",
       "community": 16,
       "norm_label": "product lookup"
@@ -5344,7 +5362,7 @@
       "label": "PDF export",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L130",
+      "source_location": "L147",
       "id": "docs_architecture_pdf_export",
       "community": 16,
       "norm_label": "pdf export"
@@ -5353,16 +5371,25 @@
       "label": "UI stack",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L136",
+      "source_location": "L153",
       "id": "docs_architecture_ui_stack",
       "community": 16,
       "norm_label": "ui stack"
     },
     {
+      "label": "SEO & production meta",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L160",
+      "id": "docs_architecture_seo_production_meta",
+      "community": 16,
+      "norm_label": "seo & production meta"
+    },
+    {
       "label": "What is not architected yet",
       "file_type": "document",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L142",
+      "source_location": "L173",
       "id": "docs_architecture_what_is_not_architected_yet",
       "community": 16,
       "norm_label": "what is not architected yet"
@@ -5560,7 +5587,7 @@
       "label": "PROD-401 \u00b7 Cycle onboarding copy & validation",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L253",
+      "source_location": "L255",
       "id": "docs_backlog_prod_401_cycle_onboarding_copy_validation",
       "community": 21,
       "norm_label": "prod-401 \u00b7 cycle onboarding copy & validation"
@@ -5569,7 +5596,7 @@
       "label": "PROD-402 \u00b7 Sensitivity mode (pregnancy / retinol newbie)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L267",
+      "source_location": "L269",
       "id": "docs_backlog_prod_402_sensitivity_mode_pregnancy_retinol_newbie",
       "community": 21,
       "norm_label": "prod-402 \u00b7 sensitivity mode (pregnancy / retinol newbie)"
@@ -5578,7 +5605,7 @@
       "label": "PROD-403 \u00b7 Weekly/monthly harsh active respect in luteal",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L281",
+      "source_location": "L285",
       "id": "docs_backlog_prod_403_weekly_monthly_harsh_active_respect_in_luteal",
       "community": 21,
       "norm_label": "prod-403 \u00b7 weekly/monthly harsh active respect in luteal"
@@ -5587,7 +5614,7 @@
       "label": "E5 \u2014 Data & privacy",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L295",
+      "source_location": "L299",
       "id": "docs_backlog_e5_data_privacy",
       "community": 21,
       "norm_label": "e5 \u2014 data & privacy"
@@ -5596,7 +5623,7 @@
       "label": "PROD-501 \u00b7 JSON export",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L299",
+      "source_location": "L303",
       "id": "docs_backlog_prod_501_json_export",
       "community": 21,
       "norm_label": "prod-501 \u00b7 json export"
@@ -5605,7 +5632,7 @@
       "label": "PROD-502 \u00b7 JSON import with merge",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L313",
+      "source_location": "L317",
       "id": "docs_backlog_prod_502_json_import_with_merge",
       "community": 21,
       "norm_label": "prod-502 \u00b7 json import with merge"
@@ -5614,7 +5641,7 @@
       "label": "PROD-503 \u00b7 Clear all data",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L329",
+      "source_location": "L333",
       "id": "docs_backlog_prod_503_clear_all_data",
       "community": 21,
       "norm_label": "prod-503 \u00b7 clear all data"
@@ -5623,7 +5650,7 @@
       "label": "PROD-504 \u00b7 Optional encrypted sync",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L343",
+      "source_location": "L347",
       "id": "docs_backlog_prod_504_optional_encrypted_sync",
       "community": 21,
       "norm_label": "prod-504 \u00b7 optional encrypted sync"
@@ -5632,7 +5659,7 @@
       "label": "E6 \u2014 Onboarding & UX",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L357",
+      "source_location": "L361",
       "id": "docs_backlog_e6_onboarding_ux",
       "community": 21,
       "norm_label": "e6 \u2014 onboarding & ux"
@@ -5641,7 +5668,7 @@
       "label": "PROD-601 \u00b7 First-run onboarding flow",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L361",
+      "source_location": "L365",
       "id": "docs_backlog_prod_601_first_run_onboarding_flow",
       "community": 21,
       "norm_label": "prod-601 \u00b7 first-run onboarding flow"
@@ -5650,7 +5677,7 @@
       "label": "PROD-602 \u00b7 Seed shelf intro card",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L375",
+      "source_location": "L379",
       "id": "docs_backlog_prod_602_seed_shelf_intro_card",
       "community": 21,
       "norm_label": "prod-602 \u00b7 seed shelf intro card"
@@ -5659,7 +5686,7 @@
       "label": "PROD-603 \u00b7 Dark mode toggle",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L389",
+      "source_location": "L393",
       "id": "docs_backlog_prod_603_dark_mode_toggle",
       "community": 21,
       "norm_label": "prod-603 \u00b7 dark mode toggle"
@@ -5668,7 +5695,7 @@
       "label": "PROD-604 \u00b7 Branded PDF guide",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L403",
+      "source_location": "L407",
       "id": "docs_backlog_prod_604_branded_pdf_guide",
       "community": 21,
       "norm_label": "prod-604 \u00b7 branded pdf guide"
@@ -5677,7 +5704,7 @@
       "label": "E7 \u2014 Habit & engagement",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L417",
+      "source_location": "L421",
       "id": "docs_backlog_e7_habit_engagement",
       "community": 21,
       "norm_label": "e7 \u2014 habit & engagement"
@@ -5686,7 +5713,7 @@
       "label": "PROD-701 \u00b7 Mark routine steps complete",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L421",
+      "source_location": "L425",
       "id": "docs_backlog_prod_701_mark_routine_steps_complete",
       "community": 21,
       "norm_label": "prod-701 \u00b7 mark routine steps complete"
@@ -5695,7 +5722,7 @@
       "label": "PROD-702 \u00b7 AM/PM reminders",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L435",
+      "source_location": "L439",
       "id": "docs_backlog_prod_702_am_pm_reminders",
       "community": 21,
       "norm_label": "prod-702 \u00b7 am/pm reminders"
@@ -5704,7 +5731,7 @@
       "label": "PROD-703 \u00b7 Streak display (optional)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L451",
+      "source_location": "L455",
       "id": "docs_backlog_prod_703_streak_display_optional",
       "community": 21,
       "norm_label": "prod-703 \u00b7 streak display (optional)"
@@ -5713,7 +5740,7 @@
       "label": "E8 \u2014 Platform & growth",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L465",
+      "source_location": "L469",
       "id": "docs_backlog_e8_platform_growth",
       "community": 21,
       "norm_label": "e8 \u2014 platform & growth"
@@ -5722,7 +5749,7 @@
       "label": "PROD-801 \u00b7 PWA install + offline shell",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L469",
+      "source_location": "L473",
       "id": "docs_backlog_prod_801_pwa_install_offline_shell",
       "community": 21,
       "norm_label": "prod-801 \u00b7 pwa install + offline shell"
@@ -5731,7 +5758,7 @@
       "label": "PROD-802 \u00b7 Lookup result cache",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L483",
+      "source_location": "L487",
       "id": "docs_backlog_prod_802_lookup_result_cache",
       "community": 21,
       "norm_label": "prod-802 \u00b7 lookup result cache"
@@ -5740,7 +5767,7 @@
       "label": "PROD-803 \u00b7 Barcode scan add",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L497",
+      "source_location": "L501",
       "id": "docs_backlog_prod_803_barcode_scan_add",
       "community": 21,
       "norm_label": "prod-803 \u00b7 barcode scan add"
@@ -5749,7 +5776,7 @@
       "label": "PROD-804 \u00b7 CI pipeline",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L511",
+      "source_location": "L515",
       "id": "docs_backlog_prod_804_ci_pipeline",
       "community": 21,
       "norm_label": "prod-804 \u00b7 ci pipeline"
@@ -5758,7 +5785,7 @@
       "label": "Suggested sprint 1 (v0.2 kickoff)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L525",
+      "source_location": "L529",
       "id": "docs_backlog_suggested_sprint_1_v0_2_kickoff",
       "community": 21,
       "norm_label": "suggested sprint 1 (v0.2 kickoff)"
@@ -5767,7 +5794,7 @@
       "label": "Backlog hygiene",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L542",
+      "source_location": "L546",
       "id": "docs_backlog_backlog_hygiene",
       "community": 21,
       "norm_label": "backlog hygiene"
@@ -5839,7 +5866,7 @@
       "label": "Code map",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L58",
+      "source_location": "L53",
       "id": "docs_body_and_cycle_code_map",
       "community": 27,
       "norm_label": "code map"
@@ -5848,7 +5875,7 @@
       "label": "Menstrual cycle",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L75",
+      "source_location": "L73",
       "id": "docs_body_and_cycle_menstrual_cycle",
       "community": 27,
       "norm_label": "menstrual cycle"
@@ -5857,70 +5884,61 @@
       "label": "Phase calculation",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L77",
+      "source_location": "L75",
       "id": "docs_body_and_cycle_phase_calculation",
       "community": 27,
       "norm_label": "phase calculation"
     },
     {
-      "label": "Effect on routines",
+      "label": "Routine impact",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L88",
-      "id": "docs_body_and_cycle_effect_on_routines",
+      "source_location": "L86",
+      "id": "docs_body_and_cycle_routine_impact",
       "community": 27,
-      "norm_label": "effect on routines"
+      "norm_label": "routine impact"
     },
     {
-      "label": "Effect on UI",
+      "label": "UI",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L97",
-      "id": "docs_body_and_cycle_effect_on_ui",
+      "source_location": "L90",
+      "id": "docs_body_and_cycle_ui",
       "community": 27,
-      "norm_label": "effect on ui"
+      "norm_label": "ui"
     },
     {
       "label": "Life stage",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L103",
+      "source_location": "L96",
       "id": "docs_body_and_cycle_life_stage",
       "community": 27,
       "norm_label": "life stage"
     },
     {
-      "label": "Products held list",
-      "file_type": "document",
-      "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L117",
-      "id": "docs_body_and_cycle_products_held_list",
-      "community": 27,
-      "norm_label": "products held list"
-    },
-    {
       "label": "Weight context",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L121",
+      "source_location": "L110",
       "id": "docs_body_and_cycle_weight_context",
       "community": 27,
       "norm_label": "weight context"
     },
     {
-      "label": "Master switch behavior",
+      "label": "Master switch",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L130",
-      "id": "docs_body_and_cycle_master_switch_behavior",
+      "source_location": "L117",
+      "id": "docs_body_and_cycle_master_switch",
       "community": 27,
-      "norm_label": "master switch behavior"
+      "norm_label": "master switch"
     },
     {
       "label": "UI surfaces checklist",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L141",
+      "source_location": "L125",
       "id": "docs_body_and_cycle_ui_surfaces_checklist",
       "community": 27,
       "norm_label": "ui surfaces checklist"
@@ -5929,7 +5947,7 @@
       "label": "Routine generation flow",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L152",
+      "source_location": "L135",
       "id": "docs_body_and_cycle_routine_generation_flow",
       "community": 27,
       "norm_label": "routine generation flow"
@@ -5938,25 +5956,25 @@
       "label": "code:block2 (products)",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L154",
+      "source_location": "L137",
       "id": "docs_body_and_cycle_codeblock_2",
       "community": 27,
       "norm_label": "code:block2 (products)"
     },
     {
-      "label": "Limitations & disclaimers",
+      "label": "Limitations",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L164",
-      "id": "docs_body_and_cycle_limitations_disclaimers",
+      "source_location": "L145",
+      "id": "docs_body_and_cycle_limitations",
       "community": 27,
-      "norm_label": "limitations & disclaimers"
+      "norm_label": "limitations"
     },
     {
       "label": "Tests",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L172",
+      "source_location": "L152",
       "id": "docs_body_and_cycle_tests",
       "community": 27,
       "norm_label": "tests"
@@ -5965,7 +5983,7 @@
       "label": "Related docs",
       "file_type": "document",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L183",
+      "source_location": "L163",
       "id": "docs_body_and_cycle_related_docs",
       "community": 27,
       "norm_label": "related docs"
@@ -5992,7 +6010,7 @@
       "label": "Database",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L5",
+      "source_location": "L7",
       "id": "docs_data_and_storage_database",
       "community": 17,
       "norm_label": "database"
@@ -6001,7 +6019,7 @@
       "label": "Tables",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L12",
+      "source_location": "L14",
       "id": "docs_data_and_storage_tables",
       "community": 17,
       "norm_label": "tables"
@@ -6010,7 +6028,7 @@
       "label": "Settings shape",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L20",
+      "source_location": "L22",
       "id": "docs_data_and_storage_settings_shape",
       "community": 17,
       "norm_label": "settings shape"
@@ -6019,7 +6037,7 @@
       "label": "code:ts ({)",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L22",
+      "source_location": "L24",
       "id": "docs_data_and_storage_codeblock_1",
       "community": 17,
       "norm_label": "code:ts ({)"
@@ -6028,7 +6046,7 @@
       "label": "Product shape",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L46",
+      "source_location": "L48",
       "id": "docs_data_and_storage_product_shape",
       "community": 17,
       "norm_label": "product shape"
@@ -6037,7 +6055,7 @@
       "label": "code:ts ({)",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L48",
+      "source_location": "L50",
       "id": "docs_data_and_storage_codeblock_2",
       "community": 17,
       "norm_label": "code:ts ({)"
@@ -6046,7 +6064,7 @@
       "label": "Routine shape",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L67",
+      "source_location": "L77",
       "id": "docs_data_and_storage_routine_shape",
       "community": 17,
       "norm_label": "routine shape"
@@ -6055,7 +6073,7 @@
       "label": "code:ts ({)",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L69",
+      "source_location": "L79",
       "id": "docs_data_and_storage_codeblock_3",
       "community": 17,
       "norm_label": "code:ts ({)"
@@ -6064,7 +6082,7 @@
       "label": "Seed products",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L88",
+      "source_location": "L92",
       "id": "docs_data_and_storage_seed_products",
       "community": 17,
       "norm_label": "seed products"
@@ -6073,7 +6091,7 @@
       "label": "Seed behavior",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L106",
+      "source_location": "L110",
       "id": "docs_data_and_storage_seed_behavior",
       "community": 17,
       "norm_label": "seed behavior"
@@ -6082,7 +6100,7 @@
       "label": "Privacy",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L114",
+      "source_location": "L117",
       "id": "docs_data_and_storage_privacy",
       "community": 17,
       "norm_label": "privacy"
@@ -6091,7 +6109,7 @@
       "label": "Backup and portability",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L128",
+      "source_location": "L131",
       "id": "docs_data_and_storage_backup_and_portability",
       "community": 17,
       "norm_label": "backup and portability"
@@ -6100,7 +6118,7 @@
       "label": "Browser support",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L134",
+      "source_location": "L137",
       "id": "docs_data_and_storage_browser_support",
       "community": 17,
       "norm_label": "browser support"
@@ -6109,10 +6127,19 @@
       "label": "Future schema changes",
       "file_type": "document",
       "source_file": "docs/DATA-AND-STORAGE.md",
-      "source_location": "L138",
+      "source_location": "L141",
       "id": "docs_data_and_storage_future_schema_changes",
       "community": 17,
       "norm_label": "future schema changes"
+    },
+    {
+      "label": "Related docs",
+      "file_type": "document",
+      "source_file": "docs/DATA-AND-STORAGE.md",
+      "source_location": "L145",
+      "id": "docs_data_and_storage_related_docs",
+      "community": 17,
+      "norm_label": "related docs"
     },
     {
       "label": "KNOWN-LIMITATIONS.md",
@@ -6145,7 +6172,7 @@
       "label": "Features missing",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "docs_known_limitations_features_missing",
       "community": 18,
       "norm_label": "features missing"
@@ -6154,7 +6181,7 @@
       "label": "Scheduling quirks",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L26",
+      "source_location": "L29",
       "id": "docs_known_limitations_scheduling_quirks",
       "community": 18,
       "norm_label": "scheduling quirks"
@@ -6163,7 +6190,7 @@
       "label": "Routine generation",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L33",
+      "source_location": "L36",
       "id": "docs_known_limitations_routine_generation",
       "community": 18,
       "norm_label": "routine generation"
@@ -6172,7 +6199,7 @@
       "label": "Ingredient conflicts",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L41",
+      "source_location": "L44",
       "id": "docs_known_limitations_ingredient_conflicts",
       "community": 18,
       "norm_label": "ingredient conflicts"
@@ -6181,7 +6208,7 @@
       "label": "Product lookup",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L48",
+      "source_location": "L52",
       "id": "docs_known_limitations_product_lookup",
       "community": 18,
       "norm_label": "product lookup"
@@ -6190,7 +6217,7 @@
       "label": "Storage",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L54",
+      "source_location": "L59",
       "id": "docs_known_limitations_storage",
       "community": 18,
       "norm_label": "storage"
@@ -6199,46 +6226,217 @@
       "label": "UI / UX",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L61",
+      "source_location": "L67",
       "id": "docs_known_limitations_ui_ux",
       "community": 18,
       "norm_label": "ui / ux"
     },
     {
-      "label": "Code quality (audit notes)",
+      "label": "Localization",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L69",
-      "id": "docs_known_limitations_code_quality_audit_notes",
+      "source_location": "L76",
+      "id": "docs_known_limitations_localization",
       "community": 18,
-      "norm_label": "code quality (audit notes)"
+      "norm_label": "localization"
     },
     {
-      "label": "Default seed shelf",
+      "label": "Code quality",
       "file_type": "document",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L82",
+      "id": "docs_known_limitations_code_quality",
+      "community": 18,
+      "norm_label": "code quality"
+    },
+    {
+      "label": "Deployment",
+      "file_type": "document",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L88",
+      "id": "docs_known_limitations_deployment",
+      "community": 18,
+      "norm_label": "deployment"
+    },
+    {
+      "label": "Suggested next work",
+      "file_type": "document",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L96",
+      "id": "docs_known_limitations_suggested_next_work",
+      "community": 18,
+      "norm_label": "suggested next work"
+    },
+    {
+      "label": "LOCALIZATION.md",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L1",
+      "id": "docs_localization_md",
+      "community": 30,
+      "norm_label": "localization.md"
+    },
+    {
+      "label": "Localization",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L1",
+      "id": "docs_localization_localization",
+      "community": 30,
+      "norm_label": "localization"
+    },
+    {
+      "label": "Locales",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L5",
+      "id": "docs_localization_locales",
+      "community": 30,
+      "norm_label": "locales"
+    },
+    {
+      "label": "code:ts (DEFAULT_LOCALE = \"es-419\")",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L14",
+      "id": "docs_localization_codeblock_1",
+      "community": 30,
+      "norm_label": "code:ts (default_locale = \"es-419\")"
+    },
+    {
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L21",
+      "id": "docs_localization_architecture",
+      "community": 30,
+      "norm_label": "architecture"
+    },
+    {
+      "label": "code:block2 (LocaleProvider (components/providers/locale-provider.tsx))",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L23",
+      "id": "docs_localization_codeblock_2",
+      "community": 30,
+      "norm_label": "code:block2 (localeprovider (components/providers/locale-provider.tsx))"
+    },
+    {
+      "label": "Provider tree",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L34",
+      "id": "docs_localization_provider_tree",
+      "community": 30,
+      "norm_label": "provider tree"
+    },
+    {
+      "label": "code:block3 (AppLayoutClient)",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L36",
+      "id": "docs_localization_codeblock_3",
+      "community": 30,
+      "norm_label": "code:block3 (applayoutclient)"
+    },
+    {
+      "label": "Using translations in components",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L43",
+      "id": "docs_localization_using_translations_in_components",
+      "community": 30,
+      "norm_label": "using translations in components"
+    },
+    {
+      "label": "code:tsx (import { useTranslation } from \"@/components/providers/local)",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L45",
+      "id": "docs_localization_codeblock_4",
+      "community": 30,
+      "norm_label": "code:tsx (import { usetranslation } from \"@/components/providers/local)"
+    },
+    {
+      "label": "UI helpers",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L53",
+      "id": "docs_localization_ui_helpers",
+      "community": 30,
+      "norm_label": "ui helpers"
+    },
+    {
+      "label": "Message files",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L63",
+      "id": "docs_localization_message_files",
+      "community": 30,
+      "norm_label": "message files"
+    },
+    {
+      "label": "Language toggle",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
       "source_location": "L75",
-      "id": "docs_known_limitations_default_seed_shelf",
-      "community": 18,
-      "norm_label": "default seed shelf"
+      "id": "docs_localization_language_toggle",
+      "community": 30,
+      "norm_label": "language toggle"
     },
     {
-      "label": "Deployment notes",
+      "label": "What is localized",
       "file_type": "document",
-      "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L79",
-      "id": "docs_known_limitations_deployment_notes",
-      "community": 18,
-      "norm_label": "deployment notes"
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L83",
+      "id": "docs_localization_what_is_localized",
+      "community": 30,
+      "norm_label": "what is localized"
     },
     {
-      "label": "Suggested next work (not committed)",
+      "label": "What is not localized",
       "file_type": "document",
-      "source_file": "docs/KNOWN-LIMITATIONS.md",
-      "source_location": "L84",
-      "id": "docs_known_limitations_suggested_next_work_not_committed",
-      "community": 18,
-      "norm_label": "suggested next work (not committed)"
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L94",
+      "id": "docs_localization_what_is_not_localized",
+      "community": 30,
+      "norm_label": "what is not localized"
+    },
+    {
+      "label": "HTML `lang`",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L104",
+      "id": "docs_localization_html_lang",
+      "community": 30,
+      "norm_label": "html `lang`"
+    },
+    {
+      "label": "Adding a new string",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L109",
+      "id": "docs_localization_adding_a_new_string",
+      "community": 30,
+      "norm_label": "adding a new string"
+    },
+    {
+      "label": "Adding a new locale",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L116",
+      "id": "docs_localization_adding_a_new_locale",
+      "community": 30,
+      "norm_label": "adding a new locale"
+    },
+    {
+      "label": "Related docs",
+      "file_type": "document",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L124",
+      "id": "docs_localization_related_docs",
+      "community": 30,
+      "norm_label": "related docs"
     },
     {
       "label": "PRODUCT-VISION.md",
@@ -6289,7 +6487,7 @@
       "label": "Product principles",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "docs_product_vision_product_principles",
       "community": 23,
       "norm_label": "product principles"
@@ -6298,7 +6496,7 @@
       "label": "Success metrics (v0.2+)",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "id": "docs_product_vision_success_metrics_v0_2",
       "community": 23,
       "norm_label": "success metrics (v0.2+)"
@@ -6307,7 +6505,7 @@
       "label": "Non-goals (for now)",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L47",
+      "source_location": "L48",
       "id": "docs_product_vision_non_goals_for_now",
       "community": 23,
       "norm_label": "non-goals (for now)"
@@ -6316,7 +6514,7 @@
       "label": "Related docs",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L54",
+      "source_location": "L55",
       "id": "docs_product_vision_related_docs",
       "community": 23,
       "norm_label": "related docs"
@@ -6343,7 +6541,7 @@
       "label": "Readiness snapshot",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L11",
+      "source_location": "L12",
       "id": "docs_production_tracker_readiness_snapshot",
       "community": 26,
       "norm_label": "readiness snapshot"
@@ -6352,7 +6550,7 @@
       "label": "code:mermaid (flowchart LR)",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "docs_production_tracker_codeblock_1",
       "community": 26,
       "norm_label": "code:mermaid (flowchart lr)"
@@ -6361,7 +6559,7 @@
       "label": "How to use this doc",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L47",
+      "source_location": "L48",
       "id": "docs_production_tracker_how_to_use_this_doc",
       "community": 26,
       "norm_label": "how to use this doc"
@@ -6370,7 +6568,7 @@
       "label": "1. Build & runtime",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L58",
+      "source_location": "L59",
       "id": "docs_production_tracker_1_build_runtime",
       "community": 26,
       "norm_label": "1. build & runtime"
@@ -6379,7 +6577,7 @@
       "label": "2. Meta, SEO & social",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L72",
+      "source_location": "L73",
       "id": "docs_production_tracker_2_meta_seo_social",
       "community": 26,
       "norm_label": "2. meta, seo & social"
@@ -6388,7 +6586,7 @@
       "label": "3. Brand & copy",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L98",
+      "source_location": "L99",
       "id": "docs_production_tracker_3_brand_copy",
       "community": 26,
       "norm_label": "3. brand & copy"
@@ -6397,25 +6595,25 @@
       "label": "4. Environment & deployment",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L110",
+      "source_location": "L111",
       "id": "docs_production_tracker_4_environment_deployment",
       "community": 26,
       "norm_label": "4. environment & deployment"
     },
     {
-      "label": "code:env (NEXT_PUBLIC_SITE_URL=https://your-domain.com)",
+      "label": "code:env (NEXT_PUBLIC_SITE_URL=https://skincareforyou.builds.software)",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L124",
+      "source_location": "L125",
       "id": "docs_production_tracker_codeblock_2",
       "community": 26,
-      "norm_label": "code:env (next_public_site_url=https://your-domain.com)"
+      "norm_label": "code:env (next_public_site_url=https://skincareforyou.builds.software)"
     },
     {
       "label": "5. Security",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L132",
+      "source_location": "L133",
       "id": "docs_production_tracker_5_security",
       "community": 26,
       "norm_label": "5. security"
@@ -6424,7 +6622,7 @@
       "label": "6. Privacy & legal",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L145",
+      "source_location": "L146",
       "id": "docs_production_tracker_6_privacy_legal",
       "community": 26,
       "norm_label": "6. privacy & legal"
@@ -6433,7 +6631,7 @@
       "label": "7. CI / QA / release process",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L159",
+      "source_location": "L160",
       "id": "docs_production_tracker_7_ci_qa_release_process",
       "community": 26,
       "norm_label": "7. ci / qa / release process"
@@ -6442,7 +6640,7 @@
       "label": "8. Performance & reliability",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L185",
+      "source_location": "L186",
       "id": "docs_production_tracker_8_performance_reliability",
       "community": 26,
       "norm_label": "8. performance & reliability"
@@ -6451,7 +6649,7 @@
       "label": "9. Accessibility",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L199",
+      "source_location": "L200",
       "id": "docs_production_tracker_9_accessibility",
       "community": 26,
       "norm_label": "9. accessibility"
@@ -6460,7 +6658,7 @@
       "label": "10. Internationalization (as shipped)",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L211",
+      "source_location": "L212",
       "id": "docs_production_tracker_10_internationalization_as_shipped",
       "community": 26,
       "norm_label": "10. internationalization (as shipped)"
@@ -6469,7 +6667,7 @@
       "label": "11. Feature completeness (production honesty)",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L224",
+      "source_location": "L225",
       "id": "docs_production_tracker_11_feature_completeness_production_honesty",
       "community": 26,
       "norm_label": "11. feature completeness (production honesty)"
@@ -6478,7 +6676,7 @@
       "label": "12. Launch gates",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L239",
+      "source_location": "L240",
       "id": "docs_production_tracker_12_launch_gates",
       "community": 26,
       "norm_label": "12. launch gates"
@@ -6487,7 +6685,7 @@
       "label": "Gate A \u2014 Private beta (friends & family)",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L241",
+      "source_location": "L242",
       "id": "docs_production_tracker_gate_a_private_beta_friends_family",
       "community": 26,
       "norm_label": "gate a \u2014 private beta (friends & family)"
@@ -6496,7 +6694,7 @@
       "label": "Gate B \u2014 Public production",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L253",
+      "source_location": "L254",
       "id": "docs_production_tracker_gate_b_public_production",
       "community": 26,
       "norm_label": "gate b \u2014 public production"
@@ -6505,7 +6703,7 @@
       "label": "Gate C \u2014 Confident production",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L266",
+      "source_location": "L267",
       "id": "docs_production_tracker_gate_c_confident_production",
       "community": 26,
       "norm_label": "gate c \u2014 confident production"
@@ -6514,7 +6712,7 @@
       "label": "13. Suggested work order (next 2 weeks)",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L278",
+      "source_location": "L279",
       "id": "docs_production_tracker_13_suggested_work_order_next_2_weeks",
       "community": 26,
       "norm_label": "13. suggested work order (next 2 weeks)"
@@ -6523,7 +6721,7 @@
       "label": "QA log",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L289",
+      "source_location": "L290",
       "id": "docs_production_tracker_qa_log",
       "community": 26,
       "norm_label": "qa log"
@@ -6532,7 +6730,7 @@
       "label": "Related docs",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
-      "source_location": "L297",
+      "source_location": "L298",
       "id": "docs_production_tracker_related_docs",
       "community": 26,
       "norm_label": "related docs"
@@ -6568,10 +6766,19 @@
       "label": "Engineering",
       "file_type": "document",
       "source_file": "docs/README.md",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "docs_readme_engineering",
       "community": 19,
       "norm_label": "engineering"
+    },
+    {
+      "label": "Doc types",
+      "file_type": "document",
+      "source_file": "docs/README.md",
+      "source_location": "L24",
+      "id": "docs_readme_doc_types",
+      "community": 19,
+      "norm_label": "doc types"
     },
     {
       "label": "ROADMAP.md",
@@ -6622,7 +6829,7 @@
       "label": "Phase 1 \u2014 Daily driver (target: v0.2)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L51",
+      "source_location": "L55",
       "id": "docs_roadmap_phase_1_daily_driver_target_v0_2",
       "community": 22,
       "norm_label": "phase 1 \u2014 daily driver (target: v0.2)"
@@ -6631,7 +6838,7 @@
       "label": "Phase 2 \u2014 Trust & polish (target: v0.3)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L71",
+      "source_location": "L75",
       "id": "docs_roadmap_phase_2_trust_polish_target_v0_3",
       "community": 22,
       "norm_label": "phase 2 \u2014 trust & polish (target: v0.3)"
@@ -6640,7 +6847,7 @@
       "label": "Phase 3 \u2014 Habit loop (target: v0.4)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L89",
+      "source_location": "L93",
       "id": "docs_roadmap_phase_3_habit_loop_target_v0_4",
       "community": 22,
       "norm_label": "phase 3 \u2014 habit loop (target: v0.4)"
@@ -6649,7 +6856,7 @@
       "label": "Phase 4 \u2014 Platform (target: v1.0)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L107",
+      "source_location": "L111",
       "id": "docs_roadmap_phase_4_platform_target_v1_0",
       "community": 22,
       "norm_label": "phase 4 \u2014 platform (target: v1.0)"
@@ -6658,7 +6865,7 @@
       "label": "How priorities are set",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L124",
+      "source_location": "L128",
       "id": "docs_roadmap_how_priorities_are_set",
       "community": 22,
       "norm_label": "how priorities are set"
@@ -6667,7 +6874,7 @@
       "label": "Phase gate checklist",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L133",
+      "source_location": "L137",
       "id": "docs_roadmap_phase_gate_checklist",
       "community": 22,
       "norm_label": "phase gate checklist"
@@ -6680,6 +6887,141 @@
       "id": "app_layout_metadata",
       "community": 7,
       "norm_label": "metadata"
+    },
+    {
+      "label": "Optional: real AI product lookup",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L53",
+      "community": 9,
+      "norm_label": "optional: real ai product lookup",
+      "id": "skin_care_for_me_webapp_readme_optional_real_ai_product_lookup"
+    },
+    {
+      "label": "Optional: Amazon affiliate links",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L63",
+      "community": 9,
+      "norm_label": "optional: amazon affiliate links",
+      "id": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links"
+    },
+    {
+      "label": "code:block5 (app/                    Next.js App Router pages and API rou)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L93",
+      "community": 9,
+      "norm_label": "code:block5 (app/                    next.js app router pages and api rou)",
+      "id": "skin_care_for_me_webapp_readme_codeblock_5"
+    },
+    {
+      "label": "How detection works",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L89",
+      "community": 16,
+      "norm_label": "how detection works",
+      "id": "docs_architecture_how_detection_works"
+    },
+    {
+      "label": "Where warnings appear in the UI",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L96",
+      "community": 16,
+      "norm_label": "where warnings appear in the ui",
+      "id": "docs_architecture_where_warnings_appear_in_the_ui"
+    },
+    {
+      "label": "Cycle phases",
+      "file_type": "document",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L109",
+      "community": 16,
+      "norm_label": "cycle phases",
+      "id": "docs_architecture_cycle_phases"
+    },
+    {
+      "label": "Effect on routines",
+      "file_type": "document",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L88",
+      "community": 27,
+      "norm_label": "effect on routines",
+      "id": "docs_body_and_cycle_effect_on_routines"
+    },
+    {
+      "label": "Effect on UI",
+      "file_type": "document",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L97",
+      "community": 27,
+      "norm_label": "effect on ui",
+      "id": "docs_body_and_cycle_effect_on_ui"
+    },
+    {
+      "label": "Products held list",
+      "file_type": "document",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L117",
+      "community": 27,
+      "norm_label": "products held list",
+      "id": "docs_body_and_cycle_products_held_list"
+    },
+    {
+      "label": "Master switch behavior",
+      "file_type": "document",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L130",
+      "community": 27,
+      "norm_label": "master switch behavior",
+      "id": "docs_body_and_cycle_master_switch_behavior"
+    },
+    {
+      "label": "Limitations & disclaimers",
+      "file_type": "document",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L164",
+      "community": 27,
+      "norm_label": "limitations & disclaimers",
+      "id": "docs_body_and_cycle_limitations_disclaimers"
+    },
+    {
+      "label": "Code quality (audit notes)",
+      "file_type": "document",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L69",
+      "community": 18,
+      "norm_label": "code quality (audit notes)",
+      "id": "docs_known_limitations_code_quality_audit_notes"
+    },
+    {
+      "label": "Default seed shelf",
+      "file_type": "document",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L75",
+      "community": 18,
+      "norm_label": "default seed shelf",
+      "id": "docs_known_limitations_default_seed_shelf"
+    },
+    {
+      "label": "Deployment notes",
+      "file_type": "document",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L79",
+      "community": 18,
+      "norm_label": "deployment notes",
+      "id": "docs_known_limitations_deployment_notes"
+    },
+    {
+      "label": "Suggested next work (not committed)",
+      "file_type": "document",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L84",
+      "community": 18,
+      "norm_label": "suggested next work (not committed)",
+      "id": "docs_known_limitations_suggested_next_work_not_committed"
     },
     {
       "label": "SeverityDot()",
@@ -6704,7 +7046,7 @@
       "file_type": "code",
       "source_file": "components/pages/home-page.tsx",
       "source_location": "L71",
-      "community": 6,
+      "community": 15,
       "norm_label": "getgreeting()",
       "id": "pages_home_page_getgreeting"
     },
@@ -6767,7 +7109,7 @@
       "file_type": "code",
       "source_file": "components/cycle/cycle-phase-banner.tsx",
       "source_location": "L8",
-      "community": 6,
+      "community": 25,
       "norm_label": "cyclephasebannerprops",
       "id": "cycle_cycle_phase_banner_cyclephasebannerprops"
     },
@@ -6821,7 +7163,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L15",
-      "community": 25,
+      "community": 15,
       "norm_label": "phase_sensitive",
       "id": "routines_generator_phase_sensitive"
     },
@@ -6830,7 +7172,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L27",
-      "community": 25,
+      "community": 15,
       "norm_label": "shouldincludeforphase()",
       "id": "routines_generator_shouldincludeforphase"
     },
@@ -6839,7 +7181,7 @@
       "file_type": "code",
       "source_file": "lib/types/cycle.ts",
       "source_location": "L1",
-      "community": 6,
+      "community": 25,
       "norm_label": "cyclephase",
       "id": "types_cycle_cyclephase"
     },
@@ -6857,7 +7199,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L14",
-      "community": 25,
+      "community": 15,
       "norm_label": "category_order",
       "id": "routines_generator_category_order"
     },
@@ -6866,7 +7208,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L35",
-      "community": 25,
+      "community": 15,
       "norm_label": "sortbycategory()",
       "id": "routines_generator_sortbycategory"
     },
@@ -6983,7 +7325,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L108",
-      "community": 0,
+      "community": 1,
       "norm_label": "stepinteractionhint()",
       "id": "conflicts_ingredient_interactions_stepinteractionhint"
     },
@@ -7001,7 +7343,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L194",
-      "community": 6,
+      "community": 1,
       "norm_label": "interactionsummarybar()",
       "id": "conflicts_ingredient_interactions_interactionsummarybar"
     },
@@ -7019,7 +7361,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L1",
-      "community": 25,
+      "community": 15,
       "norm_label": "productcategory",
       "id": "lib_types_productcategory"
     },
@@ -7028,7 +7370,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L13",
-      "community": 25,
+      "community": 6,
       "norm_label": "routinefrequency",
       "id": "lib_types_routinefrequency"
     },
@@ -7037,7 +7379,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L15",
-      "community": 25,
+      "community": 15,
       "norm_label": "timeofday",
       "id": "lib_types_timeofday"
     },
@@ -7046,7 +7388,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L17",
-      "community": 6,
+      "community": 25,
       "norm_label": "cyclephase",
       "id": "lib_types_cyclephase"
     },
@@ -7064,7 +7406,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L40",
-      "community": 1,
+      "community": 6,
       "norm_label": "cyclesettings",
       "id": "lib_types_cyclesettings"
     },
@@ -7073,7 +7415,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L47",
-      "community": 25,
+      "community": 15,
       "norm_label": "routinestep",
       "id": "lib_types_routinestep"
     },
@@ -7199,7 +7541,7 @@
       "file_type": "code",
       "source_file": "app/page.tsx",
       "source_location": "L1",
-      "community": 1,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "app_page_tsx"
     },
@@ -7208,7 +7550,7 @@
       "file_type": "code",
       "source_file": "app/cycle/page.tsx",
       "source_location": "L1",
-      "community": 1,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "app_cycle_page_tsx"
     },
@@ -7226,7 +7568,7 @@
       "file_type": "code",
       "source_file": "app/products/page.tsx",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "page.tsx",
       "id": "app_products_page_tsx"
     },
@@ -7244,7 +7586,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/conflict-list.tsx",
       "source_location": "L1",
-      "community": 1,
+      "community": 0,
       "norm_label": "conflict-list.tsx",
       "id": "components_conflicts_conflict_list_tsx"
     },
@@ -7253,7 +7595,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/conflict-list.tsx",
       "source_location": "L8",
-      "community": 1,
+      "community": 0,
       "norm_label": "severity_styles",
       "id": "conflicts_conflict_list_severity_styles"
     },
@@ -7262,7 +7604,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/conflict-list.tsx",
       "source_location": "L14",
-      "community": 1,
+      "community": 6,
       "norm_label": "conflictlist()",
       "id": "conflicts_conflict_list_conflictlist"
     },
@@ -8303,9 +8645,9 @@
       "source_file": "app/robots.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_robots_ts",
-      "target": "lib_constants_site_ts",
-      "confidence_score": 1.0
+      "target": "lib_constants_site_ts"
     },
     {
       "relation": "contains",
@@ -8313,9 +8655,9 @@
       "source_file": "app/robots.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_robots_ts",
-      "target": "app_robots_robots",
-      "confidence_score": 1.0
+      "target": "app_robots_robots"
     },
     {
       "relation": "imports_from",
@@ -8324,9 +8666,9 @@
       "source_file": "app/sitemap.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_sitemap_ts",
-      "target": "lib_constants_site_ts",
-      "confidence_score": 1.0
+      "target": "lib_constants_site_ts"
     },
     {
       "relation": "contains",
@@ -8334,9 +8676,9 @@
       "source_file": "app/sitemap.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_sitemap_ts",
-      "target": "app_sitemap_routes",
-      "confidence_score": 1.0
+      "target": "app_sitemap_routes"
     },
     {
       "relation": "contains",
@@ -8344,9 +8686,9 @@
       "source_file": "app/sitemap.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_sitemap_ts",
-      "target": "app_sitemap_sitemap",
-      "confidence_score": 1.0
+      "target": "app_sitemap_sitemap"
     },
     {
       "relation": "imports_from",
@@ -15258,6 +15600,17 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_products_add_product_sheet_tsx",
+      "target": "lib_constants_features_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/add-product-sheet.tsx",
       "source_location": "L6",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -15397,6 +15750,28 @@
       "target": "ui_sheet_sheettrigger"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "components_products_add_product_sheet_tsx",
+      "target": "lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "components_products_add_product_sheet_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/products/add-product-sheet.tsx",
@@ -15415,6 +15790,26 @@
       "confidence_score": 1.0,
       "source": "components_products_add_product_sheet_tsx",
       "target": "products_add_product_sheet_addproductsheet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "components_products_add_product_sheet_tsx",
+      "target": "products_add_product_sheet_addproductunavailable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "components_products_add_product_sheet_tsx",
+      "target": "products_add_product_sheet_addproductsheetenabled",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -15558,6 +15953,72 @@
       "confidence_score": 1.0,
       "source": "app_products_page_tsx",
       "target": "products_add_product_sheet_addproductsheet"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "products_add_product_sheet_addproductunavailable",
+      "target": "providers_locale_provider_usetranslation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "products_add_product_sheet_addproductunavailable",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "products_add_product_sheet_addproductunavailable",
+      "target": "body_context_routine_rules_test_t"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "products_add_product_sheet_addproductsheetenabled",
+      "target": "providers_locale_provider_usetranslation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "products_add_product_sheet_addproductsheetenabled",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "components/products/add-product-sheet.tsx",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "products_add_product_sheet_addproductsheetenabled",
+      "target": "body_context_routine_rules_test_t"
     },
     {
       "relation": "imports_from",
@@ -23415,9 +23876,9 @@
       "source_file": "lib/constants/metadata.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_constants_metadata_ts",
-      "target": "lib_constants_site_ts",
-      "confidence_score": 1.0
+      "target": "lib_constants_site_ts"
     },
     {
       "relation": "contains",
@@ -28642,6 +29103,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "skin_care_for_me_webapp_readme_quick_start",
+      "target": "skin_care_for_me_webapp_readme_environment_variables",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skin_care_for_me_webapp_readme_quick_start",
+      "target": "skin_care_for_me_webapp_readme_production_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L42",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -28657,16 +29138,6 @@
       "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_readme_quick_start",
       "target": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "skin_care_for_me_webapp_readme_quick_start",
-      "target": "skin_care_for_me_webapp_readme_production_build"
     },
     {
       "relation": "contains",
@@ -28692,21 +29163,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L46",
+      "source_location": "L60",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "skin_care_for_me_webapp_readme_optional_real_ai_product_lookup",
-      "target": "skin_care_for_me_webapp_readme_codeblock_2"
+      "source": "skin_care_for_me_webapp_readme_environment_variables",
+      "target": "skin_care_for_me_webapp_readme_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L67",
+      "source_location": "L46",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links",
-      "target": "skin_care_for_me_webapp_readme_codeblock_3"
+      "source": "skin_care_for_me_webapp_readme_optional_real_ai_product_lookup",
+      "target": "skin_care_for_me_webapp_readme_codeblock_2"
     },
     {
       "relation": "contains",
@@ -28732,11 +29203,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L70",
+      "source_location": "L67",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "skin_care_for_me_webapp_readme_project_layout",
-      "target": "skin_care_for_me_webapp_readme_codeblock_4"
+      "source": "skin_care_for_me_webapp_readme_optional_amazon_affiliate_links",
+      "target": "skin_care_for_me_webapp_readme_codeblock_3"
     },
     {
       "relation": "contains",
@@ -28747,6 +29218,16 @@
       "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_readme_skin_care_for_me",
       "target": "skin_care_for_me_webapp_readme_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skin_care_for_me_webapp_readme_project_layout",
+      "target": "skin_care_for_me_webapp_readme_codeblock_4"
     },
     {
       "relation": "contains",
@@ -28854,6 +29335,16 @@
       "source_file": "docs/ARCHITECTURE.md",
       "source_location": "L85",
       "weight": 1.0,
+      "source": "docs_architecture_architecture",
+      "target": "docs_architecture_routine_verification_safety_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L85",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_architecture_architecture",
       "target": "docs_architecture_ingredient_conflicts"
@@ -28862,11 +29353,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L109",
+      "source_location": "L121",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_architecture_architecture",
-      "target": "docs_architecture_cycle_phases"
+      "target": "docs_architecture_body_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "docs_architecture_architecture",
+      "target": "docs_architecture_localization",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -28902,11 +29403,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "docs_architecture_architecture",
+      "target": "docs_architecture_seo_production_meta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
       "source_location": "L142",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "docs_architecture_architecture",
       "target": "docs_architecture_what_is_not_architected_yet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_architecture",
+      "target": "docs_architecture_cycle_phases"
     },
     {
       "relation": "contains",
@@ -28957,6 +29478,16 @@
       "confidence_score": 1.0,
       "source": "docs_architecture_steps",
       "target": "docs_architecture_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "docs_architecture_ingredient_conflicts",
+      "target": "docs_architecture_where_warnings_appear",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -29502,11 +30033,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L130",
+      "source_location": "L117",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_body_and_cycle_body_cycle_context",
-      "target": "docs_body_and_cycle_master_switch_behavior"
+      "target": "docs_body_and_cycle_master_switch",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -29532,11 +30063,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/BODY-AND-CYCLE.md",
-      "source_location": "L164",
+      "source_location": "L145",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "docs_body_and_cycle_body_cycle_context",
-      "target": "docs_body_and_cycle_limitations_disclaimers"
+      "target": "docs_body_and_cycle_limitations",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -29557,6 +30088,26 @@
       "confidence_score": 1.0,
       "source": "docs_body_and_cycle_body_cycle_context",
       "target": "docs_body_and_cycle_related_docs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_body_and_cycle_body_cycle_context",
+      "target": "docs_body_and_cycle_master_switch_behavior"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_body_and_cycle_body_cycle_context",
+      "target": "docs_body_and_cycle_limitations_disclaimers"
     },
     {
       "relation": "contains",
@@ -29587,6 +30138,26 @@
       "confidence_score": 1.0,
       "source": "docs_body_and_cycle_menstrual_cycle",
       "target": "docs_body_and_cycle_phase_calculation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "docs_body_and_cycle_menstrual_cycle",
+      "target": "docs_body_and_cycle_routine_impact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BODY-AND-CYCLE.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "docs_body_and_cycle_menstrual_cycle",
+      "target": "docs_body_and_cycle_ui",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -29697,6 +30268,16 @@
       "confidence_score": 1.0,
       "source": "docs_data_and_storage_data_and_storage",
       "target": "docs_data_and_storage_future_schema_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DATA-AND-STORAGE.md",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "docs_data_and_storage_data_and_storage",
+      "target": "docs_data_and_storage_related_docs",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -29872,6 +30453,46 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "docs_known_limitations_known_limitations",
+      "target": "docs_known_limitations_localization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "docs_known_limitations_known_limitations",
+      "target": "docs_known_limitations_code_quality",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "docs_known_limitations_known_limitations",
+      "target": "docs_known_limitations_deployment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "docs_known_limitations_known_limitations",
+      "target": "docs_known_limitations_suggested_next_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/KNOWN-LIMITATIONS.md",
       "source_location": "L69",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -29907,6 +30528,186 @@
       "confidence_score": 1.0,
       "source": "docs_known_limitations_known_limitations",
       "target": "docs_known_limitations_suggested_next_work_not_committed"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_localization_md",
+      "target": "docs_localization_localization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_locales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_message_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_language_toggle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_what_is_localized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_what_is_not_localized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_html_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_adding_a_new_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_adding_a_new_locale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "docs_localization_localization",
+      "target": "docs_localization_related_docs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "docs_localization_locales",
+      "target": "docs_localization_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "docs_localization_architecture",
+      "target": "docs_localization_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "docs_localization_architecture",
+      "target": "docs_localization_provider_tree",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "docs_localization_architecture",
+      "target": "docs_localization_using_translations_in_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "docs_localization_architecture",
+      "target": "docs_localization_ui_helpers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "docs_localization_provider_tree",
+      "target": "docs_localization_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/LOCALIZATION.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "docs_localization_using_translations_in_components",
+      "target": "docs_localization_codeblock_4",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -29994,9 +30795,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_md",
-      "target": "docs_production_tracker_road_to_production_tracker",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_road_to_production_tracker"
     },
     {
       "relation": "contains",
@@ -30004,9 +30805,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_readiness_snapshot",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_readiness_snapshot"
     },
     {
       "relation": "contains",
@@ -30014,9 +30815,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_how_to_use_this_doc",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_how_to_use_this_doc"
     },
     {
       "relation": "contains",
@@ -30024,9 +30825,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_1_build_runtime",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_1_build_runtime"
     },
     {
       "relation": "contains",
@@ -30034,9 +30835,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_2_meta_seo_social",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_2_meta_seo_social"
     },
     {
       "relation": "contains",
@@ -30044,9 +30845,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_3_brand_copy",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_3_brand_copy"
     },
     {
       "relation": "contains",
@@ -30054,9 +30855,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_4_environment_deployment",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_4_environment_deployment"
     },
     {
       "relation": "contains",
@@ -30064,9 +30865,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_5_security",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_5_security"
     },
     {
       "relation": "contains",
@@ -30074,9 +30875,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_6_privacy_legal",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_6_privacy_legal"
     },
     {
       "relation": "contains",
@@ -30084,9 +30885,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_7_ci_qa_release_process",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_7_ci_qa_release_process"
     },
     {
       "relation": "contains",
@@ -30094,9 +30895,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_8_performance_reliability",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_8_performance_reliability"
     },
     {
       "relation": "contains",
@@ -30104,9 +30905,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_9_accessibility",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_9_accessibility"
     },
     {
       "relation": "contains",
@@ -30114,9 +30915,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L211",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_10_internationalization_as_shipped",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_10_internationalization_as_shipped"
     },
     {
       "relation": "contains",
@@ -30124,9 +30925,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_11_feature_completeness_production_honesty",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_11_feature_completeness_production_honesty"
     },
     {
       "relation": "contains",
@@ -30134,9 +30935,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_12_launch_gates",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_12_launch_gates"
     },
     {
       "relation": "contains",
@@ -30144,9 +30945,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L278",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_13_suggested_work_order_next_2_weeks",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_13_suggested_work_order_next_2_weeks"
     },
     {
       "relation": "contains",
@@ -30154,9 +30955,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L297",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_road_to_production_tracker",
-      "target": "docs_production_tracker_related_docs",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_related_docs"
     },
     {
       "relation": "contains",
@@ -30164,9 +30965,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_readiness_snapshot",
-      "target": "docs_production_tracker_codeblock_1",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_codeblock_1"
     },
     {
       "relation": "contains",
@@ -30174,9 +30975,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_4_environment_deployment",
-      "target": "docs_production_tracker_codeblock_2",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_codeblock_2"
     },
     {
       "relation": "contains",
@@ -30184,9 +30985,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_12_launch_gates",
-      "target": "docs_production_tracker_gate_a_private_beta_friends_family",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_gate_a_private_beta_friends_family"
     },
     {
       "relation": "contains",
@@ -30194,9 +30995,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_12_launch_gates",
-      "target": "docs_production_tracker_gate_b_public_production",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_gate_b_public_production"
     },
     {
       "relation": "contains",
@@ -30204,9 +31005,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L266",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_12_launch_gates",
-      "target": "docs_production_tracker_gate_c_confident_production",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_gate_c_confident_production"
     },
     {
       "relation": "contains",
@@ -30214,9 +31015,9 @@
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L289",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_production_tracker_13_suggested_work_order_next_2_weeks",
-      "target": "docs_production_tracker_qa_log",
-      "confidence_score": 1.0
+      "target": "docs_production_tracker_qa_log"
     },
     {
       "relation": "contains",
@@ -30247,6 +31048,16 @@
       "confidence_score": 1.0,
       "source": "docs_readme_documentation",
       "target": "docs_readme_engineering"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/README.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "docs_readme_documentation",
+      "target": "docs_readme_doc_types",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -31141,5 +31952,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3810dcfa4f1f72cfeb8ba07cbe57b48c8ee9c742"
+  "built_at_commit": "1a331e5542a8fb0d2f4072b719dbf3eaaa39251e"
 }

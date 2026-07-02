@@ -116,7 +116,7 @@ export const en = {
       title: "Today's skin care",
       emptyTitle: "Start your shelf",
       emptyDescription:
-        "Add products you own. Routines and conflict checks update automatically.",
+        "Your shelf ships with demo products. Adding your own is coming soon.",
       emptyRoutines:
         "No routines scheduled for today. Check weekly or monthly tabs.",
     },
@@ -309,6 +309,9 @@ export const en = {
     nameLabel: "Product name",
     namePlaceholder: "e.g. CeraVe Hydrating Cleanser",
     notFound: "Could not find product info. Try a more specific name.",
+    comingSoon: "Coming soon",
+    unavailable:
+      "Search and save your own products isn't ready yet. The demo shelf below is fully usable.",
   },
   affiliate:
     "Shop on Amazon links may earn a commission at no extra cost to you. Set NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG in your environment to use your Associates tag.",

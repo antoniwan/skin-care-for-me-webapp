@@ -15,8 +15,7 @@ import { getTodaysRoutines } from "@/lib/routines/generator";
 import { cn } from "@/lib/utils";
 
 export function HomePage() {
-  const { products, routines, settings, loading, addProductFromLookup } =
-    useAppDataContext();
+  const { products, routines, settings, loading } = useAppDataContext();
   const { t } = useTranslation();
 
   if (loading || !settings) {
@@ -42,7 +41,7 @@ export function HomePage() {
             title={t("pages.home.emptyTitle")}
             description={t("pages.home.emptyDescription")}
           >
-            <AddProductSheet onAdd={addProductFromLookup} />
+            <AddProductSheet />
           </EmptyState>
         </>
       ) : (
