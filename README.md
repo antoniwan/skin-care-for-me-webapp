@@ -137,6 +137,7 @@ hooks/use-app-data.ts   Client data hook + React context
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How data flows, how routines and conflicts are computed |
 | [docs/DATA-AND-STORAGE.md](docs/DATA-AND-STORAGE.md) | Database schema, seed products, privacy |
 | [docs/KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md) | Audit findings, gaps, and rough edges |
+| [docs/PRODUCTION-TRACKER.md](docs/PRODUCTION-TRACKER.md) | Road to production checklist (meta, deploy, legal, CI) |
 
 ## Tech stack
 

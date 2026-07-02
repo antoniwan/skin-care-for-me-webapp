@@ -18,5 +18,6 @@ Start with the [main README](../README.md) for setup and a short overview.
 | [DATA-AND-STORAGE.md](DATA-AND-STORAGE.md) | See database schema, seed products, and what stays local vs server |
 | [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md) | Understand menstrual, life-stage, and weight settings and how they affect routines |
 | [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md) | Know what is missing, buggy, or simplified before you ship or rely on it |
+| [PRODUCTION-TRACKER.md](PRODUCTION-TRACKER.md) | Ship today's app to production — meta, deploy, legal, CI (not the roadmap) |
 
-**Current state** docs describe the codebase as it is. **Product** docs describe where we intend to go.
+**Current state** docs describe the codebase as it is. **Product** docs describe where we intend to go. **Production tracker** is the launch checklist for v0.1 as it exists today.

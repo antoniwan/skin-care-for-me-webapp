@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" fill="none">
+  <rect width="800" height="320" rx="16" fill="#FDF8F9"/>
+  <text x="40" y="48" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#1a1a1a">Skincare for You  production readiness</text>
+  <text x="40" y="76" font-family="system-ui, sans-serif" font-size="14" fill="#6b7280">v0.1.0 · audited 2026-07-02 · 52% overall</text>
+
+  <!-- Bar background -->
+  <rect x="40" y="100" width="720" height="24" rx="12" fill="#e5e7eb"/>
+  <rect x="40" y="100" width="374" height="24" rx="12" fill="#E04362"/>
+
+  <text x="40" y="150" font-family="system-ui, sans-serif" font-size="13" fill="#374151">22 of 42 checklist items complete</text>
+
+  <!-- Category rows -->
+  <g font-family="system-ui, sans-serif" font-size="13">
+    <text x="40" y="190" fill="#374151" font-weight="600">Build &amp; tests</text>
+    <rect x="200" y="176" width="120" height="16" rx="4" fill="#86efac"/>
+    <text x="330" y="190" fill="#6b7280">6/7</text>
+
+    <text x="40" y="220" fill="#374151" font-weight="600">Meta &amp; SEO</text>
+    <rect x="200" y="206" width="154" height="16" rx="4" fill="#86efac"/>
+    <text x="330" y="220" fill="#6b7280">9/10</text>
+
+    <text x="40" y="250" fill="#374151" font-weight="600">Deploy &amp; env</text>
+    <rect x="200" y="236" width="69" height="16" rx="4" fill="#fcd34d"/>
+    <text x="330" y="250" fill="#6b7280">2/7</text>
+
+    <text x="40" y="280" fill="#374151" font-weight="600">Legal &amp; CI</text>
+    <rect x="200" y="266" width="35" height="16" rx="4" fill="#fca5a5"/>
+    <text x="330" y="280" fill="#6b7280">1/8</text>
+
+    <text x="420" y="190" fill="#374151" font-weight="600">Security</text>
+    <rect x="540" y="176" width="52" height="16" rx="4" fill="#fcd34d"/>
+    <text x="670" y="190" fill="#6b7280">2/5</text>
+
+    <text x="420" y="220" fill="#374151" font-weight="600">i18n</text>
+    <rect x="540" y="206" width="83" height="16" rx="4" fill="#86efac"/>
+    <text x="670" y="220" fill="#6b7280">3/5</text>
+
+    <text x="420" y="250" fill="#374151" font-weight="600">A11y &amp; perf</text>
+    <rect x="540" y="236" width="35" height="16" rx="4" fill="#fcd34d"/>
+    <text x="670" y="250" fill="#6b7280">2/8</text>
+  </g>
+</svg>
