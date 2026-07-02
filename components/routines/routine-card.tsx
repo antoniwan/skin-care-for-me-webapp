@@ -6,7 +6,7 @@ import { groupWarningsByProduct } from "@/lib/conflicts/display";
 import {
   RoutineInteractionBadge,
   StepInteractionHint,
-} from "@/components/conflicts/ingredient-interactions";
+} from "@/components/conflicts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 

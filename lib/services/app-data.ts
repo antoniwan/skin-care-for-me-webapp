@@ -2,6 +2,7 @@ import {
   deleteProduct,
   getAllProducts,
   getSettings,
+  listProducts,
   saveProduct,
   saveSettings,
 } from "@/lib/db";
@@ -24,13 +25,20 @@ export interface AppDataSnapshot {
   conflicts: ConflictWarning[];
 }
 
-/** Load shelf + settings and derive routines and conflicts. Routines are not persisted. */
-export async function refreshAppData(): Promise<AppDataSnapshot> {
+/** Read-only snapshot for liveQuery (no IndexedDB writes). */
+export async function readAppDataSnapshot(): Promise<AppDataSnapshot> {
   const [products, settings] = await Promise.all([
-    getAllProducts(),
+    listProducts(),
     getSettings(),
   ]);
 
+  return deriveAppDataSnapshot(products, settings);
+}
+
+function deriveAppDataSnapshot(
+  products: Product[],
+  settings: AppSettings,
+): AppDataSnapshot {
   return {
     products,
     settings,
@@ -39,26 +47,29 @@ export async function refreshAppData(): Promise<AppDataSnapshot> {
   };
 }
 
+/** Load shelf + settings and derive routines and conflicts. Ensures seed products first. */
+export async function refreshAppData(): Promise<AppDataSnapshot> {
+  const [products, settings] = await Promise.all([
+    getAllProducts(),
+    getSettings(),
+  ]);
+
+  return deriveAppDataSnapshot(products, settings);
+}
+
 export async function addProductFromLookup(
   lookup: ProductLookupResult,
-): Promise<{ product: Product; snapshot: AppDataSnapshot }> {
+): Promise<Product> {
   const product = productFromLookup(lookup);
   await saveProduct(product);
-  const snapshot = await refreshAppData();
-  return { product, snapshot };
+  return product;
 }
 
-export async function removeProductById(id: string): Promise<AppDataSnapshot> {
-  if (isSeedProductId(id)) {
-    return refreshAppData();
-  }
+export async function removeProductById(id: string): Promise<void> {
+  if (isSeedProductId(id)) return;
   await deleteProduct(id);
-  return refreshAppData();
 }
 
-export async function updateAppSettings(
-  settings: AppSettings,
-): Promise<AppDataSnapshot> {
+export async function updateAppSettings(settings: AppSettings): Promise<void> {
   await saveSettings(settings);
-  return refreshAppData();
 }

@@ -56,7 +56,7 @@ This is an audit of the project as of v0.1. It lists what is rough, missing, or 
 - Data is per-browser, per-origin. Clearing site data loses user-added products (seeds come back).
 - Seed products are re-upserted every load — you cannot permanently remove them.
 - No encryption at rest beyond what the browser provides.
-- `loadedRoutines` in `use-app-data.ts` is fetched but discarded; routines always come from fresh generation.
+- Routines are derived on each read, not stored in IndexedDB during normal use.
 
 ## UI / UX
 
@@ -68,8 +68,6 @@ This is an audit of the project as of v0.1. It lists what is rough, missing, or 
 
 ## Code quality (audit notes)
 
-- **`npm run lint` fails** — `react-hooks/set-state-in-effect` on `useAppData` mount refresh; unused `loadedRoutines` variable.
-- **No test files** in the repo.
 - **Both `package-lock.json` and `pnpm-lock.yaml`** exist — pick one package manager for team consistency.
 - **`graphify-out/`** is generated architecture tooling output; not required to run the app.
 - **Dependencies:** `shadcn` is listed as a runtime dependency though it is normally a dev CLI only.
@@ -89,7 +87,6 @@ If you continue development, these would address the biggest gaps:
 
 1. Let users edit frequency, time of day, and ingredients on existing products.
 2. Configurable weekly day (or “every N days”).
-3. Expand or externalize conflict rules; add tests for alias matching.
-4. Fix lint issues; add Vitest for `generator.ts` and `ingredient-conflicts.ts`.
-5. JSON export/import for backup.
-6. Either remove unused `onboardingComplete` or build onboarding.
+3. Expand or externalize conflict rules.
+4. JSON export/import for backup.
+5. Either remove unused `onboardingComplete` or build onboarding.

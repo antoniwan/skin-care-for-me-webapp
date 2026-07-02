@@ -31,7 +31,8 @@ export const db = new SkinCareDB();
 
 let seedPromise: Promise<void> | null = null;
 
-async function ensureSeedProducts(): Promise<void> {
+/** Upsert default shelf products. Call outside liveQuery (read-only) contexts. */
+export async function ensureSeedProducts(): Promise<void> {
   if (!seedPromise) {
     seedPromise = db.products.bulkPut(DEFAULT_PRODUCTS).then(() => undefined);
   }
@@ -47,9 +48,13 @@ export async function saveSettings(settings: AppSettings): Promise<void> {
   await db.settings.put({ id: "app", ...settings });
 }
 
+export async function listProducts(): Promise<Product[]> {
+  return db.products.orderBy("createdAt").reverse().toArray();
+}
+
 export async function getAllProducts(): Promise<Product[]> {
   await ensureSeedProducts();
-  return db.products.orderBy("createdAt").reverse().toArray();
+  return listProducts();
 }
 
 export async function getProduct(id: string): Promise<Product | undefined> {

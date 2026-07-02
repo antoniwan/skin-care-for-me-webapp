@@ -11,12 +11,11 @@ This is early-stage software (v0.1). It works, but many features are basic or mi
 - **Ingredient interactions** — A small hand-written rules list (retinol + BHA, vitamin C + niacinamide, etc.). Warnings show inline on routine steps, not as a long separate list.
 - **Cycle tracking** (optional) — Enter cycle length and last period start. The app shows your phase and softens harsh actives during menstrual/luteal phases.
 - **PDF guide** — Download products, routines, and interaction notes as a simple PDF.
-- **Local storage** — Products, routines, and settings live in IndexedDB (Dexie). No account, no cloud sync.
+- **Local storage** — Products and settings live in IndexedDB (Dexie). Routines are derived on read. No account, no cloud sync.
 
 ## What does not work (or is incomplete)
 
 - No way to edit a product after adding it (only delete user-added ones).
-- No tests.
 - No offline/PWA install flow.
 - Product lookup uses a fake mock when `OPENAI_API_KEY` is not set.
 - Conflict rules cover ~10 ingredient pairs, not a full dermatology database.
@@ -63,7 +62,9 @@ npm start
 | `npm run dev`  | Development server (Turbopack)   |
 | `npm run build`| Production build + typecheck     |
 | `npm run start`| Serve production build           |
-| `npm run lint` | ESLint (has known issues — see audit) |
+| `npm run lint` | ESLint |
+| `npm test`     | Vitest unit tests (`lib/**/*.test.ts`) |
+| `npm run test:watch` | Vitest watch mode |
 
 ## Project layout
 
@@ -88,6 +89,8 @@ components/
   ui/                   shadcn/ui primitives
 
 lib/
+  types/                Domain types (product, routine, cycle, settings, …)
+  services/app-data.ts  Load + mutate shelf data; derive routines/conflicts
   db.ts                 IndexedDB (Dexie)
   seed/                 Default product data
   routines/generator.ts Routine building logic
@@ -114,7 +117,7 @@ hooks/use-app-data.ts   Client data hook + React context
 
 - **Next.js 16** (App Router, React 19)
 - **Tailwind CSS 4** + **shadcn/ui** (Radix)
-- **Dexie** (IndexedDB)
+- **Dexie** (IndexedDB) + **dexie-react-hooks** (`useLiveQuery`)
 - **Vercel AI SDK** + OpenAI (optional product lookup)
 - **jsPDF** (guide export)
 - **Fontsource**: Fraunces (headings) + Source Sans 3 (body)

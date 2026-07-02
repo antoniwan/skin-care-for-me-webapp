@@ -2,7 +2,7 @@
 
 import { Download } from "lucide-react";
 import { useAppDataContext } from "@/components/providers/app-data-provider";
-import { InteractionSummaryBar } from "@/components/conflicts/ingredient-interactions";
+import { InteractionSummaryBar } from "@/components/conflicts";
 import { RoutineList } from "@/components/routines/routine-list";
 import { PageContainer } from "@/components/layout/page-container";
 import { PageHeader } from "@/components/layout/page-header";

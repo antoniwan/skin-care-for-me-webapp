@@ -10,7 +10,7 @@ Browser
   ├─ React pages (client components)
   │     └─ useAppDataContext() ──► useAppData() hook
   │
-  ├─ IndexedDB (Dexie)          products, routines, settings
+  ├─ IndexedDB (Dexie)          products, settings (routines derived in memory)
   │
   └─ POST /api/products/lookup  only when adding a product
         └─ OpenAI (or mock)     returns structured JSON once; result saved locally
@@ -37,15 +37,14 @@ Bottom nav routes:
 
 ## Data loading
 
-On mount, `useAppData.refresh()`:
+`useAppData()` uses Dexie’s `useLiveQuery` to subscribe to IndexedDB changes. On each read it calls `refreshAppData()` in `lib/services/app-data.ts`, which:
 
 1. Loads products from IndexedDB (and upserts seed products — see [DATA-AND-STORAGE.md](DATA-AND-STORAGE.md))
 2. Loads settings (or defaults)
-3. Calls `generateRoutines(products, settings)`
-4. Saves generated routines back to IndexedDB
-5. Runs `detectConflicts(products)` for shelf-wide warnings
+3. Derives routines via `generateRoutines(products, settings)` (not persisted)
+4. Runs `detectConflicts(products)` for shelf-wide warnings
 
-Any change (add product, delete product, update cycle settings) calls `refresh()` again so routines stay in sync.
+Mutations (`addProductFromLookup`, `removeProductById`, `updateAppSettings`) write to IndexedDB; `useLiveQuery` re-runs automatically.
 
 ## Routine generation
 
@@ -95,7 +94,7 @@ File: `lib/rules/ingredient-conflicts.ts`
 
 ### Where warnings appear in the UI
 
-File: `components/conflicts/ingredient-interactions.tsx`
+Folder: `components/conflicts/` (barrel: `index.ts`)
 
 | Component | When used |
 |-----------|-----------|
@@ -144,7 +143,7 @@ Runs entirely client-side with jsPDF. Uses Helvetica (not the web fonts). Includ
 - Server-side persistence or sync
 - Authentication
 - Service worker / offline caching
-- Automated tests or CI
+- CI pipeline (unit tests exist via Vitest)
 - Product edit flow
 - Database migrations beyond Dexie v1
 
