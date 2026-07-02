@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {
   OG_IMAGE_HEIGHT,
-  OG_IMAGE_PATH,
+  OG_IMAGE_URL,
   OG_IMAGE_WIDTH,
   SITE_DESCRIPTION,
   SITE_NAME,
@@ -14,7 +14,7 @@ import {
 export { SITE_NAME, SITE_TITLE, SITE_DESCRIPTION } from "./site";
 
 const OG_IMAGE = {
-  url: absoluteUrl(OG_IMAGE_PATH),
+  url: OG_IMAGE_URL,
   width: OG_IMAGE_WIDTH,
   height: OG_IMAGE_HEIGHT,
   alt: ogImageAlt(),

@@ -3409,7 +3409,7 @@
       "label": "OG_IMAGE",
       "file_type": "code",
       "source_file": "lib/constants/metadata.ts",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "constants_metadata_og_image",
       "community": 29,
       "norm_label": "og_image"
@@ -3418,7 +3418,7 @@
       "label": "buildSocialMetadata()",
       "file_type": "code",
       "source_file": "lib/constants/metadata.ts",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "constants_metadata_buildsocialmetadata",
       "community": 29,
       "norm_label": "buildsocialmetadata()"
@@ -3427,7 +3427,7 @@
       "label": "ROOT_METADATA",
       "file_type": "code",
       "source_file": "lib/constants/metadata.ts",
-      "source_location": "L55",
+      "source_location": "L56",
       "id": "constants_metadata_root_metadata",
       "community": 31,
       "norm_label": "root_metadata"
@@ -3436,7 +3436,7 @@
       "label": "createPageMetadata()",
       "file_type": "code",
       "source_file": "lib/constants/metadata.ts",
-      "source_location": "L88",
+      "source_location": "L89",
       "id": "constants_metadata_createpagemetadata",
       "community": 29,
       "norm_label": "createpagemetadata()"
@@ -3445,7 +3445,7 @@
       "label": "PAGE_METADATA",
       "file_type": "code",
       "source_file": "lib/constants/metadata.ts",
-      "source_location": "L112",
+      "source_location": "L113",
       "id": "constants_metadata_page_metadata",
       "community": 29,
       "norm_label": "page_metadata"
@@ -3499,7 +3499,7 @@
       "label": "absoluteUrl()",
       "file_type": "code",
       "source_file": "lib/constants/site.ts",
-      "source_location": "L20",
+      "source_location": "L28",
       "id": "constants_site_absoluteurl",
       "community": 29,
       "norm_label": "absoluteurl()"
@@ -3508,7 +3508,7 @@
       "label": "ogImageAlt()",
       "file_type": "code",
       "source_file": "lib/constants/site.ts",
-      "source_location": "L24",
+      "source_location": "L32",
       "id": "constants_site_ogimagealt",
       "community": 29,
       "norm_label": "ogimagealt()"
@@ -6637,13 +6637,13 @@
       "norm_label": "4. environment & deployment"
     },
     {
-      "label": "code:env (NEXT_PUBLIC_SITE_URL=https://skincareforyou.builds.software)",
+      "label": "code:env (NEXT_PUBLIC_SITE_URL=https://skincare.builds.software)",
       "file_type": "document",
       "source_file": "docs/PRODUCTION-TRACKER.md",
       "source_location": "L125",
       "id": "docs_production_tracker_codeblock_2",
       "community": 26,
-      "norm_label": "code:env (next_public_site_url=https://skincareforyou.builds.software)"
+      "norm_label": "code:env (next_public_site_url=https://skincare.builds.software)"
     },
     {
       "label": "5. Security",
@@ -23923,9 +23923,9 @@
       "source_file": "lib/constants/metadata.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_constants_metadata_ts",
-      "target": "constants_site_absoluteurl",
-      "confidence_score": 1.0
+      "target": "constants_site_absoluteurl"
     },
     {
       "relation": "imports",
@@ -23934,9 +23934,9 @@
       "source_file": "lib/constants/metadata.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_constants_metadata_ts",
-      "target": "constants_site_ogimagealt",
-      "confidence_score": 1.0
+      "target": "constants_site_ogimagealt"
     },
     {
       "relation": "contains",
@@ -23944,9 +23944,9 @@
       "source_file": "lib/constants/metadata.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_constants_metadata_ts",
-      "target": "constants_metadata_og_image",
-      "confidence_score": 1.0
+      "target": "constants_metadata_og_image"
     },
     {
       "relation": "contains",
@@ -23954,9 +23954,9 @@
       "source_file": "lib/constants/metadata.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_constants_metadata_ts",
-      "target": "constants_metadata_buildsocialmetadata",
-      "confidence_score": 1.0
+      "target": "constants_metadata_buildsocialmetadata"
     },
     {
       "relation": "contains",
@@ -24006,9 +24006,9 @@
       "source_file": "lib/constants/metadata.ts",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "constants_metadata_createpagemetadata",
-      "target": "constants_metadata_buildsocialmetadata",
-      "confidence_score": 1.0
+      "target": "constants_metadata_buildsocialmetadata"
     },
     {
       "relation": "calls",
@@ -24017,9 +24017,9 @@
       "source_file": "lib/constants/metadata.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "constants_metadata_buildsocialmetadata",
-      "target": "constants_site_absoluteurl",
-      "confidence_score": 1.0
+      "target": "constants_site_absoluteurl"
     },
     {
       "relation": "contains",
@@ -24057,9 +24057,9 @@
       "source_file": "lib/constants/site.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_constants_site_ts",
-      "target": "constants_site_absoluteurl",
-      "confidence_score": 1.0
+      "target": "constants_site_absoluteurl"
     },
     {
       "relation": "contains",
@@ -24067,9 +24067,9 @@
       "source_file": "lib/constants/site.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_constants_site_ts",
-      "target": "constants_site_ogimagealt",
-      "confidence_score": 1.0
+      "target": "constants_site_ogimagealt"
     },
     {
       "relation": "imports_from",
@@ -32072,5 +32072,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "88068059cb8fadef379f403bfa3d42cbedb73fc2"
+  "built_at_commit": "678264bff48b87cfe665545c6c4b6624d93fdfeb"
 }

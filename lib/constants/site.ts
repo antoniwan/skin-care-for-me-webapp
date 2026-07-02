@@ -1,7 +1,12 @@
+/** Canonical production origin (also used for og:image when env is unset). */
+export const PRODUCTION_SITE_URL = "https://skincare.builds.software";
+
 /** Public site URL — set `NEXT_PUBLIC_SITE_URL` in production. */
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "http://localhost:3000";
+  (process.env.NODE_ENV === "production"
+    ? PRODUCTION_SITE_URL
+    : "http://localhost:3000");
 
 export const SITE_NAME = "Skincare for You";
 
@@ -16,6 +21,9 @@ export const SITE_DESCRIPTION =
 export const OG_IMAGE_PATH = "/og.png";
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
+
+/** Absolute OG / Twitter image URL — always on the production host. */
+export const OG_IMAGE_URL = `${PRODUCTION_SITE_URL}${OG_IMAGE_PATH}`;
 
 export function absoluteUrl(path: string): string {
   return new URL(path, SITE_URL).href;

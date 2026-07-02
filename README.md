@@ -4,7 +4,7 @@ A mobile-first web app that helps you track skin care products, build daily/week
 
 This is early-stage software (v0.1). It works, but many features are basic or missing. See [docs/KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md) for an honest list of current gaps, [docs/ROADMAP.md](docs/ROADMAP.md) for planned features, and [docs/PRODUCTION-TRACKER.md](docs/PRODUCTION-TRACKER.md) for the launch checklist.
 
-**Planned production URL:** `https://skincareforyou.builds.software`
+**Planned production URL:** `https://skincare.builds.software`
 
 ## What works today
 
@@ -65,7 +65,7 @@ OPENAI_API_KEY=sk-...
 NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=yourtag-20
 
 # Production: canonical URL for sitemap, Open Graph, robots.txt
-NEXT_PUBLIC_SITE_URL=https://skincareforyou.builds.software
+NEXT_PUBLIC_SITE_URL=https://skincare.builds.software
 ```
 
 Without `OPENAI_API_KEY`, adding a product still works but returns keyword-based placeholder data. Env is validated in `lib/env.ts`.

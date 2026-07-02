@@ -1,7 +1,7 @@
 # Graph Report - skin-care-for-me-webapp  (2026-07-02)
 
 ## Corpus Check
-- 142 files · ~330,401 words
+- 142 files · ~330,445 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `88068059`
+- Built from commit: `678264bf`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

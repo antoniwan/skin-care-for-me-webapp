@@ -89,7 +89,7 @@ Audit of the project as of **v0.1.0** (2026-07-02). Lists what is rough, missing
 
 - Standard Next.js on Vercel (or similar).
 - **Env:** `OPENAI_API_KEY`, `NEXT_PUBLIC_SITE_URL`, optional `NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG`.
-- **Planned URL:** `https://skincareforyou.builds.software`
+- **Planned URL:** `https://skincare.builds.software`
 - IndexedDB is client-only — SSR does not preload user data.
 - Meta assets exist (`og.png`, `icon.svg`, `robots.ts`, `sitemap.ts`) — see [PRODUCTION-TRACKER.md](PRODUCTION-TRACKER.md) for remaining launch gaps.
 
