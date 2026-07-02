@@ -2,16 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Calendar, Download, Home, Package, Sparkles } from "lucide-react";
+import { APP_NAV_ITEMS, isNavItemActive } from "@/lib/constants/navigation";
 import { cn } from "@/lib/utils";
-
-const NAV_ITEMS = [
-  { href: "/", label: "Today", icon: Home },
-  { href: "/products", label: "Products", icon: Package },
-  { href: "/routines", label: "Routines", icon: Sparkles },
-  { href: "/cycle", label: "Cycle", icon: Calendar },
-  { href: "/guide", label: "Guide", icon: Download },
-];
 
 export function BottomNav() {
   const pathname = usePathname();
@@ -19,9 +11,8 @@ export function BottomNav() {
   return (
     <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-border/80 bg-card/95 backdrop-blur-md pb-[env(safe-area-inset-bottom)]">
       <div className="mx-auto flex max-w-lg items-stretch justify-around px-1">
-        {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
-          const active =
-            href === "/" ? pathname === "/" : pathname.startsWith(href);
+        {APP_NAV_ITEMS.map(({ href, label, icon: Icon }) => {
+          const active = isNavItemActive(pathname, href);
           return (
             <Link
               key={href}

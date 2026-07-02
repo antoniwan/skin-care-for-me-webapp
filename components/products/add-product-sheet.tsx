@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Loader2, Plus, Search } from "lucide-react";
 import type { ProductLookupResult } from "@/lib/types";
+import { ProductMetaBadges } from "@/components/products/product-meta-badges";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -14,7 +15,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Badge } from "@/components/ui/badge";
 
 interface AddProductSheetProps {
   onAdd: (lookup: ProductLookupResult) => Promise<unknown>;
@@ -114,13 +114,11 @@ export function AddProductSheet({ onAdd }: AddProductSheetProps) {
                   <p className="text-sm text-muted-foreground">{preview.brand}</p>
                 )}
               </div>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="capitalize">
-                  {preview.category.replace("_", " ")}
-                </Badge>
-                <Badge variant="outline">{preview.suggestedFrequency}</Badge>
-                <Badge variant="outline">{preview.suggestedTimeOfDay}</Badge>
-              </div>
+              <ProductMetaBadges
+                category={preview.category}
+                frequency={preview.suggestedFrequency}
+                timeOfDay={preview.suggestedTimeOfDay}
+              />
               <p className="text-sm">{preview.usageGuide}</p>
               {preview.ingredients.length > 0 && (
                 <p className="text-xs text-muted-foreground">

@@ -1,6 +1,7 @@
 "use client";
 
 import type { ConflictWarning, Routine } from "@/lib/types";
+import { formatCategory } from "@/lib/format";
 import { groupWarningsByProduct } from "@/lib/conflicts/display";
 import {
   RoutineInteractionBadge,
@@ -45,7 +46,7 @@ export function RoutineCard({ routine, warnings = [] }: RoutineCardProps) {
               <div className="min-w-0 flex-1">
                 <p className="text-sm font-medium">{step.productName}</p>
                 <p className="text-xs capitalize text-muted-foreground">
-                  {step.category.replace("_", " ")}
+                  {formatCategory(step.category)}
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
                   {step.instructions}

@@ -6,7 +6,6 @@ import "@fontsource/source-sans-3/400.css";
 import "@fontsource/source-sans-3/500.css";
 import "@fontsource/source-sans-3/600.css";
 import "./globals.css";
-import { ClientAppShell } from "@/components/layout/client-app-shell";
 
 export const metadata: Metadata = {
   title: "Skin Care For Me",
@@ -28,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className="min-h-full font-sans antialiased">
-        <ClientAppShell>{children}</ClientAppShell>
-      </body>
+      <body className="min-h-full font-sans antialiased">{children}</body>
     </html>
   );
 }

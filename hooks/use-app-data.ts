@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from "react";
 import {
   deleteProduct,
   getAllProducts,
-  getRoutines,
   getSettings,
   saveProduct,
   saveRoutines,
@@ -29,10 +28,9 @@ export function useAppData() {
   const [loading, setLoading] = useState(true);
 
   const refresh = useCallback(async () => {
-    const [loadedProducts, loadedSettings, loadedRoutines] = await Promise.all([
+    const [loadedProducts, loadedSettings] = await Promise.all([
       getAllProducts(),
       getSettings(),
-      getRoutines(),
     ]);
 
     const generated = generateRoutines(loadedProducts, loadedSettings);
@@ -46,8 +44,34 @@ export function useAppData() {
   }, []);
 
   useEffect(() => {
-    void refresh();
-  }, [refresh]);
+    let cancelled = false;
+
+    async function load() {
+      const [loadedProducts, loadedSettings] = await Promise.all([
+        getAllProducts(),
+        getSettings(),
+      ]);
+
+      if (cancelled) return;
+
+      const generated = generateRoutines(loadedProducts, loadedSettings);
+      await saveRoutines(generated);
+
+      if (cancelled) return;
+
+      setProducts(loadedProducts);
+      setSettings(loadedSettings);
+      setRoutines(generated);
+      setConflicts(detectConflicts(loadedProducts));
+      setLoading(false);
+    }
+
+    void load();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const addProductFromLookup = useCallback(
     async (lookup: ProductLookupResult) => {

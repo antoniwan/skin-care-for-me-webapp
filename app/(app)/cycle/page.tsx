@@ -1,23 +1,22 @@
 "use client";
 
 import { useAppDataContext } from "@/components/providers/app-data-provider";
+import { CyclePhaseBanner } from "@/components/cycle/cycle-phase-banner";
+import { PageContainer } from "@/components/layout/page-container";
+import { PageHeader } from "@/components/layout/page-header";
+import { PageLoading } from "@/components/layout/page-loading";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
-import {
-  CYCLE_PHASE_LABELS,
-  CYCLE_SKIN_NOTES,
-  getCurrentCyclePhase,
-  getCycleDay,
-} from "@/lib/cycle/phases";
+import { getCurrentCyclePhase, getCycleDay } from "@/lib/cycle/phases";
 import type { AppSettings, CycleSettings } from "@/lib/types";
 
 export default function CyclePage() {
   const { settings, loading, updateSettings } = useAppDataContext();
 
   if (loading || !settings) {
-    return <p className="text-muted-foreground">Loading cycle settings…</p>;
+    return <PageLoading message="Loading cycle settings…" />;
   }
 
   const appSettings = settings;
@@ -36,13 +35,11 @@ export default function CyclePage() {
   }
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="font-heading text-2xl font-semibold">Cycle tracking</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Optional. Routines adapt gently to your current phase.
-        </p>
-      </header>
+    <PageContainer>
+      <PageHeader
+        title="Cycle tracking"
+        description="Optional. Routines adapt gently to your current phase."
+      />
 
       <Card>
         <CardContent className="flex items-center justify-between pt-6">
@@ -109,20 +106,14 @@ export default function CyclePage() {
           </Card>
 
           {appSettings.cycle.lastPeriodStart && (
-            <Card className="border-primary/20 bg-primary/5">
-              <CardContent className="pt-4">
-                <p className="font-medium text-primary">
-                  Current: {CYCLE_PHASE_LABELS[phase]}
-                  {cycleDay ? ` (day ${cycleDay})` : ""}
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  {CYCLE_SKIN_NOTES[phase]}
-                </p>
-              </CardContent>
-            </Card>
+            <CyclePhaseBanner
+              phase={phase}
+              cycleDay={cycleDay}
+              prefix="Current: "
+            />
           )}
         </>
       )}
-    </div>
+    </PageContainer>
   );
 }

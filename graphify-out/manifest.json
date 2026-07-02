@@ -30,73 +30,38 @@
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\layout.tsx": {
-    "mtime": 1783006261.5243132,
-    "ast_hash": "19894ecba8b6ec74ec5bf0c5244e6ddf",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\page.tsx": {
-    "mtime": 1783006240.7059178,
-    "ast_hash": "1b7c4958b76ddc414de2ac05a78e9417",
+    "mtime": 1783011598.4990432,
+    "ast_hash": "f9bfc100fc145bdb4de227f66a24a069",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\api\\products\\lookup\\route.ts": {
-    "mtime": 1783006206.2937684,
+    "mtime": 1783007556.4657323,
     "ast_hash": "4716050a4424188d79f028d27283bc19",
     "semantic_hash": ""
   },
-  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\cycle\\page.tsx": {
-    "mtime": 1783006331.8747902,
-    "ast_hash": "215cb13e96400c2fe11a05874c316ddc",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\guide\\page.tsx": {
-    "mtime": 1783006256.5758479,
-    "ast_hash": "6a1f69620f89e1d89aa8e2c5581d2042",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\products\\page.tsx": {
-    "mtime": 1783007307.0247302,
-    "ast_hash": "1206c3a2f721415be2d19a6bee8c989a",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\routines\\page.tsx": {
-    "mtime": 1783006247.0418437,
-    "ast_hash": "90a65447bfda10852c01033057480134",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\conflicts\\conflict-list.tsx": {
-    "mtime": 1783006220.607236,
-    "ast_hash": "a94fdebdc785d204bed0b3562c93bd61",
-    "semantic_hash": ""
-  },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\layout\\app-shell.tsx": {
-    "mtime": 1783006217.2989068,
+    "mtime": 1783007556.4657323,
     "ast_hash": "48e01900774d8a784b7368fe0dc68e18",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\layout\\bottom-nav.tsx": {
-    "mtime": 1783006216.2318387,
-    "ast_hash": "9bb0a29ac51b71500913bf1320276166",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\layout\\client-app-shell.tsx": {
-    "mtime": 1783006234.9688265,
-    "ast_hash": "3a51c977420a91498bf61a832bb3f138",
+    "mtime": 1783011601.8637116,
+    "ast_hash": "db717c42e0c6b293d3b199861dd9a3e1",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\products\\add-product-sheet.tsx": {
-    "mtime": 1783006349.3507538,
-    "ast_hash": "eed84419e872fc47b47ce5d0dee088d8",
+    "mtime": 1783011670.1341865,
+    "ast_hash": "c04cb6fc7b3a025c7b7f408d1b958503",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\providers\\app-data-provider.tsx": {
-    "mtime": 1783006234.23596,
+    "mtime": 1783007556.4476712,
     "ast_hash": "831dd1069d22fbdb76aaf8790e708cf4",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\routines\\routine-card.tsx": {
-    "mtime": 1783006222.993968,
-    "ast_hash": "dcf423b974ca97d2d17d036008ae53e6",
+    "mtime": 1783011628.6576216,
+    "ast_hash": "617f1335bdd65d303f232320e926c2ea",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\ui\\badge.tsx": {
@@ -155,17 +120,17 @@
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\hooks\\use-app-data.ts": {
-    "mtime": 1783007299.944366,
-    "ast_hash": "9c822ce9eafa76d16d5a1e21544818e2",
+    "mtime": 1783011614.8718855,
+    "ast_hash": "3796b0bd37a5afca63fea18167746b8e",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\db.ts": {
-    "mtime": 1783007314.0511084,
+    "mtime": 1783007556.4285946,
     "ast_hash": "7c1675a29fef7de8f400c82f24163bcf",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\types.ts": {
-    "mtime": 1783007277.403917,
+    "mtime": 1783007556.4657323,
     "ast_hash": "06e074e309940a864c31ee0a0c995ae9",
     "semantic_hash": ""
   },
@@ -175,27 +140,27 @@
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\cycle\\phases.ts": {
-    "mtime": 1783006188.9234407,
+    "mtime": 1783007556.4285946,
     "ast_hash": "23112a0302f779b16575902ef1c1b08b",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\pdf\\guide.ts": {
-    "mtime": 1783006200.93168,
+    "mtime": 1783007556.4416468,
     "ast_hash": "93a63a20c2b54ce25d7b8f6e068698e0",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\products\\lookup.ts": {
-    "mtime": 1783006204.9701035,
+    "mtime": 1783007556.4416468,
     "ast_hash": "4ee5e2560a99e20750426a1c154e08d5",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\routines\\generator.ts": {
-    "mtime": 1783006195.88173,
+    "mtime": 1783007556.4476712,
     "ast_hash": "3ccbfdd327ae197edd84639df93a115f",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\rules\\ingredient-conflicts.ts": {
-    "mtime": 1783006183.770327,
+    "mtime": 1783007556.4416468,
     "ast_hash": "d620c77751e7ec9928d5a7e137808575",
     "semantic_hash": ""
   },
@@ -210,8 +175,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\README.md": {
-    "mtime": 1783002636.1445265,
-    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "mtime": 1783009822.9651277,
+    "ast_hash": "183dc779811dfb53d0ac4fd18552f68d",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\public\\file.svg": {
@@ -240,18 +205,133 @@
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\seed\\default-products.ts": {
-    "mtime": 1783007295.0698445,
+    "mtime": 1783007556.442657,
     "ast_hash": "dc79c6b336a8087c3efd9add5db155b7",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\seed\\index.ts": {
-    "mtime": 1783007334.3964133,
+    "mtime": 1783007556.4657323,
     "ast_hash": "9affd93c5755d352865f2461f52536d0",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\pnpm-workspace.yaml": {
     "mtime": 1783006899.3003714,
     "ast_hash": "2351653968c7110de15b2ae81ab45b8b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\(app)\\layout.tsx": {
+    "mtime": 1783011566.7437906,
+    "ast_hash": "09ec0c9c954704115a735a9fe24e9f5d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\(app)\\loading.tsx": {
+    "mtime": 1783011567.4614644,
+    "ast_hash": "bb95aab06b7dac7bca52fab8eb27498a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\(app)\\page.tsx": {
+    "mtime": 1783011572.4231734,
+    "ast_hash": "1f873a3b656c194859ff8f13f0158c02",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\(app)\\cycle\\page.tsx": {
+    "mtime": 1783011589.029816,
+    "ast_hash": "0b251742bc4190020cb7f7390ea78f98",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\(app)\\guide\\page.tsx": {
+    "mtime": 1783011593.7319853,
+    "ast_hash": "e052e25c4db3f8cc8cbabc3b3df26207",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\(app)\\products\\page.tsx": {
+    "mtime": 1783011575.4695969,
+    "ast_hash": "b7af06c8e0460c4aa481c8dbff20505b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\(app)\\routines\\page.tsx": {
+    "mtime": 1783011580.3774548,
+    "ast_hash": "13d02942fe9c80ae7553c1d4749038e6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\conflicts\\ingredient-interactions.tsx": {
+    "mtime": 1783007570.8679924,
+    "ast_hash": "527ab83d6f5faa4e49d2e3d0a1732409",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\cycle\\cycle-phase-banner.tsx": {
+    "mtime": 1783011563.3730845,
+    "ast_hash": "9413d24097b7bdebe706a216f6b55d58",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\layout\\empty-state.tsx": {
+    "mtime": 1783011551.4878082,
+    "ast_hash": "4cff7d6c1f783d0520c7d2e631aac524",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\layout\\page-container.tsx": {
+    "mtime": 1783011546.4808457,
+    "ast_hash": "7ca4082b3d515c36b156916ae67f73cd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\layout\\page-header.tsx": {
+    "mtime": 1783011548.460295,
+    "ast_hash": "ae96a9b96839ef3e947fbadff1c8f7e3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\layout\\page-loading.tsx": {
+    "mtime": 1783011549.3341384,
+    "ast_hash": "ee204155916140263d667d13f44ca666",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\products\\product-card.tsx": {
+    "mtime": 1783011558.0045364,
+    "ast_hash": "5355ffdacd23bd1641e751dba1061feb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\products\\product-meta-badges.tsx": {
+    "mtime": 1783011553.8644228,
+    "ast_hash": "95f0095899678a6d7355f7b674a278f7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\components\\routines\\routine-list.tsx": {
+    "mtime": 1783011560.683002,
+    "ast_hash": "2e006dbe276450371f87486bbf7f9dcc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\format.ts": {
+    "mtime": 1783011543.4603786,
+    "ast_hash": "53f0d93ca4d47056307e88179d4cab31",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\conflicts\\display.ts": {
+    "mtime": 1783007556.4657323,
+    "ast_hash": "1098278cd02c201c3dc48c189c058ca6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\constants\\navigation.ts": {
+    "mtime": 1783011545.5303226,
+    "ast_hash": "655c226214ea7815332ec1c83e7c08a7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\docs\\ARCHITECTURE.md": {
+    "mtime": 1783009822.9601293,
+    "ast_hash": "1ec9874dd58a6f5e2db1598e509cf0a4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\docs\\DATA-AND-STORAGE.md": {
+    "mtime": 1783009822.9601293,
+    "ast_hash": "b961577c59517dc966340b92130d28f0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\docs\\KNOWN-LIMITATIONS.md": {
+    "mtime": 1783009822.9651277,
+    "ast_hash": "0a19eaab3e315ec2ec9a76921b3ce625",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\docs\\README.md": {
+    "mtime": 1783009822.9601293,
+    "ast_hash": "e1360640b42311d1706982141a950481",
     "semantic_hash": ""
   }
 }
