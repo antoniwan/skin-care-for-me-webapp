@@ -1,29 +1,8 @@
 import { generateObject } from "ai";
 import { createOpenAI } from "@ai-sdk/openai";
-import { z } from "zod";
+import { getEnv } from "@/lib/env";
+import { productLookupSchema } from "@/lib/products/lookup-schema";
 import type { ProductLookupResult } from "@/lib/types";
-
-const lookupSchema = z.object({
-  name: z.string(),
-  brand: z.string().optional(),
-  category: z.enum([
-    "cleanser",
-    "toner",
-    "serum",
-    "moisturizer",
-    "sunscreen",
-    "exfoliant",
-    "mask",
-    "eye_cream",
-    "treatment",
-    "other",
-  ]),
-  ingredients: z.array(z.string()),
-  activeIngredients: z.array(z.string()),
-  usageGuide: z.string(),
-  suggestedFrequency: z.enum(["daily", "weekly", "monthly"]),
-  suggestedTimeOfDay: z.enum(["morning", "evening", "any"]),
-});
 
 function mockLookup(query: string): ProductLookupResult {
   const lower = query.toLowerCase();
@@ -59,17 +38,17 @@ function mockLookup(query: string): ProductLookupResult {
 }
 
 export async function lookupProduct(query: string): Promise<ProductLookupResult> {
-  const apiKey = process.env.OPENAI_API_KEY;
+  const { OPENAI_API_KEY } = getEnv();
 
-  if (!apiKey) {
+  if (!OPENAI_API_KEY) {
     return mockLookup(query);
   }
 
-  const openai = createOpenAI({ apiKey });
+  const openai = createOpenAI({ apiKey: OPENAI_API_KEY });
 
   const { object } = await generateObject({
     model: openai("gpt-4o-mini"),
-    schema: lookupSchema,
+    schema: productLookupSchema,
     prompt: `You are a skincare product expert. Look up this product and return structured data: "${query}".
 Include realistic ingredient lists, active ingredients (normalized names like retinol, vitamin c, aha, bha, niacinamide),
 practical usage instructions, and sensible frequency/time-of-day suggestions.

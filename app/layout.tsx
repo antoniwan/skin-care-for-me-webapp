@@ -6,12 +6,9 @@ import "@fontsource/source-sans-3/400.css";
 import "@fontsource/source-sans-3/500.css";
 import "@fontsource/source-sans-3/600.css";
 import "./globals.css";
+import { ROOT_METADATA } from "@/lib/constants/metadata";
 
-export const metadata: Metadata = {
-  title: "Skin Care For Me",
-  description:
-    "Personal skin care routines, ingredient checks, and cycle-aware guidance — stored on your device.",
-};
+export const metadata: Metadata = ROOT_METADATA;
 
 export const viewport: Viewport = {
   width: "device-width",

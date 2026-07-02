@@ -47,7 +47,7 @@ Create `.env.local`:
 OPENAI_API_KEY=sk-...
 ```
 
-Without this key, adding a product still works but returns keyword-based placeholder data (sunscreen/retinol/generic serum).
+Without this key, adding a product still works but returns keyword-based placeholder data (sunscreen/retinol/generic serum). Env is validated in `lib/env.ts`.
 
 ### Production build
 
@@ -69,14 +69,18 @@ npm start
 
 ```
 app/                    Next.js App Router pages and API routes
-  page.tsx              Today — routines for the current day
-  products/             Product shelf
-  routines/             Daily / weekly / monthly tabs
-  cycle/                Cycle settings
-  guide/                PDF export + full routine list
-  api/products/lookup/  POST — AI or mock product lookup
+  (app)/                Route group — app shell, pages, error boundary
+    layout.tsx          Server layout → client AppLayoutClient
+    loading.tsx         Route loading UI
+    error.tsx           Error boundary with retry
+    page.tsx            Server entry + metadata → client view
+    products/
+      page.tsx          Server entry + metadata
+      actions.ts        lookupProductAction (Server Action)
+  api/products/lookup/  POST — legacy/API lookup (same logic as action)
 
 components/
+  pages/                Client page views (HomePage, ProductsPage, …)
   conflicts/            Ingredient interaction UI (hints, sheets)
   layout/               Shell, bottom nav
   products/             Add-product sheet
@@ -91,6 +95,8 @@ lib/
   cycle/                Menstrual phase calculation
   conflicts/            Display helpers for warnings
   products/lookup.ts    OpenAI lookup + mock fallback
+  env.ts                Validated server env (OPENAI_API_KEY)
+  constants/metadata.ts Per-page metadata definitions
   pdf/guide.ts          PDF generation (jsPDF)
 
 hooks/use-app-data.ts   Client data hook + React context

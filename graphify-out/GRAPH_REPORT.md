@@ -1,16 +1,16 @@
 # Graph Report - skin-care-for-me-webapp  (2026-07-02)
 
 ## Corpus Check
-- 63 files · ~12,810 words
+- 74 files · ~13,387 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 393 nodes · 863 edges · 19 communities (14 shown, 5 thin omitted)
+- 429 nodes · 1047 edges · 19 communities (14 shown, 5 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3faf2996`
+- Built from commit: `829aa33e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,41 +36,41 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 60 edges
-2. `Product` - 18 edges
-3. `compilerOptions` - 16 edges
-4. `useAppDataContext()` - 16 edges
-5. `Routine` - 13 edges
-6. `getCurrentCyclePhase()` - 13 edges
-7. `Known limitations` - 13 edges
-8. `ConflictWarning` - 12 edges
-9. `Architecture` - 11 edges
-10. `Button()` - 10 edges
+2. `useAppDataContext()` - 26 edges
+3. `getCurrentCyclePhase()` - 19 edges
+4. `Product` - 18 edges
+5. `compilerOptions` - 16 edges
+6. `getCycleDay()` - 16 edges
+7. `Routine` - 13 edges
+8. `Known limitations` - 13 edges
+9. `PageContainer()` - 12 edges
+10. `PageLoading()` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `AddProductSheetProps` --references--> `ProductLookupResult`  [EXTRACTED]
+  components/products/add-product-sheet.tsx → lib/types.ts
+- `POST()` --calls--> `lookupProduct()`  [EXTRACTED]
+  app/api/products/lookup/route.ts → lib/products/lookup.ts
 - `SeverityDot()` --calls--> `cn()`  [EXTRACTED]
   components/conflicts/ingredient-interactions.tsx → lib/utils.ts
 - `InteractionDetail()` --calls--> `cn()`  [EXTRACTED]
   components/conflicts/ingredient-interactions.tsx → lib/utils.ts
-- `AddProductSheetProps` --references--> `ProductLookupResult`  [EXTRACTED]
-  components/products/add-product-sheet.tsx → lib/types.ts
-- `ProductCardProps` --references--> `Product`  [EXTRACTED]
-  components/products/product-card.tsx → lib/types.ts
-- `ProductMetaBadgesProps` --references--> `Product`  [EXTRACTED]
-  components/products/product-meta-badges.tsx → lib/types.ts
+- `InteractionDetailsSheet()` --calls--> `sortWarningsBySeverity()`  [EXTRACTED]
+  components/conflicts/ingredient-interactions.tsx → lib/conflicts/display.ts
 
 ## Communities (19 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.09
-Nodes (28): EmptyState(), cn(), FREQUENCIES, RoutinesPage(), CardAction(), CardDescription(), CardFooter(), DialogContent() (+20 more)
+Cohesion: 0.07
+Nodes (44): getOtherProductName(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), warningKey(), InteractionDetail(), InteractionDetailsSheet(), InteractionSummaryBar() (+36 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.08
-Nodes (48): db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines(), getSettings(), saveProduct() (+40 more)
+Cohesion: 0.07
+Nodes (54): CyclePhaseBannerProps, db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines(), getSettings() (+46 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.11
-Nodes (37): getGreeting(), HomePage(), ConflictList(), SEVERITY_STYLES, CyclePhaseBanner(), CyclePhaseBannerProps, CyclePage(), CYCLE_PHASE_LABELS (+29 more)
+Cohesion: 0.18
+Nodes (23): getGreeting(), HomePage(), ConflictList(), SEVERITY_STYLES, groupWarningsByProduct(), CyclePhaseBanner(), CyclePage(), CYCLE_PHASE_LABELS (+15 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.05
@@ -85,16 +85,16 @@ Cohesion: 0.10
 Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.12
-Nodes (27): getOtherProductName(), groupWarningsByProduct(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), warningKey(), InteractionDetail(), InteractionDetailsSheet() (+19 more)
+Cohesion: 0.13
+Nodes (27): PAGE_METADATA, EmptyState(), PageContainer(), PageHeader(), PageLoading(), pluralize(), GuidePage(), getGreeting() (+19 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.15
-Nodes (11): metadata, viewport, APP_NAV_ITEMS, AppNavItem, isNavItemActive(), useAppData(), AppShell(), BottomNav() (+3 more)
+Cohesion: 0.14
+Nodes (13): metadata, viewport, ROOT_METADATA, APP_NAV_ITEMS, AppNavItem, isNavItemActive(), useAppData(), AppLayoutClient() (+5 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.53
-Nodes (4): POST(), lookupProduct(), lookupSchema, mockLookup()
+Cohesion: 0.21
+Nodes (12): Env, envSchema, getEnv(), hasOpenAiKey(), POST(), lookupProductAction(), LookupProductActionResult, lookupProduct() (+4 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.11
@@ -113,7 +113,7 @@ Cohesion: 0.14
 Nodes (13): Code quality (audit notes), Default seed shelf, Deployment notes, Features missing, Ingredient conflicts, Known limitations, Medical and safety, Product lookup (+5 more)
 
 ## Knowledge Gaps
-- **142 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+137 more)
+- **146 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+141 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -121,16 +121,16 @@ Nodes (13): Code quality (audit notes), Default seed shelf, Deployment notes, Fe
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `cn()` connect `Community 0` to `Community 2`, `Community 6`, `Community 7`?**
-  _High betweenness centrality (0.084) - this node is a cross-community bridge._
-- **Why does `ConflictWarning` connect `Community 1` to `Community 2`, `Community 6`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+- **Why does `Button()` connect `Community 0` to `Community 2`, `Community 6`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **Why does `Product` connect `Community 1` to `Community 2`, `Community 6`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _142 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _146 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.08536585365853659 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06646825396825397 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.08365384615384615 - nodes in this community are weakly interconnected._
-- **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.10946589106292967 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07355242566510173 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected._

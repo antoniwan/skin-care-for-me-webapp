@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Loader2, Plus, Search } from "lucide-react";
+import { lookupProductAction } from "@/app/(app)/products/actions";
 import type { ProductLookupResult } from "@/lib/types";
 import { ProductMetaBadges } from "@/components/products/product-meta-badges";
 import { Button } from "@/components/ui/button";
@@ -34,18 +35,14 @@ export function AddProductSheet({ onAdd }: AddProductSheetProps) {
     setPreview(null);
 
     try {
-      const res = await fetch("/api/products/lookup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: query.trim() }),
-      });
+      const result = await lookupProductAction(query.trim());
 
-      if (!res.ok) {
-        throw new Error("Lookup failed");
+      if (!result.success) {
+        setError(result.error);
+        return;
       }
 
-      const data = (await res.json()) as ProductLookupResult;
-      setPreview(data);
+      setPreview(result.data);
     } catch {
       setError("Could not find product info. Try a more specific name.");
     } finally {

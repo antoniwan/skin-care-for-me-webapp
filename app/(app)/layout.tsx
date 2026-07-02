@@ -1,16 +1,9 @@
-"use client";
-
-import { AppShell } from "@/components/layout/app-shell";
-import { AppDataProvider } from "@/components/providers/app-data-provider";
+import { AppLayoutClient } from "@/components/layout/app-layout-client";
 
 export default function AppLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <AppDataProvider>
-      <AppShell>{children}</AppShell>
-    </AppDataProvider>
-  );
+  return <AppLayoutClient>{children}</AppLayoutClient>;
 }

@@ -1,18 +1,20 @@
 import { lookupProduct } from "@/lib/products/lookup";
+import { lookupQuerySchema } from "@/lib/products/lookup-schema";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
-    const { query } = (await request.json()) as { query?: string };
+    const body = (await request.json()) as { query?: string };
+    const parsed = lookupQuerySchema.safeParse(body);
 
-    if (!query?.trim()) {
+    if (!parsed.success) {
       return NextResponse.json(
-        { error: "Product name is required." },
+        { error: parsed.error.issues[0]?.message ?? "Invalid request." },
         { status: 400 },
       );
     }
 
-    const result = await lookupProduct(query.trim());
+    const result = await lookupProduct(parsed.data.query);
     return NextResponse.json(result);
   } catch (error) {
     console.error("Product lookup failed:", error);
