@@ -40,7 +40,7 @@ export function RoutineCard({ routine, warnings = [] }: RoutineCardProps) {
           const stepWarnings = byProduct.get(step.productId) ?? [];
           return (
             <div key={step.productId} className="flex gap-3">
-              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-semibold text-primary">
+              <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground shadow-sm">
                 {step.order}
               </span>
               <div className="min-w-0 flex-1">

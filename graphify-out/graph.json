@@ -355,22 +355,22 @@
       "norm_label": "@ai-sdk/openai"
     },
     {
-      "label": "@fontsource/fraunces",
+      "label": "@fontsource/dm-sans",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
-      "id": "skin_care_for_me_webapp_package_dependencies_fontsource_fraunces",
+      "id": "skin_care_for_me_webapp_package_dependencies_fontsource_dm_sans",
       "community": 3,
-      "norm_label": "@fontsource/fraunces"
+      "norm_label": "@fontsource/dm-sans"
     },
     {
-      "label": "@fontsource/source-sans-3",
+      "label": "@fontsource/sora",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
-      "id": "skin_care_for_me_webapp_package_dependencies_fontsource_source_sans_3",
+      "id": "skin_care_for_me_webapp_package_dependencies_fontsource_sora",
       "community": 3,
-      "norm_label": "@fontsource/source-sans-3"
+      "norm_label": "@fontsource/sora"
     },
     {
       "label": "@radix-ui/react-dialog",
@@ -1233,7 +1233,7 @@
       "source_file": "components/cycle/cycle-phase-banner.tsx",
       "source_location": "L8",
       "id": "cycle_cycle_phase_banner_cyclephasebannerprops",
-      "community": 6,
+      "community": 25,
       "norm_label": "cyclephasebannerprops"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "components/products/add-product-sheet.tsx",
       "source_location": "L20",
       "id": "products_add_product_sheet_addproductsheetprops",
-      "community": 25,
+      "community": 8,
       "norm_label": "addproductsheetprops"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L1",
       "id": "components_products_product_card_tsx",
-      "community": 2,
+      "community": 6,
       "norm_label": "product-card.tsx"
     },
     {
@@ -1575,7 +1575,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L10",
       "id": "products_product_card_productcardprops",
-      "community": 2,
+      "community": 25,
       "norm_label": "productcardprops"
     },
     {
@@ -1593,7 +1593,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L111",
       "id": "products_product_card_productimage",
-      "community": 2,
+      "community": 6,
       "norm_label": "productimage()"
     },
     {
@@ -1773,7 +1773,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L17",
       "id": "routines_routine_guide_section_routineguidesection",
-      "community": 6,
+      "community": 25,
       "norm_label": "routineguidesection()"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L1",
       "id": "components_ui_tabs_tsx",
-      "community": 6,
+      "community": 0,
       "norm_label": "tabs.tsx"
     },
     {
@@ -2295,7 +2295,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L9",
       "id": "ui_tabs_tabs",
-      "community": 6,
+      "community": 0,
       "norm_label": "tabs()"
     },
     {
@@ -2304,7 +2304,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L27",
       "id": "ui_tabs_tabslistvariants",
-      "community": 6,
+      "community": 0,
       "norm_label": "tabslistvariants"
     },
     {
@@ -2313,7 +2313,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L42",
       "id": "ui_tabs_tabslist",
-      "community": 6,
+      "community": 0,
       "norm_label": "tabslist()"
     },
     {
@@ -2322,7 +2322,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L58",
       "id": "ui_tabs_tabstrigger",
-      "community": 6,
+      "community": 0,
       "norm_label": "tabstrigger()"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L77",
       "id": "ui_tabs_tabscontent",
-      "community": 6,
+      "community": 0,
       "norm_label": "tabscontent()"
     },
     {
@@ -2871,7 +2871,7 @@
       "source_file": "lib/pdf/guide.ts",
       "source_location": "L1",
       "id": "lib_pdf_guide_ts",
-      "community": 25,
+      "community": 6,
       "norm_label": "guide.ts"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_file": "lib/seed/product-catalog.test.ts",
       "source_location": "L1",
       "id": "lib_seed_product_catalog_test_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "product-catalog.test.ts"
     },
     {
@@ -3393,7 +3393,7 @@
       "source_file": "lib/seed/product-catalog.test.ts",
       "source_location": "L18",
       "id": "seed_product_catalog_test_entry",
-      "community": 25,
+      "community": 1,
       "norm_label": "entry"
     },
     {
@@ -3402,7 +3402,7 @@
       "source_file": "lib/seed/product-catalog.test.ts",
       "source_location": "L24",
       "id": "seed_product_catalog_test_enriched",
-      "community": 25,
+      "community": 1,
       "norm_label": "enriched"
     },
     {
@@ -3411,7 +3411,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L1",
       "id": "lib_seed_product_catalog_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "product-catalog.ts"
     },
     {
@@ -3420,7 +3420,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L5",
       "id": "seed_product_catalog_seedproductcatalogentry",
-      "community": 25,
+      "community": 1,
       "norm_label": "seedproductcatalogentry"
     },
     {
@@ -3429,7 +3429,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L19",
       "id": "seed_product_catalog_seed_product_catalog",
-      "community": 25,
+      "community": 1,
       "norm_label": "seed_product_catalog"
     },
     {
@@ -3438,7 +3438,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L147",
       "id": "seed_product_catalog_getseedcatalogentry",
-      "community": 25,
+      "community": 1,
       "norm_label": "getseedcatalogentry()"
     },
     {
@@ -3447,7 +3447,7 @@
       "source_file": "lib/seed/product-catalog.ts",
       "source_location": "L153",
       "id": "seed_product_catalog_enrichseedproduct",
-      "community": 25,
+      "community": 1,
       "norm_label": "enrichseedproduct()"
     },
     {
@@ -3456,7 +3456,7 @@
       "source_file": "lib/seed/product-ids.ts",
       "source_location": "L1",
       "id": "lib_seed_product_ids_ts",
-      "community": 25,
+      "community": 1,
       "norm_label": "product-ids.ts"
     },
     {
@@ -3465,7 +3465,7 @@
       "source_file": "lib/seed/product-ids.ts",
       "source_location": "L1",
       "id": "seed_product_ids_seed_product_ids",
-      "community": 25,
+      "community": 1,
       "norm_label": "seed_product_ids"
     },
     {
@@ -3600,7 +3600,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L11",
       "id": "types_conflicts_conflictwarning",
-      "community": 25,
+      "community": 0,
       "norm_label": "conflictwarning"
     },
     {
@@ -3690,7 +3690,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L44",
       "id": "types_product_productlookupresult",
-      "community": 25,
+      "community": 8,
       "norm_label": "productlookupresult"
     },
     {
@@ -5044,6 +5044,24 @@
       "norm_label": "metadata"
     },
     {
+      "label": "@fontsource/fraunces",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "community": 3,
+      "norm_label": "@fontsource/fraunces",
+      "id": "skin_care_for_me_webapp_package_dependencies_fontsource_fraunces"
+    },
+    {
+      "label": "@fontsource/source-sans-3",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "community": 3,
+      "norm_label": "@fontsource/source-sans-3",
+      "id": "skin_care_for_me_webapp_package_dependencies_fontsource_source_sans_3"
+    },
+    {
       "label": "Skin Care For Me",
       "file_type": "document",
       "source_file": "README.md",
@@ -5156,7 +5174,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L194",
-      "community": 6,
+      "community": 0,
       "norm_label": "interactionsummarybar()",
       "id": "conflicts_ingredient_interactions_interactionsummarybar"
     },
@@ -5183,7 +5201,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L13",
-      "community": 6,
+      "community": 25,
       "norm_label": "routinefrequency",
       "id": "lib_types_routinefrequency"
     },
@@ -5201,7 +5219,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L17",
-      "community": 6,
+      "community": 25,
       "norm_label": "cyclephase",
       "id": "lib_types_cyclephase"
     },
@@ -5273,7 +5291,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L83",
-      "community": 25,
+      "community": 8,
       "norm_label": "productlookupresult",
       "id": "lib_types_productlookupresult"
     },
@@ -5390,7 +5408,7 @@
       "file_type": "code",
       "source_file": "app/routines/page.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 0,
       "norm_label": "page.tsx",
       "id": "app_routines_page_tsx"
     },
@@ -5841,21 +5859,21 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_package_dependencies",
-      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_fraunces"
+      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_dm_sans",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_package_dependencies",
-      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_source_sans_3"
+      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_sora",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -6066,6 +6084,26 @@
       "confidence_score": 1.0,
       "source": "skin_care_for_me_webapp_package_dependencies",
       "target": "skin_care_for_me_webapp_package_dependencies_zod"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skin_care_for_me_webapp_package_dependencies",
+      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_fraunces"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skin_care_for_me_webapp_package_dependencies",
+      "target": "skin_care_for_me_webapp_package_dependencies_fontsource_source_sans_3"
     },
     {
       "relation": "contains",
@@ -9543,9 +9581,9 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_logo_tsx",
-      "target": "lib_constants_metadata_ts",
-      "confidence_score": 1.0
+      "target": "lib_constants_metadata_ts"
     },
     {
       "relation": "imports_from",
@@ -9554,9 +9592,9 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_logo_tsx",
-      "target": "lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -9565,9 +9603,9 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_logo_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -9575,9 +9613,9 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_logo_tsx",
-      "target": "layout_app_logo_applogosize",
-      "confidence_score": 1.0
+      "target": "layout_app_logo_applogosize"
     },
     {
       "relation": "contains",
@@ -9585,9 +9623,9 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_logo_tsx",
-      "target": "layout_app_logo_sizestyles",
-      "confidence_score": 1.0
+      "target": "layout_app_logo_sizestyles"
     },
     {
       "relation": "contains",
@@ -9595,9 +9633,9 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_logo_tsx",
-      "target": "layout_app_logo_applogo",
-      "confidence_score": 1.0
+      "target": "layout_app_logo_applogo"
     },
     {
       "relation": "imports_from",
@@ -9606,9 +9644,9 @@
       "source_file": "components/layout/app-shell.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_shell_tsx",
-      "target": "components_layout_app_logo_tsx",
-      "confidence_score": 1.0
+      "target": "components_layout_app_logo_tsx"
     },
     {
       "relation": "imports_from",
@@ -9617,9 +9655,9 @@
       "source_file": "components/layout/side-nav.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_side_nav_tsx",
-      "target": "components_layout_app_logo_tsx",
-      "confidence_score": 1.0
+      "target": "components_layout_app_logo_tsx"
     },
     {
       "relation": "imports",
@@ -9628,9 +9666,9 @@
       "source_file": "components/layout/app-shell.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_app_shell_tsx",
-      "target": "layout_app_logo_applogo",
-      "confidence_score": 1.0
+      "target": "layout_app_logo_applogo"
     },
     {
       "relation": "imports",
@@ -9639,9 +9677,9 @@
       "source_file": "components/layout/side-nav.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_layout_side_nav_tsx",
-      "target": "layout_app_logo_applogo",
-      "confidence_score": 1.0
+      "target": "layout_app_logo_applogo"
     },
     {
       "relation": "calls",
@@ -21867,5 +21905,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a398687ab41e59604b072435c2945b4bfed26c49"
+  "built_at_commit": "056d1c9281851d3dfa2768f3b4c24bf0b6213fc9"
 }

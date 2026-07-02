@@ -1,21 +1,22 @@
 # Graph Report - skin-care-for-me-webapp  (2026-07-02)
 
 ## Corpus Check
-- 109 files · ~47,506 words
+- 109 files · ~47,530 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 608 nodes · 1536 edges · 25 communities (20 shown, 5 thin omitted)
+- 610 nodes · 1538 edges · 26 communities (21 shown, 5 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a398687a`
+- Built from commit: `056d1c92`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 2|Community 2]]
 - [[_COMMUNITY_Community 3|Community 3]]
 - [[_COMMUNITY_Community 4|Community 4]]
@@ -56,26 +57,30 @@
   app/api/products/lookup/route.ts → lib/products/lookup.ts
 - `SeverityDot()` --calls--> `cn()`  [EXTRACTED]
   components/conflicts/routine-interaction-badge.tsx → lib/utils.ts
-- `CyclePhaseBannerProps` --references--> `CyclePhase`  [EXTRACTED]
-  components/cycle/cycle-phase-banner.tsx → lib/types/cycle.ts
 - `AppLogo()` --calls--> `cn()`  [EXTRACTED]
   components/layout/app-logo.tsx → lib/utils.ts
 - `EmptyState()` --calls--> `cn()`  [EXTRACTED]
   components/layout/empty-state.tsx → lib/utils.ts
+- `PageContainer()` --calls--> `cn()`  [EXTRACTED]
+  components/layout/page-container.tsx → lib/utils.ts
 
-## Communities (25 total, 5 thin omitted)
+## Communities (26 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.07
-Nodes (54): getOtherProductName(), groupWarningsByProduct(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), grouped, sorted, warning (+46 more)
+Cohesion: 0.06
+Nodes (61): getOtherProductName(), groupWarningsByProduct(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), grouped, sorted, warning (+53 more)
+
+### Community 1 - "Community 1"
+Cohesion: 0.33
+Nodes (7): enrichSeedProduct(), getSeedCatalogEntry(), SEED_PRODUCT_CATALOG, SeedProductCatalogEntry, enriched, entry, SEED_PRODUCT_IDS
 
 ### Community 2 - "Community 2"
-Cohesion: 0.17
-Nodes (10): buildAmazonAffiliateUrl(), hasAmazonAffiliateTag(), ProductCardProps, ProductIngredients(), ProductIngredientsProps, ProductLinks(), ProductLinksProps, getProductPageLabel() (+2 more)
+Cohesion: 0.18
+Nodes (9): buildAmazonAffiliateUrl(), hasAmazonAffiliateTag(), ProductIngredients(), ProductIngredientsProps, ProductLinks(), ProductLinksProps, getProductPageLabel(), Button() (+1 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.04
-Nodes (45): dependencies, ai, @ai-sdk/openai, class-variance-authority, clsx, dexie, dexie-react-hooks, @fontsource/fraunces (+37 more)
+Nodes (47): dependencies, ai, @ai-sdk/openai, class-variance-authority, clsx, dexie, dexie-react-hooks, @fontsource/dm-sans (+39 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.09
@@ -86,16 +91,16 @@ Cohesion: 0.10
 Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.08
-Nodes (55): getGreeting(), HomePage(), ConflictList(), SEVERITY_STYLES, InteractionSummaryBar(), PAGE_METADATA, CyclePhaseBanner(), CyclePhaseBannerProps (+47 more)
+Cohesion: 0.09
+Nodes (45): getGreeting(), HomePage(), ConflictList(), SEVERITY_STYLES, PAGE_METADATA, CyclePhaseBanner(), CyclePage(), CYCLE_PHASE_LABELS (+37 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.12
 Nodes (17): metadata, viewport, ROOT_METADATA, APP_NAV_ITEMS, AppNavItem, isNavItemActive(), useAppData(), AppLayoutClient() (+9 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.21
-Nodes (12): Env, envSchema, getEnv(), hasOpenAiKey(), POST(), lookupProductAction(), LookupProductActionResult, lookupProduct() (+4 more)
+Cohesion: 0.18
+Nodes (15): Env, envSchema, getEnv(), hasOpenAiKey(), ProductLookupResult, POST(), lookupProductAction(), LookupProductActionResult (+7 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.13
@@ -135,10 +140,10 @@ Nodes (8): Non-goals (for now), North star, Problem, Product principles, Product
 
 ### Community 25 - "Community 25"
 Cohesion: 0.06
-Nodes (78): db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines(), getSettings(), listProducts() (+70 more)
+Nodes (72): CyclePhaseBannerProps, db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines(), getSettings() (+64 more)
 
 ## Knowledge Gaps
-- **221 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+216 more)
+- **223 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+218 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -146,16 +151,16 @@ Nodes (78): db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllP
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `cn()` connect `Community 0` to `Community 2`, `Community 6`, `Community 7`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
+  _High betweenness centrality (0.068) - this node is a cross-community bridge._
 - **Why does `Button()` connect `Community 2` to `Community 0`, `Community 25`, `Community 6`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `Product` connect `Community 25` to `Community 2`, `Community 15`?**
+- **Why does `Product` connect `Community 25` to `Community 0`, `Community 1`, `Community 6`, `Community 15`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _221 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _223 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06962025316455696 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06384065372829417 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.043478260869565216 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._

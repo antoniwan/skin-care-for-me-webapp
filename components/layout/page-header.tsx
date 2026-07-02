@@ -10,16 +10,20 @@ export function PageHeader({
   action?: React.ReactNode;
 }) {
   return (
-    <header className={action ? "space-y-3" : "space-y-1"}>
+    <header className={action ? "space-y-3" : "space-y-1.5"}>
       <div>
         {eyebrow && (
-          <p className="text-sm text-muted-foreground">{eyebrow}</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary">
+            {eyebrow}
+          </p>
         )}
-        <h1 className="font-heading text-2xl font-semibold tracking-tight">
+        <h1 className="font-heading text-2xl font-semibold tracking-tight text-foreground lg:text-3xl">
           {title}
         </h1>
         {description && (
-          <p className="mt-1 text-sm text-muted-foreground">{description}</p>
+          <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+            {description}
+          </p>
         )}
       </div>
       {action}

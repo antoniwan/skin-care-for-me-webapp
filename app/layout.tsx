@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource/fraunces/500.css";
-import "@fontsource/fraunces/600.css";
-import "@fontsource/fraunces/700.css";
-import "@fontsource/source-sans-3/400.css";
-import "@fontsource/source-sans-3/500.css";
-import "@fontsource/source-sans-3/600.css";
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+import "@fontsource/dm-sans/600.css";
+import "@fontsource/sora/500.css";
+import "@fontsource/sora/600.css";
+import "@fontsource/sora/700.css";
 import "./globals.css";
 import { ROOT_METADATA } from "@/lib/constants/metadata";
 
@@ -14,7 +14,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#F5EDE4",
+  themeColor: "#E04362",
 };
 
 export default function RootLayout({

@@ -10,7 +10,7 @@ export function SideNav() {
   const pathname = usePathname();
 
   return (
-    <aside className="fixed inset-y-0 left-0 z-40 hidden w-56 flex-col border-r border-border bg-card lg:flex">
+    <aside className="fixed inset-y-0 left-0 z-40 hidden w-56 flex-col border-r border-border bg-card/95 backdrop-blur-sm lg:flex">
       <div className="px-6 py-8">
         <Link
           href="/"
@@ -29,7 +29,7 @@ export function SideNav() {
               className={cn(
                 "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
                 active
-                  ? "bg-primary/10 text-primary"
+                  ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground",
               )}
             >

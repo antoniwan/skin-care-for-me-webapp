@@ -8,7 +8,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-dvh bg-background">
       <SideNav />
       <div className="flex min-w-0 flex-1 flex-col lg:pl-56">
-        <header className="sticky top-0 z-30 border-b border-border/70 bg-card/90 px-4 py-3 backdrop-blur-md lg:hidden">
+        <header className="sticky top-0 z-30 border-b border-border bg-card/90 px-4 py-3 shadow-sm backdrop-blur-md lg:hidden">
           <Link
             href="/"
             className="inline-flex rounded-md outline-offset-4 transition-opacity hover:opacity-90"

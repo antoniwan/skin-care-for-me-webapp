@@ -19,7 +19,7 @@ export function CyclePhaseBanner({
   if (phase === "none") return null;
 
   return (
-    <Card className="border-primary/20 bg-primary/5">
+    <Card className="border-primary/25 bg-primary/10 shadow-sm">
       <CardContent className="pt-4">
         <p className="text-sm font-medium text-primary">
           {prefix}
