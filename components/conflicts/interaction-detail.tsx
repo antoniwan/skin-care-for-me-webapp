@@ -1,25 +1,69 @@
+"use client";
+
 import type { ConflictWarning } from "@/lib/types";
+import { useTranslation } from "@/components/providers/locale-provider";
+import { getSeverityLabel } from "@/lib/i18n/ui";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
+import { SeverityBadge } from "./interaction-primitives";
 import { getSeverityStyle } from "./severity-styles";
 
 export function InteractionDetail({ warning }: { warning: ConflictWarning }) {
-  const style = getSeverityStyle(warning.conflict.severity);
+  const { t } = useTranslation();
+  const { conflict, productA, productB } = warning;
+  const style = getSeverityStyle(conflict.severity);
 
   return (
-    <div className="space-y-2 rounded-xl border bg-card p-3">
-      <div className="flex flex-wrap items-center gap-2">
-        <Badge variant="outline" className={cn("text-[10px] capitalize", style.chip)}>
-          {warning.conflict.severity}
-        </Badge>
-        <span className="text-sm font-medium leading-snug">
-          {warning.productA.name}
-          <span className="font-normal text-muted-foreground"> + </span>
-          {warning.productB.name}
-        </span>
+    <article
+      className={cn(
+        "flex overflow-hidden rounded-xl",
+        style.surface,
+      )}
+    >
+      <div className={cn("w-1 shrink-0", style.accent)} aria-hidden />
+      <div className="min-w-0 flex-1 space-y-3 p-3.5 sm:p-4">
+        <div className="space-y-2">
+          <SeverityBadge
+            severity={conflict.severity}
+            label={getSeverityLabel(t, conflict.severity)}
+          />
+          <div className="space-y-1">
+            <p className="text-sm font-semibold leading-snug text-foreground">
+              <span>{productA.name}</span>
+              <span className="mx-1.5 font-normal text-muted-foreground">
+                +
+              </span>
+              <span>{productB.name}</span>
+            </p>
+            <p className="text-xs text-muted-foreground">
+              <span className="font-medium text-foreground/80">
+                {t("conflicts.ingredients")}:
+              </span>{" "}
+              <span className="capitalize">{conflict.ingredientA}</span>
+              <span className="text-muted-foreground/70"> · </span>
+              <span className="capitalize">{conflict.ingredientB}</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="space-y-3 border-t border-foreground/8 pt-3">
+          <div className="space-y-1">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+              {t("conflicts.why")}
+            </p>
+            <p className="text-sm leading-relaxed text-foreground/90">
+              {conflict.reason}
+            </p>
+          </div>
+          <div className="space-y-1">
+            <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+              {t("conflicts.whatToDo")}
+            </p>
+            <p className="text-sm leading-relaxed text-foreground">
+              {conflict.guidance}
+            </p>
+          </div>
+        </div>
       </div>
-      <p className="text-xs text-muted-foreground">{warning.conflict.reason}</p>
-      <p className="text-xs leading-relaxed">{warning.conflict.guidance}</p>
-    </div>
+    </article>
   );
 }

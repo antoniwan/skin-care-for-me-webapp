@@ -1,9 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import { Trash2 } from "lucide-react";
 import type { Product } from "@/lib/types";
 import { ProductIngredients } from "@/components/products/product-ingredients";
 import { ProductLinks } from "@/components/products/product-links";
 import { ProductMetaBadges } from "@/components/products/product-meta-badges";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -13,6 +16,8 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, onRemove }: ProductCardProps) {
+  const { t } = useTranslation();
+
   return (
     <Card className="overflow-hidden">
       <div className="flex gap-4 p-4 pb-0">
@@ -36,7 +41,7 @@ export function ProductCard({ product, onRemove }: ProductCardProps) {
               variant="ghost"
               size="icon-sm"
               className="shrink-0"
-              aria-label={`Remove ${product.name}`}
+              aria-label={t("common.removeProduct", { name: product.name })}
               disabled={product.isSeed}
               onClick={() => void onRemove(product.id)}
             >
@@ -80,7 +85,7 @@ export function ProductCard({ product, onRemove }: ProductCardProps) {
 
         <div className="space-y-1">
           <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-            How to use
+            {t("common.howToUse")}
           </p>
           <p className="text-sm text-muted-foreground">{product.usageGuide}</p>
         </div>
@@ -88,7 +93,7 @@ export function ProductCard({ product, onRemove }: ProductCardProps) {
         {product.activeIngredients.length > 0 && (
           <div className="space-y-1">
             <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-              Active ingredients
+              {t("common.activeIngredients")}
             </p>
             <p className="text-sm capitalize text-foreground">
               {product.activeIngredients.join(" · ")}
@@ -109,6 +114,8 @@ export function ProductCard({ product, onRemove }: ProductCardProps) {
 }
 
 function ProductImage({ product }: { product: Product }) {
+  const { t } = useTranslation();
+
   if (product.imageUrl) {
     const isSvg = product.imageUrl.endsWith(".svg");
 
@@ -143,7 +150,7 @@ function ProductImage({ product }: { product: Product }) {
       className="flex size-24 shrink-0 items-center justify-center rounded-lg border bg-muted/30 text-center text-[10px] font-medium uppercase tracking-wide text-muted-foreground"
       aria-hidden
     >
-      No image
+      {t("common.noImage")}
     </div>
   );
 }

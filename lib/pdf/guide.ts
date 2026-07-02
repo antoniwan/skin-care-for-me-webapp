@@ -10,6 +10,7 @@ interface GuideData {
   conflicts: ConflictWarning[];
   cyclePhase: CyclePhase;
   cycleDay: number | null;
+  bodyContextNotes?: string[];
 }
 
 export function downloadGuidePdf(data: GuideData): void {
@@ -50,14 +51,19 @@ export function downloadGuidePdf(data: GuideData): void {
   body(`Generated ${new Date().toLocaleDateString()}`);
   y += 4;
 
-  if (data.cyclePhase !== "none") {
-    heading("Cycle Context");
-    body(
-      `Phase: ${CYCLE_PHASE_LABELS[data.cyclePhase]}${
-        data.cycleDay ? ` (day ${data.cycleDay})` : ""
-      }`,
-    );
-    body(CYCLE_SKIN_NOTES[data.cyclePhase]);
+  if (data.cyclePhase !== "none" || (data.bodyContextNotes?.length ?? 0) > 0) {
+    heading("Body & cycle context");
+    if (data.cyclePhase !== "none") {
+      body(
+        `Menstrual phase: ${CYCLE_PHASE_LABELS[data.cyclePhase]}${
+          data.cycleDay ? ` (day ${data.cycleDay})` : ""
+        }`,
+      );
+      body(CYCLE_SKIN_NOTES[data.cyclePhase]);
+    }
+    for (const note of data.bodyContextNotes ?? []) {
+      body(note);
+    }
     y += 4;
   }
 

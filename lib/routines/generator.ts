@@ -2,42 +2,20 @@ import type {
   AppSettings,
   CyclePhase,
   Product,
-  ProductCategory,
   Routine,
   RoutineFrequency,
   RoutineStep,
   TimeOfDay,
 } from "../types";
-import { getCurrentCyclePhase } from "../cycle/phases";
-import { detectConflicts, getConflictsForRoutine } from "../rules/ingredient-conflicts";
+import {
+  getBodyContextCore,
+  shouldIncludeProductInRoutine,
+} from "../body-context";
 import { finalizeRoutineProductOrder } from "./category-order";
-
-const PHASE_SENSITIVE: Record<CyclePhase, ProductCategory[]> = {
-  menstrual: ["exfoliant", "treatment"],
-  follicular: [],
-  ovulation: [],
-  luteal: ["exfoliant"],
-  none: [],
-};
+import { detectConflicts, getConflictsForRoutine } from "../rules/ingredient-conflicts";
 
 function matchesTime(product: Product, time: TimeOfDay): boolean {
   return product.timeOfDay === "any" || product.timeOfDay === time;
-}
-
-function shouldIncludeForPhase(
-  product: Product,
-  phase: CyclePhase,
-): boolean {
-  const sensitive = PHASE_SENSITIVE[phase];
-  if (sensitive.includes(product.category)) {
-    const hasHarshActive = product.activeIngredients.some((a) =>
-      /retinol|aha|bha|benzoyl/i.test(a),
-    );
-    if (hasHarshActive && (phase === "menstrual" || phase === "luteal")) {
-      return product.frequency !== "daily";
-    }
-  }
-  return true;
 }
 
 function buildSteps(products: Product[], timeOfDay: TimeOfDay): RoutineStep[] {
@@ -56,23 +34,20 @@ function buildRoutine(
   frequency: RoutineFrequency,
   timeOfDay: TimeOfDay,
   products: Product[],
-  phase: CyclePhase,
+  cyclePhase: CyclePhase,
 ): Routine | null {
   const filtered = products.filter(
-    (p) =>
-      p.frequency === frequency &&
-      matchesTime(p, timeOfDay) &&
-      shouldIncludeForPhase(p, phase),
+    (p) => p.frequency === frequency && matchesTime(p, timeOfDay),
   );
 
   if (filtered.length === 0) return null;
 
   return {
-    id: `${frequency}-${timeOfDay}-${phase}`,
+    id: `${frequency}-${timeOfDay}-${cyclePhase}`,
     frequency,
     timeOfDay,
     steps: buildSteps(filtered, timeOfDay),
-    cyclePhase: phase !== "none" ? phase : undefined,
+    cyclePhase: cyclePhase !== "none" ? cyclePhase : undefined,
     generatedAt: new Date().toISOString(),
   };
 }
@@ -93,12 +68,25 @@ function separateConflictingProducts(products: Product[]): Product[] {
   return products.filter((p) => !removed.has(p.id));
 }
 
+function applyBodyContextFilter(
+  products: Product[],
+  settings: AppSettings,
+): Product[] {
+  const snapshot = getBodyContextCore(settings.bodyContext);
+  if (!snapshot.enabled) return products;
+
+  return products.filter((product) =>
+    shouldIncludeProductInRoutine(product, snapshot),
+  );
+}
+
 export function generateRoutines(
   products: Product[],
   settings: AppSettings,
 ): Routine[] {
-  const phase = getCurrentCyclePhase(settings.cycle);
+  const snapshot = getBodyContextCore(settings.bodyContext);
   const safeProducts = separateConflictingProducts(products);
+  const contextualProducts = applyBodyContextFilter(safeProducts, settings);
   const routines: Routine[] = [];
 
   const frequencies: RoutineFrequency[] = ["daily", "weekly", "monthly"];
@@ -106,7 +94,12 @@ export function generateRoutines(
 
   for (const frequency of frequencies) {
     for (const time of times) {
-      const routine = buildRoutine(frequency, time, safeProducts, phase);
+      const routine = buildRoutine(
+        frequency,
+        time,
+        contextualProducts,
+        snapshot.cyclePhase,
+      );
       if (routine) routines.push(routine);
     }
   }
@@ -130,15 +123,22 @@ export function getTodaysRoutines(
   routines: Routine[],
   settings: AppSettings,
 ): Routine[] {
-  const phase = getCurrentCyclePhase(settings.cycle);
+  const snapshot = getBodyContextCore(settings.bodyContext);
   const today = new Date();
   const dayOfMonth = today.getDate();
   const dayOfWeek = today.getDay();
 
-  return routines.filter((r) => {
-    if (r.frequency === "daily") return true;
-    if (r.frequency === "weekly") return dayOfWeek === 0;
-    if (r.frequency === "monthly") return dayOfMonth === 1;
-    return false;
-  }).filter((r) => !r.cyclePhase || r.cyclePhase === phase || r.cyclePhase === "none");
+  return routines
+    .filter((r) => {
+      if (r.frequency === "daily") return true;
+      if (r.frequency === "weekly") return dayOfWeek === 0;
+      if (r.frequency === "monthly") return dayOfMonth === 1;
+      return false;
+    })
+    .filter(
+      (r) =>
+        !r.cyclePhase ||
+        r.cyclePhase === snapshot.cyclePhase ||
+        r.cyclePhase === "none",
+    );
 }

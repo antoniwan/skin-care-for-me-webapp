@@ -8,15 +8,15 @@ import {
 
 export interface AppNavItem {
   href: string;
-  label: string;
+  labelKey: "nav.today" | "nav.products" | "nav.routines" | "nav.body";
   icon: LucideIcon;
 }
 
 export const APP_NAV_ITEMS: AppNavItem[] = [
-  { href: "/", label: "Today", icon: Home },
-  { href: "/products", label: "Products", icon: Package },
-  { href: "/routines", label: "Routines", icon: Sparkles },
-  { href: "/cycle", label: "Cycle", icon: Calendar },
+  { href: "/", labelKey: "nav.today", icon: Home },
+  { href: "/products", labelKey: "nav.products", icon: Package },
+  { href: "/routines", labelKey: "nav.routines", icon: Sparkles },
+  { href: "/cycle", labelKey: "nav.body", icon: Calendar },
 ];
 
 export function isNavItemActive(pathname: string, href: string): boolean {

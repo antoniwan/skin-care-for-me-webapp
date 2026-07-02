@@ -1,18 +1,21 @@
 "use client";
 
 import type { ConflictWarning, Product, Routine } from "@/lib/types";
-import { formatCategory } from "@/lib/format";
 import { groupWarningsByProduct } from "@/lib/conflicts/display";
 import {
   RoutineInteractionBadge,
   StepInteractionHint,
 } from "@/components/conflicts";
 import { RoutineVerificationPanel } from "@/components/routines/routine-verification-panel";
+import { useTranslation } from "@/components/providers/locale-provider";
 import {
+  formatCategoryLabel,
   formatRoutineSchedule,
   formatRoutineTitle,
-  verifyRoutine,
-} from "@/lib/routines/verification";
+  getEnumLabel,
+  plural,
+} from "@/lib/i18n/ui";
+import { verifyRoutine } from "@/lib/routines/verification";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2 } from "lucide-react";
@@ -30,6 +33,7 @@ export function RoutineCard({
   warnings = [],
   detailed = false,
 }: RoutineCardProps) {
+  const { t } = useTranslation();
   const byProduct = groupWarningsByProduct(warnings);
   const verification = verifyRoutine(routine, products);
 
@@ -39,24 +43,30 @@ export function RoutineCard({
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div className="space-y-1">
             <CardTitle className="font-heading text-base">
-              {formatRoutineTitle(routine.frequency, routine.timeOfDay)}
+              {formatRoutineTitle(t, routine.frequency, routine.timeOfDay)}
             </CardTitle>
             <p className="text-xs text-muted-foreground">
-              {formatRoutineSchedule(routine.frequency)} · {routine.steps.length}{" "}
-              {routine.steps.length === 1 ? "step" : "steps"}
+              {formatRoutineSchedule(t, routine.frequency)} ·{" "}
+              {routine.steps.length}{" "}
+              {plural(
+                t,
+                routine.steps.length,
+                "common.step",
+                "common.steps",
+              )}
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
             {verification.allPassed && (
               <Badge className="gap-1 border-transparent bg-primary text-primary-foreground">
                 <CheckCircle2 className="size-3" />
-                All clear
+                {t("common.allClear")}
               </Badge>
             )}
             <RoutineInteractionBadge warnings={warnings} />
             {routine.cyclePhase && (
-              <Badge variant="secondary" className="capitalize">
-                {routine.cyclePhase}
+              <Badge variant="secondary">
+                {getEnumLabel(t, "cyclePhase", routine.cyclePhase)}
               </Badge>
             )}
           </div>
@@ -75,8 +85,8 @@ export function RoutineCard({
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-medium">{step.productName}</p>
-                  <p className="text-xs capitalize text-muted-foreground">
-                    {formatCategory(step.category)}
+                  <p className="text-xs text-muted-foreground">
+                    {formatCategoryLabel(t, step.category)}
                   </p>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                     {step.instructions}

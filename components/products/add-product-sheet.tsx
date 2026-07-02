@@ -5,6 +5,7 @@ import { Loader2, Plus, Search } from "lucide-react";
 import { lookupProductAction } from "@/app/(app)/products/actions";
 import type { ProductLookupResult } from "@/lib/types";
 import { ProductMetaBadges } from "@/components/products/product-meta-badges";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -22,6 +23,7 @@ interface AddProductSheetProps {
 }
 
 export function AddProductSheet({ onAdd }: AddProductSheetProps) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -44,7 +46,7 @@ export function AddProductSheet({ onAdd }: AddProductSheetProps) {
 
       setPreview(result.data);
     } catch {
-      setError("Could not find product info. Try a more specific name.");
+      setError(t("addProduct.notFound"));
     } finally {
       setLoading(false);
     }
@@ -64,24 +66,22 @@ export function AddProductSheet({ onAdd }: AddProductSheetProps) {
       <SheetTrigger asChild>
         <Button className="w-full gap-2" size="lg">
           <Plus className="size-4" />
-          Add product
+          {t("common.addProduct")}
         </Button>
       </SheetTrigger>
       <SheetContent side="bottom" className="max-h-[90dvh] overflow-y-auto rounded-t-2xl">
         <SheetHeader>
-          <SheetTitle className="font-heading">Add a product</SheetTitle>
-          <SheetDescription>
-            Search by name or brand. Info is looked up with AI and saved on your device.
-          </SheetDescription>
+          <SheetTitle className="font-heading">{t("addProduct.title")}</SheetTitle>
+          <SheetDescription>{t("addProduct.description")}</SheetDescription>
         </SheetHeader>
 
         <div className="mt-6 space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="product-query">Product name</Label>
+            <Label htmlFor="product-query">{t("addProduct.nameLabel")}</Label>
             <div className="flex gap-2">
               <Input
                 id="product-query"
-                placeholder="e.g. CeraVe Hydrating Cleanser"
+                placeholder={t("addProduct.namePlaceholder")}
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && void handleLookup()}
@@ -124,7 +124,7 @@ export function AddProductSheet({ onAdd }: AddProductSheetProps) {
                 </p>
               )}
               <Button className="w-full" onClick={() => void handleSave()}>
-                Save to my shelf
+                {t("common.saveToShelf")}
               </Button>
             </div>
           )}

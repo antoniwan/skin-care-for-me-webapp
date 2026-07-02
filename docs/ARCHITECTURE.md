@@ -32,7 +32,7 @@ Bottom nav routes (mobile) and side nav (desktop):
 | `/` | Today |
 | `/products` | Product shelf |
 | `/routines` | All routines by frequency + PDF guide section |
-| `/cycle` | Cycle tracking settings |
+| `/cycle` | Body & cycle settings (menstrual, life stage, weight) |
 
 `/guide` redirects to `/routines#guide`.
 

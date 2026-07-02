@@ -1,13 +1,10 @@
-export type CyclePhase =
-  | "menstrual"
-  | "follicular"
-  | "ovulation"
-  | "luteal"
-  | "none";
-
-export interface CycleSettings {
-  enabled: boolean;
-  cycleLength: number;
-  periodLength: number;
-  lastPeriodStart: string | null;
-}
+/** @deprecated Import from @/lib/body-context or @/lib/types/body-context */
+export type {
+  CyclePhase,
+  LifeStage,
+  WeightChange,
+  MenstrualCycleSettings,
+  WeightContextSettings,
+  BodyContextSettings,
+  CycleSettings,
+} from "./body-context";

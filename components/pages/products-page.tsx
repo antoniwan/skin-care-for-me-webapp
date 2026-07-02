@@ -1,27 +1,37 @@
 "use client";
 
 import { useAppDataContext } from "@/components/providers/app-data-provider";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { AffiliateDisclosure } from "@/components/products/affiliate-disclosure";
 import { AddProductSheet } from "@/components/products/add-product-sheet";
 import { ProductCard } from "@/components/products/product-card";
 import { PageContainer } from "@/components/layout/page-container";
 import { PageHeader } from "@/components/layout/page-header";
 import { PageLoading } from "@/components/layout/page-loading";
-import { pluralize } from "@/lib/format";
+import { plural } from "@/lib/i18n/ui";
 
 export function ProductsPage() {
   const { products, loading, addProductFromLookup, removeProduct } =
     useAppDataContext();
+  const { t } = useTranslation();
 
   if (loading) {
-    return <PageLoading message="Loading products…" />;
+    return <PageLoading message={t("pages.products.loading")} />;
   }
 
   return (
     <PageContainer>
       <PageHeader
-        title="My products"
-        description={`Your curated shelf with photos, brand links, and shop links. ${products.length} ${pluralize(products.length, "item")} stored locally on your device.`}
+        title={t("pages.products.title")}
+        description={t("pages.products.description", {
+          count: products.length,
+          itemsLabel: plural(
+            t,
+            products.length,
+            "common.item",
+            "common.items",
+          ),
+        })}
       />
 
       <AddProductSheet onAdd={addProductFromLookup} />

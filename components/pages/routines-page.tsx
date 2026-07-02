@@ -1,40 +1,46 @@
 "use client";
 
 import { useAppDataContext } from "@/components/providers/app-data-provider";
+import { useTranslation } from "@/components/providers/locale-provider";
+import { RoutineExclusionsNotice } from "@/components/routines/routine-exclusions-notice";
 import { RoutineGuideSection } from "@/components/routines/routine-guide-section";
 import { RoutineList } from "@/components/routines/routine-list";
-import { RoutinesOverview } from "@/components/routines/routines-overview";
 import { PageContainer } from "@/components/layout/page-container";
 import { PageHeader } from "@/components/layout/page-header";
 import { PageLoading } from "@/components/layout/page-loading";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getCurrentCyclePhase, getCycleDay } from "@/lib/cycle/phases";
+import { getBodyContextSnapshot } from "@/lib/body-context";
 import { getRoutineShelfExclusions } from "@/lib/routines/verification";
-import { pluralize } from "@/lib/format";
+import {
+  formatFrequencyLabel,
+  formatRoutineSchedule,
+  plural,
+} from "@/lib/i18n/ui";
 import type { RoutineFrequency } from "@/lib/types";
 
 const FREQUENCIES: RoutineFrequency[] = ["daily", "weekly", "monthly"];
 
 export function RoutinesPage() {
-  const { routines, products, conflicts, settings, loading } = useAppDataContext();
+  const { routines, products, conflicts, settings, loading } =
+    useAppDataContext();
+  const { t } = useTranslation();
 
   if (loading || !settings) {
-    return <PageLoading message="Loading routines…" />;
+    return <PageLoading message={t("pages.routines.loading")} />;
   }
 
   if (products.length === 0) {
     return (
       <PageContainer>
         <PageHeader
-          title="Routines"
-          description="Add products first — your daily, weekly, and monthly routines will appear here."
+          title={t("pages.routines.title")}
+          description={t("pages.routines.emptyDescription")}
         />
       </PageContainer>
     );
   }
 
-  const phase = getCurrentCyclePhase(settings.cycle);
-  const cycleDay = getCycleDay(settings.cycle);
+  const snapshot = getBodyContextSnapshot(settings.bodyContext, t);
   const exclusions = getRoutineShelfExclusions(products, conflicts);
 
   const byFrequency = Object.fromEntries(
@@ -45,59 +51,69 @@ export function RoutinesPage() {
   ) as Record<RoutineFrequency, typeof routines>;
 
   return (
-    <PageContainer>
+    <PageContainer className="space-y-5">
       <PageHeader
-        title="Routines"
-        description="Each routine is checked for layering order, ingredient pairings, and the right schedule."
+        title={t("pages.routines.title")}
+        description={t("pages.routines.description")}
       />
 
-      <RoutinesOverview
-        routines={routines}
-        products={products}
-        exclusions={exclusions}
-      />
-
-      <Tabs defaultValue="daily">
+      <Tabs defaultValue="daily" className="gap-4">
         <TabsList className="grid w-full grid-cols-3 lg:max-w-md">
           {FREQUENCIES.map((freq) => {
             const count = byFrequency[freq].length;
             return (
               <TabsTrigger key={freq} value={freq} className="capitalize">
-                {freq}
+                {formatFrequencyLabel(t, freq)}
                 {count > 0 ? ` (${count})` : ""}
               </TabsTrigger>
             );
           })}
         </TabsList>
         {FREQUENCIES.map((freq) => (
-          <TabsContent key={freq} value={freq} className="mt-4 space-y-3">
-            {byFrequency[freq].length > 0 && (
+          <TabsContent key={freq} value={freq} className="mt-0 space-y-4">
+            {byFrequency[freq].length > 0 ? (
+              <>
+                <p className="text-sm text-muted-foreground">
+                  {t("pages.routines.routineCount", {
+                    count: byFrequency[freq].length,
+                    routineLabel: plural(
+                      t,
+                      byFrequency[freq].length,
+                      "common.routine",
+                      "common.routines",
+                    ),
+                    schedule: formatRoutineSchedule(t, freq),
+                  })}
+                </p>
+                <RoutineList
+                  routines={byFrequency[freq]}
+                  products={products}
+                  detailed
+                  emptyMessage={t("pages.routines.emptyFrequency", {
+                    frequency: formatFrequencyLabel(t, freq),
+                  })}
+                />
+              </>
+            ) : (
               <p className="text-sm text-muted-foreground">
-                {byFrequency[freq].length}{" "}
-                {pluralize(byFrequency[freq].length, "routine")} ·{" "}
-                {freq === "daily"
-                  ? "use every day"
-                  : freq === "weekly"
-                    ? "scheduled Sundays"
-                    : "scheduled on the 1st"}
+                {t("pages.routines.emptyFrequency", {
+                  frequency: formatFrequencyLabel(t, freq),
+                })}
               </p>
             )}
-            <RoutineList
-              routines={byFrequency[freq]}
-              products={products}
-              detailed
-              emptyMessage={`No ${freq} products yet.`}
-            />
           </TabsContent>
         ))}
       </Tabs>
+
+      <RoutineExclusionsNotice exclusions={exclusions} />
 
       <RoutineGuideSection
         products={products}
         routines={routines}
         conflicts={conflicts}
-        cyclePhase={phase}
-        cycleDay={cycleDay}
+        cyclePhase={snapshot.cyclePhase}
+        cycleDay={snapshot.cycleDay}
+        bodyContextNotes={snapshot.guidanceNotes}
       />
     </PageContainer>
   );

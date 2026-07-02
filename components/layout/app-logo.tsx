@@ -1,5 +1,7 @@
+"use client";
+
 import { Heart } from "lucide-react";
-import { SITE_NAME } from "@/lib/constants/metadata";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { cn } from "@/lib/utils";
 
 type AppLogoSize = "sm" | "md";
@@ -19,6 +21,7 @@ export function AppLogo({
   className?: string;
   size?: AppLogoSize;
 }) {
+  const { t } = useTranslation();
   const styles = sizeStyles[size];
 
   return (
@@ -35,7 +38,7 @@ export function AppLogo({
           styles.text,
         )}
       >
-        {SITE_NAME}
+        {t("brand.name")}
       </span>
       <Heart
         aria-hidden

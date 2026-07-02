@@ -56,3 +56,13 @@ export function highestSeverity(
   if (warnings.length === 0) return null;
   return sortWarningsBySeverity(warnings)[0].conflict.severity;
 }
+
+export function countBySeverity(
+  warnings: ConflictWarning[],
+): Record<ConflictWarning["conflict"]["severity"], number> {
+  const counts = { avoid: 0, caution: 0, separate: 0 };
+  for (const warning of warnings) {
+    counts[warning.conflict.severity] += 1;
+  }
+  return counts;
+}

@@ -137,7 +137,7 @@ function collectReviewNotes(routine: Routine, warnings: ConflictWarning[]): stri
 
   if (routine.cyclePhase) {
     notes.push(
-      `Adjusted for ${routine.cyclePhase} phase — harsher actives may be limited on sensitive days.`,
+      `Adjusted for your current menstrual phase — harsher actives may be limited on sensitive days.`,
     );
   }
 

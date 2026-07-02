@@ -3,11 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AppLogo } from "@/components/layout/app-logo";
+import { LanguageToggle } from "@/components/layout/language-toggle";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { APP_NAV_ITEMS, isNavItemActive } from "@/lib/constants/navigation";
 import { cn } from "@/lib/utils";
 
 export function SideNav() {
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   return (
     <aside className="fixed inset-y-0 left-0 z-40 hidden w-56 flex-col border-r border-border bg-card/95 backdrop-blur-sm lg:flex">
@@ -19,8 +22,8 @@ export function SideNav() {
           <AppLogo />
         </Link>
       </div>
-      <nav className="flex flex-1 flex-col gap-1 px-3 pb-8">
-        {APP_NAV_ITEMS.map(({ href, label, icon: Icon }) => {
+      <nav className="flex flex-1 flex-col gap-1 px-3">
+        {APP_NAV_ITEMS.map(({ href, labelKey, icon: Icon }) => {
           const active = isNavItemActive(pathname, href);
           return (
             <Link
@@ -34,11 +37,14 @@ export function SideNav() {
               )}
             >
               <Icon className={cn("size-5", active && "stroke-[2.5]")} />
-              {label}
+              {t(labelKey)}
             </Link>
           );
         })}
       </nav>
+      <div className="border-t border-border px-4 py-4">
+        <LanguageToggle />
+      </div>
     </aside>
   );
 }

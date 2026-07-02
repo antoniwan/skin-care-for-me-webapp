@@ -8,7 +8,15 @@ export type {
 
 export type { RoutineStep, Routine } from "./routine";
 
-export type { CyclePhase, CycleSettings } from "./cycle";
+export type {
+  CyclePhase,
+  LifeStage,
+  WeightChange,
+  MenstrualCycleSettings,
+  WeightContextSettings,
+  BodyContextSettings,
+  CycleSettings,
+} from "./body-context";
 
 export type { IngredientConflict, ConflictWarning } from "./conflicts";
 

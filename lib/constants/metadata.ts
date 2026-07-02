@@ -35,8 +35,9 @@ export const PAGE_METADATA = {
     description: "Daily, weekly, and monthly routines built from your products.",
   }),
   cycle: createPageMetadata({
-    title: "Cycle",
-    description: "Optional cycle tracking to adapt routines by phase.",
+    title: "Body & cycle",
+    description:
+      "Optional menstrual, life-stage, and weight context — stored only on your device.",
   }),
   guide: createPageMetadata({
     title: "Guide",

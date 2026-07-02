@@ -1,5 +1,5 @@
-import { PageLoading } from "@/components/layout/page-loading";
+import { AppLoading } from "@/components/layout/app-loading";
 
 export default function Loading() {
-  return <PageLoading message="Loading…" />;
+  return <AppLoading />;
 }

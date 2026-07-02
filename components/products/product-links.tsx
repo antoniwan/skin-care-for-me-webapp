@@ -1,5 +1,8 @@
+"use client";
+
 import { buildAmazonAffiliateUrl } from "@/lib/products/affiliate";
 import { getProductPageLabel } from "@/lib/products/product-page-link";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { ExternalLink, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,6 +17,8 @@ export function ProductLinks({
   productPageLabel,
   amazonAsin,
 }: ProductLinksProps) {
+  const { t } = useTranslation();
+
   if (!manufacturerUrl && !amazonAsin) return null;
 
   const pageLabel = manufacturerUrl
@@ -42,7 +47,7 @@ export function ProductLinks({
             rel="noopener noreferrer sponsored"
           >
             <ShoppingBag className="size-3.5" />
-            Shop on Amazon
+            {t("common.shopAmazon")}
           </a>
         </Button>
       )}

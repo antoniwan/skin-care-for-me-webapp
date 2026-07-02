@@ -1,21 +1,18 @@
 import Dexie, { type EntityTable } from "dexie";
 import type { AppSettings, Product, Routine } from "./types";
+import { normalizeAppSettings } from "./body-context/migrate";
+import { DEFAULT_BODY_CONTEXT } from "./body-context/defaults";
 import { DEFAULT_PRODUCTS } from "./seed/default-products";
 
 const DEFAULT_SETTINGS: AppSettings = {
-  cycle: {
-    enabled: false,
-    cycleLength: 28,
-    periodLength: 5,
-    lastPeriodStart: null,
-  },
+  bodyContext: { ...DEFAULT_BODY_CONTEXT },
   onboardingComplete: false,
 };
 
 class SkinCareDB extends Dexie {
   products!: EntityTable<Product, "id">;
   routines!: EntityTable<Routine, "id">;
-  settings!: EntityTable<AppSettings & { id: string }, "id">;
+  settings!: EntityTable<AppSettings & { id: string; cycle?: unknown }, "id">;
 
   constructor() {
     super("SkinCareForMe");
@@ -41,7 +38,10 @@ export async function ensureSeedProducts(): Promise<void> {
 
 export async function getSettings(): Promise<AppSettings> {
   const row = await db.settings.get("app");
-  return row ?? DEFAULT_SETTINGS;
+  if (!row) return DEFAULT_SETTINGS;
+  const { id, ...rest } = row;
+  void id;
+  return normalizeAppSettings(rest as Parameters<typeof normalizeAppSettings>[0]);
 }
 
 export async function saveSettings(settings: AppSettings): Promise<void> {

@@ -1,16 +1,25 @@
 export const SEVERITY_STYLES = {
   avoid: {
-    chip: "border-destructive/25 bg-destructive/10 text-destructive",
+    accent: "bg-destructive",
+    surface: "bg-destructive/6",
+    trigger: "bg-destructive/8 hover:bg-destructive/12",
+    badge: "bg-destructive/15 text-destructive",
     dot: "bg-destructive",
     label: "Avoid layering",
   },
   caution: {
-    chip: "border-amber-500/30 bg-amber-500/10 text-amber-900",
+    accent: "bg-amber-500",
+    surface: "bg-amber-500/8",
+    trigger: "bg-amber-500/10 hover:bg-amber-500/15",
+    badge: "bg-amber-500/15 text-amber-950 dark:text-amber-100",
     dot: "bg-amber-500",
     label: "Use with care",
   },
   separate: {
-    chip: "border-border bg-muted/60 text-muted-foreground",
+    accent: "bg-muted-foreground/70",
+    surface: "bg-muted/50",
+    trigger: "bg-muted/60 hover:bg-muted/80",
+    badge: "bg-muted text-muted-foreground",
     dot: "bg-muted-foreground",
     label: "Separate timing",
   },

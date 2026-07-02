@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { Button } from "@/components/ui/button";
 
 interface ProductIngredientsProps {
@@ -9,6 +10,7 @@ interface ProductIngredientsProps {
 }
 
 export function ProductIngredients({ ingredients }: ProductIngredientsProps) {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
   if (ingredients.length === 0) return null;
@@ -23,7 +25,7 @@ export function ProductIngredients({ ingredients }: ProductIngredientsProps) {
         aria-expanded={open}
       >
         <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-          Full ingredient list ({ingredients.length})
+          {t("common.fullIngredientList", { count: ingredients.length })}
         </span>
         <ChevronDown
           className={`size-4 shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`}

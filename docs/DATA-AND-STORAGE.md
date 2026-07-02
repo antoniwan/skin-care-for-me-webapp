@@ -21,15 +21,27 @@ All personal data is stored in the browser using IndexedDB. Clearing site data i
 
 ```ts
 {
-  cycle: {
+  bodyContext: {
     enabled: boolean
-    cycleLength: number      // default 28
-    periodLength: number       // default 5
-    lastPeriodStart: string | null  // ISO date "YYYY-MM-DD"
+    menstrual: {
+      enabled: boolean
+      cycleLength: number      // default 28
+      periodLength: number     // default 5
+      lastPeriodStart: string | null  // ISO date "YYYY-MM-DD"
+    }
+    lifeStage: "none" | "pregnant" | "postpartum" | "breastfeeding"
+             | "perimenopause" | "menopause"
+    postpartumWeeks: number | null   // 0–52 when postpartum
+    weight: {
+      enabled: boolean
+      recentChange: "stable" | "gaining" | "losing" | "prefer_not_to_say"
+    }
   }
   onboardingComplete: boolean  // currently unused in UI
 }
 ```
+
+Legacy installs may still have a top-level `cycle` object in IndexedDB; it is migrated on read. See [BODY-AND-CYCLE.md](BODY-AND-CYCLE.md) for full behavior.
 
 ### Product shape
 
@@ -107,6 +119,7 @@ Nine products are hardcoded for development and demo. They use stable IDs prefix
 | Seed products | IndexedDB | No |
 | Routines | IndexedDB | No |
 | Cycle settings | IndexedDB | No |
+| Body context (cycle, life stage, weight prefs) | IndexedDB | No |
 | Product name during lookup | Request body to `/api/products/lookup` | Yes, once per lookup |
 | OpenAI processing | Vercel/server function | Yes, if API key is set |
 

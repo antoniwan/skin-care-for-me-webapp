@@ -1,6 +1,6 @@
-import type { CycleSettings } from "./cycle";
+import type { BodyContextSettings } from "./body-context";
 
 export interface AppSettings {
-  cycle: CycleSettings;
+  bodyContext: BodyContextSettings;
   onboardingComplete: boolean;
 }

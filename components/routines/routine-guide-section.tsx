@@ -2,6 +2,7 @@
 
 import { Download } from "lucide-react";
 import { InteractionSummaryBar } from "@/components/conflicts";
+import { useTranslation } from "@/components/providers/locale-provider";
 import { Button } from "@/components/ui/button";
 import { downloadGuidePdf } from "@/lib/pdf/guide";
 import type { ConflictWarning, CyclePhase, Product, Routine } from "@/lib/types";
@@ -12,6 +13,7 @@ interface RoutineGuideSectionProps {
   conflicts: ConflictWarning[];
   cyclePhase: CyclePhase;
   cycleDay: number | null;
+  bodyContextNotes?: string[];
 }
 
 export function RoutineGuideSection({
@@ -20,7 +22,10 @@ export function RoutineGuideSection({
   conflicts,
   cyclePhase,
   cycleDay,
+  bodyContextNotes = [],
 }: RoutineGuideSectionProps) {
+  const { t } = useTranslation();
+
   function handleDownload() {
     downloadGuidePdf({
       products,
@@ -28,6 +33,7 @@ export function RoutineGuideSection({
       conflicts,
       cyclePhase,
       cycleDay,
+      bodyContextNotes,
     });
   }
 
@@ -36,10 +42,10 @@ export function RoutineGuideSection({
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 className="font-heading text-lg font-semibold tracking-tight">
-            Routine guide
+            {t("guide.title")}
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Ingredient interactions and a printable PDF of your shelf and routines.
+            {t("guide.description")}
           </p>
         </div>
         <Button
@@ -48,7 +54,7 @@ export function RoutineGuideSection({
           onClick={handleDownload}
         >
           <Download className="size-4" />
-          Download PDF
+          {t("common.downloadPdf")}
         </Button>
       </div>
 
