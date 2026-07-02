@@ -2,8 +2,9 @@
 
 > **This is not the [roadmap](ROADMAP.md).** The roadmap plans future product phases. This tracker audits **what exists today** (v0.1.0) and what is still required to ship it publicly at a production URL.
 >
-> **Last audited:** 2026-07-02  
+> **Last audited:** 2026-07-02 (documentation sync)  
 > **App version:** `0.1.0`  
+> **Planned URL:** `https://skincareforyou.builds.software`  
 > **Stack:** Next.js 16 · React 19 · IndexedDB (Dexie) · optional OpenAI lookup
 
 ---
@@ -114,7 +115,7 @@ flowchart LR
 | P-040 | `.env.example` | ✅ | Documents `OPENAI_API_KEY`, `NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG`, `NEXT_PUBLIC_SITE_URL` | — |
 | P-041 | Env validation | 🟡 | `lib/env.ts` validates `OPENAI_API_KEY` only | Validate `NEXT_PUBLIC_SITE_URL` in prod |
 | P-042 | Hosting target | 🟡 | Standard Next.js — README mentions Vercel | Link Vercel project; no `vercel.json` yet |
-| P-043 | Custom domain + SSL | ❌ | Not configured | Buy/configure domain; set `NEXT_PUBLIC_SITE_URL` |
+| P-043 | Custom domain + SSL | ❌ | Not configured | Use `skincareforyou.builds.software`; set `NEXT_PUBLIC_SITE_URL` |
 | P-044 | `OPENAI_API_KEY` (prod) | 🟡 | Optional — mock fallback without key | Set for real lookups; monitor cost |
 | P-045 | `NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG` | ⏸ | Optional affiliate links on seed products | Set if monetizing Amazon links |
 | P-046 | Preview vs production envs | ❌ | No documented env matrix | Document Vercel Preview/Production vars |
@@ -122,7 +123,7 @@ flowchart LR
 **Production env checklist (Vercel)**
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://your-domain.com
+NEXT_PUBLIC_SITE_URL=https://skincareforyou.builds.software
 OPENAI_API_KEY=sk-...          # required for real product lookup
 NEXT_PUBLIC_AMAZON_ASSOCIATE_TAG=yourtag-20   # optional
 ```
@@ -302,6 +303,7 @@ Priority order based on **current app state**, not roadmap phases:
 | [BACKLOG.md](BACKLOG.md) | Feature epics with IDs like PROD-101 |
 | [KNOWN-LIMITATIONS.md](KNOWN-LIMITATIONS.md) | Technical audit of v0.1 gaps |
 | [DATA-AND-STORAGE.md](DATA-AND-STORAGE.md) | Privacy model for policy writing |
+| [LOCALIZATION.md](LOCALIZATION.md) | i18n scope and gaps |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Deploy and data-flow reference |
 
 ---
