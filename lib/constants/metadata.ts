@@ -1,12 +1,61 @@
 import type { Metadata } from "next";
-import { SITE_DESCRIPTION, SITE_URL } from "./site";
+import {
+  OG_IMAGE_HEIGHT,
+  OG_IMAGE_PATH,
+  OG_IMAGE_WIDTH,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TITLE,
+  SITE_URL,
+  absoluteUrl,
+  ogImageAlt,
+} from "./site";
 
-export const SITE_NAME = "Skincare for You";
+export { SITE_NAME, SITE_TITLE, SITE_DESCRIPTION } from "./site";
+
+const OG_IMAGE = {
+  url: absoluteUrl(OG_IMAGE_PATH),
+  width: OG_IMAGE_WIDTH,
+  height: OG_IMAGE_HEIGHT,
+  alt: ogImageAlt(),
+  type: "image/png" as const,
+};
+
+function buildSocialMetadata({
+  title,
+  description,
+  path = "/",
+}: {
+  title: string;
+  description: string;
+  path?: string;
+}): Pick<Metadata, "openGraph" | "twitter"> {
+  const url = absoluteUrl(path);
+
+  return {
+    openGraph: {
+      type: "website",
+      locale: "es_419",
+      alternateLocale: ["en_US"],
+      url,
+      siteName: SITE_NAME,
+      title,
+      description,
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [OG_IMAGE.url],
+    },
+  };
+}
 
 export const ROOT_METADATA: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: SITE_NAME,
+    default: SITE_TITLE,
     template: `%s · ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -21,29 +70,11 @@ export const ROOT_METADATA: Metadata = {
   ],
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
-  openGraph: {
-    type: "website",
-    locale: "es_419",
-    alternateLocale: ["en_US"],
-    url: SITE_URL,
-    siteName: SITE_NAME,
-    title: SITE_NAME,
+  ...buildSocialMetadata({
+    title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: `${SITE_NAME} — personal skincare routines on your device`,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: SITE_NAME,
-    description: SITE_DESCRIPTION,
-    images: ["/og.png"],
-  },
+    path: "/",
+  }),
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
@@ -57,47 +88,56 @@ export const ROOT_METADATA: Metadata = {
 export function createPageMetadata({
   title,
   description,
+  path,
+  absoluteTitle,
 }: {
   title: string;
   description: string;
+  path: string;
+  absoluteTitle?: string;
 }): Metadata {
+  const socialTitle = absoluteTitle ?? `${title} · ${SITE_NAME}`;
+
   return {
-    title,
+    title: absoluteTitle ? { absolute: absoluteTitle } : title,
     description,
-    openGraph: {
-      title: `${title} · ${SITE_NAME}`,
+    ...buildSocialMetadata({
+      title: socialTitle,
       description,
-    },
-    twitter: {
-      title: `${title} · ${SITE_NAME}`,
-      description,
-    },
+      path,
+    }),
   };
 }
 
 export const PAGE_METADATA = {
   home: createPageMetadata({
     title: "Today",
-    description:
-      "Your skin care routine for today, with ingredient interaction notes.",
+    absoluteTitle: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    path: "/",
   }),
   products: createPageMetadata({
     title: "Products",
-    description: "Your product shelf, stored locally on this device.",
+    description:
+      "Your curated skincare shelf with photos, brand links, and shop links. Products and settings are stored locally on this device — no account required.",
+    path: "/products",
   }),
   routines: createPageMetadata({
     title: "Routines",
     description:
-      "Daily, weekly, and monthly routines built from your products.",
+      "Daily, weekly, and monthly skincare routines built automatically from your shelf. Open any routine for ordered steps, ingredient interaction notes, and safety checks.",
+    path: "/routines",
   }),
   cycle: createPageMetadata({
     title: "Body & cycle",
     description:
-      "Optional menstrual, life-stage, and weight context — stored only on your device.",
+      "Optional menstrual, life-stage, and weight context to adapt routines and guidance. All body settings stay in your browser — never sent to our servers.",
+    path: "/cycle",
   }),
   guide: createPageMetadata({
     title: "Guide",
     description:
-      "Download your products, routines, and interaction notes as a PDF.",
+      "Download a printable PDF of your product shelf, routines, ingredient interactions, and body context notes. Generated entirely on your device.",
+    path: "/routines",
   }),
 } as const;

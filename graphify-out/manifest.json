@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\constants\\metadata.ts": {
-    "mtime": 1783021052.4283593,
-    "ast_hash": "2e1fb20b9953407919be718563e6e707",
+    "mtime": 1783022952.585821,
+    "ast_hash": "0ec7d13cf652f32a65d6bc36b39684f0",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\products\\lookup-schema.ts": {
@@ -765,8 +765,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\lib\\constants\\site.ts": {
-    "mtime": 1783021044.6023731,
-    "ast_hash": "d43e1fe68b7bf87829e6c2a0a77eb5fb",
+    "mtime": 1783023010.3325677,
+    "ast_hash": "d1d10862f538487b32a82a71a5291730",
     "semantic_hash": ""
   },
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\docs\\PRODUCTION-TRACKER.md": {
@@ -802,6 +802,16 @@
   "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\docs\\LOCALIZATION.md": {
     "mtime": 1783022248.7029278,
     "ast_hash": "c140f3c92794f68ea81dc867d6ecf913",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\opengraph-image.png": {
+    "mtime": 1783021072.2837884,
+    "ast_hash": "a89a9b8c5df7de2504afc43db8e52901",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\zombi\\Developer\\projects\\skin-care-for-me-webapp\\app\\twitter-image.png": {
+    "mtime": 1783021072.2837884,
+    "ast_hash": "a89a9b8c5df7de2504afc43db8e52901",
     "semantic_hash": ""
   }
 }
