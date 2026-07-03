@@ -22,22 +22,31 @@ import {
   getBodyContextProductExclusions,
   getBodyContextSnapshot,
 } from "@/lib/body-context";
-import { getLifeStageDescription, localizeExclusionReason } from "@/lib/i18n/ui";
+import {
+  LIFE_STAGE_TOGGLE_KEYS,
+  reconcileLifeStageFlags,
+  type LifeStageToggleKey,
+} from "@/lib/body-context/life-stage";
+import {
+  SKIN_CONDITION_KEYS,
+  WELLNESS_KEYS,
+  type SkinConditionKey,
+  type WellnessKey,
+} from "@/lib/body-context/skin-wellness";
+import {
+  getLifeStageToggleHelp,
+  getSkinConditionToggleHelp,
+  getWellnessToggleHelp,
+  localizeExclusionReason,
+} from "@/lib/i18n/ui";
 import type {
   AppSettings,
   BodyContextSettings,
-  LifeStage,
+  LifeStageFlags,
+  SkinConditionFlags,
   WeightChange,
+  WellnessFlags,
 } from "@/lib/types";
-
-const LIFE_STAGES: LifeStage[] = [
-  "none",
-  "pregnant",
-  "postpartum",
-  "breastfeeding",
-  "perimenopause",
-  "menopause",
-];
 
 const WEIGHT_OPTIONS: WeightChange[] = [
   "stable",
@@ -51,7 +60,7 @@ export function CyclePage() {
   const { t } = useTranslation();
 
   if (loading || !settings) {
-    return <PageLoading message={t("pages.body.loading")} />;
+    return <PageLoading message={t("pages.lifestyle.loading")} />;
   }
 
   const bodyContext = settings.bodyContext;
@@ -82,11 +91,43 @@ export function CyclePage() {
     });
   }
 
+  function updateLifeStage(patch: Partial<LifeStageFlags>) {
+    const lifeStage = reconcileLifeStageFlags(bodyContext.lifeStage, patch);
+    updateBodyContext({
+      lifeStage,
+      postpartumWeeks: lifeStage.postpartum ? bodyContext.postpartumWeeks : null,
+    });
+  }
+
+  function toggleLifeStage(key: LifeStageToggleKey, checked: boolean) {
+    updateLifeStage({ [key]: checked });
+  }
+
+  function updateSkinConditions(patch: Partial<SkinConditionFlags>) {
+    updateBodyContext({
+      skinConditions: { ...bodyContext.skinConditions, ...patch },
+    });
+  }
+
+  function updateWellness(patch: Partial<WellnessFlags>) {
+    updateBodyContext({
+      wellness: { ...bodyContext.wellness, ...patch },
+    });
+  }
+
+  function toggleSkinCondition(key: SkinConditionKey, checked: boolean) {
+    updateSkinConditions({ [key]: checked });
+  }
+
+  function toggleWellness(key: WellnessKey, checked: boolean) {
+    updateWellness({ [key]: checked });
+  }
+
   return (
     <PageContainer>
       <PageHeader
-        title={t("pages.body.title")}
-        description={t("pages.body.description")}
+        title={t("pages.lifestyle.title")}
+        description={t("pages.lifestyle.description")}
       />
 
       <BodyContextPrivacyNotice />
@@ -94,9 +135,9 @@ export function CyclePage() {
       <Card>
         <CardContent className="flex items-center justify-between pt-6">
           <div>
-            <p className="font-medium">{t("pages.body.masterToggle")}</p>
+            <p className="font-medium">{t("pages.lifestyle.masterToggle")}</p>
             <p className="text-sm text-muted-foreground">
-              {t("pages.body.masterHelp")}
+              {t("pages.lifestyle.masterHelp")}
             </p>
           </div>
           <Switch
@@ -111,17 +152,17 @@ export function CyclePage() {
           <Card>
             <CardHeader>
               <CardTitle className="font-heading text-base">
-                {t("pages.body.menstrualTitle")}
+                {t("pages.lifestyle.menstrualTitle")}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <p className="text-sm font-medium">
-                    {t("pages.body.trackMenstrual")}
+                    {t("pages.lifestyle.trackMenstrual")}
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    {t("pages.body.trackMenstrualHelp")}
+                    {t("pages.lifestyle.trackMenstrualHelp")}
                   </p>
                 </div>
                 <Switch
@@ -135,7 +176,7 @@ export function CyclePage() {
               {bodyContext.menstrual.enabled && (
                 <div className="space-y-4 border-t border-border/80 pt-4">
                   <div className="space-y-2">
-                    <Label htmlFor="last-period">{t("pages.body.lastPeriod")}</Label>
+                    <Label htmlFor="last-period">{t("pages.lifestyle.lastPeriod")}</Label>
                     <Input
                       id="last-period"
                       type="date"
@@ -150,7 +191,7 @@ export function CyclePage() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="cycle-length">
-                        {t("pages.body.cycleLength")}
+                        {t("pages.lifestyle.cycleLength")}
                       </Label>
                       <Input
                         id="cycle-length"
@@ -167,7 +208,7 @@ export function CyclePage() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="period-length">
-                        {t("pages.body.periodLength")}
+                        {t("pages.lifestyle.periodLength")}
                       </Label>
                       <Input
                         id="period-length"
@@ -191,44 +232,41 @@ export function CyclePage() {
           <Card>
             <CardHeader>
               <CardTitle className="font-heading text-base">
-                {t("pages.body.lifeStageTitle")}
+                {t("pages.lifestyle.lifeStageTitle")}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <Label htmlFor="life-stage">{t("pages.body.lifeStageLabel")}</Label>
-                <Select
-                  value={bodyContext.lifeStage}
-                  onValueChange={(value) =>
-                    updateBodyContext({
-                      lifeStage: value as LifeStage,
-                      postpartumWeeks:
-                        value === "postpartum"
-                          ? bodyContext.postpartumWeeks
-                          : null,
-                    })
-                  }
-                >
-                  <SelectTrigger id="life-stage" className="w-full">
-                    <SelectValue placeholder={t("pages.body.lifeStagePlaceholder")} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {LIFE_STAGES.map((stage) => (
-                      <SelectItem key={stage} value={stage}>
-                        {t(`enums.lifeStage.${stage}`)}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <p className="text-sm text-muted-foreground">
-                  {getLifeStageDescription(t, bodyContext.lifeStage)}
-                </p>
+              <p className="text-sm text-muted-foreground">
+                {t("pages.lifestyle.lifeStageHelp")}
+              </p>
+
+              <div className="space-y-4">
+                {LIFE_STAGE_TOGGLE_KEYS.map((key) => (
+                  <div
+                    key={key}
+                    className="flex items-start justify-between gap-4 border-b border-border/60 pb-4 last:border-0 last:pb-0"
+                  >
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium">
+                        {t(`enums.lifeStage.${key}`)}
+                      </p>
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {getLifeStageToggleHelp(t, key)}
+                      </p>
+                    </div>
+                    <Switch
+                      checked={bodyContext.lifeStage[key]}
+                      onCheckedChange={(checked) => toggleLifeStage(key, checked)}
+                      aria-label={t(`enums.lifeStage.${key}`)}
+                    />
+                  </div>
+                ))}
               </div>
 
-              {bodyContext.lifeStage === "postpartum" && (
-                <div className="space-y-2">
+              {bodyContext.lifeStage.postpartum && (
+                <div className="space-y-2 border-t border-border/80 pt-4">
                   <Label htmlFor="postpartum-weeks">
-                    {t("pages.body.postpartumWeeks")}
+                    {t("pages.lifestyle.postpartumWeeks")}
                   </Label>
                   <Input
                     id="postpartum-weeks"
@@ -246,7 +284,7 @@ export function CyclePage() {
                     }
                   />
                   <p className="text-xs text-muted-foreground">
-                    {t("pages.body.postpartumHelp")}
+                    {t("pages.lifestyle.postpartumHelp")}
                   </p>
                 </div>
               )}
@@ -256,17 +294,91 @@ export function CyclePage() {
           <Card>
             <CardHeader>
               <CardTitle className="font-heading text-base">
-                {t("pages.body.weightTitle")}
+                {t("pages.lifestyle.skinConditionTitle")}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="text-sm text-muted-foreground">
+                {t("pages.lifestyle.skinConditionHelp")}
+              </p>
+
+              <div className="space-y-4">
+                {SKIN_CONDITION_KEYS.map((key) => (
+                  <div
+                    key={key}
+                    className="flex items-start justify-between gap-4 border-b border-border/60 pb-4 last:border-0 last:pb-0"
+                  >
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium">
+                        {t(`enums.skinCondition.${key}`)}
+                      </p>
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {getSkinConditionToggleHelp(t, key)}
+                      </p>
+                    </div>
+                    <Switch
+                      checked={bodyContext.skinConditions[key]}
+                      onCheckedChange={(checked) =>
+                        toggleSkinCondition(key, checked)
+                      }
+                      aria-label={t(`enums.skinCondition.${key}`)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-heading text-base">
+                {t("pages.lifestyle.wellnessTitle")}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="text-sm text-muted-foreground">
+                {t("pages.lifestyle.wellnessHelp")}
+              </p>
+
+              <div className="space-y-4">
+                {WELLNESS_KEYS.map((key) => (
+                  <div
+                    key={key}
+                    className="flex items-start justify-between gap-4 border-b border-border/60 pb-4 last:border-0 last:pb-0"
+                  >
+                    <div className="min-w-0">
+                      <p className="text-sm font-medium">
+                        {t(`enums.wellness.${key}`)}
+                      </p>
+                      <p className="mt-1 text-sm text-muted-foreground">
+                        {getWellnessToggleHelp(t, key)}
+                      </p>
+                    </div>
+                    <Switch
+                      checked={bodyContext.wellness[key]}
+                      onCheckedChange={(checked) => toggleWellness(key, checked)}
+                      aria-label={t(`enums.wellness.${key}`)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-heading text-base">
+                {t("pages.lifestyle.weightTitle")}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <p className="text-sm font-medium">
-                    {t("pages.body.includeWeight")}
+                    {t("pages.lifestyle.includeWeight")}
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    {t("pages.body.includeWeightHelp")}
+                    {t("pages.lifestyle.includeWeightHelp")}
                   </p>
                 </div>
                 <Switch
@@ -280,7 +392,7 @@ export function CyclePage() {
               {bodyContext.weight.enabled && (
                 <div className="space-y-2 border-t border-border/80 pt-4">
                   <Label htmlFor="weight-change">
-                    {t("pages.body.recentChange")}
+                    {t("pages.lifestyle.recentChange")}
                   </Label>
                   <Select
                     value={bodyContext.weight.recentChange}
@@ -312,7 +424,7 @@ export function CyclePage() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="font-heading text-base">
-                      {t("pages.body.heldProductsTitle")}
+                      {t("pages.lifestyle.heldProductsTitle")}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>

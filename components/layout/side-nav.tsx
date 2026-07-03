@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AppLogo } from "@/components/layout/app-logo";
 import { LanguageToggle } from "@/components/layout/language-toggle";
+import { ThemeDial } from "@/components/layout/theme-dial";
 import { useTranslation } from "@/components/providers/locale-provider";
 import { APP_NAV_ITEMS, isNavItemActive } from "@/lib/constants/navigation";
 import { cn } from "@/lib/utils";
@@ -42,7 +43,13 @@ export function SideNav() {
           );
         })}
       </nav>
-      <div className="border-t border-border px-4 py-4">
+      <div className="space-y-3 border-t border-border px-4 py-4">
+        <div className="flex items-center justify-between gap-2">
+          <span className="text-xs font-medium text-muted-foreground">
+            {t("theme.label")}
+          </span>
+          <ThemeDial />
+        </div>
         <LanguageToggle />
       </div>
     </aside>

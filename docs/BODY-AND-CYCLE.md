@@ -36,9 +36,14 @@ bodyContext: {
     periodLength: number              // default 5, range 2–10
     lastPeriodStart: string | null    // "YYYY-MM-DD"
   }
-  lifeStage: "none" | "pregnant" | "postpartum" | "breastfeeding"
-           | "perimenopause" | "menopause"
-  postpartumWeeks: number | null      // 0–52 when postpartum
+  lifeStage: {
+    pregnant: boolean
+    postpartum: boolean
+    breastfeeding: boolean
+    perimenopause: boolean
+    menopause: boolean
+  }
+  postpartumWeeks: number | null      // 0–52 when postpartum toggle is on
   weight: {
     enabled: boolean
     recentChange: "stable" | "gaining" | "losing" | "prefer_not_to_say"
@@ -95,17 +100,23 @@ On **menstrual** and **luteal** days, daily products with harsh actives (retinoi
 
 ## Life stage
 
-| Stage | Routine impact | Guidance |
-|-------|----------------|----------|
-| `none` | None | — |
+**Multi-select toggles** — postpartum and breastfeeding can both be on. Guidance **accumulates** per active flag; a combined note appears when both postpartum and breastfeeding are active.
+
+| Toggle | Routine impact | Guidance |
+|--------|----------------|----------|
 | `pregnant` | Holds retinoids; daily BHA/AHA in toner/treatment/exfoliant | Clinician reminder |
-| `breastfeeding` | Same retinoid/daily acid caution as pregnancy | Clinician reminder |
 | `postpartum` (0–11 wk) | Holds retinoids + daily harsh actives | Barrier-first messaging |
-| `postpartum` (12+ wk) | No automatic holds | Gradual reintroduction note |
+| `postpartum` (12+ wk, not nursing) | No automatic holds from postpartum alone | Gradual reintroduction note |
+| `breastfeeding` | Retinoid / daily-acid caution (like pregnancy) | Clinician reminder |
+| `postpartum` + `breastfeeding` | Stricter of both rule sets | Combined layered note |
 | `perimenopause` | No holds | Hydration tips |
 | `menopause` | No holds | Ceramide / SPF tips |
 
-Exclusion reasons are English internally; UI uses `localizeExclusionReason(t, reason)`.
+**Mutual exclusion in UI:** pregnant ↔ postpartum; perimenopause ↔ menopause.
+
+**Knowledge base:** [SKINCARE-INSIGHTS.md](SKINCARE-INSIGHTS.md) — foundational copy for FAQs and future education.
+
+Exclusion reasons are structured types; UI uses `localizeExclusionReason(t, reason)`.
 
 ## Weight context
 

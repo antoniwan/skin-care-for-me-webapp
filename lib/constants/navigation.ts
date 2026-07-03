@@ -1,5 +1,5 @@
 import {
-  Calendar,
+  Heart,
   Home,
   Package,
   Sparkles,
@@ -8,7 +8,7 @@ import {
 
 export interface AppNavItem {
   href: string;
-  labelKey: "nav.today" | "nav.products" | "nav.routines" | "nav.body";
+  labelKey: "nav.today" | "nav.products" | "nav.routines" | "nav.lifestyle";
   icon: LucideIcon;
 }
 
@@ -16,7 +16,7 @@ export const APP_NAV_ITEMS: AppNavItem[] = [
   { href: "/", labelKey: "nav.today", icon: Home },
   { href: "/products", labelKey: "nav.products", icon: Package },
   { href: "/routines", labelKey: "nav.routines", icon: Sparkles },
-  { href: "/cycle", labelKey: "nav.body", icon: Calendar },
+  { href: "/lifestyle", labelKey: "nav.lifestyle", icon: Heart },
 ];
 
 export function isNavItemActive(pathname: string, href: string): boolean {

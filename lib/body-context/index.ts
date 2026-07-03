@@ -18,6 +18,16 @@ export { normalizeAppSettings, normalizeBodyContext } from "./migrate";
 export { DEFAULT_BODY_CONTEXT } from "./defaults";
 
 export {
+  LIFE_STAGE_TOGGLE_KEYS,
+  reconcileLifeStageFlags,
+  normalizeLifeStageFlags,
+  hasActiveLifeStage,
+  type LifeStageToggleKey,
+} from "./life-stage";
+
+export { collectLifeStageGuidance } from "./snapshot";
+
+export {
   CYCLE_PHASE_LABELS,
   CYCLE_SKIN_NOTES,
   LIFE_STAGE_LABELS,

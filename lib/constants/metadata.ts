@@ -128,11 +128,11 @@ export const PAGE_METADATA = {
       "Daily, weekly, and monthly skincare routines built automatically from your shelf. Open any routine for ordered steps, ingredient interaction notes, and safety checks.",
     path: "/routines",
   }),
-  cycle: createPageMetadata({
-    title: "Body & cycle",
+  lifestyle: createPageMetadata({
+    title: "Lifestyle",
     description:
-      "Optional menstrual, life-stage, and weight context to adapt routines and guidance. All body settings stay in your browser — never sent to our servers.",
-    path: "/cycle",
+      "Optional cycle, life-stage, skin, and wellness context to adapt routines and guidance. Everything stays in your browser — never sent to our servers.",
+    path: "/lifestyle",
   }),
   guide: createPageMetadata({
     title: "Guide",

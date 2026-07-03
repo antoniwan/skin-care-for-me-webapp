@@ -4,7 +4,7 @@ import {
   getBodyContextSnapshot,
   shouldIncludeProductInRoutine,
 } from "@/lib/body-context";
-import { DEFAULT_BODY_CONTEXT } from "@/lib/body-context/defaults";
+import { DEFAULT_BODY_CONTEXT, DEFAULT_LIFE_STAGE_FLAGS } from "@/lib/body-context/defaults";
 import { getMessages } from "@/lib/i18n/messages";
 import { createTranslator } from "@/lib/i18n/translate";
 import { makeProduct } from "@/lib/test/fixtures";
@@ -21,6 +21,7 @@ describe("getBodyContextSnapshot", () => {
   it("combines menstrual, life stage, and weight factors", () => {
     const snapshot = getBodyContextSnapshot(
       {
+        ...DEFAULT_BODY_CONTEXT,
         enabled: true,
         menstrual: {
           enabled: true,
@@ -28,7 +29,7 @@ describe("getBodyContextSnapshot", () => {
           periodLength: 5,
           lastPeriodStart: "2024-06-01",
         },
-        lifeStage: "postpartum",
+        lifeStage: { ...DEFAULT_LIFE_STAGE_FLAGS, postpartum: true },
         postpartumWeeks: 4,
         weight: { enabled: true, recentChange: "gaining" },
       },
@@ -59,7 +60,29 @@ describe("shouldIncludeProductInRoutine", () => {
     const snapshot = getBodyContextCore({
       ...DEFAULT_BODY_CONTEXT,
       enabled: true,
-      lifeStage: "pregnant",
+      lifeStage: { ...DEFAULT_LIFE_STAGE_FLAGS, pregnant: true },
+    });
+
+    expect(shouldIncludeProductInRoutine(retinol, snapshot)).toBe(false);
+  });
+
+  it("holds retinoids while breastfeeding after week 12 postpartum", () => {
+    const retinol = makeProduct({
+      activeIngredients: ["retinol"],
+      frequency: "daily",
+      timeOfDay: "evening",
+      category: "treatment",
+    });
+
+    const snapshot = getBodyContextCore({
+      ...DEFAULT_BODY_CONTEXT,
+      enabled: true,
+      lifeStage: {
+        ...DEFAULT_LIFE_STAGE_FLAGS,
+        postpartum: true,
+        breastfeeding: true,
+      },
+      postpartumWeeks: 16,
     });
 
     expect(shouldIncludeProductInRoutine(retinol, snapshot)).toBe(false);
@@ -75,7 +98,7 @@ describe("shouldIncludeProductInRoutine", () => {
     const snapshot = getBodyContextCore({
       ...DEFAULT_BODY_CONTEXT,
       enabled: true,
-      lifeStage: "postpartum",
+      lifeStage: { ...DEFAULT_LIFE_STAGE_FLAGS, postpartum: true },
       postpartumWeeks: 3,
     });
 
@@ -91,6 +114,7 @@ describe("shouldIncludeProductInRoutine", () => {
 
     const snapshot = getBodyContextCore(
       {
+        ...DEFAULT_BODY_CONTEXT,
         enabled: true,
         menstrual: {
           enabled: true,
@@ -98,9 +122,6 @@ describe("shouldIncludeProductInRoutine", () => {
           periodLength: 5,
           lastPeriodStart: "2024-06-01",
         },
-        lifeStage: "none",
-        postpartumWeeks: null,
-        weight: { enabled: false, recentChange: "prefer_not_to_say" },
       },
       new Date("2024-06-03"),
     );
@@ -113,5 +134,27 @@ describe("shouldIncludeProductInRoutine", () => {
         snapshot,
       ),
     ).toBe(true);
+  });
+
+  it("holds daily retinoids when eczema is active", () => {
+    const retinol = makeProduct({
+      activeIngredients: ["retinol"],
+      frequency: "daily",
+      timeOfDay: "evening",
+      category: "treatment",
+    });
+
+    const snapshot = getBodyContextCore({
+      ...DEFAULT_BODY_CONTEXT,
+      enabled: true,
+      skinConditions: {
+        psoriasis: false,
+        eczema: true,
+        rosacea: false,
+        acneProne: false,
+      },
+    });
+
+    expect(shouldIncludeProductInRoutine(retinol, snapshot)).toBe(false);
   });
 });

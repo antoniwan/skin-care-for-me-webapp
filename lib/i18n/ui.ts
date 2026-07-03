@@ -3,11 +3,18 @@ import type { IngredientConflict } from "@/lib/types";
 import type { ProductExclusionReason } from "@/lib/types/exclusions";
 import type {
   CyclePhase,
-  LifeStage,
   ProductCategory,
   RoutineFrequency,
   TimeOfDay,
 } from "@/lib/types";
+import {
+  LIFE_STAGE_TOGGLE_KEYS,
+  type LifeStageToggleKey,
+} from "@/lib/body-context/life-stage";
+import type {
+  SkinConditionKey,
+  WellnessKey,
+} from "@/lib/body-context/skin-wellness";
 import type {
   ReviewNote,
   RoutineCheck,
@@ -205,8 +212,25 @@ function localizeReviewNote(t: TranslateFn, note: ReviewNote): string {
   }
 }
 
-export function getLifeStageDescription(t: TranslateFn, stage: LifeStage): string {
-  return t(`lifeStageDescription.${stage}`);
+export function getLifeStageToggleHelp(
+  t: TranslateFn,
+  key: LifeStageToggleKey,
+): string {
+  return t(`lifeStageToggle.${key}.help`);
+}
+
+export function getSkinConditionToggleHelp(
+  t: TranslateFn,
+  key: SkinConditionKey,
+): string {
+  return t(`skinConditionToggle.${key}.help`);
+}
+
+export function getWellnessToggleHelp(
+  t: TranslateFn,
+  key: WellnessKey,
+): string {
+  return t(`wellnessToggle.${key}.help`);
 }
 
 export function getCycleSkinNote(t: TranslateFn, phase: CyclePhase): string {
@@ -232,6 +256,10 @@ export function localizeExclusionReason(
     case "menstrual":
       return t("exclusionReason.menstrual", {
         phase: t(`enums.cyclePhase.${reason.phase}`),
+      });
+    case "skin-condition":
+      return t("exclusionReason.skinCondition", {
+        condition: t(`enums.skinCondition.${reason.condition}`),
       });
     case "body-default":
       return t("exclusionReason.default");
@@ -277,10 +305,11 @@ export function buildBodyContextHeadline(
     );
   }
 
-  if (snapshot.lifeStage !== "none") {
-    const stage = t(`enums.lifeStage.${snapshot.lifeStage}`);
+  for (const key of LIFE_STAGE_TOGGLE_KEYS) {
+    if (!snapshot.lifeStage[key]) continue;
+    const stage = t(`enums.lifeStage.${key}`);
     parts.push(
-      snapshot.postpartumWeeks !== null
+      key === "postpartum" && snapshot.postpartumWeeks !== null
         ? `${stage} · ${t("bodyBanner.week", { week: snapshot.postpartumWeeks })}`
         : stage,
     );
@@ -296,19 +325,21 @@ export function buildBodyContextHeadline(
   return parts.length > 0 ? parts.join(" · ") : t("bodyBanner.fallback");
 }
 
-export type PageTitleKey = "home" | "products" | "routines" | "body";
+export type PageTitleKey = "home" | "products" | "routines" | "lifestyle";
 
 const PAGE_TITLE_KEYS: Record<PageTitleKey, string> = {
   home: "pages.home.title",
   products: "pages.products.title",
   routines: "pages.routines.title",
-  body: "pages.body.title",
+  lifestyle: "pages.lifestyle.title",
 };
 
 export function getPageTitleKey(pathname: string): PageTitleKey {
   if (pathname.startsWith("/products")) return "products";
   if (pathname.startsWith("/routines")) return "routines";
-  if (pathname.startsWith("/cycle")) return "body";
+  if (pathname.startsWith("/lifestyle") || pathname.startsWith("/cycle")) {
+    return "lifestyle";
+  }
   return "home";
 }
 

@@ -4,6 +4,11 @@ import type {
   MenstrualCycleSettings,
 } from "@/lib/types";
 import { DEFAULT_BODY_CONTEXT } from "./defaults";
+import { normalizeLifeStageFlags } from "./life-stage";
+import {
+  DEFAULT_SKIN_CONDITION_FLAGS,
+  DEFAULT_WELLNESS_FLAGS,
+} from "./skin-wellness";
 
 type LegacySettings = Partial<AppSettings> & {
   cycle?: Partial<MenstrualCycleSettings> | MenstrualCycleSettings;
@@ -36,13 +41,21 @@ export function normalizeBodyContext(
   return {
     enabled: raw?.enabled ?? legacyEnabled,
     menstrual,
-    lifeStage: raw?.lifeStage ?? DEFAULT_BODY_CONTEXT.lifeStage,
+    lifeStage: normalizeLifeStageFlags(raw?.lifeStage),
     postpartumWeeks:
       raw?.postpartumWeeks ?? DEFAULT_BODY_CONTEXT.postpartumWeeks,
     weight: {
       enabled: raw?.weight?.enabled ?? DEFAULT_BODY_CONTEXT.weight.enabled,
       recentChange:
         raw?.weight?.recentChange ?? DEFAULT_BODY_CONTEXT.weight.recentChange,
+    },
+    skinConditions: {
+      ...DEFAULT_SKIN_CONDITION_FLAGS,
+      ...(raw?.skinConditions ?? {}),
+    },
+    wellness: {
+      ...DEFAULT_WELLNESS_FLAGS,
+      ...(raw?.wellness ?? {}),
     },
   };
 }

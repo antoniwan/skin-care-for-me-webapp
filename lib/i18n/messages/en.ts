@@ -6,12 +6,27 @@ export const en = {
     today: "Today",
     products: "Products",
     routines: "Routines",
-    body: "Body",
+    lifestyle: "Lifestyle",
   },
   language: {
     label: "Language",
     es419: "Español",
     en: "English",
+  },
+  theme: {
+    label: "Theming",
+    openDial: "Open theme color dial",
+    dialTitle: "Pick your vibe",
+    palettes: {
+      rose: "Rose",
+      coral: "Coral",
+      peach: "Peach",
+      meadow: "Meadow",
+      ocean: "Ocean",
+      lavender: "Lavender",
+      berry: "Berry",
+      blush: "Blush",
+    },
   },
   common: {
     loading: "Loading…",
@@ -90,6 +105,16 @@ export const en = {
       losing: "Losing recently",
       prefer_not_to_say: "Prefer not to say",
     },
+    skinCondition: {
+      psoriasis: "Psoriasis",
+      eczema: "Eczema",
+      rosacea: "Rosacea",
+      acneProne: "Acne-prone",
+    },
+    wellness: {
+      anxiety: "Anxiety",
+      depression: "Depression",
+    },
     severity: {
       avoid: "Avoid layering",
       caution: "Use with care",
@@ -135,13 +160,14 @@ export const en = {
       emptyFrequency: "No {frequency} products yet.",
       routineCount: "{count} {routineLabel} · {schedule}",
     },
-    body: {
-      loading: "Loading body settings…",
-      title: "Body & cycle",
+    lifestyle: {
+      loading: "Loading lifestyle settings…",
+      title: "Lifestyle",
       description:
-        "Optional context for your skin — menstrual phase, life stage, and weight changes. Routines and tips adapt locally on your device.",
-      masterToggle: "Body-aware routines",
-      masterHelp: "Turn on to adjust routines and guidance from the settings below.",
+        "Optional context for your skin — cycle, life stage, skin conditions, wellness, and weight. Routines and tips adapt locally on your device.",
+      masterToggle: "Lifestyle-aware routines",
+      masterHelp:
+        "Turn on to adjust routines and guidance from the preferences below.",
       menstrualTitle: "Menstrual cycle",
       trackMenstrual: "Track menstrual phase",
       trackMenstrualHelp:
@@ -150,11 +176,17 @@ export const en = {
       cycleLength: "Cycle length (days)",
       periodLength: "Period length (days)",
       lifeStageTitle: "Life stage",
-      lifeStageLabel: "Current life stage",
-      lifeStagePlaceholder: "Choose life stage",
+      lifeStageHelp:
+        "Turn on everything that applies — guidance stacks. Postpartum and breastfeeding can be active together.",
       postpartumWeeks: "Weeks since delivery",
       postpartumHelp:
         "Weeks 0–11 hold retinoids and daily strong acids; week 12+ gradually allows reintroduction.",
+      skinConditionTitle: "Skin conditions",
+      skinConditionHelp:
+        "Barrier-sensitive conditions hold daily retinoids and strong acids. Acne-prone adds tips only.",
+      wellnessTitle: "Wellness",
+      wellnessHelp:
+        "Mental health context shapes gentle routine tips — never holds products or replaces care.",
       weightTitle: "Weight changes",
       includeWeight: "Include weight context",
       includeWeightHelp:
@@ -166,16 +198,18 @@ export const en = {
   privacy: {
     title: "Private on this device only",
     body:
-      "Cycle dates, life stage, and weight preferences are saved in your browser's local database (IndexedDB). They are never sent to our servers — we have no way to see them.",
+      "Cycle dates, life stage, skin, wellness, and weight preferences are saved in your browser's local database (IndexedDB). They are never sent to our servers — we have no way to see them.",
   },
   bodyBanner: {
-    fallback: "Body-aware routines are on",
+    fallback: "Lifestyle-aware routines are on",
     day: "day {day}",
     week: "week {week}",
     factorMenstrual: "Menstrual · {phase}",
     factorLifeStage: "Life stage · {stage}",
     factorLifeStageWeek: "Life stage · {stage} (week {week})",
     factorWeight: "Weight · {change}",
+    factorSkinCondition: "Skin · {condition}",
+    factorWellness: "Wellness · {topic}",
   },
   bodyGuidance: {
     pregnant1:
@@ -191,6 +225,8 @@ export const en = {
       "Strong actives and retinoids are held until your skin has recovered.",
     postpartumLate:
       "Postpartum week {week}: you can gradually reintroduce actives if tolerated.",
+    postpartumBreastfeedingCombined:
+      "Postpartum and breastfeeding together: barrier recovery still comes first. Retinoids stay paused while nursing even after week 12 — confirm any changes with your clinician.",
     perimenopause:
       "Perimenopause: skin may swing between dry and reactive — consistency helps.",
     menopause: "Menopause: prioritize ceramides, hydration, and daily SPF.",
@@ -206,17 +242,63 @@ export const en = {
       "Oil production may increase. Lightweight hydration and consistent SPF help.",
     cycleLuteal:
       "Breakouts can flare. Consider BHA and avoid introducing harsh new actives.",
+    skin: {
+      psoriasis:
+        "Psoriasis: barrier-first care — fragrance-free moisturizer and mineral SPF; avoid over-exfoliating plaques.",
+      eczema:
+        "Eczema: gentle cleanser and rich moisturizer; daily retinoids and strong acids stay off routines while this is on.",
+      rosacea:
+        "Rosacea: cool water, minimal actives, and daily SPF; harsh exfoliants and retinoids are held from daily routines.",
+      acneProne:
+        "Acne-prone: consistent BHA or benzoyl peroxide can help — introduce one active at a time.",
+    },
+    wellness: {
+      anxiety:
+        "Anxiety: a short, predictable routine can feel grounding — keep steps simple on hard days.",
+      depression:
+        "Depression: low-energy days are okay — cleanse, moisturize, SPF if you're stepping out.",
+      anxietyDepressionCombined:
+        "Anxiety and depression together: prioritize the smallest routine that feels doable; this app never replaces professional support.",
+    },
   },
-  lifeStageDescription: {
-    none: "No life-stage adjustments beyond your other settings.",
-    pregnant:
-      "Retinoids and some strong acids are held from routines. Barrier care is prioritized.",
-    postpartum:
-      "Early weeks favor gentle care; actives are reintroduced gradually as you heal.",
-    breastfeeding:
-      "Similar caution to pregnancy for retinoids until you and your clinician agree.",
-    perimenopause: "Hydration and barrier support help as hormones shift.",
-    menopause: "Focus on moisture retention and gentle, consistent actives.",
+  lifeStageToggle: {
+    pregnant: {
+      help: "Retinoids and some daily acids are held from routines. Barrier care is prioritized.",
+    },
+    postpartum: {
+      help: "Early weeks favor gentle care; actives reintroduce gradually as you heal.",
+    },
+    breastfeeding: {
+      help: "Similar caution to pregnancy for retinoids until you and your clinician agree.",
+    },
+    perimenopause: {
+      help: "Hydration and barrier support help as hormones shift.",
+    },
+    menopause: {
+      help: "Focus on moisture retention and gentle, consistent actives.",
+    },
+  },
+  skinConditionToggle: {
+    psoriasis: {
+      help: "Barrier-first guidance; daily retinoids and strong acids are held.",
+    },
+    eczema: {
+      help: "Gentle care focus; daily harsh actives are held from routines.",
+    },
+    rosacea: {
+      help: "Minimize triggers; daily retinoids and strong acids are held.",
+    },
+    acneProne: {
+      help: "Tips for actives and consistency — no automatic product holds.",
+    },
+  },
+  wellnessToggle: {
+    anxiety: {
+      help: "Encourages simple, predictable routines — guidance only.",
+    },
+    depression: {
+      help: "Supports minimal viable routines on low-energy days — guidance only.",
+    },
   },
   safetyCheck: {
     title: "Safety check",
@@ -274,7 +356,9 @@ export const en = {
     postpartum: "Held during early postpartum recovery — reintroduce when ready.",
     menstrual:
       "Held on {phase} phase days — save harsh actives for less sensitive times.",
-    default: "Held based on your body settings.",
+    skinCondition:
+      "Held for {condition} — barrier-first care while this context is on.",
+    default: "Held based on your lifestyle settings.",
     ingredient: "{reason}",
   },
   guide: {

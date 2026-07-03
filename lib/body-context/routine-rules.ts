@@ -1,6 +1,11 @@
 import type { CyclePhase, Product, ProductCategory } from "@/lib/types";
 import type { ProductExclusionReason } from "@/lib/types/exclusions";
 import type { BodyContextCore } from "./snapshot";
+import {
+  getPrimarySkinCondition,
+  needsBarrierFirstHolds,
+  shouldExcludeForBarrierFirstSkin,
+} from "./skin-wellness";
 
 const RETINOID_PATTERN = /retinol|retinal|tretinoin|adapalene|retinyl/i;
 const STRONG_ACID_PATTERN = /salicylic acid|\bbha\b|\baha\b|lactic acid|glycolic/i;
@@ -73,20 +78,23 @@ function shouldExcludeForPostpartum(
   return false;
 }
 
+function needsPregnancyStyleCaution(snapshot: BodyContextCore): boolean {
+  return (
+    snapshot.lifeStage.pregnant || snapshot.lifeStage.breastfeeding
+  );
+}
+
 export function shouldIncludeProductInRoutine(
   product: Product,
   snapshot: BodyContextCore,
 ): boolean {
   if (!snapshot.enabled) return true;
 
-  if (
-    snapshot.lifeStage === "pregnant" ||
-    snapshot.lifeStage === "breastfeeding"
-  ) {
+  if (needsPregnancyStyleCaution(snapshot)) {
     if (shouldExcludeForPregnancy(product)) return false;
   }
 
-  if (snapshot.lifeStage === "postpartum") {
+  if (snapshot.lifeStage.postpartum) {
     if (shouldExcludeForPostpartum(product, snapshot.postpartumWeeks)) {
       return false;
     }
@@ -98,6 +106,10 @@ export function shouldIncludeProductInRoutine(
     }
   }
 
+  if (needsBarrierFirstHolds(snapshot.skinConditions)) {
+    if (shouldExcludeForBarrierFirstSkin(product)) return false;
+  }
+
   return true;
 }
 
@@ -107,16 +119,12 @@ export function getProductExclusionReason(
 ): ProductExclusionReason | null {
   if (shouldIncludeProductInRoutine(product, snapshot)) return null;
 
-  if (
-    (snapshot.lifeStage === "pregnant" ||
-      snapshot.lifeStage === "breastfeeding") &&
-    shouldExcludeForPregnancy(product)
-  ) {
+  if (needsPregnancyStyleCaution(snapshot) && shouldExcludeForPregnancy(product)) {
     return { kind: "pregnancy" };
   }
 
   if (
-    snapshot.lifeStage === "postpartum" &&
+    snapshot.lifeStage.postpartum &&
     shouldExcludeForPostpartum(product, snapshot.postpartumWeeks)
   ) {
     return { kind: "postpartum" };
@@ -128,6 +136,16 @@ export function getProductExclusionReason(
     product.frequency === "daily"
   ) {
     return { kind: "menstrual", phase: snapshot.cyclePhase };
+  }
+
+  if (
+    needsBarrierFirstHolds(snapshot.skinConditions) &&
+    shouldExcludeForBarrierFirstSkin(product)
+  ) {
+    const condition = getPrimarySkinCondition(snapshot.skinConditions);
+    if (condition) {
+      return { kind: "skin-condition", condition };
+    }
   }
 
   return { kind: "body-default" };

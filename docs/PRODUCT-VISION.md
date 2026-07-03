@@ -9,6 +9,7 @@ Most skincare apps are either generic routine templates or overwhelming ingredie
 - See what to use **today** (not every product every day)
 - Know when actives **should not be layered**
 - Adjust gently when their skin, cycle, or life stage changes
+- **Manage a partner's routine** when only one person in the household does the research
 - Keep their list **private** and portable
 
 ## North star
@@ -21,6 +22,8 @@ Most skincare apps are either generic routine templates or overwhelming ingredie
 |---------|------|------------|
 | **Routine builder** | Consistent AM/PM habits | Clear Today view, ordered steps, safety check |
 | **Ingredient-conscious** | Avoid bad combinations | Inline warnings, guide summary, exportable PDF |
+| **Shelf optimizer** | Know what to try next | Alternates tab, comparatives, local wishlist |
+| **Partner caregiver** | Manage care for someone who won't set up the app | Partner profile — separate shelf, routines, lifestyle; local switcher |
 | **Body-aware** | Softer care on sensitive days | Optional menstrual, life-stage, weight context — local only |
 | **Privacy-first** | No account, no cloud by default | IndexedDB + minimal server calls |
 | **Spanish-first (LATAM)** | App in their language | `es-419` default; English toggle |
@@ -43,12 +46,13 @@ Track qualitatively first; analytics only if privacy-preserving and opt-in.
 | **Shelf completion** | Users with ≥1 added product | Lookup flow works |
 | **Conflict awareness** | Open interaction details once | Rules are discoverable |
 | **Return to Today** | Weekly home opens | Habit-forming |
+| **Wishlist use** | ≥1 alternate saved | Discovery loop beyond current shelf |
 | **Data portability** | Export/import without loss | Trust for local-only storage |
 
 ## Non-goals (for now)
 
 - Telehealth, diagnosis, or prescriptions
-- Social feeds or review marketplace
+- Social feeds or **user-generated** review marketplace (curated alternate notes are in scope — see [ROADMAP.md](ROADMAP.md) Alternates)
 - Full INCI / concentration / pH modeling
 - Mandatory accounts or paywall
 

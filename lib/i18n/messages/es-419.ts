@@ -8,12 +8,27 @@ export const es419: Messages = {
     today: "Hoy",
     products: "Productos",
     routines: "Rutinas",
-    body: "Cuerpo",
+    lifestyle: "Estilo de vida",
   },
   language: {
     label: "Idioma",
     es419: "Español",
     en: "English",
+  },
+  theme: {
+    label: "Tema",
+    openDial: "Abrir selector de color",
+    dialTitle: "Elige tu estilo",
+    palettes: {
+      rose: "Rosa",
+      coral: "Coral",
+      peach: "Durazno",
+      meadow: "Prado",
+      ocean: "Océano",
+      lavender: "Lavanda",
+      berry: "Baya",
+      blush: "Rubor",
+    },
   },
   common: {
     loading: "Cargando…",
@@ -92,6 +107,16 @@ export const es419: Messages = {
       losing: "Bajando de peso",
       prefer_not_to_say: "Prefiero no decir",
     },
+    skinCondition: {
+      psoriasis: "Psoriasis",
+      eczema: "Eccema",
+      rosacea: "Rosácea",
+      acneProne: "Piel propensa al acné",
+    },
+    wellness: {
+      anxiety: "Ansiedad",
+      depression: "Depresión",
+    },
     severity: {
       avoid: "Evitar juntar",
       caution: "Usar con cuidado",
@@ -137,14 +162,14 @@ export const es419: Messages = {
       emptyFrequency: "Aún no hay productos {frequency}.",
       routineCount: "{count} {routineLabel} · {schedule}",
     },
-    body: {
-      loading: "Cargando ajustes del cuerpo…",
-      title: "Cuerpo y ciclo",
+    lifestyle: {
+      loading: "Cargando preferencias de estilo de vida…",
+      title: "Estilo de vida",
       description:
-        "Contexto opcional para tu piel — ciclo menstrual, etapa de vida y cambios de peso. Las rutinas y consejos se adaptan solo en tu dispositivo.",
-      masterToggle: "Rutinas según tu cuerpo",
+        "Contexto opcional para tu piel — ciclo, etapa de vida, condiciones de piel, bienestar y peso. Las rutinas y consejos se adaptan solo en tu dispositivo.",
+      masterToggle: "Rutinas según tu estilo de vida",
       masterHelp:
-        "Actívalo para ajustar rutinas y consejos con la configuración de abajo.",
+        "Actívalo para ajustar rutinas y consejos con las preferencias de abajo.",
       menstrualTitle: "Ciclo menstrual",
       trackMenstrual: "Seguir fase menstrual",
       trackMenstrualHelp:
@@ -153,11 +178,17 @@ export const es419: Messages = {
       cycleLength: "Duración del ciclo (días)",
       periodLength: "Duración del periodo (días)",
       lifeStageTitle: "Etapa de vida",
-      lifeStageLabel: "Etapa actual",
-      lifeStagePlaceholder: "Elige una etapa",
+      lifeStageHelp:
+        "Activa todo lo que aplique — los consejos se acumulan. Posparto y lactancia pueden estar activos a la vez.",
       postpartumWeeks: "Semanas desde el parto",
       postpartumHelp:
         "Semanas 0–11: se apartan retinoides y ácidos fuertes diarios; desde la semana 12 se reintroducen gradualmente.",
+      skinConditionTitle: "Condiciones de piel",
+      skinConditionHelp:
+        "Las condiciones sensibles apartan retinoides y ácidos fuertes diarios. Piel con acné solo agrega consejos.",
+      wellnessTitle: "Bienestar",
+      wellnessHelp:
+        "El contexto de salud mental orienta rutinas suaves — nunca aparta productos ni sustituye atención profesional.",
       weightTitle: "Cambios de peso",
       includeWeight: "Incluir contexto de peso",
       includeWeightHelp:
@@ -169,16 +200,18 @@ export const es419: Messages = {
   privacy: {
     title: "Privado solo en este dispositivo",
     body:
-      "Fechas del ciclo, etapa de vida y preferencias de peso se guardan en la base de datos local del navegador (IndexedDB). Nunca se envían a nuestros servidores — no tenemos forma de verlos.",
+      "Fechas del ciclo, etapa de vida, piel, bienestar y preferencias de peso se guardan en la base de datos local del navegador (IndexedDB). Nunca se envían a nuestros servidores — no tenemos forma de verlos.",
   },
   bodyBanner: {
-    fallback: "Rutinas según tu cuerpo activadas",
+    fallback: "Rutinas según tu estilo de vida activadas",
     day: "día {day}",
     week: "semana {week}",
     factorMenstrual: "Menstrual · {phase}",
     factorLifeStage: "Etapa · {stage}",
     factorLifeStageWeek: "Etapa · {stage} (semana {week})",
     factorWeight: "Peso · {change}",
+    factorSkinCondition: "Piel · {condition}",
+    factorWellness: "Bienestar · {topic}",
   },
   bodyGuidance: {
     pregnant1:
@@ -195,6 +228,8 @@ export const es419: Messages = {
       "Activos fuertes y retinoides se apartan hasta que tu piel se recupere.",
     postpartumLate:
       "Semana {week} posparto: puedes reintroducir activos gradualmente si los toleras.",
+    postpartumBreastfeedingCombined:
+      "Posparto y lactancia juntos: la recuperación de la barrera sigue siendo prioridad. Los retinoides permanecen en pausa mientras amamantas, incluso después de la semana 12 — confirma cualquier cambio con tu médico.",
     perimenopause:
       "Perimenopausia: la piel puede alternar entre seca y reactiva — la constancia ayuda.",
     menopause:
@@ -211,17 +246,63 @@ export const es419: Messages = {
       "Puede aumentar la grasa. Hidratación ligera y protector solar constante ayudan.",
     cycleLuteal:
       "Pueden aparecer brotes. Considera BHA y evita activos fuertes nuevos.",
+    skin: {
+      psoriasis:
+        "Psoriasis: cuidado de barrera primero — hidratante sin fragancia y protector mineral; evita exfoliar demasiado las placas.",
+      eczema:
+        "Eccema: limpieza suave e hidratante rica; retinoides y ácidos fuertes diarios se apartan mientras esté activo.",
+      rosacea:
+        "Rosácea: agua fresca, pocos activos y protector diario; exfoliantes fuertes y retinoides se apartan de rutinas diarias.",
+      acneProne:
+        "Piel con acné: BHA o peróxido de benzoilo constantes pueden ayudar — introduce un activo a la vez.",
+    },
+    wellness: {
+      anxiety:
+        "Ansiedad: una rutina corta y predecible puede sentirse reconfortante — simplifica los pasos en días difíciles.",
+      depression:
+        "Depresión: los días de poca energía están bien — limpia, hidrata y usa protector si sales.",
+      anxietyDepressionCombined:
+        "Ansiedad y depresión juntas: prioriza la rutina más pequeña que puedas hacer; esta app no sustituye apoyo profesional.",
+    },
   },
-  lifeStageDescription: {
-    none: "Sin ajustes por etapa de vida además de tus otros ajustes.",
-    pregnant:
-      "Se apartan retinoides y algunos ácidos fuertes. Se prioriza el cuidado de barrera.",
-    postpartum:
-      "Las primeras semanas favorecen cuidado suave; los activos se reintroducen poco a poco.",
-    breastfeeding:
-      "Precaución similar al embarazo con retinoides hasta que tú y tu médico lo acuerden.",
-    perimenopause: "Hidratación y barrera ayudan cuando cambian las hormonas.",
-    menopause: "Enfócate en retener humedad y usar activos suaves con constancia.",
+  lifeStageToggle: {
+    pregnant: {
+      help: "Se apartan retinoides y algunos ácidos diarios. Se prioriza el cuidado de barrera.",
+    },
+    postpartum: {
+      help: "Las primeras semanas favorecen cuidado suave; los activos se reintroducen poco a poco.",
+    },
+    breastfeeding: {
+      help: "Precaución similar al embarazo con retinoides hasta que tú y tu médico lo acuerden.",
+    },
+    perimenopause: {
+      help: "Hidratación y barrera ayudan cuando cambian las hormonas.",
+    },
+    menopause: {
+      help: "Enfócate en retener humedad y usar activos suaves con constancia.",
+    },
+  },
+  skinConditionToggle: {
+    psoriasis: {
+      help: "Consejos de barrera primero; se apartan retinoides y ácidos fuertes diarios.",
+    },
+    eczema: {
+      help: "Enfoque en cuidado suave; activos fuertes diarios se apartan de rutinas.",
+    },
+    rosacea: {
+      help: "Minimiza desencadenantes; retinoides y ácidos fuertes diarios se apartan.",
+    },
+    acneProne: {
+      help: "Consejos sobre activos y constancia — sin apartar productos automáticamente.",
+    },
+  },
+  wellnessToggle: {
+    anxiety: {
+      help: "Fomenta rutinas simples y predecibles — solo consejos.",
+    },
+    depression: {
+      help: "Apoya rutinas mínimas en días de poca energía — solo consejos.",
+    },
   },
   safetyCheck: {
     title: "Revisión de seguridad",
@@ -279,7 +360,9 @@ export const es419: Messages = {
       "Apartado en recuperación posparto temprana — reintroduce cuando estés lista.",
     menstrual:
       "Apartado en fase {phase} — guarda activos fuertes para días menos sensibles.",
-    default: "Apartado según tu configuración corporal.",
+    skinCondition:
+      "Apartado por {condition} — cuidado de barrera mientras este contexto esté activo.",
+    default: "Apartado según tus preferencias de estilo de vida.",
     ingredient: "{reason}",
   },
   guide: {

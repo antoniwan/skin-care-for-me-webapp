@@ -21,6 +21,8 @@ Prioritized work items for Skincare for You. IDs are stable references for issue
 | [E6 — Onboarding & UX](#e6--onboarding--ux) | 1–2 | 2 | First-run clarity |
 | [E7 — Habit & engagement](#e7--habit--engagement) | 3 | 0 | Follow-through |
 | [E8 — Platform & growth](#e8--platform--growth) | 4 | 0 | Optional scale |
+| [E9 — Alternates & discovery](#e9--alternates--discovery) | 3 | 0 | Comparables, wishlist |
+| [E10 — Partner profiles](#e10--partner-profiles) | 3–4 | 0 | Household, partner shelf |
 
 ---
 
@@ -523,6 +525,231 @@ Prioritized work items for Skincare for You. IDs are stable references for issue
 **User story:** As a developer, I want PR checks for test, lint, and build.
 
 **Acceptance criteria:** GitHub Actions (or Vercel CI); required checks documented in README.
+
+---
+
+## E9 — Alternates & discovery
+
+*Help users find comparable products and save options to try — without a social marketplace.*
+
+**Main nav:** Fifth tab — **Alternates** (`/alternates`).
+
+### PROD-901 · Alternates tab shell
+| Field | Value |
+|-------|-------|
+| Priority | P1 |
+| Effort | M |
+| Phase | 3 (v0.4) |
+| Status | Not started |
+
+**User story:** As a user, I want a dedicated Alternates section in the app so I can explore options beyond my current shelf.
+
+**Acceptance criteria:**
+- New nav item and route `/alternates` (desktop side nav + mobile bottom nav)
+- Empty state when shelf is empty — link to Products
+- i18n keys for `nav.alternates` and page copy (`es-419` + `en`)
+- Sitemap + page metadata
+
+**Dependencies:** Phase 1 shelf management (meaningful comparables need real products)
+
+---
+
+### PROD-902 · Comparable products per shelf item
+| Field | Value |
+|-------|-------|
+| Priority | P1 |
+| Effort | L |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user, I want to see products comparable to what I already own so I can consider swaps or upgrades.
+
+**Acceptance criteria:**
+- Group alternates by shelf product (or category + active family)
+- Matching uses category, active ingredients, and frequency — documented rules in `lib/`
+- Seed catalog or static alternate map for demo shelf; extensible for lookup-backed catalog later
+- Surfaces conflict risk if alternate would clash with another shelf product
+
+**Dependencies:** PROD-901; E3 conflict rules
+
+---
+
+### PROD-903 · Comparative view
+| Field | Value |
+|-------|-------|
+| Priority | P1 |
+| Effort | M |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user, I want a side-by-side comparison so I can decide between my product and an alternate.
+
+**Acceptance criteria:**
+- Compare: name, brand, category, key actives, frequency, rough price tier (when available)
+- Highlight differences (e.g. stronger/weaker active, AM vs PM fit)
+- Link out to brand / shop URLs when present — same pattern as product cards
+- Printable or shareable comparison deferred (P2)
+
+**Dependencies:** PROD-902
+
+---
+
+### PROD-904 · Curated alternate notes (reviews)
+| Field | Value |
+|-------|-------|
+| Priority | P2 |
+| Effort | M |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user, I want short notes on why an alternate might suit me — without wading through a review site.
+
+**Acceptance criteria:**
+- Editorial copy per alternate (localized `es-419` / `en`) — who it's for, tradeoffs, barrier-friendly flag
+- **Not** user-generated reviews or star ratings in v0.4
+- Copy lives in seed/static files or CMS-ready structure for later
+
+**Dependencies:** PROD-902
+
+---
+
+### PROD-905 · Wishlist (save alternates)
+| Field | Value |
+|-------|-------|
+| Priority | P1 |
+| Effort | M |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user, I want to save alternates to a wishlist so I can try them later without adding them to my shelf yet.
+
+**Acceptance criteria:**
+- `wishlist` store in IndexedDB (separate from products shelf)
+- Save / remove from alternate cards; wishlist sub-view on Alternates tab
+- Optional note or "try next" tag per item
+- Included in JSON export/import (E5) when backup ships
+
+**Dependencies:** PROD-901; PROD-502 (import) for full portability
+
+---
+
+### PROD-906 · Wishlist → add to shelf
+| Field | Value |
+|-------|-------|
+| Priority | P2 |
+| Effort | S |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user, I want to promote a wishlist item to my shelf when I'm ready to buy or try it.
+
+**Acceptance criteria:**
+- "Add to shelf" flows through existing lookup/add product path
+- Removes from wishlist on successful add (or asks user)
+- Routines re-derive after add
+
+**Dependencies:** PROD-905; PROD-101 (edit flow helpful but not blocking)
+
+---
+
+## E10 — Partner profiles
+
+*One person often runs skincare for two — support partner shelves without accounts or stereotypes.*
+
+**Product insight:** Many partners (any gender) won't install or maintain a skincare app themselves. The primary user still wants conflict-safe routines and a clear Today view **for them** on the same phone.
+
+### PROD-1001 · Partner profile creation
+| Field | Value |
+|-------|-------|
+| Priority | P1 |
+| Effort | M |
+| Phase | 3 (v0.4) |
+| Status | Not started |
+
+**User story:** As a user, I want to add my partner so I can manage their products and routine alongside mine.
+
+**Acceptance criteria:**
+- "Add partner" flow — display name only (e.g. "Alex", "Partner"); no gender field required
+- Second profile stored in IndexedDB with isolated `products`, `routines`, `settings`
+- Remove partner profile with confirmation (does not affect primary profile)
+- Copy is inclusive — "partner", not gendered relationship labels
+
+**Dependencies:** Phase 1 backup schema design (multi-profile export)
+
+---
+
+### PROD-1002 · Profile switcher
+| Field | Value |
+|-------|-------|
+| Priority | P1 |
+| Effort | S |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user, I want to switch between my shelf and my partner's so Today always shows the right person.
+
+**Acceptance criteria:**
+- Switcher in app chrome (header or nav footer); persists last-selected profile in localStorage
+- All routes (Today, Products, Routines, Lifestyle) scoped to active profile
+- Visual indicator of whose profile is active (name or avatar initial)
+
+**Dependencies:** PROD-1001
+
+---
+
+### PROD-1003 · Partner shelf and routines
+| Field | Value |
+|-------|-------|
+| Priority | P1 |
+| Effort | L |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user managing my partner's care, I want their products and routines fully separate from mine.
+
+**Acceptance criteria:**
+- Add/edit products on partner profile uses same flows as primary
+- Routines auto-generate per profile; no cross-profile ingredient conflict checks unless we explicitly add "shared bathroom" mode (out of scope)
+- PDF export per profile
+
+**Dependencies:** PROD-1002; PROD-101
+
+---
+
+### PROD-1004 · Partner lifestyle context
+| Field | Value |
+|-------|-------|
+| Priority | P2 |
+| Effort | S |
+| Phase | 3 |
+| Status | Not started |
+
+**User story:** As a user, I want lifestyle settings per person so my partner's cycle or skin conditions don't mix with mine.
+
+**Acceptance criteria:**
+- `bodyContext` (Lifestyle tab) scoped to active profile
+- Same toggle model as primary user — no "male/female" mode; menstrual tracking optional per profile
+
+**Dependencies:** PROD-1002
+
+---
+
+### PROD-1005 · Partner sync (own device)
+| Field | Value |
+|-------|-------|
+| Priority | P2 |
+| Effort | XL |
+| Phase | 4 (v1.0) |
+| Status | Not started |
+
+**User story:** As a partner, I want to see my routine on my own phone without rebuilding my shelf.
+
+**Acceptance criteria:**
+- Optional account links partner profile to a second device
+- Partner can view Today + routines read-only or full edit (TBD)
+- Conflict resolution documented
+
+**Dependencies:** Phase 4 auth + sync; PROD-1001–1003
 
 ---
 

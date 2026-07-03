@@ -8,6 +8,7 @@ import "@fontsource/sora/700.css";
 import "./globals.css";
 import { ROOT_METADATA } from "@/lib/constants/metadata";
 import { DEFAULT_LOCALE, getHtmlLang, LOCALE_STORAGE_KEY } from "@/lib/i18n/locales";
+import { THEME_BOOTSTRAP } from "@/lib/theme/bootstrap";
 
 const LOCALE_BOOTSTRAP = `(function(){try{var k=${JSON.stringify(LOCALE_STORAGE_KEY)};var l=localStorage.getItem(k);var h=${JSON.stringify(getHtmlLang(DEFAULT_LOCALE))};if(l==="en"){h="en"}else if(l==="es-419"){h="es-419"}document.documentElement.lang=h}catch(e){}})();`;
 
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang={getHtmlLang(DEFAULT_LOCALE)} className="h-full" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP }} />
         <script dangerouslySetInnerHTML={{ __html: LOCALE_BOOTSTRAP }} />
       </head>
       <body className="min-h-full font-sans antialiased">{children}</body>

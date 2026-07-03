@@ -36,10 +36,10 @@ describe("normalizeAppSettings", () => {
         lifeStage: "postpartum",
         postpartumWeeks: 6,
         weight: { enabled: true, recentChange: "stable" },
-      },
+      } as unknown as import("@/lib/types").BodyContextSettings,
     });
 
-    expect(settings.bodyContext.lifeStage).toBe("postpartum");
+    expect(settings.bodyContext.lifeStage.postpartum).toBe(true);
     expect(settings.bodyContext.menstrual.enabled).toBe(false);
   });
 });

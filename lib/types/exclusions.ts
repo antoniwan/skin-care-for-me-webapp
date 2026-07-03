@@ -5,5 +5,6 @@ export type ProductExclusionReason =
   | { kind: "pregnancy" }
   | { kind: "postpartum" }
   | { kind: "menstrual"; phase: CyclePhase }
+  | { kind: "skin-condition"; condition: string }
   | { kind: "body-default" }
   | { kind: "ingredient"; ruleId: string };

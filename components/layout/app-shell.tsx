@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AppLogo } from "@/components/layout/app-logo";
 import { LanguageToggle } from "@/components/layout/language-toggle";
+import { ThemeDial } from "@/components/layout/theme-dial";
 import { BottomNav } from "./bottom-nav";
 import { SideNav } from "./side-nav";
 
@@ -16,7 +17,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           >
             <AppLogo size="sm" />
           </Link>
-          <LanguageToggle />
+          <div className="flex items-center gap-2">
+            <ThemeDial />
+            <LanguageToggle />
+          </div>
         </header>
         <main className="mx-auto w-full max-w-lg flex-1 px-4 pb-24 pt-6 lg:max-w-6xl lg:px-8 lg:pb-8 lg:pt-8">
           {children}

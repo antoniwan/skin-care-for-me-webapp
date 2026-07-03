@@ -11,7 +11,10 @@ export type { RoutineStep, Routine } from "./routine";
 export type {
   CyclePhase,
   LifeStage,
+  LifeStageFlags,
+  SkinConditionFlags,
   WeightChange,
+  WellnessFlags,
   MenstrualCycleSettings,
   WeightContextSettings,
   BodyContextSettings,
