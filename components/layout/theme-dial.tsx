@@ -15,11 +15,19 @@ function polarPosition(index: number, total: number) {
   return {
     x: Math.cos(rad) * DIAL_RADIUS,
     y: Math.sin(rad) * DIAL_RADIUS,
-    angle,
   };
 }
 
-export function ThemeDial({ className }: { className?: string }) {
+type ThemeDialPlacement = "above" | "below";
+
+export function ThemeDial({
+  className,
+  placement = "above",
+}: {
+  className?: string;
+  /** Where the panel opens relative to the trigger. Use `below` in the mobile header. */
+  placement?: ThemeDialPlacement;
+}) {
   const { themeId, palette, setThemeId } = useTheme();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -33,21 +41,30 @@ export function ThemeDial({ className }: { className?: string }) {
   useEffect(() => {
     if (!open) return;
 
-    function onPointerDown(event: PointerEvent) {
-      if (!rootRef.current?.contains(event.target as Node)) {
-        setOpen(false);
+    let removeListeners: (() => void) | undefined;
+
+    const frame = requestAnimationFrame(() => {
+      function onPointerDown(event: PointerEvent) {
+        if (!rootRef.current?.contains(event.target as Node)) {
+          setOpen(false);
+        }
       }
-    }
 
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
-    }
+      function onKeyDown(event: KeyboardEvent) {
+        if (event.key === "Escape") setOpen(false);
+      }
 
-    document.addEventListener("pointerdown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
+      document.addEventListener("pointerdown", onPointerDown);
+      document.addEventListener("keydown", onKeyDown);
+      removeListeners = () => {
+        document.removeEventListener("pointerdown", onPointerDown);
+        document.removeEventListener("keydown", onKeyDown);
+      };
+    });
+
     return () => {
-      document.removeEventListener("pointerdown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
+      cancelAnimationFrame(frame);
+      removeListeners?.();
     };
   }, [open]);
 
@@ -55,6 +72,8 @@ export function ThemeDial({ className }: { className?: string }) {
     setThemeId(id);
     window.setTimeout(() => setOpen(false), 380);
   }
+
+  const opensBelow = placement === "below";
 
   return (
     <div ref={rootRef} className={cn("relative", className)}>
@@ -89,31 +108,36 @@ export function ThemeDial({ className }: { className?: string }) {
         id={panelId}
         role="dialog"
         aria-label={t("theme.dialTitle")}
+        aria-hidden={!open}
         className={cn(
-          "absolute bottom-full left-1/2 z-50 mb-3 -translate-x-1/2",
-          "origin-bottom transition-all duration-300 ease-out",
+          "absolute left-1/2 z-[100] w-[min(100vw-2rem,15.5rem)] -translate-x-1/2",
+          "transition-all duration-300 ease-out",
+          opensBelow
+            ? "top-full mt-3 origin-top"
+            : "bottom-full mb-3 origin-bottom",
           open
             ? "pointer-events-auto scale-100 opacity-100"
-            : "pointer-events-none scale-90 opacity-0",
+            : "pointer-events-none scale-95 opacity-0",
         )}
       >
-        <div className="relative rounded-3xl border border-border/70 bg-card/95 p-4 shadow-xl backdrop-blur-md">
+        <div className="rounded-3xl border border-border/70 bg-card p-4 shadow-xl backdrop-blur-md">
           <p className="mb-3 text-center text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
             {t("theme.dialTitle")}
           </p>
 
           <div className="relative mx-auto size-[196px]">
-            {/* Fixed pointer at top */}
             <div
-              className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-0.5"
+              className={cn(
+                "absolute left-1/2 z-20 -translate-x-1/2 pointer-events-none",
+                opensBelow ? "bottom-0 translate-y-0.5 rotate-180" : "top-0 -translate-y-0.5",
+              )}
               aria-hidden
             >
               <div className="size-2 rotate-45 rounded-sm bg-foreground/80 shadow-sm" />
             </div>
 
-            {/* Spinning color ring */}
             <div
-              className="absolute inset-0 transition-transform duration-500 ease-[cubic-bezier(0.34,1.4,0.64,1)]"
+              className="absolute inset-0 z-10 transition-transform duration-500 ease-[cubic-bezier(0.34,1.4,0.64,1)]"
               style={{ transform: `rotate(${spinDeg}deg)` }}
             >
               {THEME_PALETTES.map((item, index) => {
@@ -126,9 +150,9 @@ export function ThemeDial({ className }: { className?: string }) {
                     title={t(`theme.palettes.${item.id}`)}
                     onClick={() => selectTheme(item.id)}
                     className={cn(
-                      "absolute left-1/2 top-1/2 rounded-full border-2 border-white/80 shadow-md transition-all duration-300",
-                      "hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                      selected ? "z-10 scale-125 ring-2 ring-foreground/25" : "scale-100",
+                      "absolute left-1/2 top-1/2 z-10 rounded-full border-2 border-white/80 shadow-md transition-all duration-300",
+                      "pointer-events-auto hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                      selected ? "scale-125 ring-2 ring-foreground/25" : "scale-100",
                     )}
                     style={{
                       width: SWATCH_SIZE,
@@ -145,8 +169,8 @@ export function ThemeDial({ className }: { className?: string }) {
               })}
             </div>
 
-            {/* Center hub */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            {/* Decorative center — must not block swatch clicks */}
+            <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center">
               <div className="flex size-[72px] flex-col items-center justify-center rounded-full border border-border/60 bg-background/90 shadow-inner">
                 <span
                   className="size-5 rounded-full border border-white/60 shadow-sm transition-[background] duration-500"

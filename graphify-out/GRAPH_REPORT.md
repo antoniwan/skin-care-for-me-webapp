@@ -1,16 +1,16 @@
-# Graph Report - skin-care-for-me-webapp  (2026-07-02)
+# Graph Report - skin-care-for-me-webapp  (2026-07-03)
 
 ## Corpus Check
-- 167 files · ~341,208 words
+- 167 files · ~341,280 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1029 nodes · 2715 edges · 52 communities (46 shown, 6 thin omitted)
+- 1030 nodes · 2716 edges · 49 communities (43 shown, 6 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 41 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e2599082`
+- Built from commit: `c0e57e0f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -47,11 +47,8 @@
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
 - [[_COMMUNITY_Community 33|Community 33]]
-- [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 35|Community 35]]
-- [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
-- [[_COMMUNITY_Community 38|Community 38]]
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Community 40|Community 40]]
 - [[_COMMUNITY_Community 41|Community 41]]
@@ -79,26 +76,26 @@
 10. `getCycleDay()` - 19 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `InteractionDetail()` --calls--> `t`  [INFERRED]
-  components/conflicts/interaction-detail.tsx → lib/body-context/routine-rules.test.ts
-- `InteractionDetailsSheet()` --calls--> `t`  [INFERRED]
-  components/conflicts/interaction-details-sheet.tsx → lib/body-context/routine-rules.test.ts
-- `RoutineInteractionBadge()` --calls--> `t`  [INFERRED]
-  components/conflicts/routine-interaction-badge.tsx → lib/body-context/routine-rules.test.ts
-- `StepInteractionHint()` --calls--> `t`  [INFERRED]
-  components/conflicts/step-interaction-hint.tsx → lib/body-context/routine-rules.test.ts
+- `BodyContextBannerProps` --references--> `BodyContextSnapshot`  [EXTRACTED]
+  components/cycle/body-context-banner.tsx → lib/body-context/snapshot.ts
 - `BodyContextBanner()` --calls--> `t`  [INFERRED]
   components/cycle/body-context-banner.tsx → lib/body-context/routine-rules.test.ts
+- `AppLoading()` --calls--> `t`  [INFERRED]
+  components/layout/app-loading.tsx → lib/body-context/routine-rules.test.ts
+- `AppLogo()` --calls--> `t`  [INFERRED]
+  components/layout/app-logo.tsx → lib/body-context/routine-rules.test.ts
+- `LanguageToggle()` --calls--> `t`  [INFERRED]
+  components/layout/language-toggle.tsx → lib/body-context/routine-rules.test.ts
 
-## Communities (52 total, 6 thin omitted)
+## Communities (49 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.11
-Nodes (24): t, InteractionSummaryBar(), isLocale(), formatRoutineSchedule(), localizeCheck(), localizeConflictSummary(), localizeVerification(), AppLoading() (+16 more)
+Cohesion: 0.16
+Nodes (19): DEFAULT_BODY_CONTEXT, DEFAULT_BODY_CONTEXT, DEFAULT_LIFE_STAGE_FLAGS, hasActiveLifeStage(), lifeStageFlagsFromLegacy(), LifeStageToggleKey, normalizeLifeStageFlags(), reconcileLifeStageFlags() (+11 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.11
-Nodes (22): SeverityDot(), cn(), CardAction(), CardDescription(), CardFooter(), DialogContent(), DialogDescription(), DialogFooter() (+14 more)
+Cohesion: 0.21
+Nodes (12): Env, envSchema, getEnv(), hasOpenAiKey(), POST(), lookupProductAction(), LookupProductActionResult, lookupProduct() (+4 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.36
@@ -118,23 +115,23 @@ Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModu
 
 ### Community 6 - "Community 6"
 Cohesion: 0.06
-Nodes (66): getGreeting(), HomePage(), getBodyContextProductExclusions(), ConflictList(), SEVERITY_STYLES, InteractionSummaryBar(), buildSocialMetadata(), createPageMetadata() (+58 more)
+Nodes (68): getGreeting(), HomePage(), ConflictList(), SEVERITY_STYLES, buildSocialMetadata(), createPageMetadata(), OG_IMAGE, PAGE_METADATA (+60 more)
 
 ### Community 7 - "Community 7"
-Cohesion: 0.12
-Nodes (18): broken, enKeys, esKeys, localized, localizedEs, missing, products, routine (+10 more)
+Cohesion: 0.14
+Nodes (12): broken, enKeys, esKeys, localized, localizedEs, missing, products, routine (+4 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.34
-Nodes (11): InteractionDetail(), InteractionDetailsSheet(), InteractionTrigger(), InteractionTriggerProps, SeverityBadge(), SeveritySummary(), ConflictSeverity, getSeverityStyle() (+3 more)
+Cohesion: 0.05
+Nodes (87): t, getOtherProductName(), groupWarningsByProduct(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), grouped, sorted (+79 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.13
 Nodes (24): code:bash (npm install), code:env (# Optional: real AI product lookup (server-side only)), code:bash (npm run build), code:block4 (app/), code:block5 (app/                    Next.js App Router pages and API rou), Deploy on Vercel, Documentation, Environment variables (+16 more)
 
 ### Community 15 - "Community 15"
-Cohesion: 0.05
-Nodes (79): DEFAULT_BODY_CONTEXT, CYCLE_PHASE_LABELS, CYCLE_SKIN_NOTES, LIFE_STAGE_DESCRIPTIONS, LIFE_STAGE_LABELS, WEIGHT_CHANGE_LABELS, WEIGHT_CHANGE_NOTES, DEFAULT_BODY_CONTEXT (+71 more)
+Cohesion: 0.07
+Nodes (54): CYCLE_PHASE_LABELS, CYCLE_SKIN_NOTES, LIFE_STAGE_DESCRIPTIONS, LIFE_STAGE_LABELS, WEIGHT_CHANGE_LABELS, WEIGHT_CHANGE_NOTES, getBodyContextProductExclusions(), getProductExclusionReason() (+46 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.08
@@ -166,7 +163,7 @@ Nodes (8): Non-goals (for now), North star, Problem, Product principles, Product
 
 ### Community 25 - "Community 25"
 Cohesion: 0.05
-Nodes (90): CyclePhaseBannerProps, db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines(), getSettings() (+82 more)
+Nodes (91): BodyContextSnapshot, baseCycle, db, DEFAULT_SETTINGS, deleteProduct(), ensureSeedProducts(), getAllProducts(), getRoutines() (+83 more)
 
 ### Community 26 - "Community 26"
 Cohesion: 0.08
@@ -182,51 +179,39 @@ Nodes (20): Acne-prone (Tier B — guidance only), Anxiety & depression, Breastf
 
 ### Community 29 - "Community 29"
 Cohesion: 0.10
-Nodes (29): en, es419, copyByLocale, getSeedCopy(), hasSeedCopy(), SeedCopyById, SeedProductCopy, SeedProductId (+21 more)
+Nodes (30): en, es419, copyByLocale, getSeedCopy(), hasSeedCopy(), SeedCopyById, SeedProductCopy, SeedProductId (+22 more)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.11
 Nodes (18): Adding a new locale, Adding a new string, Architecture, code:ts (DEFAULT_LOCALE = "es-419"), code:block2 (LocaleProvider (components/providers/locale-provider.tsx)), code:block3 (AppLayoutClient), code:tsx (import { useTranslation } from "@/components/providers/local), HTML `lang` (+10 more)
 
 ### Community 31 - "Community 31"
-Cohesion: 0.07
-Nodes (36): metadata, RootLayout(), viewport, ROOT_METADATA, APP_NAV_ITEMS, AppNavItem, isNavItemActive(), useAppData() (+28 more)
+Cohesion: 0.06
+Nodes (49): metadata, RootLayout(), viewport, ROOT_METADATA, APP_NAV_ITEMS, AppNavItem, isNavItemActive(), useAppData() (+41 more)
 
 ### Community 32 - "Community 32"
-Cohesion: 0.33
-Nodes (7): categoryRank(), checkApplicationOrder(), checkIngredientSafety(), checkShelfAlignment(), collectReviewNotes(), RoutineCheck, verifyRoutine()
+Cohesion: 0.27
+Nodes (8): pad, retinol, snapshot, toner, createTranslator(), interpolate(), resolveMessage(), getMessages()
 
 ### Community 33 - "Community 33"
-Cohesion: 0.22
-Nodes (15): groupWarningsByProduct(), RoutineInteractionBadge(), formatCategoryLabel(), formatFrequencyLabel(), formatRoutineTitle(), formatTimeOfDayLabel(), getEnumLabel(), plural() (+7 more)
-
-### Community 34 - "Community 34"
-Cohesion: 0.14
-Nodes (14): CHECK_MESSAGE_KEYS, formatDocumentTitle(), getLifeStageToggleHelp(), getPageTitleKey(), getSkinConditionToggleHelp(), getWellnessToggleHelp(), LocalizedRoutineCheck, LocalizedRoutineVerification (+6 more)
+Cohesion: 0.43
+Nodes (5): DeepString, en, Messages, es419, messagesByLocale
 
 ### Community 35 - "Community 35"
-Cohesion: 0.21
-Nodes (9): grouped, makeWarning(), sorted, warning, ordered, products, products, warnings (+1 more)
-
-### Community 36 - "Community 36"
-Cohesion: 0.25
-Nodes (12): getOtherProductName(), highestSeverity(), SEVERITY_ORDER, sortWarningsBySeverity(), warningKey(), InteractionDetail(), InteractionDetailsSheet(), RoutineInteractionBadge() (+4 more)
+Cohesion: 0.28
+Nodes (6): makeWarning(), ordered, products, products, warnings, makeProduct()
 
 ### Community 37 - "Community 37"
 Cohesion: 0.20
-Nodes (9): bpo, morning, products, retinol, routine, routines, safety, verification (+1 more)
-
-### Community 38 - "Community 38"
-Cohesion: 0.26
-Nodes (8): Sheet(), SheetContent(), SheetDescription(), SheetFooter(), SheetHeader(), SheetOverlay(), SheetTitle(), SheetTrigger()
+Nodes (9): formatRoutineTitle(), bpo, morning, products, retinol, routine, routines, safety (+1 more)
 
 ### Community 39 - "Community 39"
 Cohesion: 0.12
 Nodes (16): bha, cleanser, evening, fifteenth, firstOnly, midMonth, midMonthSettings, morning (+8 more)
 
 ### Community 40 - "Community 40"
-Cohesion: 0.44
-Nodes (7): clampMonthlyAnchorDay(), clampWeeklyAnchorDay(), isMonthlyRoutineDay(), isWeeklyRoutineDay(), normalizeRoutineSchedule(), DEFAULT_ROUTINE_SCHEDULE, RoutineScheduleSettings
+Cohesion: 0.53
+Nodes (6): clampMonthlyAnchorDay(), clampWeeklyAnchorDay(), isMonthlyRoutineDay(), isWeeklyRoutineDay(), normalizeRoutineSchedule(), DEFAULT_ROUTINE_SCHEDULE
 
 ### Community 41 - "Community 41"
 Cohesion: 0.29
@@ -269,24 +254,24 @@ Cohesion: 0.50
 Nodes (4): E7 — Habit & engagement, PROD-701 · Mark routine steps complete, PROD-702 · AM/PM reminders, PROD-703 · Streak display (optional)
 
 ## Knowledge Gaps
-- **378 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+373 more)
+- **379 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+374 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 1` to `Community 0`, `Community 33`, `Community 36`, `Community 6`, `Community 38`, `Community 8`, `Community 29`, `Community 31`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
-- **Why does `useTranslation()` connect `Community 0` to `Community 33`, `Community 2`, `Community 34`, `Community 36`, `Community 6`, `Community 38`, `Community 8`, `Community 15`, `Community 25`, `Community 29`, `Community 31`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
-- **Why does `Product` connect `Community 25` to `Community 32`, `Community 33`, `Community 35`, `Community 6`, `Community 15`, `Community 29`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **Why does `cn()` connect `Community 8` to `Community 15`, `Community 6`, `Community 31`?**
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `useTranslation()` connect `Community 8` to `Community 2`, `Community 6`, `Community 15`, `Community 25`, `Community 31`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `Product` connect `Community 25` to `Community 35`, `Community 6`, `Community 8`, `Community 15`, `Community 29`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Are the 41 inferred relationships involving `t` (e.g. with `InteractionDetail()` and `InteractionDetailsSheet()`) actually correct?**
   _`t` has 41 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _378 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.11088709677419355 - nodes in this community are weakly interconnected._
-- **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.10591133004926108 - nodes in this community are weakly interconnected._
+  _379 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._

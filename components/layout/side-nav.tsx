@@ -48,7 +48,7 @@ export function SideNav() {
           <span className="text-xs font-medium text-muted-foreground">
             {t("theme.label")}
           </span>
-          <ThemeDial />
+          <ThemeDial placement="above" />
         </div>
         <LanguageToggle />
       </div>
