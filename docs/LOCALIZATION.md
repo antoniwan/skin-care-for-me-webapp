@@ -59,6 +59,7 @@ t("common.removeProduct", { name: product.name });
 - `localizeExclusionReason`, `getSeverityLabel`
 - `buildBodyContextHeadline` — banner headline
 - `getBodyContextSnapshot(settings, t)` — localized guidance
+- `localizeProduct` / `localizeProducts` — seed shelf copy (`lib/seed/localize.ts`)
 
 ## Message files
 
@@ -87,16 +88,18 @@ Type: `Messages` = deep string map derived from `en.ts` shape.
 | Navigation, page titles, empty states | ✅ |
 | Body & cycle settings + privacy notice | ✅ |
 | Routines, safety check, exclusions | ✅ |
-| Ingredient interaction UI (labels) | ✅ |
+| Ingredient interaction UI (labels + rule text) | ✅ |
 | Product add sheet, badges, affiliate copy | ✅ |
+| Seed product copy (names, guides, highlights) | ✅ |
 | Error/loading strings (client) | ✅ |
+
+Seed copy lives in `lib/seed/copy/{en,es-419}.ts`. IndexedDB stores English; `AppDataProvider` applies the active locale before render.
 
 ## What is not localized
 
 | Content | Location | Notes |
 |---------|----------|-------|
-| Seed product usage guides | `lib/seed/` | English product copy |
-| Conflict rule reason/guidance | `lib/rules/ingredient-conflicts.ts` | English; severity labels localized |
+| Ingredient INCI lists on seed products | `lib/seed/default-products.ts` | Scientific names stay as listed |
 | PDF export body | `lib/pdf/guide.ts` | English |
 | Page `<meta description>` | `lib/constants/metadata.ts` | English only |
 | OpenAI lookup responses | Server | Language of query-dependent |
