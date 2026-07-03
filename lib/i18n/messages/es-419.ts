@@ -10,6 +10,17 @@ export const es419: Messages = {
     routines: "Rutinas",
     lifestyle: "Estilo de vida",
   },
+  preferences: {
+    title: "Preferencias",
+    open: "Abrir preferencias",
+    close: "Cerrar",
+    subtitle: "Personaliza cómo se ve y se lee la app.",
+    themeSection: "Color de acento",
+    themeHelp: "Toca un color — botones, enlaces y destacados se actualizan al instante.",
+    languageSection: "Idioma",
+    languageHelp: "Aplica a menús, consejos y textos de productos en tu estante.",
+    currentTheme: "Acento actual",
+  },
   language: {
     label: "Idioma",
     es419: "Español",

@@ -8,6 +8,17 @@ export const en = {
     routines: "Routines",
     lifestyle: "Lifestyle",
   },
+  preferences: {
+    title: "Preferences",
+    open: "Open preferences",
+    close: "Close",
+    subtitle: "Personalize how the app looks and reads.",
+    themeSection: "Accent color",
+    themeHelp: "Tap a color — your buttons, links, and highlights update instantly.",
+    languageSection: "Language",
+    languageHelp: "Applies to menus, guidance, and product copy on your shelf.",
+    currentTheme: "Current accent",
+  },
   language: {
     label: "Language",
     es419: "Español",

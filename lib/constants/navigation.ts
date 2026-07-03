@@ -22,3 +22,10 @@ export const APP_NAV_ITEMS: AppNavItem[] = [
 export function isNavItemActive(pathname: string, href: string): boolean {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);
 }
+
+export function getActiveNavItem(pathname: string): AppNavItem {
+  return (
+    APP_NAV_ITEMS.find((item) => isNavItemActive(pathname, item.href)) ??
+    APP_NAV_ITEMS[0]
+  );
+}
