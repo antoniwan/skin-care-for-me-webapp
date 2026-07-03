@@ -82,7 +82,11 @@ export function RoutinesPage() {
                       "common.routine",
                       "common.routines",
                     ),
-                    schedule: formatRoutineSchedule(t, freq),
+                    schedule: formatRoutineSchedule(
+                      t,
+                      freq,
+                      settings.routineSchedule,
+                    ),
                   })}
                 </p>
                 <RoutineList

@@ -25,3 +25,4 @@ export type { IngredientConflict, ConflictWarning } from "./conflicts";
 export type { ProductExclusionReason } from "./exclusions";
 
 export type { AppSettings } from "./settings";
+export type { RoutineScheduleSettings } from "./schedule";

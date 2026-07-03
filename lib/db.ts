@@ -2,11 +2,13 @@ import Dexie, { type EntityTable } from "dexie";
 import type { AppSettings, Product, Routine } from "./types";
 import { normalizeAppSettings } from "./body-context/migrate";
 import { DEFAULT_BODY_CONTEXT } from "./body-context/defaults";
+import { DEFAULT_ROUTINE_SCHEDULE } from "./schedule/defaults";
 import { DEFAULT_PRODUCTS } from "./seed/default-products";
 
 const DEFAULT_SETTINGS: AppSettings = {
   bodyContext: { ...DEFAULT_BODY_CONTEXT },
   onboardingComplete: false,
+  routineSchedule: { ...DEFAULT_ROUTINE_SCHEDULE },
 };
 
 class SkinCareDB extends Dexie {

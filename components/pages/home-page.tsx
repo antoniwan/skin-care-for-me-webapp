@@ -25,6 +25,12 @@ export function HomePage() {
   const snapshot = getBodyContextSnapshot(settings.bodyContext, t);
   const todaysRoutines = getTodaysRoutines(routines, settings);
   const showBodySidebar = snapshot.enabled;
+  const emptyMessage =
+    products.length > 0 &&
+    routines.length > 0 &&
+    todaysRoutines.length === 0
+      ? t("pages.home.emptyScheduleToday")
+      : t("pages.home.emptyRoutines");
 
   return (
     <PageContainer>
@@ -59,7 +65,7 @@ export function HomePage() {
           <RoutineList
             routines={todaysRoutines}
             products={products}
-            emptyMessage={t("pages.home.emptyRoutines")}
+            emptyMessage={emptyMessage}
           />
         </div>
       )}

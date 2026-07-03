@@ -9,6 +9,7 @@ import {
   DEFAULT_SKIN_CONDITION_FLAGS,
   DEFAULT_WELLNESS_FLAGS,
 } from "./skin-wellness";
+import { normalizeRoutineSchedule } from "@/lib/schedule";
 
 type LegacySettings = Partial<AppSettings> & {
   cycle?: Partial<MenstrualCycleSettings> | MenstrualCycleSettings;
@@ -65,6 +66,7 @@ export function normalizeAppSettings(raw: LegacySettings | undefined): AppSettin
     return {
       onboardingComplete: false,
       bodyContext: { ...DEFAULT_BODY_CONTEXT },
+      routineSchedule: normalizeRoutineSchedule(undefined),
     };
   }
 
@@ -73,5 +75,6 @@ export function normalizeAppSettings(raw: LegacySettings | undefined): AppSettin
   return {
     onboardingComplete: raw.onboardingComplete ?? false,
     bodyContext: normalizeBodyContext(raw.bodyContext, legacyCycle),
+    routineSchedule: normalizeRoutineSchedule(raw.routineSchedule),
   };
 }

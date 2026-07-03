@@ -1,5 +1,6 @@
 import type { AppSettings, Product } from "@/lib/types";
 import { DEFAULT_BODY_CONTEXT } from "@/lib/body-context/defaults";
+import { DEFAULT_ROUTINE_SCHEDULE } from "@/lib/schedule/defaults";
 
 const TIMESTAMP = "2024-06-01T12:00:00.000Z";
 
@@ -22,4 +23,5 @@ export function makeProduct(overrides: Partial<Product> = {}): Product {
 export const defaultSettings: AppSettings = {
   onboardingComplete: false,
   bodyContext: { ...DEFAULT_BODY_CONTEXT },
+  routineSchedule: { ...DEFAULT_ROUTINE_SCHEDULE },
 };

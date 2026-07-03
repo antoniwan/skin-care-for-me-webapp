@@ -21,6 +21,8 @@ import type {
   RoutineCheckId,
   RoutineVerification,
 } from "@/lib/routines/verification";
+import type { RoutineScheduleSettings } from "@/lib/types/schedule";
+import { DEFAULT_ROUTINE_SCHEDULE } from "@/lib/schedule/defaults";
 import type { TranslateFn } from "./translate";
 
 const CHECK_MESSAGE_KEYS: Record<RoutineCheckId, string> = {
@@ -83,14 +85,19 @@ export function formatRoutineTitle(
 export function formatRoutineSchedule(
   t: TranslateFn,
   frequency: RoutineFrequency,
+  schedule: RoutineScheduleSettings = DEFAULT_ROUTINE_SCHEDULE,
 ): string {
   switch (frequency) {
     case "daily":
       return t("schedule.everyDay");
     case "weekly":
-      return t("schedule.sundays");
+      return t("schedule.weeklyOnDay", {
+        day: t(`enums.weekday.${schedule.weeklyAnchorDay}`),
+      });
     case "monthly":
-      return t("schedule.firstOfMonth");
+      return t("schedule.monthlyOnDay", {
+        day: schedule.monthlyAnchorDay,
+      });
   }
 }
 

@@ -8,6 +8,7 @@ import {
 } from "@/components/conflicts";
 import { RoutineVerificationPanel } from "@/components/routines/routine-verification-panel";
 import { useTranslation } from "@/components/providers/locale-provider";
+import { useAppDataContext } from "@/components/providers/app-data-provider";
 import {
   formatCategoryLabel,
   formatRoutineSchedule,
@@ -33,6 +34,7 @@ export function RoutineCard({
   detailed = false,
 }: RoutineCardProps) {
   const { t } = useTranslation();
+  const { settings } = useAppDataContext();
   const byProduct = groupWarningsByProduct(warnings);
   const verification = verifyRoutine(routine, products);
 
@@ -45,7 +47,11 @@ export function RoutineCard({
               {formatRoutineTitle(t, routine.frequency, routine.timeOfDay)}
             </CardTitle>
             <p className="text-xs text-muted-foreground">
-              {formatRoutineSchedule(t, routine.frequency)} ·{" "}
+              {formatRoutineSchedule(
+                t,
+                routine.frequency,
+                settings?.routineSchedule,
+              )}{" "}·{" "}
               {routine.steps.length}{" "}
               {plural(
                 t,

@@ -47,6 +47,12 @@ import type {
   WeightChange,
   WellnessFlags,
 } from "@/lib/types";
+import {
+  MONTHLY_DAY_MAX,
+  MONTHLY_DAY_MIN,
+  WEEKDAY_MAX,
+  WEEKDAY_MIN,
+} from "@/lib/schedule";
 
 const WEIGHT_OPTIONS: WeightChange[] = [
   "stable",
@@ -54,6 +60,16 @@ const WEIGHT_OPTIONS: WeightChange[] = [
   "losing",
   "prefer_not_to_say",
 ];
+
+const WEEKDAY_OPTIONS = Array.from(
+  { length: WEEKDAY_MAX - WEEKDAY_MIN + 1 },
+  (_, index) => WEEKDAY_MIN + index,
+);
+
+const MONTHLY_DAY_OPTIONS = Array.from(
+  { length: MONTHLY_DAY_MAX - MONTHLY_DAY_MIN + 1 },
+  (_, index) => MONTHLY_DAY_MIN + index,
+);
 
 export function CyclePage() {
   const { settings, products, loading, updateSettings } = useAppDataContext();
@@ -70,11 +86,10 @@ export function CyclePage() {
   const appSettings = settings;
 
   function updateBodyContext(patch: Partial<BodyContextSettings>) {
-    const next: AppSettings = {
-      onboardingComplete: appSettings.onboardingComplete,
+    void updateSettings({
+      ...appSettings,
       bodyContext: { ...bodyContext, ...patch },
-    };
-    void updateSettings(next);
+    });
   }
 
   function updateMenstrual(
@@ -123,6 +138,17 @@ export function CyclePage() {
     updateWellness({ [key]: checked });
   }
 
+  function updateRoutineSchedule(
+    patch: Partial<AppSettings["routineSchedule"]>,
+  ) {
+    void updateSettings({
+      ...appSettings,
+      routineSchedule: { ...appSettings.routineSchedule, ...patch },
+    });
+  }
+
+  const routineSchedule = appSettings.routineSchedule;
+
   return (
     <PageContainer>
       <PageHeader
@@ -131,6 +157,71 @@ export function CyclePage() {
       />
 
       <BodyContextPrivacyNotice />
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="font-heading text-base">
+            {t("pages.lifestyle.scheduleTitle")}
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-sm text-muted-foreground">
+            {t("pages.lifestyle.scheduleHelp")}
+          </p>
+
+          <div className="space-y-2">
+            <Label htmlFor="weekly-anchor-day">
+              {t("pages.lifestyle.weeklyAnchorDay")}
+            </Label>
+            <Select
+              value={String(routineSchedule.weeklyAnchorDay)}
+              onValueChange={(value) =>
+                updateRoutineSchedule({ weeklyAnchorDay: Number(value) })
+              }
+            >
+              <SelectTrigger id="weekly-anchor-day" className="w-full">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {WEEKDAY_OPTIONS.map((day) => (
+                  <SelectItem key={day} value={String(day)}>
+                    {t(`enums.weekday.${day}`)}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <p className="text-xs text-muted-foreground">
+              {t("pages.lifestyle.weeklyAnchorHelp")}
+            </p>
+          </div>
+
+          <div className="space-y-2 border-t border-border/80 pt-4">
+            <Label htmlFor="monthly-anchor-day">
+              {t("pages.lifestyle.monthlyAnchorDay")}
+            </Label>
+            <Select
+              value={String(routineSchedule.monthlyAnchorDay)}
+              onValueChange={(value) =>
+                updateRoutineSchedule({ monthlyAnchorDay: Number(value) })
+              }
+            >
+              <SelectTrigger id="monthly-anchor-day" className="w-full">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {MONTHLY_DAY_OPTIONS.map((day) => (
+                  <SelectItem key={day} value={String(day)}>
+                    {day}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <p className="text-xs text-muted-foreground">
+              {t("pages.lifestyle.monthlyAnchorHelp")}
+            </p>
+          </div>
+        </CardContent>
+      </Card>
 
       <Card>
         <CardContent className="flex items-center justify-between pt-6">

@@ -120,11 +120,22 @@ export const en = {
       caution: "Use with care",
       separate: "Separate timing",
     },
+    weekday: {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday",
+    },
   },
   schedule: {
     everyDay: "every day",
     sundays: "Sundays",
     firstOfMonth: "1st of the month",
+    weeklyOnDay: "every {day}",
+    monthlyOnDay: "day {day} of each month",
     morningRoutine: "Morning routine",
     eveningRoutine: "Evening routine",
     eveningFrequency: "Evening · {frequency}",
@@ -143,6 +154,8 @@ export const en = {
         "Your shelf ships with demo products. Adding your own is coming soon.",
       emptyRoutines:
         "No routines scheduled for today. Check weekly or monthly tabs.",
+      emptyScheduleToday:
+        "Nothing on your shelf is scheduled for today. Weekly and monthly items appear on the days you set in Lifestyle → Routine schedule.",
     },
     products: {
       loading: "Loading products…",
@@ -193,6 +206,15 @@ export const en = {
         "Adds hydration and barrier tips — never sent off-device.",
       recentChange: "Recent change",
       heldProductsTitle: "Products held from routines",
+      scheduleTitle: "Routine schedule",
+      scheduleHelp:
+        "Choose when weekly and monthly products appear on Today. Daily products always show.",
+      weeklyAnchorDay: "Weekly treatments day",
+      weeklyAnchorHelp:
+        "Masks, peels, and other weekly products appear on Today on this day.",
+      monthlyAnchorDay: "Monthly treatments day",
+      monthlyAnchorHelp:
+        "Monthly products appear on Today on this day of the month (1–28).",
     },
   },
   privacy: {

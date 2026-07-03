@@ -122,11 +122,22 @@ export const es419: Messages = {
       caution: "Usar con cuidado",
       separate: "Separar horarios",
     },
+    weekday: {
+      "0": "domingo",
+      "1": "lunes",
+      "2": "martes",
+      "3": "miércoles",
+      "4": "jueves",
+      "5": "viernes",
+      "6": "sábado",
+    },
   },
   schedule: {
     everyDay: "todos los días",
     sundays: "los domingos",
     firstOfMonth: "el día 1 de cada mes",
+    weeklyOnDay: "cada {day}",
+    monthlyOnDay: "el día {day} de cada mes",
     morningRoutine: "Rutina de la mañana",
     eveningRoutine: "Rutina de la noche",
     eveningFrequency: "Noche · {frequency}",
@@ -145,6 +156,8 @@ export const es419: Messages = {
         "Tu estante incluye productos de demostración. Agregar los tuyos llegará pronto.",
       emptyRoutines:
         "No hay rutinas para hoy. Revisa las pestañas semanal o mensual.",
+      emptyScheduleToday:
+        "Nada en tu estante está programado para hoy. Los productos semanales y mensuales aparecen en los días que configures en Estilo de vida → Horario de rutinas.",
     },
     products: {
       loading: "Cargando productos…",
@@ -195,6 +208,15 @@ export const es419: Messages = {
         "Agrega consejos de hidratación y barrera — nunca sale del dispositivo.",
       recentChange: "Cambio reciente",
       heldProductsTitle: "Productos apartados de las rutinas",
+      scheduleTitle: "Horario de rutinas",
+      scheduleHelp:
+        "Elige cuándo los productos semanales y mensuales aparecen en Hoy. Los diarios siempre se muestran.",
+      weeklyAnchorDay: "Día de tratamientos semanales",
+      weeklyAnchorHelp:
+        "Mascarillas, exfoliantes y otros productos semanales aparecen en Hoy este día.",
+      monthlyAnchorDay: "Día de tratamientos mensuales",
+      monthlyAnchorHelp:
+        "Los productos mensuales aparecen en Hoy este día del mes (1–28).",
     },
   },
   privacy: {

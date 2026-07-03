@@ -909,7 +909,7 @@
       "source_file": "app/sitemap.ts",
       "source_location": "L1",
       "id": "app_sitemap_ts",
-      "community": 6,
+      "community": 51,
       "norm_label": "sitemap.ts"
     },
     {
@@ -918,7 +918,7 @@
       "source_file": "app/sitemap.ts",
       "source_location": "L4",
       "id": "app_sitemap_routes",
-      "community": 6,
+      "community": 51,
       "norm_label": "routes"
     },
     {
@@ -927,7 +927,7 @@
       "source_file": "app/sitemap.ts",
       "source_location": "L6",
       "id": "app_sitemap_sitemap",
-      "community": 6,
+      "community": 51,
       "norm_label": "sitemap()"
     },
     {
@@ -936,7 +936,7 @@
       "source_file": "app/(app)/error.tsx",
       "source_location": "L1",
       "id": "app_app_error_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "error.tsx"
     },
     {
@@ -945,7 +945,7 @@
       "source_file": "app/(app)/error.tsx",
       "source_location": "L6",
       "id": "app_error_apperror",
-      "community": 1,
+      "community": 6,
       "norm_label": "apperror()"
     },
     {
@@ -972,7 +972,7 @@
       "source_file": "app/(app)/loading.tsx",
       "source_location": "L1",
       "id": "app_app_loading_tsx",
-      "community": 6,
+      "community": 0,
       "norm_label": "loading.tsx"
     },
     {
@@ -981,7 +981,7 @@
       "source_file": "app/(app)/loading.tsx",
       "source_location": "L3",
       "id": "app_loading_loading",
-      "community": 6,
+      "community": 0,
       "norm_label": "loading()"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_file": "components/conflicts/index.ts",
       "source_location": "L1",
       "id": "components_conflicts_index_ts",
-      "community": 0,
+      "community": 8,
       "norm_label": "index.ts"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "components/conflicts/interaction-detail.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_detail_tsx",
-      "community": 0,
+      "community": 8,
       "norm_label": "interaction-detail.tsx"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "components/conflicts/interaction-detail.tsx",
       "source_location": "L10",
       "id": "conflicts_interaction_detail_interactiondetail",
-      "community": 0,
+      "community": 8,
       "norm_label": "interactiondetail()"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_file": "components/conflicts/interaction-details-sheet.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_details_sheet_tsx",
-      "community": 0,
+      "community": 38,
       "norm_label": "interaction-details-sheet.tsx"
     },
     {
@@ -1179,7 +1179,7 @@
       "source_file": "components/conflicts/interaction-details-sheet.tsx",
       "source_location": "L17",
       "id": "conflicts_interaction_details_sheet_interactiondetailssheet",
-      "community": 0,
+      "community": 8,
       "norm_label": "interactiondetailssheet()"
     },
     {
@@ -1188,7 +1188,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_primitives_tsx",
-      "community": 0,
+      "community": 8,
       "norm_label": "interaction-primitives.tsx"
     },
     {
@@ -1197,7 +1197,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L8",
       "id": "conflicts_interaction_primitives_interactiontriggerprops",
-      "community": 0,
+      "community": 8,
       "norm_label": "interactiontriggerprops"
     },
     {
@@ -1206,7 +1206,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L18",
       "id": "conflicts_interaction_primitives_interactiontrigger",
-      "community": 0,
+      "community": 8,
       "norm_label": "interactiontrigger()"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L90",
       "id": "conflicts_interaction_primitives_severitybadge",
-      "community": 0,
+      "community": 8,
       "norm_label": "severitybadge()"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "components/conflicts/interaction-primitives.tsx",
       "source_location": "L115",
       "id": "conflicts_interaction_primitives_severitysummary",
-      "community": 0,
+      "community": 8,
       "norm_label": "severitysummary()"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "components/conflicts/interaction-summary-bar.tsx",
       "source_location": "L1",
       "id": "components_conflicts_interaction_summary_bar_tsx",
-      "community": 0,
+      "community": 8,
       "norm_label": "interaction-summary-bar.tsx"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "components/conflicts/routine-interaction-badge.tsx",
       "source_location": "L1",
       "id": "components_conflicts_routine_interaction_badge_tsx",
-      "community": 0,
+      "community": 8,
       "norm_label": "routine-interaction-badge.tsx"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "components/conflicts/routine-interaction-badge.tsx",
       "source_location": "L11",
       "id": "conflicts_routine_interaction_badge_routineinteractionbadge",
-      "community": 0,
+      "community": 33,
       "norm_label": "routineinteractionbadge()"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L1",
       "id": "components_conflicts_severity_styles_ts",
-      "community": 0,
+      "community": 8,
       "norm_label": "severity-styles.ts"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L1",
       "id": "conflicts_severity_styles_severity_styles",
-      "community": 0,
+      "community": 8,
       "norm_label": "severity_styles"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L28",
       "id": "conflicts_severity_styles_conflictseverity",
-      "community": 0,
+      "community": 8,
       "norm_label": "conflictseverity"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "components/conflicts/severity-styles.ts",
       "source_location": "L30",
       "id": "conflicts_severity_styles_getseveritystyle",
-      "community": 0,
+      "community": 8,
       "norm_label": "getseveritystyle()"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "components/conflicts/step-interaction-hint.tsx",
       "source_location": "L1",
       "id": "components_conflicts_step_interaction_hint_tsx",
-      "community": 0,
+      "community": 8,
       "norm_label": "step-interaction-hint.tsx"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "components/conflicts/step-interaction-hint.tsx",
       "source_location": "L16",
       "id": "conflicts_step_interaction_hint_stepinteractionhint",
-      "community": 0,
+      "community": 36,
       "norm_label": "stepinteractionhint()"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "components/cycle/body-context-privacy-notice.tsx",
       "source_location": "L1",
       "id": "components_cycle_body_context_privacy_notice_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "body-context-privacy-notice.tsx"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "components/cycle/body-context-privacy-notice.tsx",
       "source_location": "L7",
       "id": "cycle_body_context_privacy_notice_bodycontextprivacynotice",
-      "community": 0,
+      "community": 6,
       "norm_label": "bodycontextprivacynotice()"
     },
     {
@@ -1386,7 +1386,7 @@
       "source_file": "components/layout/app-loading.tsx",
       "source_location": "L1",
       "id": "components_layout_app_loading_tsx",
-      "community": 6,
+      "community": 0,
       "norm_label": "app-loading.tsx"
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "components/layout/app-loading.tsx",
       "source_location": "L6",
       "id": "layout_app_loading_apploading",
-      "community": 6,
+      "community": 0,
       "norm_label": "apploading()"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L1",
       "id": "components_layout_app_logo_tsx",
-      "community": 31,
+      "community": 0,
       "norm_label": "app-logo.tsx"
     },
     {
@@ -1413,7 +1413,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L7",
       "id": "layout_app_logo_applogosize",
-      "community": 31,
+      "community": 0,
       "norm_label": "applogosize"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L9",
       "id": "layout_app_logo_sizestyles",
-      "community": 31,
+      "community": 0,
       "norm_label": "sizestyles"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "components/layout/app-logo.tsx",
       "source_location": "L17",
       "id": "layout_app_logo_applogo",
-      "community": 31,
+      "community": 0,
       "norm_label": "applogo()"
     },
     {
@@ -1494,7 +1494,7 @@
       "source_file": "components/layout/language-toggle.tsx",
       "source_location": "L1",
       "id": "components_layout_language_toggle_tsx",
-      "community": 31,
+      "community": 29,
       "norm_label": "language-toggle.tsx"
     },
     {
@@ -1611,23 +1611,41 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L1",
       "id": "components_pages_cycle_page_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "cycle-page.tsx"
     },
     {
       "label": "WEIGHT_OPTIONS",
       "file_type": "code",
       "source_file": "components/pages/cycle-page.tsx",
-      "source_location": "L51",
+      "source_location": "L57",
       "id": "pages_cycle_page_weight_options",
-      "community": 1,
+      "community": 6,
       "norm_label": "weight_options"
+    },
+    {
+      "label": "WEEKDAY_OPTIONS",
+      "file_type": "code",
+      "source_file": "components/pages/cycle-page.tsx",
+      "source_location": "L64",
+      "id": "pages_cycle_page_weekday_options",
+      "community": 6,
+      "norm_label": "weekday_options"
+    },
+    {
+      "label": "MONTHLY_DAY_OPTIONS",
+      "file_type": "code",
+      "source_file": "components/pages/cycle-page.tsx",
+      "source_location": "L69",
+      "id": "pages_cycle_page_monthly_day_options",
+      "community": 6,
+      "norm_label": "monthly_day_options"
     },
     {
       "label": "CyclePage()",
       "file_type": "code",
       "source_file": "components/pages/cycle-page.tsx",
-      "source_location": "L58",
+      "source_location": "L74",
       "id": "pages_cycle_page_cyclepage",
       "community": 6,
       "norm_label": "cyclepage()"
@@ -1654,7 +1672,7 @@
       "label": "getGreetingPeriod()",
       "file_type": "code",
       "source_file": "components/pages/home-page.tsx",
-      "source_location": "L70",
+      "source_location": "L76",
       "id": "pages_home_page_getgreetingperiod",
       "community": 6,
       "norm_label": "getgreetingperiod()"
@@ -1710,7 +1728,7 @@
       "source_file": "components/products/add-product-sheet.tsx",
       "source_location": "L1",
       "id": "components_products_add_product_sheet_tsx",
-      "community": 1,
+      "community": 38,
       "norm_label": "add-product-sheet.tsx"
     },
     {
@@ -1773,7 +1791,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L1",
       "id": "components_products_product_card_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "product-card.tsx"
     },
     {
@@ -1782,7 +1800,7 @@
       "source_file": "components/products/product-card.tsx",
       "source_location": "L13",
       "id": "products_product_card_productcardprops",
-      "community": 1,
+      "community": 25,
       "norm_label": "productcardprops"
     },
     {
@@ -1809,7 +1827,7 @@
       "source_file": "components/products/product-ingredients.tsx",
       "source_location": "L1",
       "id": "components_products_product_ingredients_tsx",
-      "community": 1,
+      "community": 0,
       "norm_label": "product-ingredients.tsx"
     },
     {
@@ -1818,7 +1836,7 @@
       "source_file": "components/products/product-ingredients.tsx",
       "source_location": "L8",
       "id": "products_product_ingredients_productingredientsprops",
-      "community": 1,
+      "community": 0,
       "norm_label": "productingredientsprops"
     },
     {
@@ -1827,7 +1845,7 @@
       "source_file": "components/products/product-ingredients.tsx",
       "source_location": "L12",
       "id": "products_product_ingredients_productingredients",
-      "community": 1,
+      "community": 0,
       "norm_label": "productingredients()"
     },
     {
@@ -1863,7 +1881,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L1",
       "id": "components_products_product_meta_badges_tsx",
-      "community": 0,
+      "community": 33,
       "norm_label": "product-meta-badges.tsx"
     },
     {
@@ -1872,7 +1890,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L12",
       "id": "products_product_meta_badges_productmetabadgesprops",
-      "community": 0,
+      "community": 25,
       "norm_label": "productmetabadgesprops"
     },
     {
@@ -1881,7 +1899,7 @@
       "source_file": "components/products/product-meta-badges.tsx",
       "source_location": "L19",
       "id": "products_product_meta_badges_productmetabadges",
-      "community": 0,
+      "community": 33,
       "norm_label": "productmetabadges()"
     },
     {
@@ -1935,7 +1953,7 @@
       "source_file": "components/providers/document-locale-sync.tsx",
       "source_location": "L1",
       "id": "components_providers_document_locale_sync_tsx",
-      "community": 0,
+      "community": 31,
       "norm_label": "document-locale-sync.tsx"
     },
     {
@@ -1944,7 +1962,7 @@
       "source_file": "components/providers/document-locale-sync.tsx",
       "source_location": "L10",
       "id": "providers_document_locale_sync_documentlocalesync",
-      "community": 0,
+      "community": 31,
       "norm_label": "documentlocalesync()"
     },
     {
@@ -1962,7 +1980,7 @@
       "source_file": "components/providers/locale-provider.tsx",
       "source_location": "L21",
       "id": "providers_locale_provider_localecontextvalue",
-      "community": 0,
+      "community": 15,
       "norm_label": "localecontextvalue"
     },
     {
@@ -2070,25 +2088,25 @@
       "source_file": "components/routines/routine-card.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_card_tsx",
-      "community": 0,
+      "community": 33,
       "norm_label": "routine-card.tsx"
     },
     {
       "label": "RoutineCardProps",
       "file_type": "code",
       "source_file": "components/routines/routine-card.tsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "id": "routines_routine_card_routinecardprops",
-      "community": 38,
+      "community": 25,
       "norm_label": "routinecardprops"
     },
     {
       "label": "RoutineCard()",
       "file_type": "code",
       "source_file": "components/routines/routine-card.tsx",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "routines_routine_card_routinecard",
-      "community": 0,
+      "community": 33,
       "norm_label": "routinecard()"
     },
     {
@@ -2097,7 +2115,7 @@
       "source_file": "components/routines/routine-exclusions-notice.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_exclusions_notice_tsx",
-      "community": 0,
+      "community": 34,
       "norm_label": "routine-exclusions-notice.tsx"
     },
     {
@@ -2106,7 +2124,7 @@
       "source_file": "components/routines/routine-exclusions-notice.tsx",
       "source_location": "L7",
       "id": "routines_routine_exclusions_notice_routineexclusionsnotice",
-      "community": 0,
+      "community": 34,
       "norm_label": "routineexclusionsnotice()"
     },
     {
@@ -2115,7 +2133,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_guide_section_tsx",
-      "community": 38,
+      "community": 25,
       "norm_label": "routine-guide-section.tsx"
     },
     {
@@ -2124,7 +2142,7 @@
       "source_file": "components/routines/routine-guide-section.tsx",
       "source_location": "L10",
       "id": "routines_routine_guide_section_routineguidesectionprops",
-      "community": 38,
+      "community": 25,
       "norm_label": "routineguidesectionprops"
     },
     {
@@ -2142,7 +2160,7 @@
       "source_file": "components/routines/routine-list.tsx",
       "source_location": "L1",
       "id": "components_routines_routine_list_tsx",
-      "community": 6,
+      "community": 25,
       "norm_label": "routine-list.tsx"
     },
     {
@@ -2187,7 +2205,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L1",
       "id": "components_ui_badge_tsx",
-      "community": 1,
+      "community": 33,
       "norm_label": "badge.tsx"
     },
     {
@@ -2196,7 +2214,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L7",
       "id": "ui_badge_badgevariants",
-      "community": 1,
+      "community": 33,
       "norm_label": "badgevariants"
     },
     {
@@ -2205,7 +2223,7 @@
       "source_file": "components/ui/badge.tsx",
       "source_location": "L30",
       "id": "ui_badge_badge",
-      "community": 1,
+      "community": 33,
       "norm_label": "badge()"
     },
     {
@@ -2214,7 +2232,7 @@
       "source_file": "components/ui/button.tsx",
       "source_location": "L1",
       "id": "components_ui_button_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "button.tsx"
     },
     {
@@ -2223,7 +2241,7 @@
       "source_file": "components/ui/button.tsx",
       "source_location": "L7",
       "id": "ui_button_buttonvariants",
-      "community": 1,
+      "community": 6,
       "norm_label": "buttonvariants"
     },
     {
@@ -2232,7 +2250,7 @@
       "source_file": "components/ui/button.tsx",
       "source_location": "L44",
       "id": "ui_button_button",
-      "community": 1,
+      "community": 6,
       "norm_label": "button()"
     },
     {
@@ -2241,7 +2259,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L1",
       "id": "components_ui_card_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "card.tsx"
     },
     {
@@ -2250,7 +2268,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L5",
       "id": "ui_card_card",
-      "community": 1,
+      "community": 6,
       "norm_label": "card()"
     },
     {
@@ -2259,7 +2277,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L23",
       "id": "ui_card_cardheader",
-      "community": 1,
+      "community": 6,
       "norm_label": "cardheader()"
     },
     {
@@ -2268,7 +2286,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L36",
       "id": "ui_card_cardtitle",
-      "community": 1,
+      "community": 6,
       "norm_label": "cardtitle()"
     },
     {
@@ -2295,7 +2313,7 @@
       "source_file": "components/ui/card.tsx",
       "source_location": "L72",
       "id": "ui_card_cardcontent",
-      "community": 1,
+      "community": 6,
       "norm_label": "cardcontent()"
     },
     {
@@ -2412,7 +2430,7 @@
       "source_file": "components/ui/input.tsx",
       "source_location": "L1",
       "id": "components_ui_input_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "input.tsx"
     },
     {
@@ -2421,7 +2439,7 @@
       "source_file": "components/ui/input.tsx",
       "source_location": "L5",
       "id": "ui_input_input",
-      "community": 1,
+      "community": 6,
       "norm_label": "input()"
     },
     {
@@ -2430,7 +2448,7 @@
       "source_file": "components/ui/label.tsx",
       "source_location": "L1",
       "id": "components_ui_label_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "label.tsx"
     },
     {
@@ -2439,7 +2457,7 @@
       "source_file": "components/ui/label.tsx",
       "source_location": "L8",
       "id": "ui_label_label",
-      "community": 1,
+      "community": 6,
       "norm_label": "label()"
     },
     {
@@ -2547,7 +2565,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L1",
       "id": "components_ui_sheet_tsx",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheet.tsx"
     },
     {
@@ -2556,7 +2574,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L10",
       "id": "ui_sheet_sheet",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheet()"
     },
     {
@@ -2565,7 +2583,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L14",
       "id": "ui_sheet_sheettrigger",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheettrigger()"
     },
     {
@@ -2574,7 +2592,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L20",
       "id": "ui_sheet_sheetclose",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheetclose()"
     },
     {
@@ -2583,7 +2601,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L26",
       "id": "ui_sheet_sheetportal",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheetportal()"
     },
     {
@@ -2592,7 +2610,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L32",
       "id": "ui_sheet_sheetoverlay",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheetoverlay()"
     },
     {
@@ -2601,7 +2619,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L48",
       "id": "ui_sheet_sheetcontent",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheetcontent()"
     },
     {
@@ -2610,7 +2628,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L89",
       "id": "ui_sheet_sheetheader",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheetheader()"
     },
     {
@@ -2619,7 +2637,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L99",
       "id": "ui_sheet_sheetfooter",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheetfooter()"
     },
     {
@@ -2628,7 +2646,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L109",
       "id": "ui_sheet_sheettitle",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheettitle()"
     },
     {
@@ -2637,7 +2655,7 @@
       "source_file": "components/ui/sheet.tsx",
       "source_location": "L125",
       "id": "ui_sheet_sheetdescription",
-      "community": 1,
+      "community": 38,
       "norm_label": "sheetdescription()"
     },
     {
@@ -2646,7 +2664,7 @@
       "source_file": "components/ui/switch.tsx",
       "source_location": "L1",
       "id": "components_ui_switch_tsx",
-      "community": 1,
+      "community": 6,
       "norm_label": "switch.tsx"
     },
     {
@@ -2655,7 +2673,7 @@
       "source_file": "components/ui/switch.tsx",
       "source_location": "L8",
       "id": "ui_switch_switch",
-      "community": 1,
+      "community": 6,
       "norm_label": "switch()"
     },
     {
@@ -2761,7 +2779,7 @@
       "label": "DEFAULT_SETTINGS",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "lib_db_default_settings",
       "community": 25,
       "norm_label": "default_settings"
@@ -2770,7 +2788,7 @@
       "label": "SkinCareDB",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L12",
+      "source_location": "L14",
       "id": "lib_db_skincaredb",
       "community": 25,
       "norm_label": "skincaredb"
@@ -2779,7 +2797,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L17",
+      "source_location": "L19",
       "id": "lib_db_skincaredb_constructor",
       "community": 25,
       "norm_label": ".constructor()"
@@ -2788,7 +2806,7 @@
       "label": "db",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L27",
+      "source_location": "L29",
       "id": "lib_db_db",
       "community": 25,
       "norm_label": "db"
@@ -2797,7 +2815,7 @@
       "label": "ensureSeedProducts()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L32",
+      "source_location": "L34",
       "id": "lib_db_ensureseedproducts",
       "community": 25,
       "norm_label": "ensureseedproducts()"
@@ -2806,7 +2824,7 @@
       "label": "getSettings()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L39",
+      "source_location": "L41",
       "id": "lib_db_getsettings",
       "community": 25,
       "norm_label": "getsettings()"
@@ -2815,7 +2833,7 @@
       "label": "saveSettings()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L47",
+      "source_location": "L49",
       "id": "lib_db_savesettings",
       "community": 25,
       "norm_label": "savesettings()"
@@ -2824,7 +2842,7 @@
       "label": "listProducts()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L51",
+      "source_location": "L53",
       "id": "lib_db_listproducts",
       "community": 25,
       "norm_label": "listproducts()"
@@ -2833,7 +2851,7 @@
       "label": "getAllProducts()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L55",
+      "source_location": "L57",
       "id": "lib_db_getallproducts",
       "community": 25,
       "norm_label": "getallproducts()"
@@ -2842,7 +2860,7 @@
       "label": "getProduct()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L60",
+      "source_location": "L62",
       "id": "lib_db_getproduct",
       "community": 25,
       "norm_label": "getproduct()"
@@ -2851,7 +2869,7 @@
       "label": "saveProduct()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L64",
+      "source_location": "L66",
       "id": "lib_db_saveproduct",
       "community": 25,
       "norm_label": "saveproduct()"
@@ -2860,7 +2878,7 @@
       "label": "deleteProduct()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L68",
+      "source_location": "L70",
       "id": "lib_db_deleteproduct",
       "community": 25,
       "norm_label": "deleteproduct()"
@@ -2869,7 +2887,7 @@
       "label": "getRoutines()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L73",
+      "source_location": "L75",
       "id": "lib_db_getroutines",
       "community": 25,
       "norm_label": "getroutines()"
@@ -2878,7 +2896,7 @@
       "label": "saveRoutines()",
       "file_type": "code",
       "source_file": "lib/db.ts",
-      "source_location": "L78",
+      "source_location": "L80",
       "id": "lib_db_saveroutines",
       "community": 25,
       "norm_label": "saveroutines()"
@@ -2943,7 +2961,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L1",
       "id": "lib_format_ts",
-      "community": 33,
+      "community": 25,
       "norm_label": "format.ts"
     },
     {
@@ -2961,7 +2979,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L7",
       "id": "lib_format_formatfrequency",
-      "community": 33,
+      "community": 25,
       "norm_label": "formatfrequency()"
     },
     {
@@ -2970,7 +2988,7 @@
       "source_file": "lib/format.ts",
       "source_location": "L11",
       "id": "lib_format_formattimeofday",
-      "community": 33,
+      "community": 25,
       "norm_label": "formattimeofday()"
     },
     {
@@ -2988,7 +3006,7 @@
       "source_file": "lib/utils.ts",
       "source_location": "L1",
       "id": "lib_utils_ts",
-      "community": 1,
+      "community": 8,
       "norm_label": "utils.ts"
     },
     {
@@ -3006,7 +3024,7 @@
       "source_file": "lib/body-context/defaults.ts",
       "source_location": "L1",
       "id": "lib_body_context_defaults_ts",
-      "community": 36,
+      "community": 15,
       "norm_label": "defaults.ts"
     },
     {
@@ -3087,7 +3105,7 @@
       "source_file": "lib/body-context/life-stage.test.ts",
       "source_location": "L1",
       "id": "lib_body_context_life_stage_test_ts",
-      "community": 36,
+      "community": 15,
       "norm_label": "life-stage.test.ts"
     },
     {
@@ -3096,7 +3114,7 @@
       "source_file": "lib/body-context/life-stage.test.ts",
       "source_location": "L15",
       "id": "body_context_life_stage_test_t",
-      "community": 36,
+      "community": 15,
       "norm_label": "t"
     },
     {
@@ -3105,7 +3123,7 @@
       "source_file": "lib/body-context/life-stage.test.ts",
       "source_location": "L41",
       "id": "body_context_life_stage_test_next",
-      "community": 36,
+      "community": 15,
       "norm_label": "next"
     },
     {
@@ -3114,7 +3132,7 @@
       "source_file": "lib/body-context/life-stage.test.ts",
       "source_location": "L52",
       "id": "body_context_life_stage_test_notes",
-      "community": 36,
+      "community": 15,
       "norm_label": "notes"
     },
     {
@@ -3123,7 +3141,7 @@
       "source_file": "lib/body-context/life-stage.test.ts",
       "source_location": "L79",
       "id": "body_context_life_stage_test_snapshot",
-      "community": 36,
+      "community": 15,
       "norm_label": "snapshot"
     },
     {
@@ -3141,7 +3159,7 @@
       "source_file": "lib/body-context/life-stage.ts",
       "source_location": "L9",
       "id": "body_context_life_stage_default_life_stage_flags",
-      "community": 36,
+      "community": 15,
       "norm_label": "default_life_stage_flags"
     },
     {
@@ -3150,7 +3168,7 @@
       "source_file": "lib/body-context/life-stage.ts",
       "source_location": "L17",
       "id": "body_context_life_stage_default_body_context",
-      "community": 36,
+      "community": 15,
       "norm_label": "default_body_context"
     },
     {
@@ -3195,7 +3213,7 @@
       "source_file": "lib/body-context/life-stage.ts",
       "source_location": "L80",
       "id": "body_context_life_stage_reconcilelifestageflags",
-      "community": 36,
+      "community": 15,
       "norm_label": "reconcilelifestageflags()"
     },
     {
@@ -3229,7 +3247,7 @@
       "label": "LegacySettings",
       "file_type": "code",
       "source_file": "lib/body-context/migrate.ts",
-      "source_location": "L13",
+      "source_location": "L14",
       "id": "body_context_migrate_legacysettings",
       "community": 15,
       "norm_label": "legacysettings"
@@ -3238,7 +3256,7 @@
       "label": "normalizeMenstrual()",
       "file_type": "code",
       "source_file": "lib/body-context/migrate.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "body_context_migrate_normalizemenstrual",
       "community": 15,
       "norm_label": "normalizemenstrual()"
@@ -3247,7 +3265,7 @@
       "label": "normalizeBodyContext()",
       "file_type": "code",
       "source_file": "lib/body-context/migrate.ts",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "body_context_migrate_normalizebodycontext",
       "community": 15,
       "norm_label": "normalizebodycontext()"
@@ -3256,7 +3274,7 @@
       "label": "normalizeAppSettings()",
       "file_type": "code",
       "source_file": "lib/body-context/migrate.ts",
-      "source_location": "L63",
+      "source_location": "L64",
       "id": "body_context_migrate_normalizeappsettings",
       "community": 15,
       "norm_label": "normalizeappsettings()"
@@ -3267,7 +3285,7 @@
       "source_file": "lib/body-context/routine-rules.test.ts",
       "source_location": "L1",
       "id": "lib_body_context_routine_rules_test_ts",
-      "community": 36,
+      "community": 15,
       "norm_label": "routine-rules.test.ts"
     },
     {
@@ -3285,7 +3303,7 @@
       "source_file": "lib/body-context/routine-rules.test.ts",
       "source_location": "L16",
       "id": "body_context_routine_rules_test_snapshot",
-      "community": 36,
+      "community": 15,
       "norm_label": "snapshot"
     },
     {
@@ -3294,7 +3312,7 @@
       "source_file": "lib/body-context/routine-rules.test.ts",
       "source_location": "L53",
       "id": "body_context_routine_rules_test_retinol",
-      "community": 36,
+      "community": 15,
       "norm_label": "retinol"
     },
     {
@@ -3303,7 +3321,7 @@
       "source_file": "lib/body-context/routine-rules.test.ts",
       "source_location": "L92",
       "id": "body_context_routine_rules_test_toner",
-      "community": 36,
+      "community": 15,
       "norm_label": "toner"
     },
     {
@@ -3312,7 +3330,7 @@
       "source_file": "lib/body-context/routine-rules.test.ts",
       "source_location": "L109",
       "id": "body_context_routine_rules_test_pad",
-      "community": 36,
+      "community": 15,
       "norm_label": "pad"
     },
     {
@@ -3321,7 +3339,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L1",
       "id": "lib_body_context_routine_rules_ts",
-      "community": 8,
+      "community": 15,
       "norm_label": "routine-rules.ts"
     },
     {
@@ -3330,7 +3348,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L13",
       "id": "body_context_routine_rules_phase_sensitive",
-      "community": 8,
+      "community": 15,
       "norm_label": "phase_sensitive"
     },
     {
@@ -3339,7 +3357,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L21",
       "id": "body_context_routine_rules_hasactivepattern",
-      "community": 8,
+      "community": 15,
       "norm_label": "hasactivepattern()"
     },
     {
@@ -3348,7 +3366,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L26",
       "id": "body_context_routine_rules_isdailyharshactive",
-      "community": 8,
+      "community": 15,
       "norm_label": "isdailyharshactive()"
     },
     {
@@ -3357,7 +3375,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L35",
       "id": "body_context_routine_rules_shouldlimitformenstrualphase",
-      "community": 8,
+      "community": 15,
       "norm_label": "shouldlimitformenstrualphase()"
     },
     {
@@ -3366,7 +3384,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L53",
       "id": "body_context_routine_rules_shouldexcludeforpregnancy",
-      "community": 8,
+      "community": 15,
       "norm_label": "shouldexcludeforpregnancy()"
     },
     {
@@ -3375,7 +3393,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L69",
       "id": "body_context_routine_rules_shouldexcludeforpostpartum",
-      "community": 8,
+      "community": 15,
       "norm_label": "shouldexcludeforpostpartum()"
     },
     {
@@ -3384,7 +3402,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L81",
       "id": "body_context_routine_rules_needspregnancystylecaution",
-      "community": 8,
+      "community": 15,
       "norm_label": "needspregnancystylecaution()"
     },
     {
@@ -3393,7 +3411,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L87",
       "id": "body_context_routine_rules_shouldincludeproductinroutine",
-      "community": 8,
+      "community": 15,
       "norm_label": "shouldincludeproductinroutine()"
     },
     {
@@ -3402,7 +3420,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L116",
       "id": "body_context_routine_rules_getproductexclusionreason",
-      "community": 8,
+      "community": 15,
       "norm_label": "getproductexclusionreason()"
     },
     {
@@ -3411,7 +3429,7 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L154",
       "id": "body_context_routine_rules_getbodycontextproductexclusions",
-      "community": 8,
+      "community": 6,
       "norm_label": "getbodycontextproductexclusions()"
     },
     {
@@ -3420,7 +3438,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L1",
       "id": "lib_body_context_skin_wellness_ts",
-      "community": 8,
+      "community": 15,
       "norm_label": "skin-wellness.ts"
     },
     {
@@ -3429,7 +3447,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L17",
       "id": "body_context_skin_wellness_skinconditionkey",
-      "community": 8,
+      "community": 15,
       "norm_label": "skinconditionkey"
     },
     {
@@ -3438,7 +3456,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L18",
       "id": "body_context_skin_wellness_wellnesskey",
-      "community": 8,
+      "community": 15,
       "norm_label": "wellnesskey"
     },
     {
@@ -3465,7 +3483,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L35",
       "id": "body_context_skin_wellness_hasactivepattern",
-      "community": 8,
+      "community": 15,
       "norm_label": "hasactivepattern()"
     },
     {
@@ -3474,7 +3492,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L40",
       "id": "body_context_skin_wellness_hasactiveskincondition",
-      "community": 8,
+      "community": 15,
       "norm_label": "hasactiveskincondition()"
     },
     {
@@ -3483,7 +3501,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L44",
       "id": "body_context_skin_wellness_hasactivewellness",
-      "community": 8,
+      "community": 15,
       "norm_label": "hasactivewellness()"
     },
     {
@@ -3492,7 +3510,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L49",
       "id": "body_context_skin_wellness_needsbarrierfirstholds",
-      "community": 8,
+      "community": 15,
       "norm_label": "needsbarrierfirstholds()"
     },
     {
@@ -3501,7 +3519,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L53",
       "id": "body_context_skin_wellness_shouldexcludeforbarrierfirstskin",
-      "community": 8,
+      "community": 15,
       "norm_label": "shouldexcludeforbarrierfirstskin()"
     },
     {
@@ -3510,7 +3528,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L67",
       "id": "body_context_skin_wellness_getprimaryskincondition",
-      "community": 8,
+      "community": 15,
       "norm_label": "getprimaryskincondition()"
     },
     {
@@ -3519,7 +3537,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L77",
       "id": "body_context_skin_wellness_collectskinconditionguidance",
-      "community": 8,
+      "community": 15,
       "norm_label": "collectskinconditionguidance()"
     },
     {
@@ -3528,7 +3546,7 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L90",
       "id": "body_context_skin_wellness_collectwellnessguidance",
-      "community": 8,
+      "community": 15,
       "norm_label": "collectwellnessguidance()"
     },
     {
@@ -3537,7 +3555,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L1",
       "id": "lib_body_context_snapshot_ts",
-      "community": 34,
+      "community": 15,
       "norm_label": "snapshot.ts"
     },
     {
@@ -3546,7 +3564,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L23",
       "id": "body_context_snapshot_bodycontextsnapshot",
-      "community": 34,
+      "community": 15,
       "norm_label": "bodycontextsnapshot"
     },
     {
@@ -3555,7 +3573,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L36",
       "id": "body_context_snapshot_bodycontextcore",
-      "community": 8,
+      "community": 15,
       "norm_label": "bodycontextcore"
     },
     {
@@ -3564,7 +3582,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L47",
       "id": "body_context_snapshot_getcurrentcyclephase",
-      "community": 34,
+      "community": 15,
       "norm_label": "getcurrentcyclephase()"
     },
     {
@@ -3573,7 +3591,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L70",
       "id": "body_context_snapshot_getcycleday",
-      "community": 34,
+      "community": 15,
       "norm_label": "getcycleday()"
     },
     {
@@ -3582,7 +3600,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L83",
       "id": "body_context_snapshot_lifestagefactorlabel",
-      "community": 0,
+      "community": 15,
       "norm_label": "lifestagefactorlabel()"
     },
     {
@@ -3591,7 +3609,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L99",
       "id": "body_context_snapshot_collectlifestageguidance",
-      "community": 36,
+      "community": 15,
       "norm_label": "collectlifestageguidance()"
     },
     {
@@ -3600,7 +3618,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L142",
       "id": "body_context_snapshot_weightguidance",
-      "community": 0,
+      "community": 15,
       "norm_label": "weightguidance()"
     },
     {
@@ -3609,7 +3627,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L152",
       "id": "body_context_snapshot_getbodycontextsnapshot",
-      "community": 0,
+      "community": 15,
       "norm_label": "getbodycontextsnapshot()"
     },
     {
@@ -3618,7 +3636,7 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L255",
       "id": "body_context_snapshot_getbodycontextcore",
-      "community": 34,
+      "community": 15,
       "norm_label": "getbodycontextcore()"
     },
     {
@@ -3672,7 +3690,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L1",
       "id": "lib_conflicts_display_ts",
-      "community": 0,
+      "community": 36,
       "norm_label": "display.ts"
     },
     {
@@ -3681,7 +3699,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L3",
       "id": "conflicts_display_warningkey",
-      "community": 0,
+      "community": 36,
       "norm_label": "warningkey()"
     },
     {
@@ -3690,7 +3708,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L14",
       "id": "conflicts_display_groupwarningsbyproduct",
-      "community": 0,
+      "community": 33,
       "norm_label": "groupwarningsbyproduct()"
     },
     {
@@ -3699,7 +3717,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L32",
       "id": "conflicts_display_getotherproductname",
-      "community": 0,
+      "community": 36,
       "norm_label": "getotherproductname()"
     },
     {
@@ -3708,7 +3726,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L41",
       "id": "conflicts_display_severity_order",
-      "community": 0,
+      "community": 36,
       "norm_label": "severity_order"
     },
     {
@@ -3717,7 +3735,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L43",
       "id": "conflicts_display_sortwarningsbyseverity",
-      "community": 0,
+      "community": 36,
       "norm_label": "sortwarningsbyseverity()"
     },
     {
@@ -3726,7 +3744,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L53",
       "id": "conflicts_display_highestseverity",
-      "community": 0,
+      "community": 36,
       "norm_label": "highestseverity()"
     },
     {
@@ -3735,7 +3753,7 @@
       "source_file": "lib/conflicts/display.ts",
       "source_location": "L60",
       "id": "conflicts_display_countbyseverity",
-      "community": 0,
+      "community": 36,
       "norm_label": "countbyseverity()"
     },
     {
@@ -3744,7 +3762,7 @@
       "source_file": "lib/constants/features.ts",
       "source_location": "L1",
       "id": "lib_constants_features_ts",
-      "community": 1,
+      "community": 38,
       "norm_label": "features.ts"
     },
     {
@@ -3870,7 +3888,7 @@
       "source_file": "lib/cycle/phases.test.ts",
       "source_location": "L1",
       "id": "lib_cycle_phases_test_ts",
-      "community": 34,
+      "community": 15,
       "norm_label": "phases.test.ts"
     },
     {
@@ -3879,7 +3897,7 @@
       "source_file": "lib/cycle/phases.test.ts",
       "source_location": "L5",
       "id": "cycle_phases_test_basecycle",
-      "community": 34,
+      "community": 15,
       "norm_label": "basecycle"
     },
     {
@@ -4023,7 +4041,7 @@
       "source_file": "lib/i18n/locales.ts",
       "source_location": "L1",
       "id": "lib_i18n_locales_ts",
-      "community": 31,
+      "community": 29,
       "norm_label": "locales.ts"
     },
     {
@@ -4032,7 +4050,7 @@
       "source_file": "lib/i18n/locales.ts",
       "source_location": "L1",
       "id": "i18n_locales_locales",
-      "community": 31,
+      "community": 29,
       "norm_label": "locales"
     },
     {
@@ -4041,7 +4059,7 @@
       "source_file": "lib/i18n/locales.ts",
       "source_location": "L3",
       "id": "i18n_locales_locale",
-      "community": 31,
+      "community": 29,
       "norm_label": "locale"
     },
     {
@@ -4050,7 +4068,7 @@
       "source_file": "lib/i18n/locales.ts",
       "source_location": "L9",
       "id": "i18n_locales_locale_labels",
-      "community": 31,
+      "community": 29,
       "norm_label": "locale_labels"
     },
     {
@@ -4077,7 +4095,7 @@
       "source_file": "lib/i18n/translate.ts",
       "source_location": "L1",
       "id": "lib_i18n_translate_ts",
-      "community": 41,
+      "community": 15,
       "norm_label": "translate.ts"
     },
     {
@@ -4086,7 +4104,7 @@
       "source_file": "lib/i18n/translate.ts",
       "source_location": "L3",
       "id": "i18n_translate_resolvemessage",
-      "community": 41,
+      "community": 15,
       "norm_label": "resolvemessage()"
     },
     {
@@ -4095,7 +4113,7 @@
       "source_file": "lib/i18n/translate.ts",
       "source_location": "L17",
       "id": "i18n_translate_interpolate",
-      "community": 41,
+      "community": 15,
       "norm_label": "interpolate()"
     },
     {
@@ -4104,7 +4122,7 @@
       "source_file": "lib/i18n/translate.ts",
       "source_location": "L26",
       "id": "i18n_translate_createtranslator",
-      "community": 41,
+      "community": 15,
       "norm_label": "createtranslator()"
     },
     {
@@ -4113,7 +4131,7 @@
       "source_file": "lib/i18n/translate.ts",
       "source_location": "L43",
       "id": "i18n_translate_translatefn",
-      "community": 0,
+      "community": 15,
       "norm_label": "translatefn"
     },
     {
@@ -4122,68 +4140,68 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L1",
       "id": "lib_i18n_ui_ts",
-      "community": 0,
+      "community": 34,
       "norm_label": "ui.ts"
     },
     {
       "label": "CHECK_MESSAGE_KEYS",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L26",
+      "source_location": "L28",
       "id": "i18n_ui_check_message_keys",
-      "community": 0,
+      "community": 34,
       "norm_label": "check_message_keys"
     },
     {
       "label": "getEnumLabel()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L32",
+      "source_location": "L34",
       "id": "i18n_ui_getenumlabel",
-      "community": 0,
+      "community": 33,
       "norm_label": "getenumlabel()"
     },
     {
       "label": "formatCategoryLabel()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L47",
+      "source_location": "L49",
       "id": "i18n_ui_formatcategorylabel",
-      "community": 0,
+      "community": 33,
       "norm_label": "formatcategorylabel()"
     },
     {
       "label": "formatFrequencyLabel()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L54",
+      "source_location": "L56",
       "id": "i18n_ui_formatfrequencylabel",
-      "community": 0,
+      "community": 33,
       "norm_label": "formatfrequencylabel()"
     },
     {
       "label": "formatTimeOfDayLabel()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L61",
+      "source_location": "L63",
       "id": "i18n_ui_formattimeofdaylabel",
-      "community": 0,
+      "community": 33,
       "norm_label": "formattimeofdaylabel()"
     },
     {
       "label": "formatRoutineTitle()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L68",
+      "source_location": "L70",
       "id": "i18n_ui_formatroutinetitle",
-      "community": 0,
+      "community": 33,
       "norm_label": "formatroutinetitle()"
     },
     {
       "label": "formatRoutineSchedule()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L83",
+      "source_location": "L85",
       "id": "i18n_ui_formatroutineschedule",
       "community": 0,
       "norm_label": "formatroutineschedule()"
@@ -4192,43 +4210,43 @@
       "label": "plural()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L97",
+      "source_location": "L104",
       "id": "i18n_ui_plural",
-      "community": 0,
+      "community": 33,
       "norm_label": "plural()"
     },
     {
       "label": "LocalizedRoutineCheck",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L106",
+      "source_location": "L113",
       "id": "i18n_ui_localizedroutinecheck",
-      "community": 0,
+      "community": 34,
       "norm_label": "localizedroutinecheck"
     },
     {
       "label": "LocalizedRoutineVerification",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L113",
+      "source_location": "L120",
       "id": "i18n_ui_localizedroutineverification",
-      "community": 0,
+      "community": 34,
       "norm_label": "localizedroutineverification"
     },
     {
       "label": "localizeConflictRule()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L119",
+      "source_location": "L126",
       "id": "i18n_ui_localizeconflictrule",
-      "community": 0,
+      "community": 8,
       "norm_label": "localizeconflictrule()"
     },
     {
       "label": "localizeVerification()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L129",
+      "source_location": "L136",
       "id": "i18n_ui_localizeverification",
       "community": 0,
       "norm_label": "localizeverification()"
@@ -4237,7 +4255,7 @@
       "label": "localizeCheck()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L142",
+      "source_location": "L149",
       "id": "i18n_ui_localizecheck",
       "community": 0,
       "norm_label": "localizecheck()"
@@ -4246,70 +4264,70 @@
       "label": "localizeReviewNote()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L200",
+      "source_location": "L207",
       "id": "i18n_ui_localizereviewnote",
-      "community": 0,
+      "community": 34,
       "norm_label": "localizereviewnote()"
     },
     {
       "label": "getLifeStageToggleHelp()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L215",
+      "source_location": "L222",
       "id": "i18n_ui_getlifestagetogglehelp",
-      "community": 0,
+      "community": 34,
       "norm_label": "getlifestagetogglehelp()"
     },
     {
       "label": "getSkinConditionToggleHelp()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L222",
+      "source_location": "L229",
       "id": "i18n_ui_getskinconditiontogglehelp",
-      "community": 0,
+      "community": 34,
       "norm_label": "getskinconditiontogglehelp()"
     },
     {
       "label": "getWellnessToggleHelp()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L229",
+      "source_location": "L236",
       "id": "i18n_ui_getwellnesstogglehelp",
-      "community": 0,
+      "community": 34,
       "norm_label": "getwellnesstogglehelp()"
     },
     {
       "label": "getCycleSkinNote()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L236",
+      "source_location": "L243",
       "id": "i18n_ui_getcycleskinnote",
-      "community": 0,
+      "community": 15,
       "norm_label": "getcycleskinnote()"
     },
     {
       "label": "localizeExclusionReason()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L247",
+      "source_location": "L254",
       "id": "i18n_ui_localizeexclusionreason",
-      "community": 0,
+      "community": 34,
       "norm_label": "localizeexclusionreason()"
     },
     {
       "label": "getSeverityLabel()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L273",
+      "source_location": "L280",
       "id": "i18n_ui_getseveritylabel",
-      "community": 0,
+      "community": 8,
       "norm_label": "getseveritylabel()"
     },
     {
       "label": "localizeConflictSummary()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L280",
+      "source_location": "L287",
       "id": "i18n_ui_localizeconflictsummary",
       "community": 0,
       "norm_label": "localizeconflictsummary()"
@@ -4318,7 +4336,7 @@
       "label": "buildBodyContextHeadline()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L286",
+      "source_location": "L293",
       "id": "i18n_ui_buildbodycontextheadline",
       "community": 15,
       "norm_label": "buildbodycontextheadline()"
@@ -4327,36 +4345,36 @@
       "label": "PageTitleKey",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L328",
+      "source_location": "L335",
       "id": "i18n_ui_pagetitlekey",
-      "community": 0,
+      "community": 34,
       "norm_label": "pagetitlekey"
     },
     {
       "label": "PAGE_TITLE_KEYS",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L330",
+      "source_location": "L337",
       "id": "i18n_ui_page_title_keys",
-      "community": 0,
+      "community": 34,
       "norm_label": "page_title_keys"
     },
     {
       "label": "getPageTitleKey()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L337",
+      "source_location": "L344",
       "id": "i18n_ui_getpagetitlekey",
-      "community": 0,
+      "community": 34,
       "norm_label": "getpagetitlekey()"
     },
     {
       "label": "formatDocumentTitle()",
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
-      "source_location": "L346",
+      "source_location": "L353",
       "id": "i18n_ui_formatdocumenttitle",
-      "community": 0,
+      "community": 34,
       "norm_label": "formatdocumenttitle()"
     },
     {
@@ -4365,7 +4383,7 @@
       "source_file": "lib/i18n/messages/en.ts",
       "source_location": "L1",
       "id": "lib_i18n_messages_en_ts",
-      "community": 40,
+      "community": 7,
       "norm_label": "en.ts"
     },
     {
@@ -4374,25 +4392,25 @@
       "source_file": "lib/i18n/messages/en.ts",
       "source_location": "L1",
       "id": "messages_en_en",
-      "community": 40,
+      "community": 7,
       "norm_label": "en"
     },
     {
       "label": "DeepString",
       "file_type": "code",
       "source_file": "lib/i18n/messages/en.ts",
-      "source_location": "L446",
+      "source_location": "L468",
       "id": "messages_en_deepstring",
-      "community": 40,
+      "community": 7,
       "norm_label": "deepstring"
     },
     {
       "label": "Messages",
       "file_type": "code",
       "source_file": "lib/i18n/messages/en.ts",
-      "source_location": "L455",
+      "source_location": "L477",
       "id": "messages_en_messages",
-      "community": 40,
+      "community": 7,
       "norm_label": "messages"
     },
     {
@@ -4401,7 +4419,7 @@
       "source_file": "lib/i18n/messages/es-419.ts",
       "source_location": "L1",
       "id": "lib_i18n_messages_es_419_ts",
-      "community": 40,
+      "community": 7,
       "norm_label": "es-419.ts"
     },
     {
@@ -4410,7 +4428,7 @@
       "source_file": "lib/i18n/messages/es-419.ts",
       "source_location": "L3",
       "id": "messages_es_419_es419",
-      "community": 40,
+      "community": 7,
       "norm_label": "es419"
     },
     {
@@ -4419,7 +4437,7 @@
       "source_file": "lib/i18n/messages/index.ts",
       "source_location": "L1",
       "id": "lib_i18n_messages_index_ts",
-      "community": 40,
+      "community": 7,
       "norm_label": "index.ts"
     },
     {
@@ -4428,7 +4446,7 @@
       "source_file": "lib/i18n/messages/index.ts",
       "source_location": "L9",
       "id": "messages_index_messagesbylocale",
-      "community": 40,
+      "community": 7,
       "norm_label": "messagesbylocale"
     },
     {
@@ -4437,7 +4455,7 @@
       "source_file": "lib/i18n/messages/index.ts",
       "source_location": "L14",
       "id": "messages_index_getmessages",
-      "community": 36,
+      "community": 7,
       "norm_label": "getmessages()"
     },
     {
@@ -4446,7 +4464,7 @@
       "source_file": "lib/pdf/guide.ts",
       "source_location": "L1",
       "id": "lib_pdf_guide_ts",
-      "community": 38,
+      "community": 25,
       "norm_label": "guide.ts"
     },
     {
@@ -4455,7 +4473,7 @@
       "source_file": "lib/pdf/guide.ts",
       "source_location": "L7",
       "id": "pdf_guide_guidedata",
-      "community": 38,
+      "community": 25,
       "norm_label": "guidedata"
     },
     {
@@ -4662,7 +4680,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L1",
       "id": "lib_routines_category_order_ts",
-      "community": 33,
+      "community": 25,
       "norm_label": "category-order.ts"
     },
     {
@@ -4671,7 +4689,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L4",
       "id": "routines_category_order_routine_category_order",
-      "community": 33,
+      "community": 25,
       "norm_label": "routine_category_order"
     },
     {
@@ -4689,7 +4707,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L22",
       "id": "routines_category_order_sortproductsbycategory",
-      "community": 33,
+      "community": 25,
       "norm_label": "sortproductsbycategory()"
     },
     {
@@ -4698,7 +4716,7 @@
       "source_file": "lib/routines/category-order.ts",
       "source_location": "L31",
       "id": "routines_category_order_finalizeroutineproductorder",
-      "community": 33,
+      "community": 25,
       "norm_label": "finalizeroutineproductorder()"
     },
     {
@@ -4714,7 +4732,7 @@
       "label": "products",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "id": "routines_generator_test_products",
       "community": 39,
       "norm_label": "products"
@@ -4723,7 +4741,7 @@
       "label": "routines",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L41",
+      "source_location": "L42",
       "id": "routines_generator_test_routines",
       "community": 39,
       "norm_label": "routines"
@@ -4732,7 +4750,7 @@
       "label": "morning",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L42",
+      "source_location": "L43",
       "id": "routines_generator_test_morning",
       "community": 39,
       "norm_label": "morning"
@@ -4741,7 +4759,7 @@
       "label": "retinol",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L100",
+      "source_location": "L101",
       "id": "routines_generator_test_retinol",
       "community": 39,
       "norm_label": "retinol"
@@ -4750,7 +4768,7 @@
       "label": "bha",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L107",
+      "source_location": "L108",
       "id": "routines_generator_test_bha",
       "community": 39,
       "norm_label": "bha"
@@ -4759,7 +4777,7 @@
       "label": "cleanser",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L114",
+      "source_location": "L115",
       "id": "routines_generator_test_cleanser",
       "community": 39,
       "norm_label": "cleanser"
@@ -4768,7 +4786,7 @@
       "label": "evening",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L126",
+      "source_location": "L127",
       "id": "routines_generator_test_evening",
       "community": 39,
       "norm_label": "evening"
@@ -4777,10 +4795,82 @@
       "label": "warnings",
       "file_type": "code",
       "source_file": "lib/routines/generator.test.ts",
-      "source_location": "L129",
+      "source_location": "L130",
       "id": "routines_generator_test_warnings",
       "community": 39,
       "norm_label": "warnings"
+    },
+    {
+      "label": "wednesday",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L144",
+      "id": "routines_generator_test_wednesday",
+      "community": 39,
+      "norm_label": "wednesday"
+    },
+    {
+      "label": "sundayOnly",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L146",
+      "id": "routines_generator_test_sundayonly",
+      "community": 39,
+      "norm_label": "sundayonly"
+    },
+    {
+      "label": "wednesdaySettings",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L149",
+      "id": "routines_generator_test_wednesdaysettings",
+      "community": 39,
+      "norm_label": "wednesdaysettings"
+    },
+    {
+      "label": "wednesdayRoutines",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L153",
+      "id": "routines_generator_test_wednesdayroutines",
+      "community": 39,
+      "norm_label": "wednesdayroutines"
+    },
+    {
+      "label": "fifteenth",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L169",
+      "id": "routines_generator_test_fifteenth",
+      "community": 39,
+      "norm_label": "fifteenth"
+    },
+    {
+      "label": "firstOnly",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L171",
+      "id": "routines_generator_test_firstonly",
+      "community": 39,
+      "norm_label": "firstonly"
+    },
+    {
+      "label": "midMonthSettings",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L174",
+      "id": "routines_generator_test_midmonthsettings",
+      "community": 39,
+      "norm_label": "midmonthsettings"
+    },
+    {
+      "label": "midMonth",
+      "file_type": "code",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L178",
+      "id": "routines_generator_test_midmonth",
+      "community": 39,
+      "norm_label": "midmonth"
     },
     {
       "label": "generator.ts",
@@ -4788,41 +4878,41 @@
       "source_file": "lib/routines/generator.ts",
       "source_location": "L1",
       "id": "lib_routines_generator_ts",
-      "community": 33,
+      "community": 25,
       "norm_label": "generator.ts"
     },
     {
       "label": "matchesTime()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L17",
+      "source_location": "L22",
       "id": "routines_generator_matchestime",
-      "community": 33,
+      "community": 25,
       "norm_label": "matchestime()"
     },
     {
       "label": "buildSteps()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L21",
+      "source_location": "L26",
       "id": "routines_generator_buildsteps",
-      "community": 33,
+      "community": 25,
       "norm_label": "buildsteps()"
     },
     {
       "label": "buildRoutine()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L33",
+      "source_location": "L38",
       "id": "routines_generator_buildroutine",
-      "community": 33,
+      "community": 25,
       "norm_label": "buildroutine()"
     },
     {
       "label": "separateConflictingProducts()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L55",
+      "source_location": "L60",
       "id": "routines_generator_separateconflictingproducts",
       "community": 25,
       "norm_label": "separateconflictingproducts()"
@@ -4831,16 +4921,16 @@
       "label": "applyBodyContextFilter()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L71",
+      "source_location": "L76",
       "id": "routines_generator_applybodycontextfilter",
-      "community": 34,
+      "community": 15,
       "norm_label": "applybodycontextfilter()"
     },
     {
       "label": "generateRoutines()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L83",
+      "source_location": "L88",
       "id": "routines_generator_generateroutines",
       "community": 25,
       "norm_label": "generateroutines()"
@@ -4849,16 +4939,16 @@
       "label": "getRoutineWarnings()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L110",
+      "source_location": "L115",
       "id": "routines_generator_getroutinewarnings",
-      "community": 32,
+      "community": 25,
       "norm_label": "getroutinewarnings()"
     },
     {
       "label": "getTodaysRoutines()",
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
-      "source_location": "L122",
+      "source_location": "L127",
       "id": "routines_generator_gettodaysroutines",
       "community": 6,
       "norm_label": "gettodaysroutines()"
@@ -4959,7 +5049,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L5",
       "id": "routines_verification_routinecheckid",
-      "community": 0,
+      "community": 34,
       "norm_label": "routinecheckid"
     },
     {
@@ -4968,7 +5058,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L10",
       "id": "routines_verification_routinecheck",
-      "community": 0,
+      "community": 32,
       "norm_label": "routinecheck"
     },
     {
@@ -4977,7 +5067,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L20",
       "id": "routines_verification_reviewnote",
-      "community": 0,
+      "community": 34,
       "norm_label": "reviewnote"
     },
     {
@@ -5049,7 +5139,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L174",
       "id": "routines_verification_routineshelfexclusion",
-      "community": 38,
+      "community": 25,
       "norm_label": "routineshelfexclusion"
     },
     {
@@ -5067,7 +5157,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L205",
       "id": "routines_verification_formatroutineschedule",
-      "community": 0,
+      "community": 33,
       "norm_label": "formatroutineschedule()"
     },
     {
@@ -5076,7 +5166,7 @@
       "source_file": "lib/routines/verification.ts",
       "source_location": "L217",
       "id": "routines_verification_formatroutinetitle",
-      "community": 0,
+      "community": 33,
       "norm_label": "formatroutinetitle()"
     },
     {
@@ -5175,8 +5265,98 @@
       "source_file": "lib/rules/ingredient-conflicts.ts",
       "source_location": "L159",
       "id": "rules_ingredient_conflicts_getconflictsforroutine",
-      "community": 32,
+      "community": 25,
       "norm_label": "getconflictsforroutine()"
+    },
+    {
+      "label": "cadence.test.ts",
+      "file_type": "code",
+      "source_file": "lib/schedule/cadence.test.ts",
+      "source_location": "L1",
+      "id": "lib_schedule_cadence_test_ts",
+      "community": 40,
+      "norm_label": "cadence.test.ts"
+    },
+    {
+      "label": "cadence.ts",
+      "file_type": "code",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L1",
+      "id": "lib_schedule_cadence_ts",
+      "community": 40,
+      "norm_label": "cadence.ts"
+    },
+    {
+      "label": "clampWeeklyAnchorDay()",
+      "file_type": "code",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L10",
+      "id": "schedule_cadence_clampweeklyanchorday",
+      "community": 40,
+      "norm_label": "clampweeklyanchorday()"
+    },
+    {
+      "label": "clampMonthlyAnchorDay()",
+      "file_type": "code",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L14",
+      "id": "schedule_cadence_clampmonthlyanchorday",
+      "community": 40,
+      "norm_label": "clampmonthlyanchorday()"
+    },
+    {
+      "label": "normalizeRoutineSchedule()",
+      "file_type": "code",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L18",
+      "id": "schedule_cadence_normalizeroutineschedule",
+      "community": 40,
+      "norm_label": "normalizeroutineschedule()"
+    },
+    {
+      "label": "isWeeklyRoutineDay()",
+      "file_type": "code",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L33",
+      "id": "schedule_cadence_isweeklyroutineday",
+      "community": 40,
+      "norm_label": "isweeklyroutineday()"
+    },
+    {
+      "label": "isMonthlyRoutineDay()",
+      "file_type": "code",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L40",
+      "id": "schedule_cadence_ismonthlyroutineday",
+      "community": 40,
+      "norm_label": "ismonthlyroutineday()"
+    },
+    {
+      "label": "defaults.ts",
+      "file_type": "code",
+      "source_file": "lib/schedule/defaults.ts",
+      "source_location": "L1",
+      "id": "lib_schedule_defaults_ts",
+      "community": 40,
+      "norm_label": "defaults.ts"
+    },
+    {
+      "label": "DEFAULT_ROUTINE_SCHEDULE",
+      "file_type": "code",
+      "source_file": "lib/schedule/defaults.ts",
+      "source_location": "L8",
+      "id": "schedule_defaults_default_routine_schedule",
+      "community": 40,
+      "norm_label": "default_routine_schedule"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L1",
+      "id": "lib_schedule_index_ts",
+      "community": 40,
+      "norm_label": "index.ts"
     },
     {
       "label": "default-products.ts",
@@ -5418,7 +5598,7 @@
       "source_file": "lib/seed/product-ids.ts",
       "source_location": "L13",
       "id": "seed_product_ids_isseedproductid",
-      "community": 25,
+      "community": 29,
       "norm_label": "isseedproductid()"
     },
     {
@@ -5607,14 +5787,14 @@
       "source_file": "lib/test/fixtures.ts",
       "source_location": "L1",
       "id": "lib_test_fixtures_ts",
-      "community": 36,
+      "community": 35,
       "norm_label": "fixtures.ts"
     },
     {
       "label": "makeProduct()",
       "file_type": "code",
       "source_file": "lib/test/fixtures.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "test_fixtures_makeproduct",
       "community": 35,
       "norm_label": "makeproduct()"
@@ -5623,9 +5803,9 @@
       "label": "defaultSettings",
       "file_type": "code",
       "source_file": "lib/test/fixtures.ts",
-      "source_location": "L22",
+      "source_location": "L23",
       "id": "test_fixtures_defaultsettings",
-      "community": 39,
+      "community": 37,
       "norm_label": "defaultsettings"
     },
     {
@@ -5769,7 +5949,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L1",
       "id": "lib_types_body_context_ts",
-      "community": 34,
+      "community": 15,
       "norm_label": "body-context.ts"
     },
     {
@@ -5778,7 +5958,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L1",
       "id": "types_body_context_cyclephase",
-      "community": 38,
+      "community": 25,
       "norm_label": "cyclephase"
     },
     {
@@ -5787,7 +5967,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L9",
       "id": "types_body_context_lifestage",
-      "community": 34,
+      "community": 15,
       "norm_label": "lifestage"
     },
     {
@@ -5796,7 +5976,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L18",
       "id": "types_body_context_lifestageflags",
-      "community": 34,
+      "community": 15,
       "norm_label": "lifestageflags"
     },
     {
@@ -5805,7 +5985,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L26",
       "id": "types_body_context_weightchange",
-      "community": 34,
+      "community": 15,
       "norm_label": "weightchange"
     },
     {
@@ -5814,7 +5994,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L32",
       "id": "types_body_context_menstrualcyclesettings",
-      "community": 34,
+      "community": 15,
       "norm_label": "menstrualcyclesettings"
     },
     {
@@ -5823,7 +6003,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L39",
       "id": "types_body_context_weightcontextsettings",
-      "community": 34,
+      "community": 15,
       "norm_label": "weightcontextsettings"
     },
     {
@@ -5832,7 +6012,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L44",
       "id": "types_body_context_skinconditionflags",
-      "community": 34,
+      "community": 15,
       "norm_label": "skinconditionflags"
     },
     {
@@ -5841,7 +6021,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L51",
       "id": "types_body_context_wellnessflags",
-      "community": 34,
+      "community": 15,
       "norm_label": "wellnessflags"
     },
     {
@@ -5850,7 +6030,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L56",
       "id": "types_body_context_bodycontextsettings",
-      "community": 34,
+      "community": 15,
       "norm_label": "bodycontextsettings"
     },
     {
@@ -5859,7 +6039,7 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L69",
       "id": "types_body_context_cyclesettings",
-      "community": 34,
+      "community": 15,
       "norm_label": "cyclesettings"
     },
     {
@@ -5868,7 +6048,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L1",
       "id": "lib_types_conflicts_ts",
-      "community": 33,
+      "community": 25,
       "norm_label": "conflicts.ts"
     },
     {
@@ -5877,7 +6057,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L3",
       "id": "types_conflicts_ingredientconflict",
-      "community": 33,
+      "community": 25,
       "norm_label": "ingredientconflict"
     },
     {
@@ -5886,7 +6066,7 @@
       "source_file": "lib/types/conflicts.ts",
       "source_location": "L14",
       "id": "types_conflicts_conflictwarning",
-      "community": 38,
+      "community": 25,
       "norm_label": "conflictwarning"
     },
     {
@@ -5895,7 +6075,7 @@
       "source_file": "lib/types/cycle.ts",
       "source_location": "L1",
       "id": "lib_types_cycle_ts",
-      "community": 34,
+      "community": 15,
       "norm_label": "cycle.ts"
     },
     {
@@ -5904,7 +6084,7 @@
       "source_file": "lib/types/exclusions.ts",
       "source_location": "L1",
       "id": "lib_types_exclusions_ts",
-      "community": 8,
+      "community": 25,
       "norm_label": "exclusions.ts"
     },
     {
@@ -5913,7 +6093,7 @@
       "source_file": "lib/types/exclusions.ts",
       "source_location": "L4",
       "id": "types_exclusions_productexclusionreason",
-      "community": 8,
+      "community": 25,
       "norm_label": "productexclusionreason"
     },
     {
@@ -5922,7 +6102,7 @@
       "source_file": "lib/types/index.ts",
       "source_location": "L1",
       "id": "lib_types_index_ts",
-      "community": 33,
+      "community": 25,
       "norm_label": "index.ts"
     },
     {
@@ -5931,7 +6111,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L1",
       "id": "lib_types_product_ts",
-      "community": 33,
+      "community": 25,
       "norm_label": "product.ts"
     },
     {
@@ -5940,7 +6120,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L1",
       "id": "types_product_productcategory",
-      "community": 33,
+      "community": 25,
       "norm_label": "productcategory"
     },
     {
@@ -5949,7 +6129,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L13",
       "id": "types_product_routinefrequency",
-      "community": 33,
+      "community": 25,
       "norm_label": "routinefrequency"
     },
     {
@@ -5958,7 +6138,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L15",
       "id": "types_product_timeofday",
-      "community": 33,
+      "community": 25,
       "norm_label": "timeofday"
     },
     {
@@ -5967,7 +6147,7 @@
       "source_file": "lib/types/product.ts",
       "source_location": "L17",
       "id": "types_product_product",
-      "community": 38,
+      "community": 25,
       "norm_label": "product"
     },
     {
@@ -5985,7 +6165,7 @@
       "source_file": "lib/types/routine.ts",
       "source_location": "L1",
       "id": "lib_types_routine_ts",
-      "community": 33,
+      "community": 25,
       "norm_label": "routine.ts"
     },
     {
@@ -5994,7 +6174,7 @@
       "source_file": "lib/types/routine.ts",
       "source_location": "L4",
       "id": "types_routine_routinestep",
-      "community": 33,
+      "community": 25,
       "norm_label": "routinestep"
     },
     {
@@ -6003,8 +6183,26 @@
       "source_file": "lib/types/routine.ts",
       "source_location": "L12",
       "id": "types_routine_routine",
-      "community": 38,
+      "community": 25,
       "norm_label": "routine"
+    },
+    {
+      "label": "schedule.ts",
+      "file_type": "code",
+      "source_file": "lib/types/schedule.ts",
+      "source_location": "L1",
+      "id": "lib_types_schedule_ts",
+      "community": 40,
+      "norm_label": "schedule.ts"
+    },
+    {
+      "label": "RoutineScheduleSettings",
+      "file_type": "code",
+      "source_file": "lib/types/schedule.ts",
+      "source_location": "L2",
+      "id": "types_schedule_routineschedulesettings",
+      "community": 40,
+      "norm_label": "routineschedulesettings"
     },
     {
       "label": "settings.ts",
@@ -6012,14 +6210,14 @@
       "source_file": "lib/types/settings.ts",
       "source_location": "L1",
       "id": "lib_types_settings_ts",
-      "community": 34,
+      "community": 15,
       "norm_label": "settings.ts"
     },
     {
       "label": "AppSettings",
       "file_type": "code",
       "source_file": "lib/types/settings.ts",
-      "source_location": "L3",
+      "source_location": "L4",
       "id": "types_settings_appsettings",
       "community": 25,
       "norm_label": "appsettings"
@@ -6435,7 +6633,7 @@
       "source_file": "docs/BACKLOG.md",
       "source_location": "L1",
       "id": "docs_backlog_md",
-      "community": 21,
+      "community": 44,
       "norm_label": "backlog.md"
     },
     {
@@ -6444,7 +6642,7 @@
       "source_file": "docs/BACKLOG.md",
       "source_location": "L1",
       "id": "docs_backlog_product_backlog",
-      "community": 21,
+      "community": 44,
       "norm_label": "product backlog"
     },
     {
@@ -6453,113 +6651,113 @@
       "source_file": "docs/BACKLOG.md",
       "source_location": "L12",
       "id": "docs_backlog_epic_summary",
-      "community": 21,
+      "community": 44,
       "norm_label": "epic summary"
     },
     {
       "label": "E1 \u2014 Shelf management",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L27",
+      "source_location": "L29",
       "id": "docs_backlog_e1_shelf_management",
-      "community": 21,
+      "community": 45,
       "norm_label": "e1 \u2014 shelf management"
     },
     {
       "label": "PROD-101 \u00b7 Edit existing product",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L31",
+      "source_location": "L33",
       "id": "docs_backlog_prod_101_edit_existing_product",
-      "community": 21,
+      "community": 45,
       "norm_label": "prod-101 \u00b7 edit existing product"
     },
     {
       "label": "PROD-102 \u00b7 Delete confirmation for user products",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L51",
+      "source_location": "L53",
       "id": "docs_backlog_prod_102_delete_confirmation_for_user_products",
-      "community": 21,
+      "community": 45,
       "norm_label": "prod-102 \u00b7 delete confirmation for user products"
     },
     {
       "label": "PROD-103 \u00b7 Duplicate product detection",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L65",
+      "source_location": "L67",
       "id": "docs_backlog_prod_103_duplicate_product_detection",
-      "community": 21,
+      "community": 45,
       "norm_label": "prod-103 \u00b7 duplicate product detection"
     },
     {
       "label": "PROD-104 \u00b7 Manual product entry (no AI)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L79",
+      "source_location": "L81",
       "id": "docs_backlog_prod_104_manual_product_entry_no_ai",
-      "community": 21,
+      "community": 45,
       "norm_label": "prod-104 \u00b7 manual product entry (no ai)"
     },
     {
       "label": "E2 \u2014 Scheduling & Today",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L93",
+      "source_location": "L95",
       "id": "docs_backlog_e2_scheduling_today",
-      "community": 21,
+      "community": 43,
       "norm_label": "e2 \u2014 scheduling & today"
     },
     {
       "label": "PROD-201 \u00b7 Configurable weekly day",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L97",
+      "source_location": "L99",
       "id": "docs_backlog_prod_201_configurable_weekly_day",
-      "community": 21,
+      "community": 43,
       "norm_label": "prod-201 \u00b7 configurable weekly day"
     },
     {
       "label": "PROD-202 \u00b7 Monthly cadence options",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L117",
+      "source_location": "L119",
       "id": "docs_backlog_prod_202_monthly_cadence_options",
-      "community": 21,
+      "community": 43,
       "norm_label": "prod-202 \u00b7 monthly cadence options"
     },
     {
       "label": "PROD-203 \u00b7 Routine step reorder (per routine)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L131",
+      "source_location": "L133",
       "id": "docs_backlog_prod_203_routine_step_reorder_per_routine",
-      "community": 21,
+      "community": 43,
       "norm_label": "prod-203 \u00b7 routine step reorder (per routine)"
     },
     {
       "label": "PROD-204 \u00b7 Hide product from routine (without delete)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L145",
+      "source_location": "L147",
       "id": "docs_backlog_prod_204_hide_product_from_routine_without_delete",
-      "community": 21,
+      "community": 43,
       "norm_label": "prod-204 \u00b7 hide product from routine (without delete)"
     },
     {
       "label": "PROD-205 \u00b7 Empty Today state improvements",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L159",
+      "source_location": "L161",
       "id": "docs_backlog_prod_205_empty_today_state_improvements",
-      "community": 21,
+      "community": 43,
       "norm_label": "prod-205 \u00b7 empty today state improvements"
     },
     {
       "label": "E3 \u2014 Ingredient intelligence",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L173",
+      "source_location": "L175",
       "id": "docs_backlog_e3_ingredient_intelligence",
       "community": 21,
       "norm_label": "e3 \u2014 ingredient intelligence"
@@ -6568,7 +6766,7 @@
       "label": "PROD-301 \u00b7 Shelf-wide conflict banner on Products",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L177",
+      "source_location": "L179",
       "id": "docs_backlog_prod_301_shelf_wide_conflict_banner_on_products",
       "community": 21,
       "norm_label": "prod-301 \u00b7 shelf-wide conflict banner on products"
@@ -6577,7 +6775,7 @@
       "label": "PROD-302 \u00b7 Externalized conflict rules",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L191",
+      "source_location": "L193",
       "id": "docs_backlog_prod_302_externalized_conflict_rules",
       "community": 21,
       "norm_label": "prod-302 \u00b7 externalized conflict rules"
@@ -6586,7 +6784,7 @@
       "label": "PROD-303 \u00b7 Expand rule set to 30+ pairs",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L205",
+      "source_location": "L207",
       "id": "docs_backlog_prod_303_expand_rule_set_to_30_pairs",
       "community": 21,
       "norm_label": "prod-303 \u00b7 expand rule set to 30+ pairs"
@@ -6595,7 +6793,7 @@
       "label": "PROD-304 \u00b7 Cross-routine conflict hints",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L221",
+      "source_location": "L223",
       "id": "docs_backlog_prod_304_cross_routine_conflict_hints",
       "community": 21,
       "norm_label": "prod-304 \u00b7 cross-routine conflict hints"
@@ -6604,7 +6802,7 @@
       "label": "PROD-305 \u00b7 \"Why this warning?\" explainer",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L235",
+      "source_location": "L237",
       "id": "docs_backlog_prod_305_why_this_warning_explainer",
       "community": 21,
       "norm_label": "prod-305 \u00b7 \"why this warning?\" explainer"
@@ -6613,225 +6811,342 @@
       "label": "E4 \u2014 Cycle & sensitivity",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L249",
+      "source_location": "L251",
       "id": "docs_backlog_e4_cycle_sensitivity",
-      "community": 21,
+      "community": 49,
       "norm_label": "e4 \u2014 cycle & sensitivity"
     },
     {
       "label": "PROD-401 \u00b7 Cycle onboarding copy & validation",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L255",
+      "source_location": "L257",
       "id": "docs_backlog_prod_401_cycle_onboarding_copy_validation",
-      "community": 21,
+      "community": 49,
       "norm_label": "prod-401 \u00b7 cycle onboarding copy & validation"
     },
     {
       "label": "PROD-402 \u00b7 Sensitivity mode (pregnancy / retinol newbie)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L269",
+      "source_location": "L271",
       "id": "docs_backlog_prod_402_sensitivity_mode_pregnancy_retinol_newbie",
-      "community": 21,
+      "community": 49,
       "norm_label": "prod-402 \u00b7 sensitivity mode (pregnancy / retinol newbie)"
     },
     {
       "label": "PROD-403 \u00b7 Weekly/monthly harsh active respect in luteal",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L285",
+      "source_location": "L287",
       "id": "docs_backlog_prod_403_weekly_monthly_harsh_active_respect_in_luteal",
-      "community": 21,
+      "community": 49,
       "norm_label": "prod-403 \u00b7 weekly/monthly harsh active respect in luteal"
     },
     {
       "label": "E5 \u2014 Data & privacy",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L299",
+      "source_location": "L301",
       "id": "docs_backlog_e5_data_privacy",
-      "community": 21,
+      "community": 46,
       "norm_label": "e5 \u2014 data & privacy"
     },
     {
       "label": "PROD-501 \u00b7 JSON export",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L303",
+      "source_location": "L305",
       "id": "docs_backlog_prod_501_json_export",
-      "community": 21,
+      "community": 46,
       "norm_label": "prod-501 \u00b7 json export"
     },
     {
       "label": "PROD-502 \u00b7 JSON import with merge",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L317",
+      "source_location": "L319",
       "id": "docs_backlog_prod_502_json_import_with_merge",
-      "community": 21,
+      "community": 46,
       "norm_label": "prod-502 \u00b7 json import with merge"
     },
     {
       "label": "PROD-503 \u00b7 Clear all data",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L333",
+      "source_location": "L335",
       "id": "docs_backlog_prod_503_clear_all_data",
-      "community": 21,
+      "community": 46,
       "norm_label": "prod-503 \u00b7 clear all data"
     },
     {
       "label": "PROD-504 \u00b7 Optional encrypted sync",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L347",
+      "source_location": "L349",
       "id": "docs_backlog_prod_504_optional_encrypted_sync",
-      "community": 21,
+      "community": 46,
       "norm_label": "prod-504 \u00b7 optional encrypted sync"
     },
     {
       "label": "E6 \u2014 Onboarding & UX",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L361",
+      "source_location": "L363",
       "id": "docs_backlog_e6_onboarding_ux",
-      "community": 21,
+      "community": 47,
       "norm_label": "e6 \u2014 onboarding & ux"
     },
     {
       "label": "PROD-601 \u00b7 First-run onboarding flow",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L365",
+      "source_location": "L367",
       "id": "docs_backlog_prod_601_first_run_onboarding_flow",
-      "community": 21,
+      "community": 47,
       "norm_label": "prod-601 \u00b7 first-run onboarding flow"
     },
     {
       "label": "PROD-602 \u00b7 Seed shelf intro card",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L379",
+      "source_location": "L381",
       "id": "docs_backlog_prod_602_seed_shelf_intro_card",
-      "community": 21,
+      "community": 47,
       "norm_label": "prod-602 \u00b7 seed shelf intro card"
     },
     {
       "label": "PROD-603 \u00b7 Dark mode toggle",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L393",
+      "source_location": "L395",
       "id": "docs_backlog_prod_603_dark_mode_toggle",
-      "community": 21,
+      "community": 47,
       "norm_label": "prod-603 \u00b7 dark mode toggle"
     },
     {
       "label": "PROD-604 \u00b7 Branded PDF guide",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L407",
+      "source_location": "L409",
       "id": "docs_backlog_prod_604_branded_pdf_guide",
-      "community": 21,
+      "community": 47,
       "norm_label": "prod-604 \u00b7 branded pdf guide"
     },
     {
       "label": "E7 \u2014 Habit & engagement",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L421",
+      "source_location": "L423",
       "id": "docs_backlog_e7_habit_engagement",
-      "community": 21,
+      "community": 50,
       "norm_label": "e7 \u2014 habit & engagement"
     },
     {
       "label": "PROD-701 \u00b7 Mark routine steps complete",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L425",
+      "source_location": "L427",
       "id": "docs_backlog_prod_701_mark_routine_steps_complete",
-      "community": 21,
+      "community": 50,
       "norm_label": "prod-701 \u00b7 mark routine steps complete"
     },
     {
       "label": "PROD-702 \u00b7 AM/PM reminders",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L439",
+      "source_location": "L441",
       "id": "docs_backlog_prod_702_am_pm_reminders",
-      "community": 21,
+      "community": 50,
       "norm_label": "prod-702 \u00b7 am/pm reminders"
     },
     {
       "label": "PROD-703 \u00b7 Streak display (optional)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L455",
+      "source_location": "L457",
       "id": "docs_backlog_prod_703_streak_display_optional",
-      "community": 21,
+      "community": 50,
       "norm_label": "prod-703 \u00b7 streak display (optional)"
     },
     {
       "label": "E8 \u2014 Platform & growth",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L469",
+      "source_location": "L471",
       "id": "docs_backlog_e8_platform_growth",
-      "community": 21,
+      "community": 48,
       "norm_label": "e8 \u2014 platform & growth"
     },
     {
       "label": "PROD-801 \u00b7 PWA install + offline shell",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L473",
+      "source_location": "L475",
       "id": "docs_backlog_prod_801_pwa_install_offline_shell",
-      "community": 21,
+      "community": 48,
       "norm_label": "prod-801 \u00b7 pwa install + offline shell"
     },
     {
       "label": "PROD-802 \u00b7 Lookup result cache",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L487",
+      "source_location": "L489",
       "id": "docs_backlog_prod_802_lookup_result_cache",
-      "community": 21,
+      "community": 48,
       "norm_label": "prod-802 \u00b7 lookup result cache"
     },
     {
       "label": "PROD-803 \u00b7 Barcode scan add",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L501",
+      "source_location": "L503",
       "id": "docs_backlog_prod_803_barcode_scan_add",
-      "community": 21,
+      "community": 48,
       "norm_label": "prod-803 \u00b7 barcode scan add"
     },
     {
       "label": "PROD-804 \u00b7 CI pipeline",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L515",
+      "source_location": "L517",
       "id": "docs_backlog_prod_804_ci_pipeline",
-      "community": 21,
+      "community": 48,
       "norm_label": "prod-804 \u00b7 ci pipeline"
+    },
+    {
+      "label": "E9 \u2014 Alternates & discovery",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L531",
+      "id": "docs_backlog_e9_alternates_discovery",
+      "community": 41,
+      "norm_label": "e9 \u2014 alternates & discovery"
+    },
+    {
+      "label": "PROD-901 \u00b7 Alternates tab shell",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L537",
+      "id": "docs_backlog_prod_901_alternates_tab_shell",
+      "community": 41,
+      "norm_label": "prod-901 \u00b7 alternates tab shell"
+    },
+    {
+      "label": "PROD-902 \u00b7 Comparable products per shelf item",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L557",
+      "id": "docs_backlog_prod_902_comparable_products_per_shelf_item",
+      "community": 41,
+      "norm_label": "prod-902 \u00b7 comparable products per shelf item"
+    },
+    {
+      "label": "PROD-903 \u00b7 Comparative view",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L577",
+      "id": "docs_backlog_prod_903_comparative_view",
+      "community": 41,
+      "norm_label": "prod-903 \u00b7 comparative view"
+    },
+    {
+      "label": "PROD-904 \u00b7 Curated alternate notes (reviews)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L597",
+      "id": "docs_backlog_prod_904_curated_alternate_notes_reviews",
+      "community": 41,
+      "norm_label": "prod-904 \u00b7 curated alternate notes (reviews)"
+    },
+    {
+      "label": "PROD-905 \u00b7 Wishlist (save alternates)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L616",
+      "id": "docs_backlog_prod_905_wishlist_save_alternates",
+      "community": 41,
+      "norm_label": "prod-905 \u00b7 wishlist (save alternates)"
+    },
+    {
+      "label": "PROD-906 \u00b7 Wishlist \u2192 add to shelf",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L636",
+      "id": "docs_backlog_prod_906_wishlist_add_to_shelf",
+      "community": 41,
+      "norm_label": "prod-906 \u00b7 wishlist \u2192 add to shelf"
+    },
+    {
+      "label": "E10 \u2014 Partner profiles",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L655",
+      "id": "docs_backlog_e10_partner_profiles",
+      "community": 42,
+      "norm_label": "e10 \u2014 partner profiles"
+    },
+    {
+      "label": "PROD-1001 \u00b7 Partner profile creation",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L661",
+      "id": "docs_backlog_prod_1001_partner_profile_creation",
+      "community": 42,
+      "norm_label": "prod-1001 \u00b7 partner profile creation"
+    },
+    {
+      "label": "PROD-1002 \u00b7 Profile switcher",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L681",
+      "id": "docs_backlog_prod_1002_profile_switcher",
+      "community": 42,
+      "norm_label": "prod-1002 \u00b7 profile switcher"
+    },
+    {
+      "label": "PROD-1003 \u00b7 Partner shelf and routines",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L700",
+      "id": "docs_backlog_prod_1003_partner_shelf_and_routines",
+      "community": 42,
+      "norm_label": "prod-1003 \u00b7 partner shelf and routines"
+    },
+    {
+      "label": "PROD-1004 \u00b7 Partner lifestyle context",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L719",
+      "id": "docs_backlog_prod_1004_partner_lifestyle_context",
+      "community": 42,
+      "norm_label": "prod-1004 \u00b7 partner lifestyle context"
+    },
+    {
+      "label": "PROD-1005 \u00b7 Partner sync (own device)",
+      "file_type": "document",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L737",
+      "id": "docs_backlog_prod_1005_partner_sync_own_device",
+      "community": 42,
+      "norm_label": "prod-1005 \u00b7 partner sync (own device)"
     },
     {
       "label": "Suggested sprint 1 (v0.2 kickoff)",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L529",
+      "source_location": "L756",
       "id": "docs_backlog_suggested_sprint_1_v0_2_kickoff",
-      "community": 21,
+      "community": 44,
       "norm_label": "suggested sprint 1 (v0.2 kickoff)"
     },
     {
       "label": "Backlog hygiene",
       "file_type": "document",
       "source_file": "docs/BACKLOG.md",
-      "source_location": "L546",
+      "source_location": "L773",
       "id": "docs_backlog_backlog_hygiene",
-      "community": 21,
+      "community": 44,
       "norm_label": "backlog hygiene"
     },
     {
@@ -7504,7 +7819,7 @@
       "label": "North star",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "docs_product_vision_north_star",
       "community": 23,
       "norm_label": "north star"
@@ -7513,7 +7828,7 @@
       "label": "Target users",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "docs_product_vision_target_users",
       "community": 23,
       "norm_label": "target users"
@@ -7522,7 +7837,7 @@
       "label": "Product principles",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L28",
+      "source_location": "L31",
       "id": "docs_product_vision_product_principles",
       "community": 23,
       "norm_label": "product principles"
@@ -7531,7 +7846,7 @@
       "label": "Success metrics (v0.2+)",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L36",
+      "source_location": "L39",
       "id": "docs_product_vision_success_metrics_v0_2",
       "community": 23,
       "norm_label": "success metrics (v0.2+)"
@@ -7540,7 +7855,7 @@
       "label": "Non-goals (for now)",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L48",
+      "source_location": "L52",
       "id": "docs_product_vision_non_goals_for_now",
       "community": 23,
       "norm_label": "non-goals (for now)"
@@ -7549,7 +7864,7 @@
       "label": "Related docs",
       "file_type": "document",
       "source_file": "docs/PRODUCT-VISION.md",
-      "source_location": "L55",
+      "source_location": "L59",
       "id": "docs_product_vision_related_docs",
       "community": 23,
       "norm_label": "related docs"
@@ -7855,7 +8170,7 @@
       "label": "Phase 0 \u2014 Foundation \u2705 (shipped v0.1)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L34",
+      "source_location": "L36",
       "id": "docs_roadmap_phase_0_foundation_shipped_v0_1",
       "community": 22,
       "norm_label": "phase 0 \u2014 foundation \u2705 (shipped v0.1)"
@@ -7864,7 +8179,7 @@
       "label": "Phase 1 \u2014 Daily driver (target: v0.2)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L55",
+      "source_location": "L57",
       "id": "docs_roadmap_phase_1_daily_driver_target_v0_2",
       "community": 22,
       "norm_label": "phase 1 \u2014 daily driver (target: v0.2)"
@@ -7873,7 +8188,7 @@
       "label": "Phase 2 \u2014 Trust & polish (target: v0.3)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L75",
+      "source_location": "L77",
       "id": "docs_roadmap_phase_2_trust_polish_target_v0_3",
       "community": 22,
       "norm_label": "phase 2 \u2014 trust & polish (target: v0.3)"
@@ -7882,16 +8197,34 @@
       "label": "Phase 3 \u2014 Habit loop (target: v0.4)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L93",
+      "source_location": "L95",
       "id": "docs_roadmap_phase_3_habit_loop_target_v0_4",
       "community": 22,
       "norm_label": "phase 3 \u2014 habit loop (target: v0.4)"
     },
     {
+      "label": "Alternates (main nav tab)",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L113",
+      "id": "docs_roadmap_alternates_main_nav_tab",
+      "community": 22,
+      "norm_label": "alternates (main nav tab)"
+    },
+    {
+      "label": "Partner profiles",
+      "file_type": "document",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L133",
+      "id": "docs_roadmap_partner_profiles",
+      "community": 22,
+      "norm_label": "partner profiles"
+    },
+    {
       "label": "Phase 4 \u2014 Platform (target: v1.0)",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L111",
+      "source_location": "L160",
       "id": "docs_roadmap_phase_4_platform_target_v1_0",
       "community": 22,
       "norm_label": "phase 4 \u2014 platform (target: v1.0)"
@@ -7900,7 +8233,7 @@
       "label": "How priorities are set",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L128",
+      "source_location": "L178",
       "id": "docs_roadmap_how_priorities_are_set",
       "community": 22,
       "norm_label": "how priorities are set"
@@ -7909,7 +8242,7 @@
       "label": "Phase gate checklist",
       "file_type": "document",
       "source_file": "docs/ROADMAP.md",
-      "source_location": "L137",
+      "source_location": "L189",
       "id": "docs_roadmap_phase_gate_checklist",
       "community": 22,
       "norm_label": "phase gate checklist"
@@ -8126,7 +8459,7 @@
       "file_type": "code",
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L33",
-      "community": 1,
+      "community": 6,
       "norm_label": "life_stages",
       "id": "pages_cycle_page_life_stages"
     },
@@ -8135,7 +8468,7 @@
       "file_type": "code",
       "source_file": "lib/body-context/defaults.ts",
       "source_location": "L3",
-      "community": 36,
+      "community": 15,
       "norm_label": "default_body_context",
       "id": "body_context_defaults_default_body_context"
     },
@@ -8144,7 +8477,7 @@
       "file_type": "code",
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L68",
-      "community": 0,
+      "community": 15,
       "norm_label": "lifestageguidance()",
       "id": "body_context_snapshot_lifestageguidance"
     },
@@ -8153,7 +8486,7 @@
       "file_type": "code",
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L208",
-      "community": 0,
+      "community": 6,
       "norm_label": "getlifestagedescription()",
       "id": "i18n_ui_getlifestagedescription"
     },
@@ -8324,7 +8657,7 @@
       "file_type": "code",
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L110",
-      "community": 0,
+      "community": 15,
       "norm_label": "menstrualguidance()",
       "id": "body_context_snapshot_menstrualguidance"
     },
@@ -8333,7 +8666,7 @@
       "file_type": "code",
       "source_file": "components/routines/routines-overview.tsx",
       "source_location": "L1",
-      "community": 38,
+      "community": 6,
       "norm_label": "routines-overview.tsx",
       "id": "components_routines_routines_overview_tsx"
     },
@@ -8342,7 +8675,7 @@
       "file_type": "code",
       "source_file": "components/routines/routines-overview.tsx",
       "source_location": "L8",
-      "community": 38,
+      "community": 25,
       "norm_label": "routinesoverviewprops",
       "id": "routines_routines_overview_routinesoverviewprops"
     },
@@ -8360,7 +8693,7 @@
       "file_type": "code",
       "source_file": "components/routines/routines-overview.tsx",
       "source_location": "L86",
-      "community": 38,
+      "community": 6,
       "norm_label": "overviewpill()",
       "id": "routines_routines_overview_overviewpill"
     },
@@ -8378,7 +8711,7 @@
       "file_type": "code",
       "source_file": "components/cycle/cycle-phase-banner.tsx",
       "source_location": "L8",
-      "community": 38,
+      "community": 25,
       "norm_label": "cyclephasebannerprops",
       "id": "cycle_cycle_phase_banner_cyclephasebannerprops"
     },
@@ -8432,7 +8765,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L15",
-      "community": 33,
+      "community": 25,
       "norm_label": "phase_sensitive",
       "id": "routines_generator_phase_sensitive"
     },
@@ -8441,7 +8774,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L27",
-      "community": 33,
+      "community": 25,
       "norm_label": "shouldincludeforphase()",
       "id": "routines_generator_shouldincludeforphase"
     },
@@ -8450,7 +8783,7 @@
       "file_type": "code",
       "source_file": "lib/types/cycle.ts",
       "source_location": "L1",
-      "community": 38,
+      "community": 25,
       "norm_label": "cyclephase",
       "id": "types_cycle_cyclephase"
     },
@@ -8459,7 +8792,7 @@
       "file_type": "code",
       "source_file": "lib/types/cycle.ts",
       "source_location": "L8",
-      "community": 34,
+      "community": 15,
       "norm_label": "cyclesettings",
       "id": "types_cycle_cyclesettings"
     },
@@ -8468,7 +8801,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L14",
-      "community": 33,
+      "community": 25,
       "norm_label": "category_order",
       "id": "routines_generator_category_order"
     },
@@ -8477,7 +8810,7 @@
       "file_type": "code",
       "source_file": "lib/routines/generator.ts",
       "source_location": "L35",
-      "community": 33,
+      "community": 25,
       "norm_label": "sortbycategory()",
       "id": "routines_generator_sortbycategory"
     },
@@ -8549,7 +8882,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L1",
-      "community": 1,
+      "community": 36,
       "norm_label": "ingredient-interactions.tsx",
       "id": "components_conflicts_ingredient_interactions_tsx"
     },
@@ -8558,7 +8891,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L23",
-      "community": 1,
+      "community": 36,
       "norm_label": "severity_styles",
       "id": "conflicts_ingredient_interactions_severity_styles"
     },
@@ -8567,7 +8900,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L41",
-      "community": 1,
+      "community": 36,
       "norm_label": "severitydot()",
       "id": "conflicts_ingredient_interactions_severitydot"
     },
@@ -8576,7 +8909,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L54",
-      "community": 1,
+      "community": 36,
       "norm_label": "interactiondetail()",
       "id": "conflicts_ingredient_interactions_interactiondetail"
     },
@@ -8585,7 +8918,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L75",
-      "community": 1,
+      "community": 36,
       "norm_label": "interactiondetailssheet()",
       "id": "conflicts_ingredient_interactions_interactiondetailssheet"
     },
@@ -8594,7 +8927,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L108",
-      "community": 0,
+      "community": 36,
       "norm_label": "stepinteractionhint()",
       "id": "conflicts_ingredient_interactions_stepinteractionhint"
     },
@@ -8603,7 +8936,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/ingredient-interactions.tsx",
       "source_location": "L158",
-      "community": 0,
+      "community": 36,
       "norm_label": "routineinteractionbadge()",
       "id": "conflicts_ingredient_interactions_routineinteractionbadge"
     },
@@ -8630,7 +8963,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L1",
-      "community": 33,
+      "community": 25,
       "norm_label": "productcategory",
       "id": "lib_types_productcategory"
     },
@@ -8639,7 +8972,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L13",
-      "community": 6,
+      "community": 25,
       "norm_label": "routinefrequency",
       "id": "lib_types_routinefrequency"
     },
@@ -8648,7 +8981,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L15",
-      "community": 33,
+      "community": 25,
       "norm_label": "timeofday",
       "id": "lib_types_timeofday"
     },
@@ -8657,7 +8990,7 @@
       "file_type": "code",
       "source_file": "lib/types.ts",
       "source_location": "L17",
-      "community": 38,
+      "community": 25,
       "norm_label": "cyclephase",
       "id": "lib_types_cyclephase"
     },
@@ -8837,7 +9170,7 @@
       "file_type": "code",
       "source_file": "app/products/page.tsx",
       "source_location": "L1",
-      "community": 1,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "app_products_page_tsx"
     },
@@ -8855,7 +9188,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/conflict-list.tsx",
       "source_location": "L1",
-      "community": 1,
+      "community": 6,
       "norm_label": "conflict-list.tsx",
       "id": "components_conflicts_conflict_list_tsx"
     },
@@ -8864,7 +9197,7 @@
       "file_type": "code",
       "source_file": "components/conflicts/conflict-list.tsx",
       "source_location": "L8",
-      "community": 1,
+      "community": 6,
       "norm_label": "severity_styles",
       "id": "conflicts_conflict_list_severity_styles"
     },
@@ -10476,9 +10809,9 @@
       "source_file": "app/(app)/cycle/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_app_cycle_page_tsx",
-      "target": "cycle_page_cycleredirectpage",
-      "confidence_score": 1.0
+      "target": "cycle_page_cycleredirectpage"
     },
     {
       "relation": "imports_from",
@@ -11121,9 +11454,9 @@
       "source_file": "app/(app)/lifestyle/page.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_app_lifestyle_page_tsx",
-      "target": "components_pages_cycle_page_tsx",
-      "confidence_score": 1.0
+      "target": "components_pages_cycle_page_tsx"
     },
     {
       "relation": "imports",
@@ -11132,9 +11465,9 @@
       "source_file": "app/(app)/lifestyle/page.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_app_lifestyle_page_tsx",
-      "target": "pages_cycle_page_cyclepage",
-      "confidence_score": 1.0
+      "target": "pages_cycle_page_cyclepage"
     },
     {
       "relation": "imports_from",
@@ -11143,9 +11476,9 @@
       "source_file": "app/(app)/lifestyle/page.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_app_lifestyle_page_tsx",
-      "target": "lib_constants_metadata_ts",
-      "confidence_score": 1.0
+      "target": "lib_constants_metadata_ts"
     },
     {
       "relation": "imports",
@@ -11154,9 +11487,9 @@
       "source_file": "app/(app)/lifestyle/page.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_app_lifestyle_page_tsx",
-      "target": "constants_metadata_page_metadata",
-      "confidence_score": 1.0
+      "target": "constants_metadata_page_metadata"
     },
     {
       "relation": "contains",
@@ -11164,9 +11497,9 @@
       "source_file": "app/(app)/lifestyle/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_app_lifestyle_page_tsx",
-      "target": "lifestyle_page_page",
-      "confidence_score": 1.0
+      "target": "lifestyle_page_page"
     },
     {
       "relation": "imports_from",
@@ -15798,9 +16131,9 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
-      "target": "lib_body_context_skin_wellness_ts",
-      "confidence_score": 1.0
+      "target": "lib_body_context_skin_wellness_ts"
     },
     {
       "relation": "imports",
@@ -15809,9 +16142,9 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
-      "target": "body_context_skin_wellness_skinconditionkey",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_skinconditionkey"
     },
     {
       "relation": "imports",
@@ -15820,9 +16153,9 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
-      "target": "body_context_skin_wellness_wellnesskey",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_wellnesskey"
     },
     {
       "relation": "imports_from",
@@ -15853,9 +16186,9 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
-      "target": "i18n_ui_getskinconditiontogglehelp",
-      "confidence_score": 1.0
+      "target": "i18n_ui_getskinconditiontogglehelp"
     },
     {
       "relation": "imports",
@@ -15864,9 +16197,9 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
-      "target": "i18n_ui_getwellnesstogglehelp",
-      "confidence_score": 1.0
+      "target": "i18n_ui_getwellnesstogglehelp"
     },
     {
       "relation": "imports",
@@ -15891,6 +16224,17 @@
       "target": "lib_types_index_ts"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/cycle-page.tsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "components_pages_cycle_page_tsx",
+      "target": "lib_schedule_index_ts",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "components/pages/cycle-page.tsx",
@@ -15899,6 +16243,26 @@
       "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
       "target": "pages_cycle_page_weight_options"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/cycle-page.tsx",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "components_pages_cycle_page_tsx",
+      "target": "pages_cycle_page_weekday_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "components/pages/cycle-page.tsx",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "components_pages_cycle_page_tsx",
+      "target": "pages_cycle_page_monthly_day_options",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15972,9 +16336,9 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
-      "target": "types_body_context_skinconditionflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_skinconditionflags"
     },
     {
       "relation": "imports",
@@ -15994,9 +16358,9 @@
       "source_file": "components/pages/cycle-page.tsx",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "components_pages_cycle_page_tsx",
-      "target": "types_body_context_wellnessflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_wellnessflags"
     },
     {
       "relation": "imports",
@@ -18749,6 +19113,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "components_providers_app_data_provider_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "components/pages/guide-page.tsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -18854,6 +19229,28 @@
       "confidence_score": 1.0,
       "source": "components_layout_client_app_shell_tsx",
       "target": "providers_app_data_provider_appdataprovider"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_routines_routine_card_tsx",
+      "target": "providers_app_data_provider_useappdatacontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/routines/routine-card.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "routines_routine_card_routinecard",
+      "target": "providers_app_data_provider_useappdatacontext"
     },
     {
       "relation": "imports",
@@ -22903,6 +23300,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "lib/db.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_db_ts",
+      "target": "lib_schedule_defaults_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/db.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_db_ts",
+      "target": "schedule_defaults_default_routine_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/db.ts",
       "source_location": "L3",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -24481,9 +24900,9 @@
       "source_file": "lib/body-context/life-stage.test.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_life_stage_test_ts",
-      "target": "body_context_defaults_default_body_context",
-      "confidence_score": 1.0
+      "target": "body_context_defaults_default_body_context"
     },
     {
       "relation": "imports_from",
@@ -24576,9 +24995,9 @@
       "source_file": "lib/body-context/life-stage.test.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_life_stage_test_ts",
-      "target": "body_context_life_stage_default_body_context",
-      "confidence_score": 1.0
+      "target": "body_context_life_stage_default_body_context"
     },
     {
       "relation": "imports",
@@ -24642,9 +25061,9 @@
       "source_file": "lib/body-context/life-stage.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_life_stage_ts",
-      "target": "lib_body_context_skin_wellness_ts",
-      "confidence_score": 1.0
+      "target": "lib_body_context_skin_wellness_ts"
     },
     {
       "relation": "imports",
@@ -24653,9 +25072,9 @@
       "source_file": "lib/body-context/life-stage.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_life_stage_ts",
-      "target": "body_context_skin_wellness_default_skin_condition_flags",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_default_skin_condition_flags"
     },
     {
       "relation": "imports",
@@ -24664,9 +25083,9 @@
       "source_file": "lib/body-context/life-stage.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_life_stage_ts",
-      "target": "body_context_skin_wellness_default_wellness_flags",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_default_wellness_flags"
     },
     {
       "relation": "contains",
@@ -24844,9 +25263,9 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_i18n_ui_ts",
-      "target": "body_context_life_stage_lifestagetogglekey",
-      "confidence_score": 1.0
+      "target": "body_context_life_stage_lifestagetogglekey"
     },
     {
       "relation": "calls",
@@ -24942,9 +25361,9 @@
       "source_file": "lib/body-context/migrate.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_migrate_ts",
-      "target": "lib_body_context_skin_wellness_ts",
-      "confidence_score": 1.0
+      "target": "lib_body_context_skin_wellness_ts"
     },
     {
       "relation": "imports",
@@ -24953,9 +25372,9 @@
       "source_file": "lib/body-context/migrate.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_migrate_ts",
-      "target": "body_context_skin_wellness_default_skin_condition_flags",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_default_skin_condition_flags"
     },
     {
       "relation": "imports",
@@ -24964,8 +25383,19 @@
       "source_file": "lib/body-context/migrate.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_migrate_ts",
-      "target": "body_context_skin_wellness_default_wellness_flags",
+      "target": "body_context_skin_wellness_default_wellness_flags"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/body-context/migrate.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "lib_body_context_migrate_ts",
+      "target": "lib_schedule_index_ts",
       "confidence_score": 1.0
     },
     {
@@ -25042,6 +25472,17 @@
       "target": "types_body_context_menstrualcyclesettings"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/body-context/migrate.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "lib_body_context_migrate_ts",
+      "target": "schedule_cadence_normalizeroutineschedule",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -25062,6 +25503,17 @@
       "confidence_score": 1.0,
       "source": "body_context_migrate_normalizeappsettings",
       "target": "body_context_migrate_normalizebodycontext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/body-context/migrate.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "body_context_migrate_normalizeappsettings",
+      "target": "schedule_cadence_normalizeroutineschedule"
     },
     {
       "relation": "imports",
@@ -25439,9 +25891,9 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_routine_rules_ts",
-      "target": "lib_body_context_skin_wellness_ts",
-      "confidence_score": 1.0
+      "target": "lib_body_context_skin_wellness_ts"
     },
     {
       "relation": "imports",
@@ -25450,9 +25902,9 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_routine_rules_ts",
-      "target": "body_context_skin_wellness_getprimaryskincondition",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_getprimaryskincondition"
     },
     {
       "relation": "imports",
@@ -25461,9 +25913,9 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_routine_rules_ts",
-      "target": "body_context_skin_wellness_needsbarrierfirstholds",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_needsbarrierfirstholds"
     },
     {
       "relation": "imports",
@@ -25472,9 +25924,9 @@
       "source_file": "lib/body-context/routine-rules.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_routine_rules_ts",
-      "target": "body_context_skin_wellness_shouldexcludeforbarrierfirstskin",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_shouldexcludeforbarrierfirstskin"
     },
     {
       "relation": "contains",
@@ -25858,9 +26310,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "lib_types_body_context_ts",
-      "confidence_score": 1.0
+      "target": "lib_types_body_context_ts"
     },
     {
       "relation": "imports",
@@ -25869,9 +26321,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "types_body_context_skinconditionflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_skinconditionflags"
     },
     {
       "relation": "imports",
@@ -25880,9 +26332,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "types_body_context_wellnessflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_wellnessflags"
     },
     {
       "relation": "imports_from",
@@ -25891,9 +26343,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "lib_i18n_translate_ts",
-      "confidence_score": 1.0
+      "target": "lib_i18n_translate_ts"
     },
     {
       "relation": "imports",
@@ -25902,9 +26354,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "i18n_translate_translatefn",
-      "confidence_score": 1.0
+      "target": "i18n_translate_translatefn"
     },
     {
       "relation": "imports_from",
@@ -25913,9 +26365,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "lib_types_index_ts",
-      "confidence_score": 1.0
+      "target": "lib_types_index_ts"
     },
     {
       "relation": "contains",
@@ -25923,9 +26375,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_skinconditionkey",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_skinconditionkey"
     },
     {
       "relation": "contains",
@@ -25933,9 +26385,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_wellnesskey",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_wellnesskey"
     },
     {
       "relation": "contains",
@@ -25943,9 +26395,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_default_skin_condition_flags",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_default_skin_condition_flags"
     },
     {
       "relation": "contains",
@@ -25953,9 +26405,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_default_wellness_flags",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_default_wellness_flags"
     },
     {
       "relation": "contains",
@@ -25963,9 +26415,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_hasactivepattern",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_hasactivepattern"
     },
     {
       "relation": "contains",
@@ -25973,9 +26425,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_hasactiveskincondition",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_hasactiveskincondition"
     },
     {
       "relation": "contains",
@@ -25983,9 +26435,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_hasactivewellness",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_hasactivewellness"
     },
     {
       "relation": "contains",
@@ -25993,9 +26445,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_needsbarrierfirstholds",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_needsbarrierfirstholds"
     },
     {
       "relation": "contains",
@@ -26003,9 +26455,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_shouldexcludeforbarrierfirstskin",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_shouldexcludeforbarrierfirstskin"
     },
     {
       "relation": "contains",
@@ -26013,9 +26465,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_getprimaryskincondition",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_getprimaryskincondition"
     },
     {
       "relation": "contains",
@@ -26023,9 +26475,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_collectskinconditionguidance",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_collectskinconditionguidance"
     },
     {
       "relation": "contains",
@@ -26033,9 +26485,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "body_context_skin_wellness_collectwellnessguidance",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_collectwellnessguidance"
     },
     {
       "relation": "imports_from",
@@ -26044,9 +26496,9 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_snapshot_ts",
-      "target": "lib_body_context_skin_wellness_ts",
-      "confidence_score": 1.0
+      "target": "lib_body_context_skin_wellness_ts"
     },
     {
       "relation": "imports_from",
@@ -26055,9 +26507,9 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_i18n_ui_ts",
-      "target": "lib_body_context_skin_wellness_ts",
-      "confidence_score": 1.0
+      "target": "lib_body_context_skin_wellness_ts"
     },
     {
       "relation": "imports",
@@ -26066,9 +26518,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_skin_wellness_ts",
-      "target": "types_product_product",
-      "confidence_score": 1.0
+      "target": "types_product_product"
     },
     {
       "relation": "imports",
@@ -26077,9 +26529,9 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_i18n_ui_ts",
-      "target": "body_context_skin_wellness_skinconditionkey",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_skinconditionkey"
     },
     {
       "relation": "imports",
@@ -26088,9 +26540,9 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_i18n_ui_ts",
-      "target": "body_context_skin_wellness_wellnesskey",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_wellnesskey"
     },
     {
       "relation": "calls",
@@ -26099,9 +26551,9 @@
       "source_file": "lib/body-context/skin-wellness.ts",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "body_context_skin_wellness_shouldexcludeforbarrierfirstskin",
-      "target": "body_context_skin_wellness_hasactivepattern",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_hasactivepattern"
     },
     {
       "relation": "imports",
@@ -26110,9 +26562,9 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_snapshot_ts",
-      "target": "body_context_skin_wellness_collectskinconditionguidance",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_collectskinconditionguidance"
     },
     {
       "relation": "calls",
@@ -26132,9 +26584,9 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_snapshot_ts",
-      "target": "body_context_skin_wellness_collectwellnessguidance",
-      "confidence_score": 1.0
+      "target": "body_context_skin_wellness_collectwellnessguidance"
     },
     {
       "relation": "calls",
@@ -26343,9 +26795,9 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_snapshot_ts",
-      "target": "types_body_context_skinconditionflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_skinconditionflags"
     },
     {
       "relation": "imports",
@@ -26365,9 +26817,9 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_body_context_snapshot_ts",
-      "target": "types_body_context_wellnessflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_wellnessflags"
     },
     {
       "relation": "contains",
@@ -26451,9 +26903,9 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "body_context_snapshot_bodycontextsnapshot",
-      "target": "types_body_context_skinconditionflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_skinconditionflags"
     },
     {
       "relation": "references",
@@ -26462,9 +26914,9 @@
       "source_file": "lib/body-context/snapshot.ts",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "body_context_snapshot_bodycontextsnapshot",
-      "target": "types_body_context_wellnessflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_wellnessflags"
     },
     {
       "relation": "references",
@@ -28124,6 +28576,50 @@
       "target": "routines_verification_routineverification"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/i18n/ui.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "lib_i18n_ui_ts",
+      "target": "lib_types_schedule_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/i18n/ui.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "lib_i18n_ui_ts",
+      "target": "types_schedule_routineschedulesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/i18n/ui.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "lib_i18n_ui_ts",
+      "target": "lib_schedule_defaults_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/i18n/ui.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "lib_i18n_ui_ts",
+      "target": "schedule_defaults_default_routine_schedule",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib/i18n/ui.ts",
@@ -28279,9 +28775,9 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L222",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_i18n_ui_ts",
-      "target": "i18n_ui_getskinconditiontogglehelp",
-      "confidence_score": 1.0
+      "target": "i18n_ui_getskinconditiontogglehelp"
     },
     {
       "relation": "contains",
@@ -28289,9 +28785,9 @@
       "source_file": "lib/i18n/ui.ts",
       "source_location": "L229",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_i18n_ui_ts",
-      "target": "i18n_ui_getwellnesstogglehelp",
-      "confidence_score": 1.0
+      "target": "i18n_ui_getwellnesstogglehelp"
     },
     {
       "relation": "contains",
@@ -29601,6 +30097,17 @@
       "target": "routines_generator_getroutinewarnings"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_gettodaysroutines",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -29714,6 +30221,86 @@
       "target": "routines_generator_test_warnings"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_wednesday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_sundayonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_wednesdaysettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_wednesdayroutines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_fifteenth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_firstonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_midmonthsettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.test.ts",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "lib_routines_generator_test_ts",
+      "target": "routines_generator_test_midmonth",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -29723,6 +30310,17 @@
       "confidence_score": 1.0,
       "source": "lib_routines_generator_ts",
       "target": "lib_types_index_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "lib_schedule_index_ts",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -29957,6 +30555,39 @@
       "confidence_score": 1.0,
       "source": "lib_routines_generator_ts",
       "target": "types_product_timeofday"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "schedule_cadence_ismonthlyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "schedule_cadence_isweeklyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "lib_routines_generator_ts",
+      "target": "schedule_cadence_normalizeroutineschedule",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -30316,6 +30947,17 @@
       "weight": 1.0,
       "source": "routines_verification_verifyroutine",
       "target": "routines_generator_getroutinewarnings"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/routines/generator.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "routines_generator_gettodaysroutines",
+      "target": "schedule_cadence_normalizeroutineschedule"
     },
     {
       "relation": "calls",
@@ -31099,6 +31741,330 @@
       "weight": 1.0,
       "source": "services_app_data_refreshappdata",
       "target": "rules_ingredient_conflicts_detectconflicts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_test_ts",
+      "target": "lib_schedule_cadence_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_test_ts",
+      "target": "schedule_cadence_ismonthlyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_test_ts",
+      "target": "schedule_cadence_isweeklyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_test_ts",
+      "target": "schedule_cadence_normalizeroutineschedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_test_ts",
+      "target": "lib_schedule_defaults_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_test_ts",
+      "target": "schedule_defaults_default_routine_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "lib_types_schedule_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "types_schedule_routineschedulesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "lib_schedule_defaults_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "schedule_defaults_default_routine_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "schedule_cadence_clampweeklyanchorday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "schedule_cadence_clampmonthlyanchorday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "schedule_cadence_normalizeroutineschedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "schedule_cadence_isweeklyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "lib_schedule_cadence_ts",
+      "target": "schedule_cadence_ismonthlyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "lib_schedule_cadence_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "schedule_cadence_normalizeroutineschedule",
+      "target": "schedule_cadence_clampweeklyanchorday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "schedule_cadence_clampweeklyanchorday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/cadence.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "schedule_cadence_normalizeroutineschedule",
+      "target": "schedule_cadence_clampmonthlyanchorday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "schedule_cadence_clampmonthlyanchorday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "schedule_cadence_normalizeroutineschedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "schedule_cadence_isweeklyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "schedule_cadence_ismonthlyroutineday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/defaults.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_schedule_defaults_ts",
+      "target": "lib_types_schedule_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/defaults.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_schedule_defaults_ts",
+      "target": "types_schedule_routineschedulesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/defaults.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lib_schedule_defaults_ts",
+      "target": "schedule_defaults_default_routine_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "lib_schedule_defaults_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/test/fixtures.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_test_fixtures_ts",
+      "target": "lib_schedule_defaults_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/schedule/index.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "lib_schedule_index_ts",
+      "target": "schedule_defaults_default_routine_schedule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/test/fixtures.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "lib_test_fixtures_ts",
+      "target": "schedule_defaults_default_routine_schedule",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -32887,9 +33853,9 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_types_body_context_ts",
-      "target": "types_body_context_skinconditionflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_skinconditionflags"
     },
     {
       "relation": "contains",
@@ -32897,9 +33863,9 @@
       "source_file": "lib/types/body-context.ts",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_types_body_context_ts",
-      "target": "types_body_context_wellnessflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_wellnessflags"
     },
     {
       "relation": "contains",
@@ -33115,9 +34081,9 @@
       "source_file": "lib/types/index.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_types_index_ts",
-      "target": "types_body_context_skinconditionflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_skinconditionflags"
     },
     {
       "relation": "re_exports",
@@ -33126,9 +34092,9 @@
       "source_file": "lib/types/index.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_types_index_ts",
-      "target": "types_body_context_wellnessflags",
-      "confidence_score": 1.0
+      "target": "types_body_context_wellnessflags"
     },
     {
       "relation": "re_exports",
@@ -33511,6 +34477,28 @@
       "target": "types_settings_appsettings"
     },
     {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/types/index.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "lib_types_index_ts",
+      "target": "lib_types_schedule_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/types/index.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "lib_types_index_ts",
+      "target": "types_schedule_routineschedulesettings",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -33766,6 +34754,49 @@
       "confidence_score": 1.0,
       "source": "types_routine_routine",
       "target": "types_cycle_cyclephase"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/types/schedule.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_types_schedule_ts",
+      "target": "types_schedule_routineschedulesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/types/settings.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_types_settings_ts",
+      "target": "lib_types_schedule_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/types/settings.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "lib_types_settings_ts",
+      "target": "types_schedule_routineschedulesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "lib/types/settings.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "types_settings_appsettings",
+      "target": "types_schedule_routineschedulesettings",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -34543,6 +35574,26 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/BACKLOG.md",
+      "source_location": "L531",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e9_alternates_discovery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L655",
+      "weight": 1.0,
+      "source": "docs_backlog_product_backlog",
+      "target": "docs_backlog_e10_partner_profiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
       "source_location": "L525",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -34878,6 +35929,116 @@
       "confidence_score": 1.0,
       "source": "docs_backlog_e8_platform_growth",
       "target": "docs_backlog_prod_804_ci_pipeline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L537",
+      "weight": 1.0,
+      "source": "docs_backlog_e9_alternates_discovery",
+      "target": "docs_backlog_prod_901_alternates_tab_shell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L557",
+      "weight": 1.0,
+      "source": "docs_backlog_e9_alternates_discovery",
+      "target": "docs_backlog_prod_902_comparable_products_per_shelf_item",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L577",
+      "weight": 1.0,
+      "source": "docs_backlog_e9_alternates_discovery",
+      "target": "docs_backlog_prod_903_comparative_view",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L597",
+      "weight": 1.0,
+      "source": "docs_backlog_e9_alternates_discovery",
+      "target": "docs_backlog_prod_904_curated_alternate_notes_reviews",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L616",
+      "weight": 1.0,
+      "source": "docs_backlog_e9_alternates_discovery",
+      "target": "docs_backlog_prod_905_wishlist_save_alternates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L636",
+      "weight": 1.0,
+      "source": "docs_backlog_e9_alternates_discovery",
+      "target": "docs_backlog_prod_906_wishlist_add_to_shelf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L661",
+      "weight": 1.0,
+      "source": "docs_backlog_e10_partner_profiles",
+      "target": "docs_backlog_prod_1001_partner_profile_creation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L681",
+      "weight": 1.0,
+      "source": "docs_backlog_e10_partner_profiles",
+      "target": "docs_backlog_prod_1002_profile_switcher",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L700",
+      "weight": 1.0,
+      "source": "docs_backlog_e10_partner_profiles",
+      "target": "docs_backlog_prod_1003_partner_shelf_and_routines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L719",
+      "weight": 1.0,
+      "source": "docs_backlog_e10_partner_profiles",
+      "target": "docs_backlog_prod_1004_partner_lifestyle_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/BACKLOG.md",
+      "source_location": "L737",
+      "weight": 1.0,
+      "source": "docs_backlog_e10_partner_profiles",
+      "target": "docs_backlog_prod_1005_partner_sync_own_device",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -36092,6 +37253,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "docs_roadmap_phase_3_habit_loop_target_v0_4",
+      "target": "docs_roadmap_alternates_main_nav_tab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ROADMAP.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "docs_roadmap_phase_3_habit_loop_target_v0_4",
+      "target": "docs_roadmap_partner_profiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/SKINCARE-INSIGHTS.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -36115,9 +37296,9 @@
       "source_file": "docs/SKINCARE-INSIGHTS.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_skincare_insights_skincare_insights_knowledge_base",
-      "target": "docs_skincare_insights_how_deep_can_lifestyle_context_go",
-      "confidence_score": 1.0
+      "target": "docs_skincare_insights_how_deep_can_lifestyle_context_go"
     },
     {
       "relation": "contains",
@@ -36155,9 +37336,9 @@
       "source_file": "docs/SKINCARE-INSIGHTS.md",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_skincare_insights_skincare_insights_knowledge_base",
-      "target": "docs_skincare_insights_skin_conditions_tier_a_b",
-      "confidence_score": 1.0
+      "target": "docs_skincare_insights_skin_conditions_tier_a_b"
     },
     {
       "relation": "contains",
@@ -36165,9 +37346,9 @@
       "source_file": "docs/SKINCARE-INSIGHTS.md",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_skincare_insights_skincare_insights_knowledge_base",
-      "target": "docs_skincare_insights_wellness_tier_b_guidance_only",
-      "confidence_score": 1.0
+      "target": "docs_skincare_insights_wellness_tier_b_guidance_only"
     },
     {
       "relation": "contains",
@@ -36265,9 +37446,9 @@
       "source_file": "docs/SKINCARE-INSIGHTS.md",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_skincare_insights_skin_conditions_tier_a_b",
-      "target": "docs_skincare_insights_psoriasis_eczema_rosacea_tier_a_holds",
-      "confidence_score": 1.0
+      "target": "docs_skincare_insights_psoriasis_eczema_rosacea_tier_a_holds"
     },
     {
       "relation": "contains",
@@ -36275,9 +37456,9 @@
       "source_file": "docs/SKINCARE-INSIGHTS.md",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_skincare_insights_skin_conditions_tier_a_b",
-      "target": "docs_skincare_insights_acne_prone_tier_b_guidance_only",
-      "confidence_score": 1.0
+      "target": "docs_skincare_insights_acne_prone_tier_b_guidance_only"
     },
     {
       "relation": "contains",
@@ -36285,9 +37466,9 @@
       "source_file": "docs/SKINCARE-INSIGHTS.md",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_skincare_insights_wellness_tier_b_guidance_only",
-      "target": "docs_skincare_insights_anxiety_depression",
-      "confidence_score": 1.0
+      "target": "docs_skincare_insights_anxiety_depression"
     },
     {
       "relation": "contains",
@@ -37082,5 +38263,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2a5fe454b3b49823252ddf8c037c9f9e2709032b"
+  "built_at_commit": "e259908259fd62024f29fd95cf992193098a4dd3"
 }

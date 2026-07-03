@@ -11,6 +11,11 @@ import {
   getBodyContextCore,
   shouldIncludeProductInRoutine,
 } from "../body-context";
+import {
+  isMonthlyRoutineDay,
+  isWeeklyRoutineDay,
+  normalizeRoutineSchedule,
+} from "../schedule";
 import { finalizeRoutineProductOrder } from "./category-order";
 import { detectConflicts, getConflictsForRoutine } from "../rules/ingredient-conflicts";
 
@@ -122,17 +127,22 @@ export function getRoutineWarnings(
 export function getTodaysRoutines(
   routines: Routine[],
   settings: AppSettings,
+  date = new Date(),
 ): Routine[] {
   const snapshot = getBodyContextCore(settings.bodyContext);
-  const today = new Date();
-  const dayOfMonth = today.getDate();
-  const dayOfWeek = today.getDay();
+  const schedule = normalizeRoutineSchedule(settings.routineSchedule);
+  const dayOfMonth = date.getDate();
+  const dayOfWeek = date.getDay();
 
   return routines
     .filter((r) => {
       if (r.frequency === "daily") return true;
-      if (r.frequency === "weekly") return dayOfWeek === 0;
-      if (r.frequency === "monthly") return dayOfMonth === 1;
+      if (r.frequency === "weekly") {
+        return isWeeklyRoutineDay(dayOfWeek, schedule);
+      }
+      if (r.frequency === "monthly") {
+        return isMonthlyRoutineDay(dayOfMonth, schedule);
+      }
       return false;
     })
     .filter(

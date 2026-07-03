@@ -42,4 +42,15 @@ describe("normalizeAppSettings", () => {
     expect(settings.bodyContext.lifeStage.postpartum).toBe(true);
     expect(settings.bodyContext.menstrual.enabled).toBe(false);
   });
+
+  it("defaults routine schedule when missing", () => {
+    const settings = normalizeAppSettings({
+      onboardingComplete: true,
+    });
+
+    expect(settings.routineSchedule).toEqual({
+      weeklyAnchorDay: 0,
+      monthlyAnchorDay: 1,
+    });
+  });
 });
