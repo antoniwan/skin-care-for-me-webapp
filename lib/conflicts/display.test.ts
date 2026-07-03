@@ -15,6 +15,7 @@ function makeWarning(
     productA: makeProduct({ id: "a", name: "Product A" }),
     productB: makeProduct({ id: "b", name: "Product B" }),
     conflict: {
+      id: "retinol-vitamin-c",
       ingredientA: "retinol",
       ingredientB: "vitamin c",
       severity: "separate",

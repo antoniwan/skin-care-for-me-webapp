@@ -40,7 +40,6 @@ export const es419: Messages = {
     productPage: "Página del producto",
     downloadPdf: "Descargar PDF",
     addProduct: "Agregar producto",
-    allClear: "Todo bien",
     reviewSuggested: "Revisar",
     noImage: "Sin imagen",
     removeProduct: "Quitar {name}",
@@ -306,6 +305,60 @@ export const es419: Messages = {
     whatToDo: "Qué hacer",
     ingredients: "Ingredientes",
     severityCount: "{count} {label}",
+  },
+  conflictRules: {
+    "retinol-benzoyl-peroxide": {
+      reason:
+        "El peróxido de benzoilo oxida el retinol y reduce su efectividad.",
+      guidance:
+        "Úsalos en noches alternas, no en la misma rutina.",
+    },
+    "retinol-vitamin-c": {
+      reason:
+        "Usarlos juntos puede aumentar la irritación sin beneficio extra.",
+      guidance: "Usa vitamina C por la mañana y retinol por la noche.",
+    },
+    "retinol-aha": {
+      reason:
+        "Ambos aumentan la renovación celular y pueden sobre-exfoliar.",
+      guidance:
+        "Introdúcelos despacio; evita AHA fuerte en noches de retinol.",
+    },
+    "retinol-bha": {
+      reason: "Combinar retinoides con BHA aumenta el riesgo de irritación.",
+      guidance: "Alterna noches o usa BHA solo por la mañana.",
+    },
+    "vitamin-c-niacinamide": {
+      reason:
+        "A pH bajo, la vitamina C puede reducir la eficacia de la niacinamida en algunas personas.",
+      guidance:
+        "En general son seguros juntos; sepáralos si notas enrojecimiento.",
+    },
+    "aha-bha": {
+      reason: "Combinar varios ácidos aumenta el estrés en la barrera.",
+      guidance:
+        "Úsalos en días distintos o limita a un ácido por rutina.",
+    },
+    "aha-benzoyl-peroxide": {
+      reason: "Ambos resecan y pueden causar descamación al aplicarlos juntos.",
+      guidance:
+        "Alterna la aplicación o usa peróxido de benzoilo solo en puntos.",
+    },
+    "benzoyl-peroxide-vitamin-c": {
+      reason:
+        "El peróxido de benzoilo puede desestabilizar el ácido L-ascórbico.",
+      guidance: "Vitamina C por la mañana, peróxido de benzoilo por la noche.",
+    },
+    "copper-peptides-vitamin-c": {
+      reason:
+        "Los péptidos de cobre pueden interactuar con vitamina C ácida.",
+      guidance: "Aplícalos en momentos distintos del día.",
+    },
+    "copper-peptides-aha": {
+      reason: "Los ácidos de pH bajo pueden reducir la estabilidad de los péptidos.",
+      guidance:
+        "Separa al menos 30 minutos o úsalos en horarios distintos.",
+    },
   },
   addProduct: {
     title: "Agregar un producto",

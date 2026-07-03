@@ -19,5 +19,6 @@ export type {
 } from "./body-context";
 
 export type { IngredientConflict, ConflictWarning } from "./conflicts";
+export type { ProductExclusionReason } from "./exclusions";
 
 export type { AppSettings } from "./settings";

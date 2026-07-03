@@ -40,7 +40,9 @@ describe("getBodyContextSnapshot", () => {
     expect(snapshot.cyclePhase).toBe("menstrual");
     expect(snapshot.activeFactors.length).toBeGreaterThanOrEqual(3);
     expect(
-      snapshot.guidanceNotes.some((n) => n.includes("Postpartum week 4")),
+      snapshot.guidanceNotes.some((n) =>
+        n.includes("Postpartum week 4") || n.includes("Semana 4 posparto"),
+      ),
     ).toBe(true);
   });
 });

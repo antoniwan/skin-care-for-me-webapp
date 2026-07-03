@@ -2,7 +2,7 @@
 
 import type { ConflictWarning } from "@/lib/types";
 import { useTranslation } from "@/components/providers/locale-provider";
-import { getSeverityLabel } from "@/lib/i18n/ui";
+import { getSeverityLabel, localizeConflictRule } from "@/lib/i18n/ui";
 import { cn } from "@/lib/utils";
 import { SeverityBadge } from "./interaction-primitives";
 import { getSeverityStyle } from "./severity-styles";
@@ -11,6 +11,7 @@ export function InteractionDetail({ warning }: { warning: ConflictWarning }) {
   const { t } = useTranslation();
   const { conflict, productA, productB } = warning;
   const style = getSeverityStyle(conflict.severity);
+  const localized = localizeConflictRule(t, conflict);
 
   return (
     <article
@@ -51,7 +52,7 @@ export function InteractionDetail({ warning }: { warning: ConflictWarning }) {
               {t("conflicts.why")}
             </p>
             <p className="text-sm leading-relaxed text-foreground/90">
-              {conflict.reason}
+              {localized.reason}
             </p>
           </div>
           <div className="space-y-1">
@@ -59,7 +60,7 @@ export function InteractionDetail({ warning }: { warning: ConflictWarning }) {
               {t("conflicts.whatToDo")}
             </p>
             <p className="text-sm leading-relaxed text-foreground">
-              {conflict.guidance}
+              {localized.guidance}
             </p>
           </div>
         </div>

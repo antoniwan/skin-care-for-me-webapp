@@ -45,7 +45,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const t = useMemo(
-    () => createTranslator(getMessages(locale)),
+    () => createTranslator(getMessages(locale), getMessages("en")),
     [locale],
   );
 

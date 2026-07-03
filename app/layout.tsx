@@ -7,6 +7,9 @@ import "@fontsource/sora/600.css";
 import "@fontsource/sora/700.css";
 import "./globals.css";
 import { ROOT_METADATA } from "@/lib/constants/metadata";
+import { DEFAULT_LOCALE, getHtmlLang, LOCALE_STORAGE_KEY } from "@/lib/i18n/locales";
+
+const LOCALE_BOOTSTRAP = `(function(){try{var k=${JSON.stringify(LOCALE_STORAGE_KEY)};var l=localStorage.getItem(k);var h=${JSON.stringify(getHtmlLang(DEFAULT_LOCALE))};if(l==="en"){h="en"}else if(l==="es-419"){h="es-419"}document.documentElement.lang=h}catch(e){}})();`;
 
 export const metadata: Metadata = ROOT_METADATA;
 
@@ -23,7 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es-419" className="h-full" suppressHydrationWarning>
+    <html lang={getHtmlLang(DEFAULT_LOCALE)} className="h-full" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: LOCALE_BOOTSTRAP }} />
+      </head>
       <body className="min-h-full font-sans antialiased">{children}</body>
     </html>
   );

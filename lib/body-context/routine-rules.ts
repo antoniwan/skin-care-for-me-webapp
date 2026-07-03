@@ -1,4 +1,5 @@
 import type { CyclePhase, Product, ProductCategory } from "@/lib/types";
+import type { ProductExclusionReason } from "@/lib/types/exclusions";
 import type { BodyContextCore } from "./snapshot";
 
 const RETINOID_PATTERN = /retinol|retinal|tretinoin|adapalene|retinyl/i;
@@ -103,7 +104,7 @@ export function shouldIncludeProductInRoutine(
 export function getProductExclusionReason(
   product: Product,
   snapshot: BodyContextCore,
-): string | null {
+): ProductExclusionReason | null {
   if (shouldIncludeProductInRoutine(product, snapshot)) return null;
 
   if (
@@ -111,14 +112,14 @@ export function getProductExclusionReason(
       snapshot.lifeStage === "breastfeeding") &&
     shouldExcludeForPregnancy(product)
   ) {
-    return "Held during pregnancy or breastfeeding — check with your clinician.";
+    return { kind: "pregnancy" };
   }
 
   if (
     snapshot.lifeStage === "postpartum" &&
     shouldExcludeForPostpartum(product, snapshot.postpartumWeeks)
   ) {
-    return "Held during early postpartum recovery — reintroduce when ready.";
+    return { kind: "postpartum" };
   }
 
   if (
@@ -126,16 +127,16 @@ export function getProductExclusionReason(
     shouldLimitForMenstrualPhase(product, snapshot.cyclePhase) &&
     product.frequency === "daily"
   ) {
-    return `Held on ${snapshot.cyclePhase} phase days — save harsh actives for less sensitive times.`;
+    return { kind: "menstrual", phase: snapshot.cyclePhase };
   }
 
-  return "Held based on your body settings.";
+  return { kind: "body-default" };
 }
 
 export function getBodyContextProductExclusions(
   products: Product[],
   snapshot: BodyContextCore,
-): { product: Product; reason: string }[] {
+): { product: Product; reason: ProductExclusionReason }[] {
   if (!snapshot.enabled) return [];
 
   return products.flatMap((product) => {

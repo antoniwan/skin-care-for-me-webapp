@@ -1,4 +1,4 @@
-import type { ConflictWarning, Product, Routine, RoutineFrequency } from "../types";
+import type { ConflictWarning, Product, ProductCategory, Routine, RoutineFrequency } from "../types";
 import { categoryRank } from "./category-order";
 import { getRoutineWarnings } from "./generator";
 
@@ -9,15 +9,23 @@ export type RoutineCheckId =
 
 export interface RoutineCheck {
   id: RoutineCheckId;
-  label: string;
   passed: boolean;
-  detail: string;
+  counts?: {
+    avoid?: number;
+    caution?: number;
+    mismatches?: number;
+  };
 }
+
+export type ReviewNote =
+  | { type: "duplicate-categories"; categories: ProductCategory[] }
+  | { type: "conflict-guidance"; ruleId: string }
+  | { type: "menstrual-phase" };
 
 export interface RoutineVerification {
   checks: RoutineCheck[];
   allPassed: boolean;
-  reviewNotes: string[];
+  reviewNotes: ReviewNote[];
 }
 
 function matchesTime(product: Product, time: Routine["timeOfDay"]): boolean {
@@ -51,43 +59,36 @@ function checkApplicationOrder(routine: Routine): RoutineCheck {
 
   return {
     id: "application-order",
-    label: "Layering order",
     passed: orderOk,
-    detail: orderOk
-      ? "Products are ordered cleanse → treat → hydrate → protect."
-      : "The step order may not match how these products should be layered.",
   };
 }
 
 function checkIngredientSafety(warnings: ConflictWarning[]): RoutineCheck {
   const avoid = warnings.filter((w) => w.conflict.severity === "avoid");
   const caution = warnings.filter(
-    (w) => w.conflict.severity === "caution" || w.conflict.severity === "separate",
+    (w) =>
+      w.conflict.severity === "caution" || w.conflict.severity === "separate",
   );
 
   if (avoid.length > 0) {
     return {
       id: "ingredient-safety",
-      label: "Ingredient pairings",
       passed: false,
-      detail: `${avoid.length} pairing${avoid.length === 1 ? "" : "s"} in this routine should not be used together.`,
+      counts: { avoid: avoid.length },
     };
   }
 
   if (caution.length > 0) {
     return {
       id: "ingredient-safety",
-      label: "Ingredient pairings",
       passed: true,
-      detail: `No serious conflicts; ${caution.length} note${caution.length === 1 ? "" : "s"} worth reading below.`,
+      counts: { caution: caution.length },
     };
   }
 
   return {
     id: "ingredient-safety",
-    label: "Ingredient pairings",
     passed: true,
-    detail: "Nothing in this routine conflicts on ingredients.",
   };
 }
 
@@ -103,17 +104,13 @@ function checkShelfAlignment(
 
   return {
     id: "shelf-alignment",
-    label: "Schedule match",
     passed: mismatches.length === 0,
-    detail:
-      mismatches.length === 0
-        ? "Every product belongs in this routine's frequency and time of day."
-        : `${mismatches.length} product${mismatches.length === 1 ? " doesn't" : "s don't"} quite match this routine's schedule.`,
+    counts: mismatches.length > 0 ? { mismatches: mismatches.length } : undefined,
   };
 }
 
-function collectReviewNotes(routine: Routine, warnings: ConflictWarning[]): string[] {
-  const notes: string[] = [];
+function collectReviewNotes(routine: Routine, warnings: ConflictWarning[]): ReviewNote[] {
+  const notes: ReviewNote[] = [];
   const categories = routine.steps.map((s) => s.category);
 
   const duplicateCategories = [
@@ -122,9 +119,7 @@ function collectReviewNotes(routine: Routine, warnings: ConflictWarning[]): stri
     ),
   ];
   if (duplicateCategories.length > 0) {
-    notes.push(
-      `Multiple ${duplicateCategories.join(", ").replaceAll("_", " ")} steps — confirm layering order with your skin goals.`,
-    );
+    notes.push({ type: "duplicate-categories", categories: duplicateCategories });
   }
 
   const caution = warnings.filter(
@@ -132,16 +127,25 @@ function collectReviewNotes(routine: Routine, warnings: ConflictWarning[]): stri
       w.conflict.severity === "caution" || w.conflict.severity === "separate",
   );
   for (const warning of caution) {
-    notes.push(warning.conflict.guidance);
+    notes.push({ type: "conflict-guidance", ruleId: warning.conflict.id });
   }
 
   if (routine.cyclePhase) {
-    notes.push(
-      `Adjusted for your current menstrual phase — harsher actives may be limited on sensitive days.`,
-    );
+    notes.push({ type: "menstrual-phase" });
   }
 
-  return [...new Set(notes)];
+  const unique = new Map<string, ReviewNote>();
+  for (const note of notes) {
+    const key =
+      note.type === "duplicate-categories"
+        ? `dup:${note.categories.join(",")}`
+        : note.type === "conflict-guidance"
+          ? `conflict:${note.ruleId}`
+          : "menstrual";
+    unique.set(key, note);
+  }
+
+  return [...unique.values()];
 }
 
 export function verifyRoutine(
@@ -169,7 +173,7 @@ export function verifyRoutine(
 
 export interface RoutineShelfExclusion {
   product: Product;
-  reason: string;
+  reason: import("../types").ProductExclusionReason;
   pairedWith: string;
 }
 
@@ -189,7 +193,7 @@ export function getRoutineShelfExclusions(
 
     excluded.set(removed.id, {
       product: removed,
-      reason: warning.conflict.reason,
+      reason: { kind: "ingredient", ruleId: warning.conflict.id },
       pairedWith: kept.name,
     });
   }
@@ -197,6 +201,7 @@ export function getRoutineShelfExclusions(
   return [...excluded.values()];
 }
 
+/** @deprecated Use `formatRoutineSchedule` from `@/lib/i18n/ui` in UI code. */
 export function formatRoutineSchedule(frequency: RoutineFrequency): string {
   switch (frequency) {
     case "daily":
@@ -208,6 +213,7 @@ export function formatRoutineSchedule(frequency: RoutineFrequency): string {
   }
 }
 
+/** @deprecated Use `formatRoutineTitle` from `@/lib/i18n/ui` in UI code. */
 export function formatRoutineTitle(
   frequency: RoutineFrequency,
   timeOfDay: Routine["timeOfDay"],

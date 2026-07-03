@@ -2,6 +2,7 @@ import type { IngredientConflict, Product, ConflictWarning } from "../types";
 
 export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
   {
+    id: "retinol-benzoyl-peroxide",
     ingredientA: "retinol",
     ingredientB: "benzoyl peroxide",
     severity: "avoid",
@@ -9,6 +10,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Use on alternate evenings, not in the same routine.",
   },
   {
+    id: "retinol-vitamin-c",
     ingredientA: "retinol",
     ingredientB: "vitamin c",
     severity: "separate",
@@ -16,6 +18,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Use vitamin C in the morning and retinol at night.",
   },
   {
+    id: "retinol-aha",
     ingredientA: "retinol",
     ingredientB: "aha",
     severity: "caution",
@@ -23,6 +26,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Introduce slowly; avoid using strong AHA on retinol nights.",
   },
   {
+    id: "retinol-bha",
     ingredientA: "retinol",
     ingredientB: "bha",
     severity: "caution",
@@ -30,6 +34,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Alternate nights or use BHA only in the morning.",
   },
   {
+    id: "vitamin-c-niacinamide",
     ingredientA: "vitamin c",
     ingredientB: "niacinamide",
     severity: "caution",
@@ -37,6 +42,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Generally safe together; separate if you notice flushing.",
   },
   {
+    id: "aha-bha",
     ingredientA: "aha",
     ingredientB: "bha",
     severity: "caution",
@@ -44,6 +50,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Use on different days or limit to one acid per routine.",
   },
   {
+    id: "aha-benzoyl-peroxide",
     ingredientA: "aha",
     ingredientB: "benzoyl peroxide",
     severity: "caution",
@@ -51,6 +58,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Alternate application or use BP only as a spot treatment.",
   },
   {
+    id: "benzoyl-peroxide-vitamin-c",
     ingredientA: "benzoyl peroxide",
     ingredientB: "vitamin c",
     severity: "avoid",
@@ -58,6 +66,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Use vitamin C in the morning, BP in the evening.",
   },
   {
+    id: "copper-peptides-vitamin-c",
     ingredientA: "copper peptides",
     ingredientB: "vitamin c",
     severity: "caution",
@@ -65,6 +74,7 @@ export const INGREDIENT_CONFLICTS: IngredientConflict[] = [
     guidance: "Apply at different times of day.",
   },
   {
+    id: "copper-peptides-aha",
     ingredientA: "copper peptides",
     ingredientB: "aha",
     severity: "caution",

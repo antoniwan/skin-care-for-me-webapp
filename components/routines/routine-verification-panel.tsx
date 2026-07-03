@@ -3,7 +3,6 @@
 import { useState } from "react";
 import {
   AlertCircle,
-  CheckCircle2,
   ChevronDown,
   CircleAlert,
 } from "lucide-react";
@@ -19,8 +18,13 @@ export function RoutineVerificationPanel({
 }) {
   const { t } = useTranslation();
   const localized = localizeVerification(t, verification);
-  const passedCount = localized.checks.filter((c) => c.passed).length;
-  const [open, setOpen] = useState(!localized.allPassed);
+  const failedChecks = localized.checks.filter((check) => !check.passed);
+  const hasNotes = localized.reviewNotes.length > 0;
+  const hasIssues = failedChecks.length > 0 || hasNotes;
+
+  const [open, setOpen] = useState(failedChecks.length > 0);
+
+  if (!hasIssues) return null;
 
   return (
     <div className="rounded-lg border border-border bg-muted/40">
@@ -42,24 +46,24 @@ export function RoutineVerificationPanel({
             <p className="text-sm font-medium text-foreground">
               {t("safetyCheck.title")}
             </p>
-            {localized.allPassed ? (
-              <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary">
-                <CheckCircle2 className="size-3.5" />
-                {t("common.allClear")}
-              </span>
-            ) : (
+            {failedChecks.length > 0 && (
               <span className="inline-flex items-center gap-1 rounded-full bg-destructive/10 px-2 py-0.5 text-[11px] font-semibold text-destructive">
                 <CircleAlert className="size-3.5" />
                 {t("common.reviewSuggested")}
               </span>
             )}
           </div>
-          {!open && (
+          {!open && failedChecks.length > 0 && (
             <p className="mt-0.5 text-xs text-muted-foreground">
               {t("safetyCheck.collapsed", {
-                passed: passedCount,
+                passed: localized.checks.length - failedChecks.length,
                 total: localized.checks.length,
               })}
+            </p>
+          )}
+          {!open && failedChecks.length === 0 && hasNotes && (
+            <p className="mt-0.5 text-xs text-muted-foreground">
+              {t("conflicts.tapReview")}
             </p>
           )}
         </div>
@@ -67,39 +71,33 @@ export function RoutineVerificationPanel({
 
       {open && (
         <div className="space-y-3 border-t border-border/80 px-3 pb-3 pt-2">
-          <ul className="space-y-2">
-            {localized.checks.map((check) => (
-              <li key={check.id} className="flex gap-2.5">
-                {check.passed ? (
-                  <CheckCircle2
-                    className="mt-0.5 size-4 shrink-0 text-primary"
-                    aria-hidden
-                  />
-                ) : (
+          {failedChecks.length > 0 && (
+            <ul className="space-y-2">
+              {failedChecks.map((check) => (
+                <li key={check.id} className="flex gap-2.5">
                   <AlertCircle
                     className="mt-0.5 size-4 shrink-0 text-destructive"
                     aria-hidden
                   />
-                )}
-                <div className="min-w-0">
-                  <p
-                    className={cn(
-                      "text-sm font-medium",
-                      check.passed ? "text-foreground" : "text-destructive",
-                    )}
-                  >
-                    {check.label}
-                  </p>
-                  <p className="text-xs leading-relaxed text-muted-foreground">
-                    {check.detail}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium text-destructive">
+                      {check.label}
+                    </p>
+                    <p className="text-xs leading-relaxed text-muted-foreground">
+                      {check.detail}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
 
-          {localized.reviewNotes.length > 0 && (
-            <div className="border-t border-border/80 pt-3">
+          {hasNotes && (
+            <div
+              className={cn(
+                failedChecks.length > 0 && "border-t border-border/80 pt-3",
+              )}
+            >
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 {t("safetyCheck.layeringTips")}
               </p>

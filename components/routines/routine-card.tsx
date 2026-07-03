@@ -18,7 +18,6 @@ import {
 import { verifyRoutine } from "@/lib/routines/verification";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2 } from "lucide-react";
 
 interface RoutineCardProps {
   routine: Routine;
@@ -57,12 +56,6 @@ export function RoutineCard({
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
-            {verification.allPassed && (
-              <Badge className="gap-1 border-transparent bg-primary text-primary-foreground">
-                <CheckCircle2 className="size-3" />
-                {t("common.allClear")}
-              </Badge>
-            )}
             <RoutineInteractionBadge warnings={warnings} />
             {routine.cyclePhase && (
               <Badge variant="secondary">

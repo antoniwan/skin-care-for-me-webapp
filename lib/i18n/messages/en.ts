@@ -38,7 +38,6 @@ export const en = {
     productPage: "Product page",
     downloadPdf: "Download PDF",
     addProduct: "Add product",
-    allClear: "All clear",
     reviewSuggested: "Review suggested",
     noImage: "No image",
     removeProduct: "Remove {name}",
@@ -301,6 +300,49 @@ export const en = {
     whatToDo: "What to do",
     ingredients: "Ingredients",
     severityCount: "{count} {label}",
+  },
+  conflictRules: {
+    "retinol-benzoyl-peroxide": {
+      reason: "Benzoyl peroxide oxidizes retinol, reducing effectiveness.",
+      guidance: "Use on alternate evenings, not in the same routine.",
+    },
+    "retinol-vitamin-c": {
+      reason: "Combined use can increase irritation without added benefit.",
+      guidance: "Use vitamin C in the morning and retinol at night.",
+    },
+    "retinol-aha": {
+      reason: "Both increase cell turnover and can over-exfoliate.",
+      guidance: "Introduce slowly; avoid using strong AHA on retinol nights.",
+    },
+    "retinol-bha": {
+      reason: "Layering retinoids with BHA raises irritation risk.",
+      guidance: "Alternate nights or use BHA only in the morning.",
+    },
+    "vitamin-c-niacinamide": {
+      reason:
+        "At low pH, vitamin C may reduce niacinamide efficacy for some users.",
+      guidance: "Generally safe together; separate if you notice flushing.",
+    },
+    "aha-bha": {
+      reason: "Combining multiple acids increases barrier stress.",
+      guidance: "Use on different days or limit to one acid per routine.",
+    },
+    "aha-benzoyl-peroxide": {
+      reason: "Both are drying and can cause peeling when layered.",
+      guidance: "Alternate application or use BP only as a spot treatment.",
+    },
+    "benzoyl-peroxide-vitamin-c": {
+      reason: "Benzoyl peroxide can destabilize L-ascorbic acid.",
+      guidance: "Use vitamin C in the morning, BP in the evening.",
+    },
+    "copper-peptides-vitamin-c": {
+      reason: "Copper peptides may interact with acidic vitamin C.",
+      guidance: "Apply at different times of day.",
+    },
+    "copper-peptides-aha": {
+      reason: "Low pH acids may reduce peptide stability.",
+      guidance: "Separate by at least 30 minutes or use at different times.",
+    },
   },
   addProduct: {
     title: "Add a product",
