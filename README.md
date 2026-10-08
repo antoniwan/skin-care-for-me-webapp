@@ -1,5 +1,7 @@
 # Skincare for You
 
+> **Retired October 8, 2026.** ChatGPT does this job now, so the app is no longer maintained. skincare.builds.software is coming down. The code stays here for history.
+
 A mobile-first web app that helps you track skin care products, build daily/weekly/monthly routines, flag ingredient conflicts, and optionally adapt routines to body context (menstrual phase, life stage, weight). Data stays in your browser. Nothing is sent to a server except product lookups (when you add a new product).
 
 This is early-stage software (v0.1). It works, but many features are basic or missing. See [docs/KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md) for an honest list of current gaps, [docs/ROADMAP.md](docs/ROADMAP.md) for planned features, and [docs/PRODUCTION-TRACKER.md](docs/PRODUCTION-TRACKER.md) for the launch checklist.
